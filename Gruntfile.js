@@ -31,6 +31,10 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
+      riot: {
+        files: ['<%= config.app %>/scripts/{,*/}*.tag'],
+        tasks: ['riot']
+      },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -49,7 +53,8 @@ module.exports = function (grunt) {
         files: [
           '<%= config.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*'
+          '<%= config.app %>/images/{,*/}*',
+          '.tmp/scripts/{,*/}*.js'
         ]
       }
     },
@@ -290,14 +295,28 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'sass:server',
-        'copy:styles'
+        'copy:styles',
+        'riot'
       ],
       dist: [
         'sass',
         'copy:styles',
         'imagemin',
-        'svgmin'
+        'svgmin',
+        'riot'
       ]
+    },
+
+    riot: {
+      options:{
+      },
+      dist: {
+        expand: true,
+        cwd: '<%= config.app %>/scripts',
+        src: '**/*.tag',
+        dest: '.tmp/scripts',
+        ext: '.js'
+      }
     }
   });
 
