@@ -123,7 +123,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -132,7 +132,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -275,7 +275,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'data/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
