@@ -1,5 +1,21 @@
 {
-  "name": "matsuri",
+  "name": "feschibal",
+  "version": "1.0.0",
+  "description": "祭りオープンデータプロジェクト",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeforchiba/feschibal"
+  },
+  "keywords": [
+    "chiba"
+  ],
+  "author": "codeforchiba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeforchiba/feschibal/issues"
+  },
+  "homepage": "https://github.com/codeforchiba/feschibal",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",

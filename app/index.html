@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>ちば自転車マップ</title>
+    <title>Feschibal</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
     <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css">
     <!-- build:css(app) styles/vendor.css -->
-    <link rel="stylesheet" href="scripts/vendor/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css">
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/app.css -->
     <link rel="stylesheet" href="styles/app.css">
@@ -32,28 +31,17 @@
 
   <body>
     <app></app>
-
+    
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.5/typeahead.bundle.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
     <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
     <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js"></script>
     <script src="//cdn.jsdelivr.net/riot/2.0.13/riot.min.js"></script>
     <!-- build:js(app) scripts/vendor.js -->
-    <script src="scripts/vendor/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
     <!-- endbuild -->
     <!-- build:js({app,.tmp}) scripts/app.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/navHeader.js"></script>
-    <script src="scripts/sidebar.js"></script>
-    <script src="scripts/loading.js"></script>
-    <script src="scripts/bicycleMap.js"></script>
-    <script src="scripts/modals/aboutModal.js"></script>
-    <script src="scripts/modals/legendModal.js"></script>
-    <script src="scripts/modals/featureModal.js"></script>
     <!-- endbuild -->
     <script>riot.mount('*')</script>
   </body>
