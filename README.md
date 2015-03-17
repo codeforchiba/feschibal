@@ -1,4 +1,4 @@
-# matsuri
+# Feschibal
 
 [Code for Chiba](http://code4chiba.org) の feschibalプロジェクトのソースコードです。
 
