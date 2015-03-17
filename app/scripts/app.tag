@@ -1,6 +1,6 @@
 <app>
   <app-header></app-header>
-  <div>
+  <div class="content">
     <home if={ page === 'home' }></home>
     <search if={ page === 'search' } restype={restype} searchparam={searchparam}></search>
   </div>
@@ -47,4 +47,10 @@
     riot.route(routes);
     riot.route.exec(routes);
   </script>
+
+  <style>
+    app .content {
+      padding: 15px;
+    }
+  </style>
 </app>
