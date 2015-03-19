@@ -1,8 +1,9 @@
 <app>
   <app-header></app-header>
   <div class="content">
-    <home if={ page === 'home' }></home>
-    <search if={ page === 'search' } restype={restype} searchparam={searchparam}></search>
+    <home if={ page === 'home' } listener={listener}></home>
+    <search if={ page === 'search' } restype={restype} searchparam={searchparam} listener={listener}></search>
+    <fes-detail-modal fes={fes}></fes-detail-modal>
   </div>
   <app-footer></app-footer>
 
@@ -13,6 +14,16 @@
     this.restype = null;
     /** 検索条件 */
     this.searchparam = null;
+
+    // 選択された祭り
+    this.fes = null;
+    this.listener = {
+      onSelectFes : function(fes){
+        self.fes = fes;
+        self.update();
+        $("fes-detail-modal > div").modal("show");
+      }
+    }
 
     // ルーティングパースの変更
     riot.route.parser(function(path) {

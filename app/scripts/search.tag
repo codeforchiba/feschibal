@@ -6,7 +6,7 @@
           <h3 class="panel-title">祭りを検索する</h3>
         </div>
         <div class="panel-body">
-          <form class="form-horizontal">
+          <form class="form-horizontal" onsubmit={onSubmitSearch}>
             <h4>期間を指定する</h4>
             <div class="form-group">
               <label for="fromDate" class="col-sm-2 control-label">From:</label>
@@ -36,12 +36,16 @@
         <li role="presentation" class={active: opts.restype==='cal'}><a href="#cal?{$.param(opts.searchparam)}">カレンダー表示</a></li>
       </ul>
       <div>
-        <fes-list if={ opts.restype === 'list' }></fes-list>
-        <fes-calendar if={ opts.restype === 'cal' }></fes-calendar>
+        <fes-list if={ opts.restype === 'list' } request={request} listener={opts.listener}></fes-list>
+        <fes-calendar if={ opts.restype === 'cal' } request={request} listener={opts.listener}></fes-calendar>
       </div>
+
     </div>
   </div>
+
   <script>
+    var self = this;
+
     var datepickerParam = {
       format: 'yyyy/mm/dd',
       language: 'ja',
@@ -56,6 +60,18 @@
 
     // 期間(to)
     $(this.toDate).datepicker(datepickerParam);
+
+    // 検索リクエスト
+    this.request = riot.observable();
+
+    // 検索ボタン押下時
+    onSubmitSearch(e){
+      $.getJSON("data/test-data.json", function (data) {
+        self.request.trigger('loaded', data);
+        self.update();
+        return false;
+      });
+    }
   </script>
   <style>
 

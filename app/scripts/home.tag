@@ -4,7 +4,7 @@
       <h3 class="panel-title">直近に開催される祭り</h3>
     </div>
     <div class="panel-body">
-      <fes-list></fes-list>
+      <fes-list listener={opts.listener} request={request}></fes-list>
     </div>
   </div>
   <div class="panel panel-default">
@@ -34,6 +34,14 @@
     </div>
   </div>
   <script>
+    var self = this;
 
+    // 検索リクエスト
+    this.request = riot.observable();
+
+    $.getJSON("data/home-test-data.json", function (data) {
+      self.request.trigger('loaded', data);
+      self.update();
+    });
   </script>
 </home>
