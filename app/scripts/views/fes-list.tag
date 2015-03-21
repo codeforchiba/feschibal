@@ -35,6 +35,7 @@
     // データロード時
     opts.request.on('loaded', function(fesList){
       self.fesList = fesList;
+      self.update();
 
       // 祭りデータから地図のマーカーデータを生成します。
       var data = {
@@ -52,6 +53,7 @@
         }
       });
 
+      markerList.clearLayers();
       markerList.addData(data);
     });
 

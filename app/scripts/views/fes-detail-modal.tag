@@ -26,7 +26,7 @@
                 <dt>目玉</dt>
                 <dd>2千人規模で踊る親子三代千葉おどり</dd>
               </dl>
-              <img src="images/chiba-odori.jpg" alt=""/>
+              <img src="../../images/chiba-odori.jpg" alt=""/>
             </div>
             <table class="table table-bordered">
               <thred>

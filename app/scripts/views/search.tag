@@ -32,12 +32,12 @@
     </div>
     <div class="col-lg-9">
       <ul class="nav nav-tabs">
-        <li role="presentation" class={active: opts.restype==='list'}><a href="#list?{$.param(opts.searchparam)}">一覧表示</a></li>
-        <li role="presentation" class={active: opts.restype==='cal'}><a href="#cal?{$.param(opts.searchparam)}">カレンダー表示</a></li>
+        <li role="presentation" class={active: path==='list'}><a href="#search/list?{queryString}">一覧表示</a></li>
+        <li role="presentation" class={active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー表示</a></li>
       </ul>
       <div>
-        <fes-list if={ opts.restype === 'list' } request={request} listener={opts.listener}></fes-list>
-        <fes-calendar if={ opts.restype === 'cal' } request={request} listener={opts.listener}></fes-calendar>
+        <fes-list if={ path === 'list' } request={request} listener={opts.listener}></fes-list>
+        <fes-calendar if={ path === 'cal' } request={request} listener={opts.listener}></fes-calendar>
       </div>
 
     </div>
@@ -55,23 +55,46 @@
       clearBtn: true
     };
 
-    // 期間(from)
+    /** 期間(from) */
     $(this.fromDate).datepicker(datepickerParam);
-
-    // 期間(to)
+    /** 期間(to) */
     $(this.toDate).datepicker(datepickerParam);
-
-    // 検索リクエスト
+    /** 検索リクエスト */
     this.request = riot.observable();
+    /** 表示ページパス */
+    this.path = null;
+    /** 検索パラメータ */
+    this.queryString = null;
 
-    // 検索ボタン押下時
+    /**
+     * 検索ボタン押下時
+     */
     onSubmitSearch(e){
+
+    }
+
+    /**
+     * 検索結果表示画面切替時
+     */
+    riot.route.on('routeChange:search', function(path){
+      console.log('routeChange:search path='+path);
+      self.path = path;
+      self.update();
+    });
+
+    /**
+     * 検索画面表示時
+     */
+    riot.route.on('search', function(param){
+      console.log('attach search param='+JSON.stringify(param));
+      self.queryString = $.param(param);
+      self.update();
+
       $.getJSON("data/test-data.json", function (data) {
         self.request.trigger('loaded', data);
-        self.update();
         return false;
       });
-    }
+    });
   </script>
   <style>
 

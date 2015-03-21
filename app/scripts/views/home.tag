@@ -20,13 +20,13 @@
         <table class="table">
           <tbody>
           <tr>
-            <td><a href="#list?param1=value1&param2=value2">本日開催の祭り</a></td>
+            <td><a href="#search/list?param1=value1&param2=value2">本日開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#list?param1=value3&param2=value4">今週開催の祭り</a></td>
+            <td><a href="#search/list?param1=value3&param2=value4">今週開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#list?param1=value5&param2=value6">今度の土日開催の祭り</a></td>
+            <td><a href="#search/list?param1=value5&param2=value6">今度の土日開催の祭り</a></td>
           </tr>
           </tbody>
         </table>
@@ -36,12 +36,18 @@
   <script>
     var self = this;
 
-    // 検索リクエスト
+    /** 検索リクエスト */
     this.request = riot.observable();
 
-    $.getJSON("data/home-test-data.json", function (data) {
-      self.request.trigger('loaded', data);
-      self.update();
+    /**
+     * Home画面表示時
+     */
+    riot.route.on('home', function(param){
+      console.log('attach home param='+JSON.stringify(param));
+      $.getJSON("data/home-test-data.json", function (data) {
+        self.request.trigger('loaded', data);
+      });
     });
+
   </script>
 </home>
