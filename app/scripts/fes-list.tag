@@ -71,7 +71,11 @@
         return L.marker(latlng).bindLabel(feature.properties.name, { noHide: true });
       },
       onEachFeature: function (feature, layer) {
-        //opts.listener.onSelectFes(feature.properties);
+        layer.on({
+          click: function (e) {
+            opts.listener.onSelectFes(feature.properties);
+          }
+        });
       }
     })
 
@@ -82,7 +86,7 @@
       }
       clearInterval(checkVisible);
 
-      var map = L.map($mapEl[0]).setView([35.6098733,140.1138984], 13);
+      map = L.map($mapEl[0]).setView([35.6098733,140.1138984], 12);
       tile.addTo(map);
       markerList.addTo(map);
 
@@ -90,7 +94,7 @@
 
     // 祭り選択時
     onSelectFes(e){
-      opts.listener.onSelectFes(e.item.fes);
+      map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
     }
   </script>
 
