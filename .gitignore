@@ -1,6 +1,9 @@
-node_modules
-dist
+.grunt
 .tmp
 .sass-cache
 .idea
+
+dist
+
+node_modules
 bower_components
