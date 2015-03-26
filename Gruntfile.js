@@ -318,6 +318,13 @@ module.exports = function (grunt) {
         dest: '.tmp/scripts',
         ext: '.js'
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: '**/*'
     }
   });
 
@@ -350,7 +357,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [
