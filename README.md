@@ -1,25 +1,25 @@
-# matsuri
+# Feschibal
 
-[Code for Chiba](http://code4chiba.org) の matsuriプロジェクトのソースコードです。
+[Code for Chiba](http://code4chiba.org) の feschibalプロジェクトのソースコードです。
 
 ## 使用ライブラリ
 
 主に以下のライブラリを使用して作られています。
 
-・jquery
-・bootstrap
-・leaflet
-・riotjs
+- jquery
+- bootstrap
+- leaflet
+- riotjs
 
 ## 開発ツール
 
 本プロジェクトでは開発ツールとしてGruntを使用しています。
 Gruntが担うタスクは以下の機能になります。
 
-・scssのコンパイル
-・tagファイルのコンパイル
-・開発用httpサーバの起動
-・リリース用モジュール（ソース圧縮、結合等）の生成
+- scssのコンパイル
+- tagファイルのコンパイル
+- 開発用httpサーバの起動
+- リリース用モジュール（ソース圧縮、結合等）の生成
 
 ### 開発ツールのインストール
 
@@ -37,6 +37,11 @@ $ npm install -g grunt-cli
 ## 開発環境準備
 
 1. ソースをチェックアウトし、プロジェクトのディレクトリに移動する
+
+```
+$ git clone https://github.com/codeforchiba/feschibal.git
+$ cd feschibal
+```
 
 2. プロジェクトのルートディレクトリで以下のコマンドを実行し、必要なモジュールのセットアップ
 

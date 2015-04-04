@@ -31,6 +31,10 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
+      riot: {
+        files: ['<%= config.app %>/scripts/{,*/}*.tag'],
+        tasks: ['riot']
+      },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -49,7 +53,8 @@ module.exports = function (grunt) {
         files: [
           '<%= config.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*'
+          '<%= config.app %>/images/{,*/}*',
+          '.tmp/scripts/{,*/}*.js'
         ]
       }
     },
@@ -118,7 +123,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -127,7 +132,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -270,7 +275,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'data/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -290,14 +296,35 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'sass:server',
-        'copy:styles'
+        'copy:styles',
+        'riot'
       ],
       dist: [
         'sass',
         'copy:styles',
         'imagemin',
-        'svgmin'
+        'svgmin',
+        'riot'
       ]
+    },
+
+    riot: {
+      options:{
+      },
+      dist: {
+        expand: true,
+        cwd: '<%= config.app %>/scripts',
+        src: '**/*.tag',
+        dest: '.tmp/scripts',
+        ext: '.js'
+      }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: '**/*'
     }
   });
 
@@ -330,7 +357,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [
