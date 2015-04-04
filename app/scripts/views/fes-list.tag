@@ -38,23 +38,17 @@
       self.update();
 
       // 祭りデータから地図のマーカーデータを生成します。
-      var data = {
-        "type": "FeatureCollection",
-        "features": []
-      };
-      data.features = _.map(fesList, function(fes){
-        return {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": fes.coordinates
-          },
-          "properties": fes
-        }
+      markers.clearLayers();
+      _.each(fesList, function(fes){
+        var marker = L.marker(new L.LatLng(fes.coordinates[1], fes.coordinates[0])).bindLabel(fes.name, { noHide: true, clickable: true });
+        marker.on('click', function (e) {
+          opts.listener.onSelectFes(fes);
+        });
+        marker.label.on('click', function (e) {
+          opts.listener.onSelectFes(fes);
+        });
+        markers.addLayer(marker);
       });
-
-      markerList.clearLayers();
-      markerList.addData(data);
     });
 
     // 地図情報
@@ -68,18 +62,7 @@
     });
 
     // マーカー一覧(geoJson)
-    var markerList = L.geoJson(null, {
-      pointToLayer: function (feature, latlng) {
-        return L.marker(latlng).bindLabel(feature.properties.name, { noHide: true });
-      },
-      onEachFeature: function (feature, layer) {
-        layer.on({
-          click: function (e) {
-            opts.listener.onSelectFes(feature.properties);
-          }
-        });
-      }
-    })
+    var markers = L.markerClusterGroup();
 
     var $mapEl = $(this.map);
     var checkVisible = setInterval(function(){
@@ -90,7 +73,7 @@
 
       map = L.map($mapEl[0]).setView([35.6098733,140.1138984], 12);
       tile.addTo(map);
-      markerList.addTo(map);
+      map.addLayer(markers);
 
     },50);
 
