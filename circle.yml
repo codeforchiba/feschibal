@@ -15,7 +15,7 @@ test:
 deployment:
   publish_gh_pages:
     branch: feature/introduce-circleci
-    command:
+    commands:
       - grunt build
 
 general:
