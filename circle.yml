@@ -13,7 +13,7 @@ test:
     - grunt --version
 
 deployment:
-  publish-gh-pages:
+  publish_gh_pages:
     branch: feature/introduce-circleci
     command:
       - grunt build
