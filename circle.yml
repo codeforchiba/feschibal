@@ -10,7 +10,7 @@ test:
 
 deployment:
   publish_gh_pages:
-    branch: feature/introduce-circleci
+    branch: develop
     commands:
       - git config --global user.name "CircleCI"
       - git config --global user.email "circleci@code4chiba.org"
@@ -18,6 +18,10 @@ deployment:
 
 general:
   branches:
+    ignore:
+      - master
+      - gh-pages
+      - /feature\/.*/
+      - /hotfix\/.*/
     only:
       - develop
-      - feature/introduce-circleci
