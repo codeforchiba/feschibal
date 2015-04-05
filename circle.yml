@@ -12,6 +12,8 @@ deployment:
   publish_gh_pages:
     branch: feature/introduce-circleci
     commands:
+      - git config --global user.name "CircleCI"
+      - git config --global user.email "circleci@code4chiba.org"
       - grunt build
 
 general:
