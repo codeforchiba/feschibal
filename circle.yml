@@ -1,0 +1,25 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  node:
+    version: 0.12.0
+
+dependencies:
+  override:
+    - npm install --dev
+
+test:
+  override:
+    - grunt --version
+
+deployment:
+  publish-gh-pages:
+    branch: feature/introduce-circleci
+    command:
+      - grunt build
+
+general:
+  branches:
+    only:
+      - develop
+      - feature/introduce-circleci
