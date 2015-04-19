@@ -1,9 +1,13 @@
-.grunt
-.tmp
-.sass-cache
-.idea
+.grunt/
+.tmp/
+.sass-cache/
+.idea/
 
-dist
+dist/
 
-node_modules
-bower_components
+node_modules/
+bower_components/
+
+/data/csv/processed/
+/data/json/
+

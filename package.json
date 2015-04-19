@@ -18,6 +18,9 @@
   "homepage": "https://github.com/codeforchiba/feschibal",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
+    "bluebird": "^2.9.24",
+    "csv-parse": "^0.1.0",
+    "csv-stringify": "0.0.6",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.0",
     "grunt-concurrent": "^0.5.0",
@@ -31,6 +34,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-convert": "^0.1.12",
     "grunt-gh-pages": "^0.10.0",
     "grunt-mocha": "^0.4.10",
     "grunt-modernizr": "^0.5.2",
@@ -40,8 +44,11 @@
     "grunt-sass": "^0.14.0",
     "grunt-svgmin": "^0.4.0",
     "grunt-usemin": "^2.3.0",
+    "iconv": "^2.1.6",
     "jshint-stylish": "^0.4.0",
     "load-grunt-tasks": "^0.4.0",
+    "promise-streams": "^0.2.5",
+    "stream-transform": "0.0.7",
     "time-grunt": "^0.4.0"
   },
   "engines": {
