@@ -44,7 +44,7 @@
     "grunt-sass": "^0.14.0",
     "grunt-svgmin": "^0.4.0",
     "grunt-usemin": "^2.3.0",
-    "iconv": "^2.1.6",
+    "iconv-lite": "^0.4.8",
     "jshint-stylish": "^0.4.0",
     "load-grunt-tasks": "^0.4.0",
     "promise-streams": "^0.2.5",

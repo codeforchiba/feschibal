@@ -6,7 +6,7 @@ var ps = require('promise-streams');
 var csvParse = require('csv-parse');
 var transform = require('stream-transform');
 var csvStringify = require('csv-stringify');
-var iconv = require('iconv').Iconv;
+var iconv = require('iconv-lite');
 
 var defaultOptions = {
 }
@@ -28,7 +28,8 @@ function translate(option, record) {
 }
 
 function processFile(from, to, option) {
-  var converter = new iconv('SHIFT_JIS', 'UTF8');
+  var decoder = iconv.decodeStream('shift_jis');
+  var encoder = iconv.encodeStream('utf8');
   var parser = csvParse({});
   var reader = fs.createReadStream(from);
   var transformer = transform(function(record) {
@@ -49,7 +50,7 @@ function processFile(from, to, option) {
 
   var headerProcessed = false;
 
-  return ps.wait(reader.pipe(converter).pipe(parser).pipe(transformer).pipe(stringifier).pipe(writer));
+  return ps.wait(reader.pipe(decoder).pipe(encoder).pipe(parser).pipe(transformer).pipe(stringifier).pipe(writer));
 }
 
 module.exports = function(grunt) {
