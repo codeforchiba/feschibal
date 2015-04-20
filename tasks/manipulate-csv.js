@@ -28,7 +28,7 @@ function translate(option, record) {
 }
 
 function processFile(from, to, option) {
-  var decoder = iconv.decodeStream('shift_jis');
+  var decoder = iconv.decodeStream(option.encoding);
   var encoder = iconv.encodeStream('utf8');
   var parser = csvParse({});
   var reader = fs.createReadStream(from);

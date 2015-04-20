@@ -334,6 +334,7 @@ module.exports = function (grunt) {
     'manipulate-csv': {
       options: {
         kouen_1: {
+          encoding: 'shift_jis',
           removeColumn: [ 2, 3, 4, 9, 10, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29],
           from: ['施設、場所、イベントの名称', '施設、場所、イベントの名称（読み）', '経度（世界測地系）', '緯度（世界測地系）', '郵便番号', '住所', '電話番号', 'FAX番号', 'アクセス', 'ホームページURL（PC）'],
           to: ['name', 'kanaName', 'longitude', 'latitude', 'postalCode', 'address', 'phone', 'fax', 'directions', 'url']
