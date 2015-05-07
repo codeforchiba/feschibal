@@ -64,6 +64,12 @@
     // マーカー一覧(geoJson)
     var markers = L.markerClusterGroup();
 
+    function setCurrentCoordinates(latitude, longitude){
+      map = L.map($mapEl[0]).setView([latitude,longitude], 12);
+      tile.addTo(map);
+      map.addLayer(markers);
+    }
+
     var $mapEl = $(this.map);
     var checkVisible = setInterval(function(){
       if(!$mapEl.length || !$mapEl.is(':visible')){
@@ -71,10 +77,24 @@
       }
       clearInterval(checkVisible);
 
-      map = L.map($mapEl[0]).setView([35.6098733,140.1138984], 12);
-      tile.addTo(map);
-      map.addLayer(markers);
-
+      // Get the current location
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(
+          function(position){ // success
+            setCurrentCoordinates(position.coords.latitude, position.coords.longitude);
+          },
+          function(error){ // error
+            setCurrentCoordinates(35.6098733, 140.1138984);
+          },
+          {
+          "enableHighAccuracy": false,
+          "timeout": 8000,
+          "maximumAge": 2000,
+          }
+        );
+      } else { // not correspond to the Geolocation API
+        setCurrentCoordinates(35.6098733, 140.1138984);
+      }
     },50);
 
     // 祭り選択時
