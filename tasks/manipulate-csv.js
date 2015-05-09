@@ -27,7 +27,9 @@ function translate(option, record) {
   });
 }
 
-function processFile(from, to, option) {
+function processFile(g, from, to, option) {
+  g.file.mkdir(Path.dirname(to));
+
   var decoder = iconv.decodeStream(option.encoding);
   var encoder = iconv.encodeStream('utf8');
   var parser = csvParse({});
@@ -58,7 +60,7 @@ module.exports = function(grunt) {
     var options = this.options(defaultOptions);
 
     var files = this.files.map(function(f) {
-      return processFile(f.src[0], f.dest, options[Path.basename(f.src[0], '.csv')]);
+      return processFile(grunt, f.src[0], f.dest, options[Path.basename(f.src[0], '.csv')]);
     });
 
     var done = this.async();
