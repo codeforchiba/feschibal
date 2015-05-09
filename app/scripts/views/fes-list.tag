@@ -100,6 +100,7 @@
     // 祭り選択時
     onSelectFes(e){
       map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
+      $("fes-detail-modal > div").modal("show");
     }
   </script>
 
