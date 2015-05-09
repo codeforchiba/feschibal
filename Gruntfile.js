@@ -10,10 +10,14 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  //
+  grunt.loadTasks('tasks');
+
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    data: 'data'
   };
 
   // Define the configuration for all the tasks
@@ -328,9 +332,41 @@ module.exports = function (grunt) {
         base: 'dist'
       },
       src: '**/*'
+    },
+
+    'manipulate-csv': {
+      options: {
+        kouen_1: {
+          encoding: 'shift_jis',
+          removeColumn: [ 2, 3, 4, 9, 10, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29],
+          from: ['施設、場所、イベントの名称', '施設、場所、イベントの名称（読み）', '経度（世界測地系）', '緯度（世界測地系）', '郵便番号', '住所', '電話番号', 'FAX番号', 'アクセス', 'ホームページURL（PC）'],
+          to: ['name', 'kanaName', 'longitude', 'latitude', 'postalCode', 'address', 'phone', 'fax', 'directions', 'url']
+        }
+      },
+      files: {
+        expand: true,
+        cwd: '<%= config.data %>/csv/original/',
+        src: '*.csv',
+        filter: 'isFile',
+        dest: '<%= config.data %>/csv/processed',
+        ext: '.csv'
+      }
+    },
+
+    convert: {
+      options: {
+        explicitArray: false,
+      },
+      csv2json: {
+        expand: true,
+        cwd: '<%= config.data %>/csv/processed/',
+        src: '*.csv',
+        filter: 'isFile',
+        dest: '<%= config.data %>/json/',
+        ext: '.json'
+      }
     }
   });
-
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
