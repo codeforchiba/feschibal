@@ -87,9 +87,9 @@
             setCurrentCoordinates(35.6098733, 140.1138984);
           },
           {
-          "enableHighAccuracy": false,
+          "enableHighAccuracy": true,
           "timeout": 8000,
-          "maximumAge": 2000,
+          "maximumAge": 0
           }
         );
       } else { // not correspond to the Geolocation API
@@ -100,6 +100,7 @@
     // 祭り選択時
     onSelectFes(e){
       map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
+      $("fes-detail-modal > div").modal("show");
     }
   </script>
 
