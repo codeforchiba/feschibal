@@ -68,6 +68,22 @@
       map = L.map($mapEl[0]).setView([latitude,longitude], 12);
       tile.addTo(map);
       map.addLayer(markers);
+
+      // Put the Pointer Icon
+      var centerPointerIcon = L.icon({
+        iconUrl: '../../images/icon_pointer.png',
+        iconRetinaUrl: '../../images/icon_pointer.png',
+        iconSize: [35, 35],
+        iconAnchor: [17, 17],
+        popupAnchor: [0, 0]
+      });
+      var optionIcon = {
+        icon: centerPointerIcon,
+        clickable: false,
+        draggable: false,
+        opacity: 0.9
+      }
+      L.marker([latitude,longitude] , optionIcon ).addTo(map);
     }
 
     var $mapEl = $(this.map);
