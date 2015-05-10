@@ -49,9 +49,49 @@
 
   /**
    * 画面の切り替え
-   * fadeOut -> スクロール位置のリセット -> fadeIn
+   * fadeOut -> スクロール位置のリセット -> slideIn
    * @type {boolean}
    */
+  var isIE = navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/MSIE/);
+  var animation = false,
+    domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
+    elm = document.createElement('div');
+
+  if(elm.style.animationName !== undefined) {
+    animation = true;
+  }
+  if(!animation) {
+    for(var i = 0; i < domPrefixes.length; i++) {
+      if(elm.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+        animation = true;
+        break;
+      }
+    }
+  }
+  var startValues = {
+    display: 'block',
+    opacity: 0,
+    position: 'absolute',
+    left: animation ? '0px' : '20px',
+    right: 0,
+    top: 0,
+    bottom: 0
+  };
+  var endValues = {
+    left: '0px',
+    opacity: 1
+  };
+  var clearValues = {
+    left: '',
+    top: '',
+    right: '',
+    bottom:'',
+    position:'',
+    opacity: ''
+  };
+  var removeAnimationClasses = function($el){
+    $el.removeClass('entrance-in entrance-out');
+  };
   var isAnimating = false;
   var changeView = function(routePath, nextPath, param){
     var $doc = $('body');
@@ -61,15 +101,38 @@
       riot.route.trigger(routePath, param);
     } else {
       isAnimating = true;
-      $doc.fadeOut(100, function(){
-        riot.route.trigger('routeChange'+(routePath === '' ? '' : ':')+routePath, nextPath);
+      var startTransition = function() {
         $doc.scrollTop(0);
-        $doc.fadeIn(function(){
-          isAnimating = false;
-        });
+        riot.route.trigger('routeChange'+(routePath === '' ? '' : ':')+routePath, nextPath);
+        $doc.css(startValues);
+        if (animation) {
+          removeAnimationClasses($doc);
+          $doc.addClass('entrance-in');
+          setTimeout(function () {
+            removeAnimationClasses($doc);
+            $doc.css(clearValues);
+            isAnimating = false;
+          }, 500);
+        } else {
+          $doc.animate(endValues, {
+            duration: 500,
+            easing: 'swing',
+            always: function() {
+              $doc.css(clearValues);
+              isAnimating = false;
+            }
+          });
+        }
         routePath += (routePath === '' ? '' : '/') + nextPath;
         riot.route.trigger(routePath, param);
-      });
+      };
+      if (animation && !isIE) {
+        removeAnimationClasses($doc);
+        $doc.addClass('entrance-out');
+        setTimeout(startTransition, 100);
+      } else {
+        $doc.fadeOut({ duration: 100, always: startTransition });
+      }
     }
   };
 
