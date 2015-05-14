@@ -5,6 +5,8 @@ var Promise = require('bluebird');
 var ps = require('promise-streams');
 var csvParse = require('csv-parse');
 var transform = require('stream-transform');
+var unique = require('unique-stream');
+var pass = require('stream').PassThrough;
 var csvStringify = require('csv-stringify');
 var iconv = require('iconv-lite');
 
@@ -44,6 +46,7 @@ function processFile(g, from, to, option) {
       return row;
     }
   });
+  var uniquerer = option.unique ? unique() : pass({ objectMode: true });
   var stringifier = csvStringify({quotedString: true});
   var writer = fs.createWriteStream(to, { encoding: 'utf8' });
   writer.on('finish', function() {
@@ -52,7 +55,7 @@ function processFile(g, from, to, option) {
 
   var headerProcessed = false;
 
-  return ps.wait(reader.pipe(decoder).pipe(encoder).pipe(parser).pipe(transformer).pipe(stringifier).pipe(writer));
+  return ps.wait(reader.pipe(decoder).pipe(encoder).pipe(parser).pipe(transformer).pipe(uniquerer).pipe(stringifier).pipe(writer));
 }
 
 module.exports = function(grunt) {
