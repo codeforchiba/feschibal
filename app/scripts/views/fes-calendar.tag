@@ -12,7 +12,7 @@
     /**
      * カレンダー画面表示時
      */
-    riot.route.on('search/cal', function(param){
+    riot.route.onAttached('search/cal', $calendarEl, function(param){
       $calendarEl.fullCalendar({
         lang: 'ja',
         eventClick: function(calEvent, jsEvent, view) {
