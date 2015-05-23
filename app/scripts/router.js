@@ -20,6 +20,12 @@
     return uri
   });
 
+  // 現在のページパスを返す
+  riot.route.currentPath = function(){
+    var args = location.href.match(/#([^\?]*)/);
+    return args.length > 1 ? args[1] : "";
+  };
+
   // ページ遷移をイベント発行で通知する機能を追加
   riot.observable(riot.route);
   var currentFragment = '';

@@ -4,7 +4,7 @@
       <h3 class="panel-title">直近に開催される祭り</h3>
     </div>
     <div class="panel-body">
-      <fes-list listener={opts.listener} request={request}></fes-list>
+      工事中
     </div>
   </div>
   <div class="panel panel-default">
@@ -34,20 +34,6 @@
     </div>
   </div>
   <script>
-    var self = this;
-
-    /** 検索リクエスト */
-    this.request = riot.observable();
-
-    /**
-     * Home画面表示時
-     */
-    riot.route.on('home', function(param){
-      console.log('attach home param='+JSON.stringify(param));
-      $.getJSON("data/home-test-data.json", function (data) {
-        self.request.trigger('loaded', data);
-      });
-    });
 
   </script>
 </home>

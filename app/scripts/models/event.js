@@ -33,24 +33,24 @@
    * @param param
    *  @param.limit {Number} 上限件数
    *  @param.pageNo {Number} 指定上限件数でのページ番号
-   *  @param.startDate {Date} 開始日付
-   *  @param.endDate {Date} 終了日付
+   *  @param.fromDate {Date} 開始日付
+   *  @param.toDate {Date} 終了日付
    */
   Event.find = function(param){
     return this.findAll().then(function(fesList){
       // 検索条件による絞込み
       return _.filter(fesList, function(fes){
-        if(param.startDate){
+        if(param.fromDate){
           var isInclude = _.some(fes.date, function(date){
-            return date.end.getTime() > param.startDate.getTime();
+            return date.end.getTime() > param.fromDate.getTime();
           });
           if(!isInclude){
             return false;
           }
         }
-        if(param.endDate){
+        if(param.toDate){
           var isInclude = _.some(fes.date, function(date){
-            return date.start.getTime() < param.endDate.getTime();
+            return date.start.getTime() < param.toDate.getTime();
           });
           if(!isInclude){
             return false;
@@ -60,15 +60,22 @@
       });
     }).then(function(fesList){
       // ページング機能による絞込み
-      var startIndex = param.limit * param.pageNo;
-      var endIndex = param.limit * (param.pageNo + 1 );
-      return {
-        total: fesList.length,
-        limit: param.limit,
-        pageNo: param.pageNo,
-        list:_.filter(fesList, function(fes, index){
-          return startIndex <= index && endIndex >= index;
-        })
+      if(param.limit != null && param.pageNo != null){
+        var startIndex = param.limit * param.pageNo;
+        var endIndex = param.limit * (param.pageNo + 1 ) - 1;
+        return {
+          total: fesList.length,
+          limit: param.limit,
+          pageNo: param.pageNo,
+          list:_.filter(fesList, function(fes, index){
+            return startIndex <= index && endIndex >= index;
+          })
+        };
+      } else {
+        return {
+          total: fesList.length,
+          list: fesList
+        };
       }
     });
   }
