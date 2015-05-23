@@ -19,7 +19,7 @@
       this._jsonp("http://linkdata.org/api/1/rdf1s3024i/matsuri_list_v2_rdf.json", function (data) {
         var list = [];
         for (var i in data) {
-          var fes = new feschibal.Event();
+          var fes = new cfc.Event();
           // id
           fes.id = data[i]['http://www.w3.org/2000/01/rdf-schema#label'][0].value;
 
@@ -171,4 +171,4 @@
   };
 
   nm.EventStore = EventStore;
-})(window.feschibal = window.feschibal || {});
+})(window.cfc = window.cfc || {});

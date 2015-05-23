@@ -92,7 +92,7 @@
   /**
    * データストア
    */
-  Event.dataStore = new feschibal.EventStore();
+  Event.dataStore = new cfc.EventStore();
 
   /**
    * 祭りデータを全件返します。
@@ -104,4 +104,4 @@
   }
 
   nm.Event = Event;
-})(window.feschibal = window.feschibal || {});
+})(window.cfc = window.cfc || {});

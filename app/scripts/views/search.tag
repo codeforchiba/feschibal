@@ -70,7 +70,7 @@
      * 検索ボタン押下時
      */
     onSubmitSearch(e){
-      feschibal.Event.findAll(function(data){
+      cfc.Event.findAll(function(data){
         console.log(JSON.stringify(data))
       });
     }
