@@ -70,7 +70,11 @@
      * 検索ボタン押下時
      */
     onSubmitSearch(e){
-      cfc.Event.findAll(function(data){
+      var param = {
+        limit:1,
+        pageNo:0
+      };
+      cfc.Event.find(param).done(function(data){
         console.log(JSON.stringify(data))
       });
     }
