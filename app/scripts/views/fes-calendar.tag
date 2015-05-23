@@ -3,11 +3,8 @@
   <script>
 
     var self = this;
-
     /** カレンダーエレメント */
     var $calendarEl = $(this.calendar);
-    /** カレンダーイベントデータ */
-    var events = [];
 
     /**
      * カレンダー画面表示時
@@ -18,47 +15,53 @@
         eventClick: function(calEvent, jsEvent, view) {
           opts.listener.onSelectFes(calEvent.fes);
           return false;
-        },
-        events: events
+        }
       });
+
+      var searchParam = {
+        fromDate: param.fromDate ? new Date(param.fromDate) : null,
+        toDate: param.toDate ? new Date(param.toDate) : null
+      };
+      cfc.Event.find(searchParam).done(updateResult);
     });
 
     /**
-     * 祭りデータロード時
+     * 検索結果による画面更新
+     *
+     * @param res
      */
-    opts.request.on('loaded', function(fesList){
-      self.fesList = fesList;
-
+    var updateResult = function(res){
       // 祭りデータからイベントデータを生成します。
-      events = _.map(fesList, function(fes){
+      var events = _.map(res.list, function(fes){
         return {
           title: fes.name,
-          start: fes.start,
-          end: fes.end,
+          start: fes.getStartDate().getTime(),
+          end: fes.getEndDate().getTime(),
           fes: fes
-        }
+        };
       });
+
       $calendarEl.fullCalendar('removeEvents');
       $calendarEl.fullCalendar('addEventSource', events);
-    });
+    };
 
   </script>
-  <style>
-    fes-calendar .fc-event {
+  <style scoped>
+    .fc-event {
       margin-bottom: 5px;
       padding: 5px;
       cursor: pointer;
     }
 
-    fes-calendar .fc-event:hover {
+    .fc-event:hover {
       opacity: 0.8;
     }
 
-    fes-calendar .fc-event .fc-content {
+    .fc-event .fc-content {
       white-space: normal;
     }
 
-    fes-calendar .fc-event .fc-content .fc-time {
+    .fc-event .fc-content .fc-time {
       display: block;
     }
   </style>

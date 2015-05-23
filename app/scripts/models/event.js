@@ -11,7 +11,23 @@
   };
 
   Event.prototype = {
+    /**
+     * 初日の開始日時を返します。
+     *
+     * @returns {Date} 初日の開始日時
+     */
+    getStartDate: function(){
+      return this.date[0].start;
+    },
 
+    /**
+     * 最終日の終了日時を返します。
+     *
+     * @returns {Date} 最終日の終了日時
+     */
+    getEndDate: function(){
+      return this.date[this.date.length - 1].end;
+    }
   };
 
   /**
