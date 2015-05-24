@@ -71,8 +71,8 @@
 
       // Put the Pointer Icon
       var centerPointerIcon = L.icon({
-        iconUrl: '../../images/icon_pointer.png',
-        iconRetinaUrl: '../../images/icon_pointer.png',
+        iconUrl: '/images/icon_pointer.png',
+        iconRetinaUrl: '/images/icon_pointer.png',
         iconSize: [35, 35],
         iconAnchor: [17, 17],
         popupAnchor: [0, 0]
