@@ -20,13 +20,13 @@
         <table class="table">
           <tbody>
           <tr>
-            <td><a href="#search/list?param1=value1&param2=value2">本日開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchToday}>本日開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#search/list?param1=value3&param2=value4">今週開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchThisWeek}>今週開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#search/list?param1=value5&param2=value6">今度の土日開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>今度の土日開催の祭り</a></td>
           </tr>
           </tbody>
         </table>
@@ -35,5 +35,38 @@
   </div>
   <script>
 
+    /**
+     * 本日開催の祭り検索
+     */
+    doSearchToday(){
+      var toDay = moment().format("YYYY-MM-DD");
+      var param = {
+        fromDate : toDay,
+        toDate : toDay
+      };
+      riot.route("search/list?" + $.param(param));
+    }
+
+    /**
+     * 今週開催の祭り検索
+     */
+    doSearchThisWeek(){
+      var param = {
+        fromDate :  moment().format("YYYY-MM-DD"),
+        toDate : moment().weekday(7).format("YYYY-MM-DD")
+      };
+      riot.route("search/list?" + $.param(param));
+    }
+
+    /**
+     * 今度の土日開催の祭り検索
+     */
+    doSearchThisWeekEnd(){
+      var param = {
+        fromDate :  moment().weekday(6).format("YYYY-MM-DD"),
+        toDate : moment().weekday(7).format("YYYY-MM-DD")
+      };
+      riot.route("search/list?" + $.param(param));
+    }
   </script>
 </home>
