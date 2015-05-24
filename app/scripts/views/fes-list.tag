@@ -10,7 +10,12 @@
         <tbody>
           <tr each={ fes, i in result.list } onclick={parent.onSelectFes}>
             <td>
-              <div>{fes.start}</div>
+              <div>
+                <span each={ date, j in fes.date }>
+                  <span if={ j > 0 }>, </span>
+                  {moment(date.start).format('YYYY/MM/DD')}
+                </span>
+              </div>
               <div>{fes.name}</div>
             </td>
           </tr>

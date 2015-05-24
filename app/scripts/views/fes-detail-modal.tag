@@ -13,7 +13,9 @@
               <h3 class="panel-title">期間</h3>
             </div>
             <div class="panel-body">
-              2015年3月6日（金曜日）11時00分から2015年3月6日（金曜日）11時30分
+              <div each={ date, i in opts.fes.date }>
+                {moment(date.start).format('YYYY年M月D日（dddd）H時m分')}　から　{moment(date.end).format('YYYY年M月D日（dddd）H時m分')}
+              </div>
             </div>
           </div>
 
@@ -24,7 +26,11 @@
             <div class="panel-body">
               <dl class="dl-horizontal">
                 <dt>目玉</dt>
-                <dd>2千人規模で踊る親子三代千葉おどり</dd>
+                <dd>
+                  <span each={ program, i in opts.fes.features.specialProgram }>
+                    <span if={ i > 0 }>、 </span>{program}
+                  </span>
+                </dd>
               </dl>
               <img src="../../images/chiba-odori.jpg" alt=""/>
             </div>
@@ -42,19 +48,23 @@
               </thred>
               <tbody>
               <tr>
-                <td><i class="fa fa-check"></i></td>
-                <td></td>
-                <td><i class="fa fa-check"></i></td>
-                <td></td>
-                <td><i class="fa fa-check"></i></td>
-                <td><i class="fa fa-check"></i></td>
-                <td class="other">スポーツイベント、フリーマーケット</td>
+                <td><i class="fa fa-check" if={opts.fes.features.dancing}></i></td>
+                <td><i class="fa fa-check" if={opts.fes.features.singing}></i></td>
+                <td><i class="fa fa-check" if={opts.fes.features.drum}></i></td>
+                <td><i class="fa fa-check" if={opts.fes.features.musicalPerformance}></i></td>
+                <td><i class="fa fa-check" if={opts.fes.features.foodTruck}></i></td>
+                <td><i class="fa fa-check" if={opts.fes.features.fireworks}></i></td>
+                <td class="other">
+                  <span each={ program, i in opts.fes.features.others }>
+                    <span if={ i > 0 }>、 </span>{program}
+                  </span>
+                </td>
               </tr>
               </tbody>
             </table>
-            <dl class="dl-horizontal">
+            <dl class="dl-horizontal" if={opts.fes.url}>
               <dt>祭り公式サイト</dt>
-              <dd><a href="http://www.bikai.org/matsuri.html">http://www.bikai.org/matsuri.html</a></dd>
+              <dd><a href="{opts.fes.url}">{opts.fes.url}</a></dd>
             </dl>
           </div>
 
@@ -65,9 +75,9 @@
             <div class="panel-body">
               <dl class="dl-horizontal">
                 <dt>会場</dt>
-                <dd>中央公園</dd>
+                <dd>{opts.fes.location.name}</dd>
                 <dt>住所</dt>
-                <dd>中央区中央1-12-1</dd>
+                <dd>{opts.fes.location.address}</dd>
               </dl>
               <div id="detail-map"></div>
             </div>
@@ -80,13 +90,11 @@
             <div class="panel-body">
               <dl class="dl-horizontal">
                 <dt>主催</dt>
-                <dd>千葉市を美しくする会</dd>
-                <dt>共催</dt>
-                <dd>千葉市市民自治推進課</dd>
-                <dt>担当者</dt>
-                <dd>千葉 祭</dd>
-                <dt>電話番号</dt>
-                <dd>043-999-9999</dd>
+                <dd>
+                  <span each={ organizer, i in opts.fes.organizer }>
+                    <span if={ i > 0 }>、 </span>{organizer}
+                  </span>
+                </dd>
               </dl>
             </div>
           </div>
@@ -106,8 +114,8 @@
       }
       clearInterval(checkVisible);
 
-      var map = L.map($mapEl[0]).setView([opts.fes.coordinates[1],opts.fes.coordinates[0]], 14);
-      L.marker([opts.fes.coordinates[1],opts.fes.coordinates[0]]).addTo(map);
+      var map = L.map($mapEl[0]).setView([opts.fes.location.lat, opts.fes.location.long], 14);
+      L.marker([opts.fes.location.lat, opts.fes.location.long]).addTo(map);
       L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
         maxZoom: 18,
         attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
@@ -116,34 +124,34 @@
     },50);
   </script>
 
-  <style>
-    fes-detail-modal .panel.panel-section {
+  <style scoped>
+    .panel.panel-section {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
 
-    fes-detail-modal .panel.panel-section .panel-heading {
+    .panel.panel-section .panel-heading {
       border-bottom: 3px solid #e5e5e5;
     }
 
-    fes-detail-modal .dl-horizontal dt {
+    .dl-horizontal dt {
       width: 60px;
     }
 
-    fes-detail-modal .dl-horizontal dd {
+    .dl-horizontal dd {
       margin-left: 80px;
     }
 
-    fes-detail-modal .table.table-bordered th,
-    fes-detail-modal .table.table-bordered td {
+    .table.table-bordered th,
+    .table.table-bordered td {
       text-align: center;
     }
 
-    fes-detail-modal .table.table-bordered td.other {
+    .table.table-bordered td.other {
       text-align: left;
     }
 
-    fes-detail-modal #detail-map {
+    #detail-map {
       height: 300px;
     }
   </style>
