@@ -70,16 +70,19 @@
      * 検索ボタン押下時
      */
     onSubmitSearch(e){
-      feschibal.Event.findAll(function(data){
-        console.log(JSON.stringify(data))
-      });
+      var fragment = riot.route.currentPath();
+      var param = {
+        fromDate : $(this.fromDate).val().replace(/\//g, "-"),
+        toDate : $(this.toDate).val().replace(/\//g, "-")
+      };
+      fragment += "?" + $.param(param);
+      riot.route(fragment);
     }
 
     /**
      * 検索結果表示画面切替時
      */
     riot.route.on('routeChange:search', function(path){
-      console.log('routeChange:search path='+path);
       self.path = path;
       self.update();
     });
@@ -88,14 +91,14 @@
      * 検索画面表示時
      */
     riot.route.on('search', function(param){
-      console.log('attach search param='+JSON.stringify(param));
       self.queryString = $.param(param);
+      if(param.fromDate){
+        $(self.fromDate).datepicker('update', new Date(param.fromDate))
+      }
+      if(param.toDate){
+        $(self.toDate).datepicker('update', new Date(param.toDate))
+      }
       self.update();
-
-      $.getJSON("data/test-data.json", function (data) {
-        self.request.trigger('loaded', data);
-        return false;
-      });
     });
   </script>
   <style>

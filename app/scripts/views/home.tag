@@ -4,7 +4,7 @@
       <h3 class="panel-title">直近に開催される祭り</h3>
     </div>
     <div class="panel-body">
-      <fes-list listener={opts.listener} request={request}></fes-list>
+      工事中
     </div>
   </div>
   <div class="panel panel-default">
@@ -20,13 +20,13 @@
         <table class="table">
           <tbody>
           <tr>
-            <td><a href="#search/list?param1=value1&param2=value2">本日開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchToday}>本日開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#search/list?param1=value3&param2=value4">今週開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchThisWeek}>今週開催の祭り</a></td>
           </tr>
           <tr>
-            <td><a href="#search/list?param1=value5&param2=value6">今度の土日開催の祭り</a></td>
+            <td><a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>今度の土日開催の祭り</a></td>
           </tr>
           </tbody>
         </table>
@@ -34,20 +34,39 @@
     </div>
   </div>
   <script>
-    var self = this;
-
-    /** 検索リクエスト */
-    this.request = riot.observable();
 
     /**
-     * Home画面表示時
+     * 本日開催の祭り検索
      */
-    riot.route.on('home', function(param){
-      console.log('attach home param='+JSON.stringify(param));
-      $.getJSON("data/home-test-data.json", function (data) {
-        self.request.trigger('loaded', data);
-      });
-    });
+    doSearchToday(){
+      var toDay = moment().format("YYYY-MM-DD");
+      var param = {
+        fromDate : toDay,
+        toDate : toDay
+      };
+      riot.route("search/list?" + $.param(param));
+    }
 
+    /**
+     * 今週開催の祭り検索
+     */
+    doSearchThisWeek(){
+      var param = {
+        fromDate :  moment().format("YYYY-MM-DD"),
+        toDate : moment().weekday(7).format("YYYY-MM-DD")
+      };
+      riot.route("search/list?" + $.param(param));
+    }
+
+    /**
+     * 今度の土日開催の祭り検索
+     */
+    doSearchThisWeekEnd(){
+      var param = {
+        fromDate :  moment().weekday(6).format("YYYY-MM-DD"),
+        toDate : moment().weekday(7).format("YYYY-MM-DD")
+      };
+      riot.route("search/list?" + $.param(param));
+    }
   </script>
 </home>
