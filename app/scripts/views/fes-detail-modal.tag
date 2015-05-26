@@ -32,7 +32,7 @@
                   </span>
                 </dd>
               </dl>
-              <img src="/images/chiba-odori.jpg" alt=""/>
+              <img src="images/chiba-odori.jpg" alt=""/>
             </div>
             <table class="table table-bordered">
               <thred>
