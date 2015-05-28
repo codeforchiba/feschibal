@@ -11,7 +11,7 @@
 
   EventStore.prototype = {
     /** アクセス先URL */
-    url: "http://localhost:9000/data/test-data2.json",
+    url: "data/test-data2.json",
 
     /** 祭りデータキャッシュ */
     dataStore: null,
