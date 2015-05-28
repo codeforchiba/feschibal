@@ -20,6 +20,11 @@ module.exports = function (grunt) {
     data: 'data'
   };
 
+  // load env file
+  var yaml = require("js-yaml");
+  var fs = require("fs");
+  var env = yaml.load(fs.readFileSync("env.yml"));
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -30,7 +35,7 @@ module.exports = function (grunt) {
     watch: {
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        tasks: ['replace:dev', 'jshint'],
         options: {
           livereload: true
         }
@@ -372,6 +377,57 @@ module.exports = function (grunt) {
         dest: '<%= config.data %>/json/',
         ext: '.json'
       }
+    },
+
+    replace: {
+      dev: {
+        options: {
+          patterns: [
+            {
+              json: env.dev
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: false,
+            src: ['.tmp/scripts/**/*.js'],
+            dest: '.'
+          },
+          {
+            expand: true,
+            flatten: false,
+            cwd: '<%= config.app %>/scripts',
+            src: ['**/*.js', '!vendor/**/*.*'],
+            dest: '.tmp/scripts'
+          }
+        ]
+      },
+      prod: {
+        options: {
+          patterns: [
+            {
+              json: env.prod
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: false,
+            src: ['.tmp/scripts/**/*.js'],
+            dest: '.'
+          },
+          {
+            expand: true,
+            flatten: false,
+            cwd: '<%= config.app %>/scripts',
+            src: ['**/*.js', '!vendor/**/*.*'],
+            dest: '.tmp/scripts'
+          }
+        ]
+      }
     }
   });
 
@@ -386,6 +442,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
+      'replace:dev',
       'autoprefixer',
       'connect:livereload',
       'watch'
@@ -396,6 +453,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
+    'replace:prod',
     'autoprefixer',
     'concat',
     'cssmin',
