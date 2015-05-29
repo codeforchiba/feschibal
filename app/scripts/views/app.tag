@@ -31,7 +31,6 @@
      * 画面切替時
      */
     riot.route.on('routeChange', function(path){
-      console.log('routeChange path='+path);
       self.path = path;
       self.update();
     });
