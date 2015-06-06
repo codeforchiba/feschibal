@@ -11,7 +11,7 @@
 
   EventStore.prototype = {
     /** アクセス先URL */
-    url: "data/test-data2.json",
+    url: "@@url",
 
     /** 祭りデータキャッシュ */
     dataStore: null,
@@ -29,7 +29,7 @@
         return d.promise();
       } else {
         var self = this;
-        return $.getJSON(this.url).then(function(data){
+        return this._getJSON(this.url).then(function(data){
           var list = [];
           for (var i in data) {
 
@@ -45,6 +45,25 @@
           self.dataStore = list;
           return list;
         });
+      }
+    },
+
+    /**
+     * 環境変数のprotocol状況に応じたリクエスト方法でデータを取得します。
+     *
+     * @param url {String} url
+     * @returns {JQueryDeferred}
+     * @private
+     */
+    _getJSON: function(url){
+      if('@@protocol' === 'JSONP'){
+        var d = new $.Deferred;
+        this._jsonp(url, function(data){
+          d.resolve(data);
+        });
+        return d.promise();
+      } else {
+        return $.getJSON(url);
       }
     },
 
