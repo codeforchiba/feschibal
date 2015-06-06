@@ -4,7 +4,7 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <th>検索結果：{result.total} 件中 {result.limit * result.pageNo + 1} - {result.limit * result.pageNo + result.list.length} 件</th>
+            <th>検索結果：{result.total} 件中 { result.total ? result.limit * result.pageNo + 1 : 0} - {result.limit * result.pageNo + result.list.length} 件</th>
           </tr>
         </thead>
         <tbody>
