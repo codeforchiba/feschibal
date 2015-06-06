@@ -107,7 +107,7 @@
     riot.route.on('search/list', function(param){
       self.searchParam = {
         limit: 10,
-        pageNo: 0,
+        pageNo: param.pageNo || 0,
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
         toDate: param.toDate ? new Date(param.toDate) : null
       };
@@ -119,8 +119,14 @@
      */
     this.listener = {
       onPageChange : function(pageNo){
-        self.searchParam.pageNo = pageNo;
-        cfc.Event.find(self.searchParam).done(updateResult);
+        var fromDate = self.searchParam.fromDate;
+        var toDate = self.searchParam.toDate;
+        var param = {
+          fromDate :  fromDate ? moment(fromDate).format("YYYY-MM-DD") : null,
+          toDate : toDate ? moment(toDate).format("YYYY-MM-DD") : null,
+          pageNo : pageNo
+        };
+        riot.route("search/list?" + $.param(param));
       }
     }
 

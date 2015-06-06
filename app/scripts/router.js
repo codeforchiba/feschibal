@@ -34,23 +34,26 @@
     fragment = fragment || 'home'; // デフォルトはＨＯＭＥ画面
     var paths = fragment.split('/');
     var currentPaths = currentFragment.split('/');
-    var routePath = '';
-    for (var i = 0; i < paths.length; i++) {
-      var nextPath = paths[i];
-      var currentPath = currentPaths[i];
-      if (nextPath !== currentPath) {
-        changeView(routePath, nextPath, param);
-        routePath += (routePath === '' ? '' : '/') + nextPath;
-      } else if (!_.isEqual(param, currentParam)) {
-        routePath += (routePath === '' ? '' : '/') + nextPath;
-        riot.route.trigger(routePath, param);
-      } else {
-        routePath += (routePath === '' ? '' : '/') + nextPath;
-      }
-    }
 
-    currentFragment = fragment;
-    currentParam = param;
+    changeView(function(){
+      var routePath = '';
+      for (var i = 0; i < paths.length; i++) {
+        var nextPath = paths[i];
+        var currentPath = currentPaths[i];
+        if (nextPath !== currentPath) {
+          riot.route.trigger('routeChange'+(routePath === '' ? '' : ':')+routePath, nextPath);
+          routePath += (routePath === '' ? '' : '/') + nextPath;
+          riot.route.trigger(routePath, param);
+        } else if (!_.isEqual(param, currentParam)) {
+          routePath += (routePath === '' ? '' : '/') + nextPath;
+          riot.route.trigger(routePath, param);
+        } else {
+          routePath += (routePath === '' ? '' : '/') + nextPath;
+        }
+      }
+      currentFragment = fragment;
+      currentParam = param;
+    });
   };
 
   /**
@@ -98,47 +101,35 @@
   var removeAnimationClasses = function($el){
     $el.removeClass('entrance-in entrance-out');
   };
-  var isAnimating = false;
-  var changeView = function(routePath, nextPath, param){
+  var changeView = function(cb){
     var $doc = $('body');
-    if(isAnimating){
-      riot.route.trigger('routeChange'+(routePath === '' ? '' : ':')+routePath, nextPath);
-      routePath += (routePath === '' ? '' : '/') + nextPath;
-      riot.route.trigger(routePath, param);
-    } else {
-      isAnimating = true;
-      var startTransition = function() {
-        $doc.scrollTop(0);
-        riot.route.trigger('routeChange'+(routePath === '' ? '' : ':')+routePath, nextPath);
-        $doc.css(startValues);
-        if (animation) {
-          removeAnimationClasses($doc);
-          $doc.addClass('entrance-in');
-          setTimeout(function () {
-            removeAnimationClasses($doc);
-            $doc.css(clearValues);
-            isAnimating = false;
-          }, 500);
-        } else {
-          $doc.animate(endValues, {
-            duration: 500,
-            easing: 'swing',
-            always: function() {
-              $doc.css(clearValues);
-              isAnimating = false;
-            }
-          });
-        }
-        routePath += (routePath === '' ? '' : '/') + nextPath;
-        riot.route.trigger(routePath, param);
-      };
-      if (animation && !isIE) {
+    var startTransition = function() {
+      $doc.scrollTop(0);
+      cb && cb();
+      $doc.css(startValues);
+      if (animation) {
         removeAnimationClasses($doc);
-        $doc.addClass('entrance-out');
-        setTimeout(startTransition, 100);
+        $doc.addClass('entrance-in');
+        setTimeout(function () {
+          removeAnimationClasses($doc);
+          $doc.css(clearValues);
+        }, 500);
       } else {
-        $doc.fadeOut({ duration: 100, always: startTransition });
+        $doc.animate(endValues, {
+          duration: 500,
+          easing: 'swing',
+          always: function() {
+            $doc.css(clearValues);
+          }
+        });
       }
+    };
+    if (animation && !isIE) {
+      removeAnimationClasses($doc);
+      $doc.addClass('entrance-out');
+      setTimeout(startTransition, 100);
+    } else {
+      $doc.fadeOut({ duration: 100, always: startTransition });
     }
   };
 
