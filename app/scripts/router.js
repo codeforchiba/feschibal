@@ -2,28 +2,29 @@
  * riot.routeの機能拡充
  */
 (function () {
+  'use strict';
   // ルーティングパースの変更
   riot.route.parser(function (path) {
     var raw = path.split('?'),
       uri = [raw[0]],
       qs = raw[1],
-      params = {}
+      params = {};
 
     if (qs) {
       qs.split('&').forEach(function (v) {
-        var c = v.split('=')
-        params[c[0]] = c[1]
-      })
+        var c = v.split('=');
+        params[c[0]] = c[1];
+      });
     }
 
-    uri.push(params)
-    return uri
+    uri.push(params);
+    return uri;
   });
 
   // 現在のページパスを返す
   riot.route.currentPath = function(){
     var args = location.href.match(/#([^\?]*)/);
-    return args.length > 1 ? args[1] : "";
+    return args.length > 1 ? args[1] : '';
   };
 
   // ページ遷移をイベント発行で通知する機能を追加
@@ -105,7 +106,9 @@
     var $doc = $('body');
     var startTransition = function() {
       $doc.scrollTop(0);
-      cb && cb();
+      if(cb){
+        cb();
+      }
       $doc.css(startValues);
       if (animation) {
         removeAnimationClasses($doc);

@@ -1,5 +1,5 @@
 (function (nm) {
-
+  'use strict';
   /**
    * 祭りイベントデータストア
    *
@@ -11,7 +11,7 @@
 
   EventStore.prototype = {
     /** アクセス先URL */
-    url: "@@url",
+    url: '@@url',
 
     /** 祭りデータキャッシュ */
     dataStore: null,
@@ -24,24 +24,22 @@
     findAll: function () {
 
       if(this.dataStore){
-        var d = new $.Deferred;
+        var d = new $.Deferred();
         d.resolve(this.dataStore);
         return d.promise();
       } else {
         var self = this;
-        return this._getJSON(this.url).then(function(data){
-          var list = [];
-          for (var i in data) {
-
+        return this._getJSON(this.url).then(function(dataList){
+          var list = _.map(dataList, function(data){
             // 日付をDate型に変換
-            data[i].date = _.map(data[i].date, function(eventDate){
+            data.date = _.map(data.date, function(eventDate){
               eventDate.start = new Date(eventDate.start);
               eventDate.end = new Date(eventDate.end);
               return eventDate;
             });
 
-            list.push(new cfc.Event(data[i]));
-          }
+            return new cfc.Event(data);
+          });
           self.dataStore = list;
           return list;
         });
@@ -57,7 +55,7 @@
      */
     _getJSON: function(url){
       if('@@protocol' === 'JSONP'){
-        var d = new $.Deferred;
+        var d = new $.Deferred();
         this._jsonp(url, function(data){
           d.resolve(data);
         });
@@ -83,7 +81,7 @@
         cb(data);
         window[callb] = null;
         delete window[callb];
-      }
+      };
       var sepchar = (url.indexOf('?') > -1) ? '&' : '?';
       script.src = url + sepchar + 'callback=' + callb;
       script.id = callb;
