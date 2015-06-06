@@ -37,10 +37,9 @@
     var map;
 
     // 地図タイル
-    var tile = L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
-      maxZoom: 18,
-      attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
-      opacity: 0.8
+    var tile = L.tileLayer('http://mt{s}.google.com/vt/lyrs=m@121&hl=ja&x={x}&y={y}&z={z}',{
+      subdomains: [0,1,2,3],
+      attribution: "google map"
     });
 
     // マーカー一覧(geoJson)
