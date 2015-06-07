@@ -1,4 +1,5 @@
 (function(nm){
+  'use strict';
   /**
    * 祭りイベントオブジェクト
    *
@@ -42,7 +43,7 @@
    */
   Event.findAll = function(){
     return this.dataStore.findAll();
-  }
+  };
 
   /**
    * 指定された検索条件に絞り込んだデータを返すJQueryDeferrdを返します。
@@ -56,8 +57,9 @@
     return this.findAll().then(function(fesList){
       // 検索条件による絞込み
       return _.filter(fesList, function(fes){
+        var isInclude = false;
         if(param.fromDate){
-          var isInclude = _.some(fes.date, function(date){
+          isInclude = _.some(fes.date, function(date){
             return date.end.getTime() > param.fromDate.getTime();
           });
           if(!isInclude){
@@ -65,7 +67,7 @@
           }
         }
         if(param.toDate){
-          var isInclude = _.some(fes.date, function(date){
+          isInclude = _.some(fes.date, function(date){
             return date.start.getTime() < param.toDate.getTime();
           });
           if(!isInclude){
@@ -94,7 +96,7 @@
         };
       }
     });
-  }
+  };
 
   nm.Event = Event;
 })(window.cfc = window.cfc || {});

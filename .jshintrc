@@ -17,5 +17,7 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
-  "jquery": true
+  "jquery": true,
+  "eqnull": true,
+  "globals": {"_": false, "cfc": false, "riot": false}
 }
