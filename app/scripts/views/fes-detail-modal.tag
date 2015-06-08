@@ -116,10 +116,9 @@
 
       var map = L.map($mapEl[0]).setView([opts.fes.location.lat, opts.fes.location.long], 14);
       L.marker([opts.fes.location.lat, opts.fes.location.long]).addTo(map);
-      L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
-        maxZoom: 18,
-        attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
-        opacity: 0.8
+      L.tileLayer('http://mt{s}.google.com/vt/lyrs=m@121&hl=ja&x={x}&y={y}&z={z}',{
+        subdomains: [0,1,2,3],
+        attribution: "google map"
       }).addTo(map);
     },50);
   </script>
