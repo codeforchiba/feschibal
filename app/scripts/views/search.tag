@@ -36,8 +36,8 @@
         <li role="presentation" class={active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー表示</a></li>
       </ul>
       <div>
-        <fes-list if={ path === 'list' } request={request} listener={opts.listener}></fes-list>
-        <fes-calendar if={ path === 'cal' } request={request} listener={opts.listener}></fes-calendar>
+        <fes-list if={ path === 'list' } request={request} ></fes-list>
+        <fes-calendar if={ path === 'cal' } request={request} ></fes-calendar>
       </div>
 
     </div>

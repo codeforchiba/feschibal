@@ -1,9 +1,9 @@
 <app>
   <app-header></app-header>
   <div class="content">
-    <home if={ path === 'home' } listener={listener}></home>
-    <search if={ path === 'search' } listener={listener}></search>
-    <fes-detail-modal fes={fes}></fes-detail-modal>
+    <home if={ path === 'home' }></home>
+    <search if={ path === 'search' }></search>
+    <fes-detail if={ path === 'detail' }></fes-detail>
   </div>
   <app-footer></app-footer>
 
@@ -16,18 +16,6 @@
     this.fes = null;
 
     /**
-     * 祭り選択時
-     * @type {{onSelectFes: Function}}
-     */
-    this.listener = {
-      onSelectFes : function(fes){
-        self.fes = fes;
-        self.update();
-        $("fes-detail-modal > div").modal("show");
-      }
-    }
-
-    /**
      * 画面切替時
      */
     riot.route.on('routeChange', function(path){
@@ -37,8 +25,8 @@
 
   </script>
 
-  <style>
-    app .content {
+  <style scoped>
+    .content {
       padding: 15px;
     }
   </style>
