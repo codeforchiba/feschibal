@@ -4,6 +4,7 @@ var Path = require('path');
 var Promise = require('bluebird');
 var ps = require('promise-streams');
 var csvParse = require('csv-parse');
+var _ = require('highland');
 var transform = require('stream-transform');
 var unique = require('unique-stream');
 var pass = require('stream').PassThrough;
@@ -20,13 +21,17 @@ function shrink(option, record) {
 }
 
 function translate(option, record) {
-  return record.map(function(key) {
-    if (option.from.indexOf(key) >= 0) {
-      return option.to[option.from.indexOf(key)];
-    } else {
-      return key;
-    }
-  });
+  if (option.from == null || option.to == null) {
+    return record;
+  } else {
+    return record.map(function(key) {
+      if (option.from.indexOf(key) >= 0) {
+        return option.to[option.from.indexOf(key)];
+      } else {
+        return key;
+      }
+    });
+  }
 }
 
 function processFile(g, from, to, option) {
@@ -36,11 +41,35 @@ function processFile(g, from, to, option) {
   var encoder = iconv.encodeStream('utf8');
   var parser = csvParse({});
   var reader = fs.createReadStream(from);
-  var transformer = transform(function(record) {
-    row = shrink(option, record);
+  var filter = _.pipeline(_.filter(function(record) {
+    if (option.filter == null) {
+      return true;
+    } else {
+      if (!filterHeaderProcessed) {
+        filterHeaderProcessed = true;
+        return true;
+      } else {
+        return record.every(function(column, index) {
+          f = option.filter[index.toString()];
 
-    if (!headerProcessed) {
-      headerProcessed = true;
+          if (f) {
+            if (typeof f === 'function') {
+              return f(column);
+            } else {
+              return column.match(new RegExp(f));
+            }
+          } else {
+            return true;
+          }
+        });
+      }
+    }
+  }));
+  var transformer = transform(function(record) {
+    var row = shrink(option, record);
+
+    if (!transformerHeaderProcessed) {
+      transformerHeaderProcessed = true;
       return translate(option, row);
     } else {
       return row;
@@ -53,9 +82,10 @@ function processFile(g, from, to, option) {
     console.log("processing of '" + Path.basename(from) + "' is complete.");
   });
 
-  var headerProcessed = false;
+  var filterHeaderProcessed = false;
+  var transformerHeaderProcessed = false;
 
-  return ps.wait(reader.pipe(decoder).pipe(encoder).pipe(parser).pipe(transformer).pipe(uniquerer).pipe(stringifier).pipe(writer));
+  return ps.wait(reader.pipe(decoder).pipe(encoder).pipe(parser).pipe(filter).pipe(transformer).pipe(uniquerer).pipe(stringifier).pipe(writer));
 }
 
 module.exports = function(grunt) {

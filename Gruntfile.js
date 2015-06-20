@@ -346,8 +346,23 @@ module.exports = function (grunt) {
 
     'manipulate-csv': {
       options: {
+        '12chiba': {
+          encoding: 'shift_jis',
+          filter: {
+            5: "0",
+            6: "0",
+            9: "千葉市"
+          },
+          unique: true,
+          removeColumn: [ 0, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+          from: ['都道府県CD', '市区町村CD', '町域CD', '都道府県', '市区町村', '町域'],
+          to: ['stateCode', 'cityCode', 'addressCode', 'state', 'city', 'address']
+        },
         kouen_1: {
           encoding: 'shift_jis',
+          filter: {
+            0: "稲毛"
+          },
           unique: true,
           removeColumn: [ 2, 3, 4, 9, 10, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29],
           from: ['施設、場所、イベントの名称', '施設、場所、イベントの名称（読み）', '経度（世界測地系）', '緯度（世界測地系）', '郵便番号', '住所', '電話番号', 'FAX番号', 'アクセス', 'ホームページURL（PC）'],
