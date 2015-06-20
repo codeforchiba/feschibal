@@ -98,8 +98,7 @@
     // 祭り選択時
     onSelectFes(e){
       //map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
-//      opts.listener.onSelectFes(e.item.fes);
-      // TODO: 詳細画面に遷移
+      riot.route("detail/" + e.item.fes.id);
     }
 
     /**
@@ -148,8 +147,7 @@
           opts.listener.onSelectFes(fes);
         });
         marker.label.on('click', function (e) {
-//          opts.listener.onSelectFes(fes);
-          // TODO: 詳細画面に遷移
+          riot.route("detail/" + fes.id);
         });
         markers.addLayer(marker);
       });

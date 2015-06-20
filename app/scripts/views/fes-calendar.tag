@@ -13,8 +13,7 @@
       $calendarEl.fullCalendar({
         lang: 'ja',
         eventClick: function(calEvent, jsEvent, view) {
-//          opts.listener.onSelectFes(calEvent.fes);
-          // TODO: 詳細画面に遷移
+          riot.route("detail/" + calEvent.fes.id);
           return false;
         }
       });
