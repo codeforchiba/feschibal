@@ -36,11 +36,32 @@
       </table>
     </div>
     <div id="map"></div>
+    <div  class="around-fes-area">
+      <div class="title">周辺のお祭り</div>
+      <table class="table table-hover">
+        <tbody>
+        <tr each={ fes, i in aroundFes } onclick={parent.onSelectFes}>
+          <td>
+            <div>
+                <span each={ date, j in fes.date }>
+                  <span if={ j > 0 }>, </span>
+                  {moment(date.start).format('YYYY/MM/DD')}
+                </span>
+            </div>
+            <div>{fes.name}</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
   <script>
     var self = this;
-
+    /** 祭り情報 */
     self.fes = null;
+    /** 周辺の祭り */
+    self.aroundFes = [];
 
     /**
      * 地図の生成
@@ -68,8 +89,37 @@
         marker.addTo(map);
 
         map.setView([fes.location.lat, fes.location.long], 14);
+
+        self.searchAroundRes(fes);
       });
     });
+
+    /**
+     * 指定した祭りの周辺の祭り情報を検索します
+     */
+    searchAroundRes(fes){
+      var latLng = L.latLng([fes.location.lat, fes.location.long]);
+      var param = {
+        fromDate : new Date(),
+        basePoint: latLng,
+        distance: 5000,
+        limit: 10,
+        pageNo: 0
+      };
+      cfc.Event.find(param).done(function(res){
+        // 距離での絞り込み結果から自分自身の祭りを除外する
+        self.aroundFes = _.filter(res.list, function(_fes){
+          return fes.id !== _fes.id;
+        });
+        self.update();
+      });
+    }
+
+    // 祭り選択時
+    onSelectFes(e){
+      //map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
+      riot.route("detail/" + e.item.fes.id);
+    }
   </script>
 
   <style scoped>
@@ -160,8 +210,15 @@
 
     /** 地図 */
     #map {
-      height: 200px;
+      height: 150px;
       width: 100%;
+    }
+
+    /** 周辺の祭り */
+    .around-fes-area .title {
+      background-color: #F4A838;
+      color: #ffffff;
+      padding: 5px;
     }
   </style>
 </fes-detail>

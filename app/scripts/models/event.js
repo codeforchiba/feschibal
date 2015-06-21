@@ -74,6 +74,16 @@
             return false;
           }
         }
+
+        // 距離による絞込み
+        if (param.basePoint && param.distance != null) {
+          var latLng = L.latLng([fes.location.lat, fes.location.long]);
+          fes.distance = latLng.distanceTo(param.basePoint);
+          if (fes.distance > param.distance) {
+            return false;
+          }
+        }
+
         return true;
       });
     }).then(function (fesList) {
