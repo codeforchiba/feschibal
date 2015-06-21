@@ -1,9 +1,9 @@
 <app>
   <app-header></app-header>
   <div class="content">
-    <home if={ path === 'home' }></home>
-    <search if={ path === 'search' }></search>
-    <fes-detail if={ path === 'detail' }></fes-detail>
+    <home show={ path === 'home' }></home>
+    <search show={ path === 'search' }></search>
+    <fes-detail show={ path === 'detail' }></fes-detail>
   </div>
   <app-footer></app-footer>
 

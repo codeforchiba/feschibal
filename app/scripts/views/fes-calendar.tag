@@ -9,20 +9,22 @@
     /**
      * カレンダー画面表示時
      */
-    riot.route.onAttached('search/cal', $calendarEl, function(param){
-      $calendarEl.fullCalendar({
-        lang: 'ja',
-        eventClick: function(calEvent, jsEvent, view) {
-          riot.route("detail/" + calEvent.fes.id);
-          return false;
-        }
-      });
+    riot.route.on('search/cal', function(param){
+      riot.route.attacheExec(self.calendar, function(){
+        $calendarEl.fullCalendar({
+          lang: 'ja',
+          eventClick: function(calEvent, jsEvent, view) {
+            riot.route("detail/" + calEvent.fes.id);
+            return false;
+          }
+        });
 
-      var searchParam = {
-        fromDate: param.fromDate ? new Date(param.fromDate) : null,
-        toDate: param.toDate ? new Date(param.toDate) : null
-      };
-      cfc.Event.find(searchParam).done(updateResult);
+        var searchParam = {
+          fromDate: param.fromDate ? new Date(param.fromDate) : null,
+          toDate: param.toDate ? new Date(param.toDate) : null
+        };
+        cfc.Event.find(searchParam).done(updateResult);
+      });
     });
 
     /**

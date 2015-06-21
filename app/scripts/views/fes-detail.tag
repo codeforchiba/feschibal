@@ -35,12 +35,25 @@
         </tbody>
       </table>
     </div>
-    <div id="ditail-map"></div>
+    <div id="map"></div>
   </div>
   <script>
     var self = this;
 
     self.fes = null;
+
+    /**
+     * 地図の生成
+     **/
+    var marker = null;
+    var map = L.map(self.map, {
+      dragging: false
+    });
+    L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
+      opacity: 0.8
+    }).addTo(map);
 
     /**
      * 詳細画面表示時
@@ -49,6 +62,12 @@
       cfc.Event.findOne(fesId).done(function(fes){
         self.fes = fes;
         self.update();
+
+        marker && map.removeLayer(marker);
+        marker = L.marker([fes.location.lat, fes.location.long]);
+        marker.addTo(map);
+
+        map.setView([fes.location.lat, fes.location.long], 14);
       });
     });
   </script>
@@ -139,5 +158,10 @@
       padding: 5px;
     }
 
+    /** 地図 */
+    #map {
+      height: 200px;
+      width: 100%;
+    }
   </style>
 </fes-detail>

@@ -144,7 +144,7 @@
       _.each(res.list, function(fes){
         var marker = L.marker(new L.LatLng(fes.location.lat, fes.location.long)).bindLabel(fes.name, { noHide: true, clickable: true });
         marker.on('click', function (e) {
-          opts.listener.onSelectFes(fes);
+          riot.route("detail/" + fes.id);
         });
         marker.label.on('click', function (e) {
           riot.route("detail/" + fes.id);
@@ -154,7 +154,7 @@
     };
   </script>
 
-  <style>
+  <style scoped>
     #map { height: 500px; }
   </style>
 </fes-list>
