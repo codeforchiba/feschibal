@@ -26,8 +26,6 @@
   </script>
 
   <style scoped>
-    .content {
-      padding: 15px;
-    }
+
   </style>
 </app>
