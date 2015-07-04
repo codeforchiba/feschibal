@@ -35,7 +35,7 @@
         </tbody>
       </table>
     </div>
-    <div id="map"></div>
+    <div id="map-detail"></div>
     <div  class="around-fes-area">
       <div class="title">周辺のお祭り</div>
       <table class="table table-hover">
@@ -67,7 +67,7 @@
      * 地図の生成
      **/
     var marker = null;
-    var map = L.map(self.map, {
+    var map = L.map(self["map-detail"], {
       dragging: false
     });
     L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
@@ -209,7 +209,7 @@
     }
 
     /** 地図 */
-    #map {
+    #map-detail {
       height: 150px;
       width: 100%;
     }
