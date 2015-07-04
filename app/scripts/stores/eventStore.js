@@ -17,31 +17,62 @@
     dataStore: null,
 
     /**
-     * 全データを返すJQueryDeferrdを返します。
+     * 全祭りデータを返すJQueryDeferrdを返します。
      *
      * @return JQueryDeferred
      */
     findAll: function () {
 
-      if(this.dataStore){
+      if (this.dataStore) {
         var d = new $.Deferred();
-        d.resolve(this.dataStore);
+        d.resolve(_.values(this.dataStore));
         return d.promise();
       } else {
         var self = this;
-        return this._getJSON(this.url).then(function(dataList){
-          var list = _.map(dataList, function(data){
+        return this._getJSON(this.url).then(function (dataList) {
+          self.dataStore = {};
+          var list = _.map(dataList, function (data) {
             // 日付をDate型に変換
-            data.date = _.map(data.date, function(eventDate){
+            data.date = _.map(data.date, function (eventDate) {
               eventDate.start = new Date(eventDate.start);
               eventDate.end = new Date(eventDate.end);
               return eventDate;
             });
-
-            return new cfc.Event(data);
+            self.dataStore[data.id] = new cfc.Event(data);
+            return self.dataStore[data.id];
           });
-          self.dataStore = list;
           return list;
+        });
+      }
+    },
+
+    /**
+     * 指定したＩＤに該当する祭りデータを返すJQueryDeferrdを返します。
+     *
+     * @param id
+     * @return JQueryDeferred
+     */
+    findOne: function (id) {
+      var self = this;
+      if (this.dataStore) {
+        var d = new $.Deferred();
+        var fes = self.dataStore[id];
+        if (fes) {
+          d.resolve(fes);
+        } else {
+          d.reject();
+        }
+        return d.promise();
+      } else {
+        return this.findAll().then(function(){
+          var d = new $.Deferred();
+          var fes = self.dataStore[id];
+          if (fes) {
+            d.resolve(fes);
+          } else {
+            d.reject();
+          }
+          return d.promise();
         });
       }
     },
@@ -53,10 +84,10 @@
      * @returns {JQueryDeferred}
      * @private
      */
-    _getJSON: function(url){
-      if('@@protocol' === 'JSONP'){
+    _getJSON: function (url) {
+      if ('@@protocol' === 'JSONP') {
         var d = new $.Deferred();
-        this._jsonp(url, function(data){
+        this._jsonp(url, function (data) {
           d.resolve(data);
         });
         return d.promise();

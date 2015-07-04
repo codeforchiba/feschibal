@@ -33,13 +33,14 @@
     <div class="col-lg-9">
       <ul class="nav nav-tabs">
         <li role="presentation" class={active: path==='list'}><a href="#search/list?{queryString}">一覧表示</a></li>
+        <li role="presentation" class={active: path==='map'}><a href="#search/map?{queryString}">地図</a></li>
         <li role="presentation" class={active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー表示</a></li>
       </ul>
       <div>
-        <fes-list if={ path === 'list' } request={request} listener={opts.listener}></fes-list>
-        <fes-calendar if={ path === 'cal' } request={request} listener={opts.listener}></fes-calendar>
+        <fes-list show={ path === 'list' } request={request} ></fes-list>
+        <fes-map show={ path === 'map' } request={request} ></fes-map>
+        <fes-calendar show={ path === 'cal' } request={request} ></fes-calendar>
       </div>
-
     </div>
   </div>
 

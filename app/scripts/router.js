@@ -142,17 +142,15 @@
    * @param el
    * @param handler
    */
-  riot.route.onAttached = function(event, el, handler){
-    this.on(event, function(param){
-      el = $(el);
-      var checkVisible = setInterval(function(){
-        if(!el.length || !el.is(':visible')){
-          return;
-        }
-        clearInterval(checkVisible);
-        handler(param);
-      },50);
-    });
+  riot.route.attacheExec = function(el, handler){
+    el = $(el);
+    var checkVisible = setInterval(function(){
+      if(!el.length || !el.is(':visible')){
+        return;
+      }
+      clearInterval(checkVisible);
+      handler();
+    },50);
   };
   riot.route(routes);
   riot.route.build = function () {

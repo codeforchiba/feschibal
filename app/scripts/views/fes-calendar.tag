@@ -5,19 +5,17 @@
     var self = this;
     /** カレンダーエレメント */
     var $calendarEl = $(this.calendar);
-
+    $calendarEl.fullCalendar({
+      lang: 'ja',
+      eventClick: function(calEvent, jsEvent, view) {
+        riot.route("detail/" + calEvent.fes.id);
+        return false;
+      }
+    });
     /**
      * カレンダー画面表示時
      */
-    riot.route.onAttached('search/cal', $calendarEl, function(param){
-      $calendarEl.fullCalendar({
-        lang: 'ja',
-        eventClick: function(calEvent, jsEvent, view) {
-          opts.listener.onSelectFes(calEvent.fes);
-          return false;
-        }
-      });
-
+    riot.route.on('search/cal', function(param){
       var searchParam = {
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
         toDate: param.toDate ? new Date(param.toDate) : null
@@ -40,7 +38,7 @@
           fes: fes
         };
       });
-
+      $calendarEl.fullCalendar('render');
       $calendarEl.fullCalendar('removeEvents');
       $calendarEl.fullCalendar('addEventSource', events);
     };
