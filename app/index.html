@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <script type="text/javascript">
+      if (navigator.userAgent.indexOf('iPad') != -1) {
+        document.write('<meta content="width=1200" name="viewport">');
+      }else {
+        document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />');
+      }
+    </script>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Feschibal</title>
+    <meta name="author" content="Code for Chiba">
+    <meta name="keywords" content="千葉市お祭りデータセンター" />
+    <meta name="description" content="千葉市お祭りデータセンター" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="千葉市お祭りデータセンター" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="千葉市お祭りデータセンター" />
+    <meta property="og:description" content="千葉市お祭りデータセンター" />
+    <meta property="fb:admins" content="" />
+    <title>千葉市お祭りデータセンター </title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -20,8 +34,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Merriweather' type='text/css'>
     <!-- build:css(app) styles/vendor.css -->
     <link rel="stylesheet" href="styles/vendor/leaflet.label.css"/>
+    <link rel="stylesheet" href="styles/vendor/style.min.css"/>
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/app.css -->
     <link rel="stylesheet" href="styles/app.css">
