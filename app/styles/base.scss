@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: url(../images/common/base-bg.jpg);
 }
 
 .block {
@@ -92,130 +92,12 @@ c o n t e n t
 .content {
   width: 1000px;
   margin: 0 auto;
-
   padding-top: 30px;
-
-  .festival-list {
-    padding: 0 20px;
-
-    .festival-list-date {
-      width: 300px;
-      float: left;
-      margin-right: 30px;
-      margin-bottom: 30px;
-
-      a {
-        text-decoration: none;
-      }
-
-      .day {
-        font-size: 26px;
-        font-family: 'Merriweather', serif;
-        font-weight: 400;
-        color: #fff;
-        margin-bottom: 3px;
-        letter-spacing: 0.1em;
-
-        .small {
-          font-size: 18px;
-        }
-
-        .bgcolor {
-          background: #dc79a2;
-          padding: 8px;
-        }
-      }
-
-      .title {
-        background: #4c4c4c;
-        padding: 8px;
-        font-size: 26px;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 0;
-      }
-
-      &:nth-child(3n) {
-        margin-right: 0px;
-      }
-    }
-
-    &:after {
-      content: ".";
-      display: block;
-      height: 0;
-      font-size: 0;
-      clear: both;
-      visibility: hidden;
-    }
-  }
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 640px) {
   .content {
     width: 100%;
-    margin: 0 auto;
-  }
-  .content .festival-list {
-    padding: 0;
-
-    .festival-list-date {
-      width: 100%;
-      float: none;
-      position: relative;
-      margin-right: 0;
-      margin-bottom: 1px;
-
-      dt {
-        position: absolute;
-        top: 20px;
-        left: 10px;
-
-        .day {
-          font-size: 18px;
-          font-family: 'Merriweather', serif;
-          font-weight: 400;
-          color: #fff;
-          margin-bottom: 5px;
-          letter-spacing: 0.1em;
-
-          .small {
-            font-size: 14px;
-          }
-
-          .bgcolor {
-            background: #dc79a2;
-            padding: 8px;
-          }
-        }
-
-        .title {
-          background: #4c4c4c;
-          padding: 8px;
-          font-size: 18px;
-          font-weight: bold;
-          color: #fff;
-          margin-bottom: 0;
-        }
-      }
-
-      dd {
-        height: 110px;
-        overflow: hidden;
-        background: #383838;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      &:nth-child(3n) {
-        margin-right: 6%;
-      }
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-    }
   }
 }

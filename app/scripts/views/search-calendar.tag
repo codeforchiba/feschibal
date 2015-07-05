@@ -1,4 +1,4 @@
-<fes-calendar>
+<search-calendar>
   <div id="calendar"></div>
   <script>
 
@@ -63,4 +63,4 @@
       display: block;
     }
   </style>
-</fes-calendar>
+</search-calendar>

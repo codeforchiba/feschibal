@@ -34,25 +34,25 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
+        files: ['<%= config.app %>/scripts/**/*.js'],
         tasks: ['replace:dev', 'jshint'],
         options: {
           livereload: true
         }
       },
       riot: {
-        files: ['<%= config.app %>/scripts/{,*/}*.tag'],
+        files: ['<%= config.app %>/scripts/**/*.tag'],
         tasks: ['riot']
       },
       gruntfile: {
         files: ['Gruntfile.js']
       },
       sass: {
-        files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+        files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
         tasks: ['sass:server', 'autoprefixer']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
+        files: ['<%= config.app %>/styles/**/*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
       livereload: {
@@ -60,10 +60,10 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*',
-          '.tmp/scripts/{,*/}*.js'
+          '<%= config.app %>/**/*.html',
+          '.tmp/styles/**/*.css',
+          '<%= config.app %>/images/**/*',
+          '.tmp/scripts/**/*.js'
         ]
       }
     },

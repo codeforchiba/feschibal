@@ -1,4 +1,4 @@
-<fes-map>
+<search-map>
   <div id="map-search"></div>
 
   <script>
@@ -102,4 +102,4 @@
   <style scoped>
     #map-search { height: 500px; }
   </style>
-</fes-map>
+</search-map>

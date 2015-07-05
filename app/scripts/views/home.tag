@@ -36,120 +36,26 @@
     <section class="week">
       <dl class="week-day">
         <dt>今週開催の祭り</dt>
-        <dd>7/20 - 7/21</dd>
+        <dd>{moment(startDateOfWeek).format('M/D')} - {moment(endDateOfWeek).format('M/D')}</dd>
       </dl>
 
       <div class="week-map">
-
+        <div id="map-home"></div>
       </div>
 
-      <ul class="festival-list">
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-
-        <li class="festival-list-date">
-          <dl>
-            <dt>
-              <a href="#">
-                <p class="day"><span class="bgcolor">08/01 <span class="small">土</span></span></p>
-
-                <p class="title">第28回おゆみ野夏まつり</p>
-              </a>
-            </dt>
-            <dd>
-              <a href="#">
-                <img class="roll_fout" src="./common/img/common/pic01.jpg">
-              </a>
-            </dd>
-          </dl>
-        </li>
-      </ul>
+      <fes-list feses={result.list}></fes-list>
     </section>
   </article>
 
   <script>
+    var self  = this;
+
+    // 検索結果
+    this.result = {};
+
+    // 今週の開始日付と終了日付
+    this.startDateOfWeek = moment().weekday(1).toDate();
+    this.endDateOfWeek = moment().weekday(7).toDate();
 
     /**
      * 本日開催の祭り検索
@@ -164,17 +70,6 @@
     }
 
     /**
-     * 今週開催の祭り検索
-     */
-    doSearchThisWeek(e){
-      var param = {
-        fromDate: moment().format("YYYY-MM-DD"),
-        toDate: moment().weekday(7).format("YYYY-MM-DD")
-      };
-      riot.route("search/list?" + $.param(param));
-    }
-
-    /**
      * 今度の土日開催の祭り検索
      */
     doSearchThisWeekEnd(e){
@@ -184,6 +79,20 @@
       };
       riot.route("search/list?" + $.param(param));
     }
+
+    /**
+     * Home画面表示時
+     */
+    riot.route.on('home', function(param){
+      var searchParam = {
+        fromDate: self.startDateOfWeek,
+        toDate: self.endDateOfWeek
+      };
+      cfc.Event.find(searchParam).done(function(res){
+        self.result = res;
+        self.update();
+      });
+    });
   </script>
 
   <style scoped>
@@ -254,86 +163,33 @@
       margin-bottom: 30px;
     }
 
-    .week .week-map iframe {
+    .week .week-map #map-home {
       height: 240px;
       width: 100%;
     }
 
     @media only screen and (max-width: 640px) {
-      .homesearch {
-        background: #f5ac42;
-        margin-bottom: 30px;
-      }
 
       .homesearch .homesearch-list {
-        float: left;
         width: 33.1%;
-        border-right: #cb7e01 solid 1px;
         font-size: 14px;
-        font-weight: bold;
-        text-align: center;
       }
 
       .homesearch .homesearch-list a {
-        display: block;
-        color: #fff;
         padding: 10px 0px;
-        text-decoration: none;
-      }
-
-      .homesearch .homesearch-list a p {
-        margin-bottom: 0px;
       }
 
       .homesearch .homesearch-list a img {
         width: 40%;
       }
 
-      .homesearch .homesearch-list a:hover {
-        background: #ff9700;
-      }
-
-      .homesearch .homesearch-list:last-child {
-        border-right: none;
-      }
-
-      .homesearch:after {
-        content: ".";
-        display: block;
-        height: 0;
-        font-size: 0;
-        clear: both;
-        visibility: hidden;
-      }
-
-      .week .week-day {
-        margin-bottom: 30px;
-      }
-
       .week .week-day dt {
         font-size: 14px;
-        font-weight: bold;
-        text-align: center;
       }
 
       .week .week-day dd {
         font-size: 28px;
-        font-family: sans-serif;
-        text-align: center;
-        padding-bottom: 20px;
-        font-weight: 400;
-        font-family: 'Merriweather', serif;
-        letter-spacing: 0.1em;
         background: url(images/common/week-day-bg01.gif) top 11px left -60px no-repeat, url(images/common/week-day-bg01.gif) top 11px right -60px no-repeat, url(images/common/week-day-bg02.gif) center bottom 0px no-repeat;
-      }
-
-      .week .week-map {
-        margin-bottom: 30px;
-      }
-
-      .week .week-map iframe {
-        height: 240px;
-        width: 100%;
       }
     }
   </style>

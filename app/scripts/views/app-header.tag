@@ -1,9 +1,15 @@
 <app-header>
-  <div class="header-content">
-    <h1><a class="roll_fout" href="#"><img src="images/common/logo.png" alt="千葉市お祭りデータセンター"></a></h1>
-  </div>
+  <header>
+    <div class="header-content">
+      <h1><a class="roll_fout" href="#"><img src="images/common/logo.png" alt="千葉市お祭りデータセンター"></a></h1>
+    </div>
+  </header>
 
   <style scoped>
+    header {
+      background-color: #fff;
+    }
+
     h1 {
       padding: 10px 0px;
     }
