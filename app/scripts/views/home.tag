@@ -40,10 +40,10 @@
       </dl>
 
       <div class="week-map">
-        <div id="map-home"></div>
+        <fes-map feslist={result.list}></fes-map>
       </div>
 
-      <fes-list feses={result.list}></fes-list>
+      <fes-list feslist={result.list}></fes-list>
     </section>
   </article>
 
@@ -84,6 +84,7 @@
      * Home画面表示時
      */
     riot.route.on('home', function(param){
+      self.tags["fes-map"].trigger("show");
       var searchParam = {
         fromDate: self.startDateOfWeek,
         toDate: self.endDateOfWeek
@@ -163,7 +164,7 @@
       margin-bottom: 30px;
     }
 
-    .week .week-map #map-home {
+    .week .week-map #map-result {
       height: 240px;
       width: 100%;
     }

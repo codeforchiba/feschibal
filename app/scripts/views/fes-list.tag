@@ -1,6 +1,6 @@
 <fes-list>
   <ul class="festival-list">
-    <li class="festival-list-date" each={ fes, i in opts.feses } onclick={parent.onSelectFes}>
+    <li class="festival-list-date" each={ fes, i in opts.feslist } onclick={parent.onSelectFes}>
       <dl>
         <dt>
           <p class="day">
