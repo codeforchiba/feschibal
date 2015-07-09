@@ -1,10 +1,8 @@
 <app>
   <app-header></app-header>
-  <div class="content">
-    <home show={ path === 'home' }></home>
-    <search show={ path === 'search' }></search>
-    <fes-detail show={ path === 'detail' }></fes-detail>
-  </div>
+  <home show={ path === 'home' }></home>
+  <search show={ path === 'search' }></search>
+  <fes-detail show={ path === 'detail' }></fes-detail>
   <app-footer></app-footer>
 
   <script>

@@ -1,13 +1,11 @@
 <fes-map>
-  <div id="map-search"></div>
+  <div id="map-result"></div>
 
   <script>
-    var self = this;
-
     /**
      * 地図の生成
      **/
-    var map = L.map(self["map-search"], {
+    var map = L.map(this["map-result"], {
       dragging: true
     });
     L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
@@ -15,11 +13,6 @@
       subdomains: ["otile1", "otile2", "otile3", "otile4"],
       attribution: 'Tiles courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
     }).addTo(map);
-//    L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
-//      maxZoom: 18,
-//      attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
-//      opacity: 0.8
-//    }).addTo(map);
     // マーカー一覧(geoJson)
     var markers = L.markerClusterGroup();
     markers.addTo(map);
@@ -47,16 +40,7 @@
       L.marker([latitude,longitude] , optionIcon ).addTo(map);
     }
 
-    /**
-     * 地図画面表示時
-     */
-    riot.route.on('search/map', function(param){
-      var searchParam = {
-        fromDate: param.fromDate ? new Date(param.fromDate) : null,
-        toDate: param.toDate ? new Date(param.toDate) : null
-      };
-      cfc.Event.find(searchParam).done(updateResult);
-
+    this.on('show', function() {
       // Get the current location
       if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(
@@ -77,16 +61,10 @@
       }
     });
 
-    /**
-     * 検索結果による画面更新
-     *
-     * @param res
-     */
-    var updateResult = function(res){
-
+    this.on('update', function() {
       // 祭りデータから地図のマーカーデータを生成します。
       markers.clearLayers();
-      _.each(res.list, function(fes){
+      _.each(opts.feslist, function(fes){
         var marker = L.marker(new L.LatLng(fes.location.lat, fes.location.long)).bindLabel(fes.name, { noHide: true, clickable: true });
         marker.on('click', function (e) {
           riot.route("detail/" + fes.id);
@@ -96,10 +74,10 @@
         });
         markers.addLayer(marker);
       });
-    };
+    });
   </script>
 
   <style scoped>
-    #map-search { height: 500px; }
+
   </style>
 </fes-map>

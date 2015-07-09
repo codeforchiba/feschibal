@@ -1,74 +1,149 @@
 <fes-list>
-  <table class="table table-hover">
-    <thead>
-    <tr>
-      <th>検索結果：{result.total} 件中 { result.total ? result.limit * result.pageNo + 1 : 0} - {result.limit * result.pageNo + result.list.length} 件</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr each={ fes, i in result.list } onclick={parent.onSelectFes}>
-      <td>
-        <div>
-          <span each={ date, j in fes.date }>
-            <span if={ j > 0 }>, </span>
-            {moment(date.start).format('YYYY/MM/DD')}
-          </span>
-        </div>
-        <div>{fes.name}</div>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-  <pager result={result} listener={listener}></pager>
+  <ul class="festival-list">
+    <li class="festival-list-date" each={ fes, i in opts.feslist } onclick={parent.onSelectFes}>
+      <dl>
+        <dt>
+          <p class="day">
+            <span class="bgcolor" each={ date in fes.date } >
+              {moment(date.start).format('MM/DD')}
+              <span class="small">{moment(date.start).format('dd')}</span>
+            </span>
+          </p>
+
+          <p class="title">{fes.name}</p>
+        </dt>
+        <dd>
+          <a href="javascript:void(0)">
+            <img class="roll_fout" src="images/common/pic01.jpg">
+          </a>
+        </dd>
+      </dl>
+    </li>
+  </ul>
 
   <script>
-    var self = this;
-
-    // 検索結果
-    this.result = {};
-    // 検索条件
-    this.searchParam = {};
-
     // 祭り選択時
     onSelectFes(e){
-      //map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
       riot.route("detail/" + e.item.fes.id);
     }
-
-    /**
-     * 一覧ページ変更時
-     */
-    this.listener = {
-      onPageChange : function(pageNo){
-        var fromDate = self.searchParam.fromDate;
-        var toDate = self.searchParam.toDate;
-        var param = {
-          fromDate :  fromDate ? moment(fromDate).format("YYYY-MM-DD") : null,
-          toDate : toDate ? moment(toDate).format("YYYY-MM-DD") : null,
-          pageNo : pageNo
-        };
-        riot.route("search/list?" + $.param(param));
-      }
-    }
-
-    /**
-     * 一覧画面表示時
-     */
-    riot.route.on('search/list', function(param){
-      var searchParam = {
-        limit: 10,
-        pageNo: param.pageNo || 0,
-        fromDate: param.fromDate ? new Date(param.fromDate) : null,
-        toDate: param.toDate ? new Date(param.toDate) : null
-      };
-      cfc.Event.find(searchParam).done(function(res){
-        self.result = res;
-        self.update();
-      });
-    });
   </script>
 
   <style scoped>
+    .festival-list {
+      padding: 0 20px;
+    }
 
+    .festival-list-date {
+      width: 300px;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    .festival-list-date .day {
+      font-size: 26px;
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 3px;
+      letter-spacing: 0.1em;
+    }
+
+    .festival-list-date .day .small {
+      font-size: 18px;
+    }
+
+    .festival-list-date .day .bgcolor {
+      background: #dc79a2;
+      padding: 6px;
+      margin-right: 5px;
+    }
+
+    .festival-list-date .title {
+      background: #4c4c4c;
+      padding: 8px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .festival-list-date:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+    .festival-list:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    @media only screen and (max-width: 640px) {
+      .festival-list {
+        padding: 0;
+      }
+
+      .festival-list-date {
+        width: 100%;
+        float: none;
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 1px;
+      }
+
+      .festival-list-date dt {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+
+      .festival-list-date dt .day {
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 5px;
+        letter-spacing: 0.1em;
+      }
+
+      .festival-list-date dt .day .small {
+        font-size: 14px;
+      }
+
+      .festival-list-date dt .day .bgcolor {
+        background: #dc79a2;
+        padding: 8px;
+      }
+
+      .festival-list-date dt .title {
+        background: #4c4c4c;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0;
+      }
+
+      .festival-list-date dd {
+        height: 110px;
+        overflow: hidden;
+        background: #383838;
+      }
+
+      .festival-list-date dd img {
+        width: 100%;
+      }
+
+      .festival-list-date:nth-child(3n) {
+        margin-right: 6%;
+      }
+
+      .festival-list-date:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
   </style>
 </fes-list>

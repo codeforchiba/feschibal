@@ -1,60 +1,48 @@
 <fes-detail>
-  <div if={ fes != null }>
-    <div class="image-area">
-      <img src="images/chiba-odori.jpg" alt=""/>
-      <img class="border" src="images/image-separater.png" alt=""/>
-    </div>
-    <div class="info-area">
-      <div each={ date, i in fes.date }>
-        <span class="date">{moment(date.start).format('MM/DD')}</span>
-        <span class={day-of-week:true,sat:6===date.start.getDay(),sun:0===date.start.getDay()}>{moment(date.start).format('dd')}</span>
-        <i class="fa fa-clock-o"></i>
-        <span>{moment(date.start).format('HH:mm')}</span>
-        <span> - </span>
-        <span>{moment(date.end).format('HH:mm')}</span>
+  <article if={ fes != null }>
+    <div class="main">
+      <div class="main-img">
+        <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
       </div>
-      <h4 class="detail-title">{fes.name}</h4>
-      <div class="features">
-        <i if={fes.features.dancing} class="fa fa-star fa-3x"></i>
-        <i if={fes.features.singing} class="fa fa-microphone fa-3x"></i>
-        <i if={fes.features.drum} class="fa fa-neuter fa-3x"></i>
-        <i if={fes.features.musicalPerformance} class="fa fa-music fa-3x"></i>
-        <i if={fes.features.foodTruck} class="fa fa-cutlery fa-3x"></i>
-        <i if={fes.features.fireworks} class="fa fa-fire fa-3x"></i>
+    </div>
+    <article class="content">
+      <div class="info-area">
+        <div each={ date, i in fes.date }>
+          <span class="date">{moment(date.start).format('MM/DD')}</span>
+          <span class={day-of-week:true,sat:6===date.start.getDay(),sun:0===date.start.getDay()}>{moment(date.start).format('dd')}</span>
+          <i class="fa fa-clock-o"></i>
+          <span>{moment(date.start).format('HH:mm')}</span>
+          <span> - </span>
+          <span>{moment(date.end).format('HH:mm')}</span>
+        </div>
+        <h4 class="detail-title">{fes.name}</h4>
+        <div class="features">
+          <i if={fes.features.dancing} class="fa fa-star fa-3x"></i>
+          <i if={fes.features.singing} class="fa fa-microphone fa-3x"></i>
+          <i if={fes.features.drum} class="fa fa-neuter fa-3x"></i>
+          <i if={fes.features.musicalPerformance} class="fa fa-music fa-3x"></i>
+          <i if={fes.features.foodTruck} class="fa fa-cutlery fa-3x"></i>
+          <i if={fes.features.fireworks} class="fa fa-fire fa-3x"></i>
+        </div>
+        <table class="fes-infos">
+          <tbody>
+          <tr>
+            <th><span class="title-frame">会場</span></th>
+            <td>{fes.location.name}</td>
+          </tr>
+          <tr>
+            <th><span class="title-frame">備考</span></th>
+            <td>{fes.location.name}</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
-      <table class="fes-infos">
-        <tbody>
-        <tr>
-          <th><span class="title-frame">会場</span></th>
-          <td>{fes.location.name}</td>
-        </tr>
-        <tr>
-          <th><span class="title-frame">備考</span></th>
-          <td>{fes.location.name}</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="map-detail"></div>
-    <div  class="around-fes-area">
-      <div class="title">周辺のお祭り</div>
-      <table class="table table-hover">
-        <tbody>
-        <tr each={ fes, i in aroundFes } onclick={parent.onSelectFes}>
-          <td>
-            <div>
-                <span each={ date, j in fes.date }>
-                  <span if={ j > 0 }>, </span>
-                  {moment(date.start).format('YYYY/MM/DD')}
-                </span>
-            </div>
-            <div>{fes.name}</div>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-
+      <div id="map-detail"></div>
+      <div  class="around-fes-area">
+        <div class="title">周辺のお祭り</div>
+        <fes-list feslist={aroundFes}></fes-list>
+      </div>
+    </article>
   </div>
   <script>
     var self = this;
@@ -128,26 +116,6 @@
   </script>
 
   <style scoped>
-    :scope > div {
-      margin-top: -50px;
-    }
-
-    /* 画像 */
-    .image-area {
-      position: relative;
-    }
-
-    .image-area img {
-      width: 100%;
-      max-width: 500px;
-    }
-
-    .image-area .border {
-      position:absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
 
     .info-area {
       padding: 10px;

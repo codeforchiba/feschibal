@@ -1,38 +1,36 @@
 <app-header>
-  <div class="navbar navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#" if={ path !== 'detail' }>Feschibal</a>
-        <a class="navbar-brand" href="javascript:history.back();"  if={ path === 'detail' }><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-      </div>
+  <header>
+    <div class="header-content">
+      <h1><a class="roll_fout" href="#"><img src="images/common/logo.png" alt="千葉市お祭りデータセンター"></a></h1>
     </div>
-  </div>
-  <script>
-    var self  = this;
+  </header>
 
-    /** 表示ページパス */
-    this.path = null;
-    /** 選択された祭り */
-    this.fes = null;
-
-    /**
-     * 画面切替時
-     */
-    riot.route.on('routeChange', function(path){
-      self.path = path;
-      self.update();
-    });
-
-  </script>
   <style scoped>
-    .navbar {
-      background: rgba(255, 255, 255, .5);
+    header {
+      background-color: #fff;
     }
-    .navbar a{
-      color: #F4A838;
+
+    h1 {
+      padding: 10px 0px;
     }
-    .navbar a:hover, .navbar a:focus{
-      color: #E39727;
+
+    .header-content {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 640px) {
+      h1 {
+        padding: 10px 0px 10px 10px;
+      }
+
+      h1 img {
+        width: 70%;
+      }
+
+      .header-content {
+        width: 100%;
+      }
     }
   </style>
 </app-header>
