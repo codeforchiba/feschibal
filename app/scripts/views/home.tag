@@ -6,16 +6,16 @@
   </div>
 
   <article class="content">
-    <section class="homesearch">
-      <div class="homesearch-list">
-        <a href="#">
+    <section class="tab">
+      <div class="tab-item">
+        <a href="javascript:void(0)">
           <img src="images/common/homesearch-icon01.png">
 
           <p>地域から探す</p>
         </a>
       </div>
 
-      <div class="homesearch-list">
+      <div class="tab-item">
         <a href="javascript:void(0)" onclick={doSearchToday}>
           <img src="images/common/homesearch-icon02.png">
 
@@ -23,13 +23,14 @@
         </a>
       </div>
 
-      <div class="homesearch-list">
+      <div class="tab-item">
         <a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>
           <img src="images/common/homesearch-icon03.png">
 
           <p>土日開催の祭り</p>
         </a>
       </div>
+
     </section>
 
 
@@ -56,6 +57,24 @@
     // 今週の開始日付と終了日付
     this.startDateOfWeek = moment().weekday(1).toDate();
     this.endDateOfWeek = moment().weekday(7).toDate();
+
+    /**
+     * 地域から探すボタン押下時
+     */
+    onClickCitySearch(e){
+      cfc.City.findAllWards().then(function(cities){
+        _.each(cities, function(city){
+          console.log(city);
+          city.getTowns().done(function(towns){
+            console.log(towns);
+          });
+        });
+      });
+      cfc.City.findOne("121060015").then(function(town){
+        console.log(town);
+      });
+      $(self["city-search"]).slideToggle();
+    }
 
     /**
      * 本日開催の祭り検索
@@ -97,47 +116,6 @@
   </script>
 
   <style scoped>
-    .homesearch {
-      background: #f5ac42;
-      margin-bottom: 30px;
-    }
-
-    .homesearch .homesearch-list {
-      float: left;
-      width: 33.2%;
-      border-right: #cb7e01 solid 1px;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .homesearch .homesearch-list a {
-      display: block;
-      color: #fff;
-      padding: 20px 0px;
-      text-decoration: none;
-    }
-
-    .homesearch .homesearch-list a p {
-      margin-bottom: 0px;
-    }
-
-    .homesearch .homesearch-list a:hover {
-      background: #ff9700;
-    }
-
-    .homesearch .homesearch-list:last-child {
-      border-right: none;
-    }
-
-    .homesearch:after {
-      content: ".";
-      display: block;
-      height: 0;
-      font-size: 0;
-      clear: both;
-      visibility: hidden;
-    }
 
     .week .week-day {
       margin-bottom: 30px;

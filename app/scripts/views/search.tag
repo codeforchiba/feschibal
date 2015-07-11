@@ -21,18 +21,9 @@
 
       <h4>地域を選択してください。</h4>
       <div class="form-group">
-        <select class="form-control" aria-invalid="false">
-          <option value="-">-</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
-          <option value="千葉市緑区">千葉市緑区</option>
+        <select class="form-control">
+          <option >-</option>
+          <option each={ city, i in cities } onclick={onSelectCity}>{city.city}{city.address}</option>
         </select>
       </div>
 
@@ -42,10 +33,10 @@
     </form>
 
     <section class="result">
-      <ul class="nav nav-tabs">
-        <li role="presentation" class={active: path==='list'}><a href="#search/list?{queryString}">一覧表示</a></li>
-        <li role="presentation" class={active: path==='map'}><a href="#search/map?{queryString}">地図</a></li>
-        <li role="presentation" class={active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー表示</a></li>
+      <ul class="tab">
+        <li class={'tab-item': true, active: path==='list'}><a href="#search/list?{queryString}">一覧</a></li>
+        <li class={'tab-item': true, active: path==='map'}><a href="#search/map?{queryString}">地図</a></li>
+        <li class={'tab-item': true, active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー</a></li>
       </ul>
       <div>
         <search-list show={ path==='list' } request={request} ></search-list>
@@ -71,12 +62,21 @@
     $(this.fromDate).datepicker(datepickerParam);
     /** 期間(to) */
     $(this.toDate).datepicker(datepickerParam);
+    /** 地域一覧 */
+    this.cities = [];
     /** 検索リクエスト */
     this.request = riot.observable();
     /** 表示ページパス */
     this.path = null;
     /** 検索パラメータ */
     this.queryString = null;
+
+    // 地域一覧の取得
+    cfc.City.findAll().then(function(cities){
+      _.each(cities, function(city){
+        self.cities.push(city);
+      });
+    });
 
     /**
      * 検索ボタン押下時

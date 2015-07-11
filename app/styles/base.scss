@@ -87,6 +87,57 @@ m a i n
 }
 
 /* ==================================
+t a b
+================================== */
+.tab {
+  background: #f5ac42;
+  margin-bottom: 30px;
+
+  .tab-item {
+    float: left;
+    width: 33.2%;
+    border-right: #cb7e01 solid 1px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    a {
+      display: block;
+      color: #fff;
+      padding: 20px 0px;
+      text-decoration: none;
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      &:hover {
+        background: #ff9700;
+      }
+    }
+    &.active {
+      a {
+        background: #ff9700;
+      }
+    }
+
+    &:last-child,
+    &:nth-of-type(3n){
+      border-right: none;
+    }
+  }
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+/* ==================================
 c o n t e n t
 ================================== */
 .content {

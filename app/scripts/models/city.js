@@ -24,6 +24,13 @@
           return data.addressCode.lastIndexOf("0000") < 0 && self.cityCode === data.cityCode;
         });
       });
+    },
+
+    /**
+     * 区の場合はtureを返す
+     */
+    isWard: function(){
+      return this.addressCode.lastIndexOf("0000") >= 0
     }
   };
 
@@ -56,7 +63,7 @@
   City.findAllWards = function(){
     return this.dataStore.findAll().then(function(dataList){
       return _.filter(dataList, function(data){
-        return data.addressCode.lastIndexOf("0000") >= 0;
+        return data.isWard();
       });
     });
   }
