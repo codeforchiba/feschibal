@@ -1,11 +1,9 @@
 <search-list>
-  <div class="content">
-    <div>
-      検索結果：{result.total} 件中 { result.total ? result.limit * result.pageNo + 1 : 0} - {result.limit * result.pageNo + result.list.length} 件
-    </div>
-    <fes-list feslist={result.list}></fes-list>
-    <pager result={result} listener={listener}></pager>
+  <div>
+    検索結果：{result.total} 件中 { result.total ? result.limit * result.pageNo + 1 : 0} - {result.limit * result.pageNo + result.list.length} 件
   </div>
+  <fes-list feslist={result.list}></fes-list>
+  <pager result={result} listener={listener}></pager>
 
   <script>
     var self = this;
