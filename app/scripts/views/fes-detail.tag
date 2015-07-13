@@ -7,13 +7,13 @@
     </div>
     <article class="content">
       <div class="info-area">
-        <div each={ date, i in fes.date }>
-          <span class="date">{moment(date.start).format('MM/DD')}</span>
-          <span class={day-of-week:true,sat:6===date.start.getDay(),sun:0===date.start.getDay()}>{moment(date.start).format('dd')}</span>
+        <div each={ period, i in fes.periods }>
+          <span class="date">{moment(period.start).format('MM/DD')}</span>
+          <span class={day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
           <i class="fa fa-clock-o"></i>
-          <span>{moment(date.start).format('HH:mm')}</span>
+          <span>{moment(period.start).format('HH:mm')}</span>
           <span> - </span>
-          <span>{moment(date.end).format('HH:mm')}</span>
+          <span>{moment(period.end).format('HH:mm')}</span>
         </div>
         <h4 class="detail-title">{fes.name}</h4>
         <div class="features">
@@ -97,7 +97,8 @@
         basePoint: latLng,
         distance: 5000,
         limit: 10,
-        pageNo: 0
+        pageNo: 0,
+        order: "periods"
       };
       cfc.Event.find(param).done(function(res){
         // 距離での絞り込み結果から自分自身の祭りを除外する

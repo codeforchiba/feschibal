@@ -43,7 +43,8 @@
         limit: 10,
         pageNo: param.pageNo || 0,
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
-        toDate: param.toDate ? new Date(param.toDate) : null
+        toDate: param.toDate ? new Date(param.toDate) : null,
+        order: "periods"
       };
       cfc.Event.find(searchParam).done(function(res){
         self.result = res;

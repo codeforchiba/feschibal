@@ -1,5 +1,15 @@
 (function (nm) {
   'use strict';
+
+  /**
+   * 日付比較用数値を返します。
+   * @param date
+   * @returns {number}
+   */
+  var getDateTime = function(date){
+    return date.getYear() * 10000 + date.getMonth() * 100 + date.getDate();
+  }
+
   /**
    * 祭りイベントオブジェクト
    *
@@ -18,7 +28,7 @@
      * @returns {Date} 初日の開始日時
      */
     getStartDate: function () {
-      return this.date[0].start;
+      return this.periods[0].start;
     },
 
     /**
@@ -27,7 +37,7 @@
      * @returns {Date} 最終日の終了日時
      */
     getEndDate: function () {
-      return this.date[this.date.length - 1].end;
+      return this.periods[this.periods.length - 1].end;
     }
   };
 
@@ -59,16 +69,18 @@
       return _.filter(fesList, function (fes) {
         var isInclude = false;
         if (param.fromDate) {
-          isInclude = _.some(fes.date, function (date) {
-            return date.end.getTime() > param.fromDate.getTime();
+          var fromDate = getDateTime(param.fromDate);
+          isInclude = _.some(fes.periods, function (period) {
+            return getDateTime(period.end) >= fromDate;
           });
           if (!isInclude) {
             return false;
           }
         }
         if (param.toDate) {
-          isInclude = _.some(fes.date, function (date) {
-            return date.start.getTime() < param.toDate.getTime();
+          var toDate = getDateTime(param.toDate);
+          isInclude = _.some(fes.periods, function (period) {
+            return getDateTime(period.start) <=  toDate;
           });
           if (!isInclude) {
             return false;
@@ -86,6 +98,17 @@
 
         return true;
       });
+    }).then(function (fesList) {
+      // ソート
+      if (param.order != null && param.order === 'periods'){
+        return _.sortBy(fesList, function(fes){
+          return fes.getStartDate().getTime();
+        });
+      } else if (param.order != null){
+        return _.sortBy(fesList, param.order);
+      } else {
+        return fesList;
+      }
     }).then(function (fesList) {
       // ページング機能による絞込み
       if (param.limit != null && param.pageNo != null) {
@@ -115,7 +138,7 @@
    */
   Event.findOne = function (fesId) {
     return this.dataStore.findOne(fesId);
-  }
+  };
 
   nm.Event = Event;
 })(window.cfc = window.cfc || {});

@@ -67,6 +67,9 @@ m a i n
 
 @media only screen and (max-width: 640px) {
   .main {
+    width: 100%;
+    overflow: hidden;
+
     .main-img {
       width: 100%;
     }
@@ -75,12 +78,12 @@ m a i n
     }
     .main-img::before {
       border-top: 0;
-      border-right: 200px solid white;
-      border-top: 30px solid transparent;
-      border-left: 200px solid white;
+      border-right: 200px solid #fff;
+      border-top: 50px solid transparent;
+      border-left: 200px solid #fff;
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 6px;
       width: 100%;
     }
   }
@@ -90,39 +93,33 @@ m a i n
 t a b
 ================================== */
 .tab {
-  background: #f5ac42;
+  background: #D75247;
   margin-bottom: 30px;
 
   .tab-item {
     float: left;
-    width: 33.2%;
-    border-right: #cb7e01 solid 1px;
+    width: 33.1%;
+    border-right: #8B332C solid 1px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 
     a {
       display: block;
       color: #fff;
-      padding: 20px 0px;
+      padding: 20px 0;
       text-decoration: none;
 
       p {
-        margin-bottom: 0px;
-      }
-
-      &:hover {
-        background: #ff9700;
-      }
-    }
-    &.active {
-      a {
-        background: #ff9700;
+        margin-bottom: 0;
       }
     }
 
-    &:last-child,
-    &:nth-of-type(3n){
+    a:hover, &.active a {
+      background: #BB463C;
+    }
+
+    &:last-child, &:nth-of-type(3n) {
       border-right: none;
     }
   }
@@ -134,6 +131,16 @@ t a b
     font-size: 0;
     clear: both;
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .tab{
+    margin-bottom:0px;
+
+    .tab-item{
+      font-size: 16px;
+    }
   }
 }
 
@@ -150,5 +157,6 @@ c o n t e n t
 @media only screen and (max-width: 640px) {
   .content {
     width: 100%;
+    padding-top: 0;
   }
 }
