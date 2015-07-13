@@ -297,8 +297,10 @@ module.exports = function (grunt) {
             src: 'node_modules/apache-server-configs/dist/.htaccess',
             dest: '<%= config.dist %>/.htaccess'
           }, {
-            src: 'deploy/gh-pages/circle.yml',
-            dest: '<%= config.dist %>/circle.yml'
+            expand: true,
+            cwd: 'deploy/gh-pages',
+            src: ['circle.yml', 'CNAME']
+            dest: '<%= config.dist %>/'
           }, {
             expand: true,
             cwd: 'data/json',
