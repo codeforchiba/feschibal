@@ -4,9 +4,9 @@
       <dl>
         <dt>
           <p class="day">
-            <span class="bgcolor" each={ date in fes.date } >
-              {moment(date.start).format('MM/DD')}
-              <span class="small">{moment(date.start).format('dd')}</span>
+            <span class="bgcolor" each={ period in fes.periods } >
+              {moment(period.start).format('MM/DD')}
+              <span class="small">{moment(period.start).format('dd')}</span>
             </span>
           </p>
 

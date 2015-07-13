@@ -106,7 +106,8 @@
       self.tags["fes-map"].trigger("show");
       var searchParam = {
         fromDate: self.startDateOfWeek,
-        toDate: self.endDateOfWeek
+        toDate: self.endDateOfWeek,
+        order: "periods"
       };
       cfc.Event.find(searchParam).done(function(res){
         self.result = res;

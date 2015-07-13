@@ -16,10 +16,10 @@
     storeData: function(dataList){
       _.each(dataList, function (data) {
         // 日付をDate型に変換
-        data.date = _.map(data.date, function (eventDate) {
-          eventDate.start = new Date(eventDate.start);
-          eventDate.end = new Date(eventDate.end);
-          return eventDate;
+        data.periods = _.map(data.periods, function (period) {
+          period.start = new Date(period.start);
+          period.end = new Date(period.end);
+          return period;
         });
         this.dataStore[data.id] = new cfc.Event(data);
       }, this);
