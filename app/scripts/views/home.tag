@@ -6,8 +6,8 @@
   </div>
 
   <article class="content">
-    <section class="tab">
-      <div class="tab-item">
+    <section class="homesearch">
+      <div class="homesearch-list">
         <a href="javascript:void(0)">
           <img src="images/common/homesearch-icon01.png">
 
@@ -15,7 +15,7 @@
         </a>
       </div>
 
-      <div class="tab-item">
+      <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doSearchToday}>
           <img src="images/common/homesearch-icon02.png">
 
@@ -23,7 +23,7 @@
         </a>
       </div>
 
-      <div class="tab-item">
+      <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>
           <img src="images/common/homesearch-icon03.png">
 
@@ -116,6 +116,47 @@
   </script>
 
   <style scoped>
+    .homesearch {
+      background: #f5ac42;
+      margin-bottom: 30px;
+    }
+
+    .homesearch .homesearch-list {
+      float: left;
+      width: 33.2%;
+      border-right: #cb7e01 solid 1px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .homesearch .homesearch-list a {
+      display: block;
+      color: #fff;
+      padding: 20px 0px;
+      text-decoration: none;
+    }
+
+    .homesearch .homesearch-list a p {
+      margin-bottom: 0px;
+    }
+
+    .homesearch .homesearch-list a:hover {
+      background: #ff9700;
+    }
+
+    .homesearch .homesearch-list:last-child {
+      border-right: none;
+    }
+
+    .homesearch:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
+    }
 
     .week .week-day {
       margin-bottom: 30px;

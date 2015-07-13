@@ -147,6 +147,7 @@
       color: #fff;
       width: 100px;
       border: none;
+      margin-bottom: 30px;
       background-image: linear-gradient(bottom, #2ca0ca 0%, #3eb8e5 100%);
       background-image: -webkit-linear-gradient(bottom, #2ca0ca 0%, #3eb8e5 100%);
       background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2ca0ca), color-stop(1, #3eb8e5));
@@ -155,24 +156,7 @@
       border-radius: 5px;
     }
 
-    form .btn::before {
-      background-color: #072239;
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      padding-left: 2px;
-      padding-right: 2px;
-      padding-bottom: 4px;
-      left: -2px;
-      top: 5px;
-      z-index: -1;
-      border-radius: 6px;
-      -o-box-shadow: 0px 1px 0px #fff;
-      box-shadow: 0px 1px 0px #fff;
-    }
-    form .btn:active {
+    form .btn-search:active {
       color: #156785;
       text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
       background: #2ca0ca;
@@ -180,8 +164,11 @@
       box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
       top: 7px;
     }
-    form .btn:active::before {
+    form .btn:active:before {
       top: -2px;
+    }
+    form .btn:hover {
+      color: #fff;
     }
 
     @media all and (min-width: 641px) {
@@ -193,12 +180,51 @@
     }
 
     @media only screen and (max-width: 640px) {
+      .main .main-img h2 {
+        top: 40px;
+        font-size: 26px;
+        padding-left: 10px;
+      }
+
       form {
-        padding: 20px 20px 0px 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 2px solid #f5ac42; }
+        padding: 10px 10px 0px 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: #f5ac42;
+        border: none;
+      }
+
+      form h4{
+        font-size: 13px;
+        color: #fff;
+      }
+
+      form .btn-search{
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        border: none;
+        background-image: linear-gradient(bottom, #C53333 0%, #ED6060 100%);
+        background-image: -webkit-linear-gradient(bottom, #C53333 0%, #ED6060 100%);
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #C53333), color-stop(1, #ED6060));
+        -o-box-shadow: inset 0px 1px 0px #BB3535, 0px 6px 0px #901818;
+        box-shadow: inset 0px 1px 0px #BB3535, 0px 6px 0px #901818;
+        border-radius: 5px;
+      }
+
+      form .btn-search:active {
+        background: #C53333;
+        color: #999;
+        -o-box-shadow: inset 0px 1px 0px #BB3535, 0px -1px 0px #901818;
+        box-shadow: inset 0px 1px 0px #BB3535, 0px -1px 0px #901818;
+        top: 7px;
+      }
+
+      form .btn-area {
+        margin-bottom: 0;
+      }
     }
   </style>
 </search>

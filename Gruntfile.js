@@ -299,7 +299,7 @@ module.exports = function (grunt) {
           }, {
             expand: true,
             cwd: 'deploy/gh-pages',
-            src: ['circle.yml', 'CNAME']
+            src: ['circle.yml', 'CNAME'],
             dest: '<%= config.dist %>/'
           }, {
             expand: true,
