@@ -280,25 +280,34 @@ module.exports = function (grunt) {
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= config.app %>',
-          dest: '<%= config.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
-            '{,*/}*.html',
-            'styles/fonts/{,*/}*.*',
-            'data/{,*/}*.*'
-          ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
-        }, {
-          src: 'deploy/gh-pages/circle.yml',
-          dest: '<%= config.dist %>/circle.yml'
-        }]
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= config.app %>',
+            dest: '<%= config.dist %>',
+            src: [
+              '*.{ico,png,txt}',
+              'images/{,*/}*.webp',
+              '{,*/}*.html',
+              'styles/fonts/{,*/}*.*',
+              'data/{,*/}*.*'
+            ]
+          }, {
+            src: 'node_modules/apache-server-configs/dist/.htaccess',
+            dest: '<%= config.dist %>/.htaccess'
+          }, {
+            expand: true,
+            cwd: 'deploy/gh-pages',
+            src: ['circle.yml', 'CNAME']
+            dest: '<%= config.dist %>/'
+          }, {
+            expand: true,
+            cwd: 'data/json',
+            src: ['**/*.json'],
+            dest: '<%= config.dist %>/data'
+          }
+        ]
       },
       styles: {
         expand: true,
