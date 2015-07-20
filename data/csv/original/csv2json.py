@@ -5,7 +5,7 @@ import json
 import copy
 from datetime import datetime as dt
 
-csvFileName = "chiba_festival.csv"
+csvFileName = "chiba_festival.utf8.csv"
 
 #読み出しで開く
 csvFile = open(csvFileName,'r')
