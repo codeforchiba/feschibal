@@ -28,6 +28,19 @@
         <dl class="fes-infos">
         <dt>会　場</dt>
         <dd>{fes.location.name}</dd>
+        <dt>住　所</dt>
+        <dd>{fes.location.city}{fes.location.address}</dd>
+        <dt>内　容</dt>
+        <dd>
+          <ul>
+            <li>
+              <span if={fes.features.dancing}>踊り　</span><span if={fes.features.singing}>歌唱　</span><span if={fes.features.drum}>太鼓　</span>
+              <span if={fes.features.musicalPerformance}>演奏　</span><span if={fes.features.foodTruck}>屋台　</span><span if={fes.features.fireworks}>花火　</span>
+            </li>
+            <li each={ program in fes.features.others }>{program}</li>
+            <li each={ program in fes.features.specialProgram }>{program}</li>
+          </ul>
+        </dd>
         <dt>備　考</dt>
         <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
         </dl>
@@ -49,7 +62,7 @@
      **/
     var marker = null;
     var map = L.map(self["map-detail"], {
-      dragging: false
+      dragging: true
     });
     L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
       maxZoom: 18,
