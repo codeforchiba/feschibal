@@ -197,7 +197,7 @@ module.exports = function (grunt) {
         ],
         patterns: {
           js: [
-            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp))/gm, 'Update the JS to reference our revved images']
+            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
           ]
         }
       },
