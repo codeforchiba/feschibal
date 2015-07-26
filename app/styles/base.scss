@@ -52,13 +52,19 @@ m a i n
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+
+    img {
+      vertical-align: bottom;
+    }
   }
 
   .main-img::before {
-    border-top: 0;
-    border-right: 500px solid white;
-    border-top: 82px solid transparent;
-    border-left: 500px solid white;
+    background: url(../images/common/t.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 100%;
     content: "";
     position: absolute;
     bottom: 0;
@@ -76,71 +82,6 @@ m a i n
     .main-img img {
       width: 100%;
     }
-    .main-img::before {
-      border-top: 0;
-      border-right: 200px solid #fff;
-      border-top: 50px solid transparent;
-      border-left: 200px solid #fff;
-      content: "";
-      position: absolute;
-      bottom: 6px;
-      width: 100%;
-    }
-  }
-}
-
-/* ==================================
-t a b
-================================== */
-.tab {
-  background: #D75247;
-  margin-bottom: 30px;
-
-  .tab-item {
-    float: left;
-    width: 33.1%;
-    border-right: #8B332C solid 1px;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-
-    a {
-      display: block;
-      color: #fff;
-      padding: 20px 0;
-      text-decoration: none;
-
-      p {
-        margin-bottom: 0;
-      }
-    }
-
-    a:hover, &.active a {
-      background: #BB463C;
-    }
-
-    &:last-child, &:nth-of-type(3n) {
-      border-right: none;
-    }
-  }
-
-  &:after {
-    content: ".";
-    display: block;
-    height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .tab{
-    margin-bottom:0px;
-
-    .tab-item{
-      font-size: 16px;
-    }
   }
 }
 
@@ -157,6 +98,5 @@ c o n t e n t
 @media only screen and (max-width: 640px) {
   .content {
     width: 100%;
-    padding-top: 0;
   }
 }

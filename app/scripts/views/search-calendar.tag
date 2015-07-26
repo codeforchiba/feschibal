@@ -7,6 +7,8 @@
     var $calendarEl = $(this.calendar);
     $calendarEl.fullCalendar({
       lang: 'ja',
+      timezone: 'local',
+      firstDay: 2,
       eventClick: function(calEvent, jsEvent, view) {
         riot.route("detail/" + calEvent.fes.id);
         return false;
@@ -62,6 +64,14 @@
 
     .fc-event .fc-content .fc-time {
       display: block;
+    }
+
+    .fc-sat {
+      background-color:#FFF5F5;
+    }
+
+    .fc-sun {
+      background-color:#FFF5F5;
     }
   </style>
 </search-calendar>

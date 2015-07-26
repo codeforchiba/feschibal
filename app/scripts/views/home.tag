@@ -9,15 +9,14 @@
     <section class="homesearch">
       <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doClickCitySearchPanel}>
-          <img src="images/common/homesearch-icon01.png">
-
+          <img src="images/home/icon01.svg">
           <p>地域から探す</p>
         </a>
       </div>
 
       <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doSearchToday}>
-          <img src="images/common/homesearch-icon02.png">
+          <img src="images/home/icon02.svg">
 
           <p>本日開催の祭り</p>
         </a>
@@ -25,7 +24,7 @@
 
       <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>
-          <img src="images/common/homesearch-icon03.png">
+          <img src="images/home/icon03.svg">
 
           <p>土日開催の祭り</p>
         </a>
@@ -171,6 +170,10 @@
       color: #fff;
       padding: 20px 0px;
       text-decoration: none;
+    }
+
+    .homesearch .homesearch-list a img{
+      width: 100px;
     }
 
     .homesearch .homesearch-list a p {

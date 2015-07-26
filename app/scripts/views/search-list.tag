@@ -1,9 +1,5 @@
 <search-list>
-  <div>
-    検索結果：{result.total} 件中 { result.total ? result.limit * result.pageNo + 1 : 0} - {result.limit * result.pageNo + result.list.length} 件
-  </div>
   <fes-list feslist={result.list}></fes-list>
-  <pager result={result} listener={listener}></pager>
 
   <script>
     var self = this;
@@ -40,7 +36,6 @@
      */
     riot.route.on('search/list', function(param){
       var searchParam = {
-        limit: 10,
         pageNo: param.pageNo || 0,
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
         toDate: param.toDate ? new Date(param.toDate) : null,

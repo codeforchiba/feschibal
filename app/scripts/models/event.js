@@ -38,6 +38,13 @@
      */
     getEndDate: function () {
       return this.periods[this.periods.length - 1].end;
+    },
+
+    /**
+     * 画像URLを返します。
+     */
+    getImage: function() {
+      return this.image || "images/common/pic01.jpg";
     }
   };
 

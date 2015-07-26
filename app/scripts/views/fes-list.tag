@@ -14,7 +14,7 @@
         </dt>
         <dd>
           <a href="javascript:void(0)">
-            <img class="roll_fout" src="images/common/pic01.jpg">
+            <img class="roll_fout" src="{fes.getImage()}">
           </a>
         </dd>
       </dl>

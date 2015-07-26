@@ -1,5 +1,5 @@
 <fes-detail>
-  <article if={ fes != null }>
+  <div if={ fes != null }>
     <div class="main">
       <div class="main-img">
         <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
@@ -7,41 +7,47 @@
     </div>
     <article class="content">
       <div class="info-area">
-        <div each={ period, i in fes.periods }>
-          <span class="date">{moment(period.start).format('MM/DD')}</span>
-          <span class={day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
-          <i class="fa fa-clock-o"></i>
-          <span>{moment(period.start).format('HH:mm')}</span>
-          <span> - </span>
-          <span>{moment(period.end).format('HH:mm')}</span>
-        </div>
         <h4 class="detail-title">{fes.name}</h4>
+        <ul class="day-time">
+          <li each={ period, i in fes.periods }>
+            <span class="date">{moment(period.start).format('MM/DD')}</span>
+            <span class={day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
+            <span class="clock">{moment(period.start).format('HH:mm')} - {moment(period.end).format('HH:mm')}</span>
+          </li>
+        </ul>
+
         <div class="features">
-          <i if={fes.features.dancing} class="fa fa-star fa-3x"></i>
-          <i if={fes.features.singing} class="fa fa-microphone fa-3x"></i>
-          <i if={fes.features.drum} class="fa fa-neuter fa-3x"></i>
-          <i if={fes.features.musicalPerformance} class="fa fa-music fa-3x"></i>
-          <i if={fes.features.foodTruck} class="fa fa-cutlery fa-3x"></i>
-          <i if={fes.features.fireworks} class="fa fa-fire fa-3x"></i>
+          <img if={fes.features.dancing} src="images/detail/Detail_icon01.svg" />
+          <img if={fes.features.singing} src="images/detail/Detail_icon02.svg" />
+          <img if={fes.features.drum} src="images/detail/Detail_icon03.svg" />
+          <img if={fes.features.musicalPerformance} src="images/detail/Detail_icon04.svg" />
+          <img if={fes.features.foodTruck} src="images/detail/Detail_icon05.svg" />
+          <img if={fes.features.fireworks} src="images/detail/Detail_icon06.svg" />
         </div>
-        <table class="fes-infos">
-          <tbody>
-          <tr>
-            <th><span class="title-frame">会場</span></th>
-            <td>{fes.location.name}</td>
-          </tr>
-          <tr>
-            <th><span class="title-frame">備考</span></th>
-            <td>{fes.location.name}</td>
-          </tr>
-          </tbody>
-        </table>
+
+        <dl class="fes-infos">
+        <dt>会　場</dt>
+        <dd>{fes.location.name}</dd>
+        <dt>住　所</dt>
+        <dd>{fes.location.city}{fes.location.address}</dd>
+        <dt>内　容</dt>
+        <dd>
+          <ul>
+            <li>
+              <span if={fes.features.dancing}>踊り　</span><span if={fes.features.singing}>歌唱　</span><span if={fes.features.drum}>太鼓　</span>
+              <span if={fes.features.musicalPerformance}>演奏　</span><span if={fes.features.foodTruck}>屋台　</span><span if={fes.features.fireworks}>花火　</span>
+            </li>
+            <li each={ program in fes.features.others }>{program}</li>
+            <li each={ program in fes.features.specialProgram }>{program}</li>
+          </ul>
+        </dd>
+        <dt>備　考</dt>
+        <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+        </dl>
       </div>
       <div id="map-detail"></div>
-      <div  class="around-fes-area">
-        <div class="title">周辺のお祭り</div>
-        <fes-list feslist={aroundFes}></fes-list>
-      </div>
+      <div class="title">周辺のお祭り</div>
+      <fes-list feslist={aroundFes}></fes-list>
     </article>
   </div>
   <script>
@@ -56,7 +62,7 @@
      **/
     var marker = null;
     var map = L.map(self["map-detail"], {
-      dragging: false
+      dragging: true
     });
     L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
       maxZoom: 18,
@@ -119,80 +125,116 @@
   <style scoped>
 
     .info-area {
-      padding: 10px;
-    }
-
-    /* 開催時刻 */
-    .date {
-      font-size: 20px;
-    }
-
-    .day-of-week {
-      margin-left: 5px;
+      margin-left: 10px;
       margin-right: 10px;
-    }
-
-    .day-of-week.sat {
-      color: #0000ff;
-    }
-
-    .day-of-week.sun {
-      color: #ff0000;
-    }
-
-    .fa.fa-clock-o{
-      margin-right: 5px;
     }
 
     /* 詳細画面タイトル */
     .detail-title {
       color: #E39727;
       font-weight: bold;
+      font-size: 36px;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /** 開催時刻 */
+    .info-area .day-time {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .info-area .day-time li {
+      float: left;
+      margin-right: 30px;
+    }
+    .info-area .day-time .date {
+      font-size: 26px;
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
+      margin-right: 8px;
+    }
+    .info-area .day-time .day-of-week {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .info-area .day-time .sat {
+      color: #3aa3e6;
+    }
+    .info-area .day-time .sun {
+      color: #E10003;
+    }
+    .info-area .day-time .clock {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+    }
+    .info-area .day-time:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
     }
 
     /** 祭り内容 */
-    .features .fa {
-      border: solid 3px;
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
-      text-align: center;
-      margin-right: 5px;
-      color: #34AAE8;
+    .info-area .features {
+      clear: both;
+      margin-bottom: 30px;
+    }
+    .info-area .features img {
+      width: 120px;
     }
 
-    .fes-infos {
-      margin-top: 5px;
-      width: 100%;
+    /** 祭り情報 */
+    .info-area .fes-infos {
+      clear: both;
     }
-
-    .fes-infos th {
-      width: 100px;
-      text-align: center;
-    }
-
-    .fes-infos th .title-frame{
-      border: solid 1px #000000;
-      font-size: x-small;
-      padding: 1px 15px;
+    .info-area .fes-infos dt {
+      float: left;
+      border: solid 1px #A0A0A0;
+      font-size: 13px;
+      padding: 1px 30px;
       border-radius: 10px;
     }
-
-    .fes-infos th, .fes-infos td {
-      padding: 5px;
+    .info-area .fes-infos dd {
+      padding-left: 120px;
+      margin-bottom: 20px;
     }
 
     /** 地図 */
     #map-detail {
-      height: 150px;
+      height: 250px;
       width: 100%;
+      margin-bottom: 30px;
     }
 
     /** 周辺の祭り */
-    .around-fes-area .title {
+    .content .title {
       background-color: #F4A838;
       color: #ffffff;
-      padding: 5px;
+      padding: 10px;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width: 640px) {
+      .info-area .detail-title {
+        font-size: 28px;
+      }
+      .info-area .features img {
+        width: 33.3%;
+      }
+      .info-area .fes-infos dt {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .info-area .fes-infos dd {
+        padding-left: 0px;
+      }
     }
   </style>
 </fes-detail>
