@@ -56,7 +56,7 @@
       todayHighlight: true,
       autoclose: true,
       clearBtn: true,
-      weekStart: 1
+      weekStart: 2
     };
 
     /** 期間(from) */

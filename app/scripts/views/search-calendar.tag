@@ -8,7 +8,7 @@
     $calendarEl.fullCalendar({
       lang: 'ja',
       timezone: 'local',
-      firstDay: 1,
+      firstDay: 2,
       eventClick: function(calEvent, jsEvent, view) {
         riot.route("detail/" + calEvent.fes.id);
         return false;
