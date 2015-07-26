@@ -221,27 +221,11 @@
     }
 
     @media only screen and (max-width: 640px) {
-      .info-area {
-        padding-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .info-area .day_time li {
-        float: left;
-        margin-right: 30px;
-      }
       .info-area .detail-title {
         font-size: 28px;
       }
-      .info-area .features {
-        clear: both;
-        margin-bottom: 30px;
-      }
       .info-area .features img {
         width: 33.3%;
-      }
-      .info-area .fes-infos {
-        clear: both;
       }
       .info-area .fes-infos dt {
         float: none;
@@ -250,7 +234,6 @@
       }
       .info-area .fes-infos dd {
         padding-left: 0px;
-        margin-bottom: 20px;
       }
     }
   </style>
