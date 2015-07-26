@@ -8,9 +8,8 @@
   <article class="content">
     <section class="homesearch">
       <div class="homesearch-list">
-        <a href="javascript:void(0)">
+        <a href="javascript:void(0)" onclick={doClickCitySearchPanel}>
           <img src="images/home/icon01.svg">
-
           <p>地域から探す</p>
         </a>
       </div>
@@ -30,10 +29,17 @@
           <p>土日開催の祭り</p>
         </a>
       </div>
-
     </section>
-
-
+    <section id="city-search" style="display:none">
+      <ul class="homesearch">
+        <li class="homesearch-list" each={ city in cities }>
+          <a href="javascript:void(0)" onclick={parent.doSearchCity}>
+            <p>{city.city}</p>
+            <p>{parent.fesCount[city.cityCode]}件</p>
+          </a>
+        </li>
+      </ul>
+    </section>
     <section class="week">
       <dl class="week-day">
         <dt>今週開催の祭り</dt>
@@ -41,18 +47,24 @@
       </dl>
 
       <div class="week-map">
-        <fes-map feslist={result.list}></fes-map>
+        <fes-map feslist={fesList}></fes-map>
       </div>
 
-      <fes-list feslist={result.list}></fes-list>
+      <fes-list feslist={fesList}></fes-list>
     </section>
   </article>
 
   <script>
     var self  = this;
 
-    // 検索結果
-    this.result = {};
+    // 今週開催の祭り一覧
+    this.fesList = [];
+
+    // 区一覧
+    this.cities = [];
+
+    // 区毎の祭りの件数
+    this.fesCount = {"a":"b"};
 
     // 今週の開始日付と終了日付
     this.startDateOfWeek = moment().weekday(1).toDate();
@@ -61,18 +73,7 @@
     /**
      * 地域から探すボタン押下時
      */
-    onClickCitySearch(e){
-      cfc.City.findAllWards().then(function(cities){
-        _.each(cities, function(city){
-          console.log(city);
-          city.getTowns().done(function(towns){
-            console.log(towns);
-          });
-        });
-      });
-      cfc.City.findOne("121060015").then(function(town){
-        console.log(town);
-      });
+    doClickCitySearchPanel(e){
       $(self["city-search"]).slideToggle();
     }
 
@@ -100,18 +101,47 @@
     }
 
     /**
+     * 指定地域検索
+     */
+    doSearchCity(e){
+      var toDay = moment().format("YYYY-MM-DD");
+      var param = {
+        fromDate: toDay,
+        cities: [e.item.city.cityCode]
+      };
+      riot.route("search/list?" + $.param(param));
+    }
+
+    /**
      * Home画面表示時
      */
     riot.route.on('home', function(param){
       self.tags["fes-map"].trigger("show");
+      // 今週開催の祭り取得
       var searchParam = {
         fromDate: self.startDateOfWeek,
         toDate: self.endDateOfWeek,
         order: "periods"
       };
       cfc.Event.find(searchParam).done(function(res){
-        self.result = res;
+        self.fesList = res.list;
         self.update();
+      });
+      // 区一覧の取得
+      cfc.City.findAllWards().then(function(cities){
+        self.cities = cities;
+        var requests = _.map(cities, function(city){
+          var citySearchParam = {
+            fromDate: new Date(),
+            cities: [city.cityCode]
+          };
+          return cfc.Event.find(citySearchParam).done(function(res){
+            self.fesCount[city.cityCode] = res.total;
+          });
+        });
+        $.when.apply($, requests).done(function(){
+          self.update();
+        });
       });
     });
   </script>
@@ -129,6 +159,10 @@
       font-size: 20px;
       font-weight: bold;
       text-align: center;
+    }
+
+    .homesearch .homesearch-list:nth-child(3n) {
+      border-right: 0px;
     }
 
     .homesearch .homesearch-list a {
@@ -154,6 +188,12 @@
       border-right: none;
     }
 
+    .homesearch #city-search .homesearch-list {
+      display: inline-block;
+      float: none;
+      border-top: #cb7e01 solid 1px;
+    }
+
     .homesearch:after {
       content: ".";
       display: block;
@@ -161,6 +201,16 @@
       font-size: 0;
       clear: both;
       visibility: hidden;
+    }
+
+    #city-search .homesearch-list {
+      border-top: #cb7e01 solid 1px;
+    }
+
+    #city-search .homesearch-list:nth-child(1),
+    #city-search .homesearch-list:nth-child(2),
+    #city-search .homesearch-list:nth-child(3){
+      border-top: 0;
     }
 
     .week .week-day {

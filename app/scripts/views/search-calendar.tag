@@ -20,7 +20,8 @@
     riot.route.on('search/cal', function(param){
       var searchParam = {
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
-        toDate: param.toDate ? new Date(param.toDate) : null
+        toDate: param.toDate ? new Date(param.toDate) : null,
+        cities: param.cities,
       };
       cfc.Event.find(searchParam).done(updateResult);
     });

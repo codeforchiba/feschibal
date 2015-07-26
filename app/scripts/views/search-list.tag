@@ -39,6 +39,7 @@
         pageNo: param.pageNo || 0,
         fromDate: param.fromDate ? new Date(param.fromDate) : null,
         toDate: param.toDate ? new Date(param.toDate) : null,
+        cities: param.cities,
         order: "periods"
       };
       cfc.Event.find(searchParam).done(function(res){

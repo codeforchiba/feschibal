@@ -13,7 +13,15 @@
     if (qs) {
       qs.split('&').forEach(function (v) {
         var c = v.split('=');
-        params[c[0]] = c[1];
+        if(c[0].indexOf('%5B%5D') >= 0){
+          var key = c[0].replace('%5B%5D', '');
+          if(!params[key]){
+            params[key] = [];
+          }
+          params[key].push(c[1]);
+        } else {
+          params[c[0]] = c[1];
+        }
       });
     }
 
