@@ -55,7 +55,8 @@
       orientation: 'top',
       todayHighlight: true,
       autoclose: true,
-      clearBtn: true
+      clearBtn: true,
+      weekStart: 1
     };
 
     /** 期間(from) */
@@ -114,6 +115,7 @@
     });
   </script>
   <style scoped>
+
     .main .main-img h2 {
       position: absolute;
       top: 80px;
