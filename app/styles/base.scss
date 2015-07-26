@@ -90,61 +90,6 @@ m a i n
 }
 
 /* ==================================
-t a b
-================================== */
-.tab {
-  background: #D75247;
-  margin-bottom: 30px;
-
-  .tab-item {
-    float: left;
-    width: 33.1%;
-    border-right: #8B332C solid 1px;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-
-    a {
-      display: block;
-      color: #fff;
-      padding: 20px 0;
-      text-decoration: none;
-
-      p {
-        margin-bottom: 0;
-      }
-    }
-
-    a:hover, &.active a {
-      background: #BB463C;
-    }
-
-    &:last-child, &:nth-of-type(3n) {
-      border-right: none;
-    }
-  }
-
-  &:after {
-    content: ".";
-    display: block;
-    height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .tab{
-    margin-bottom:0px;
-
-    .tab-item{
-      font-size: 16px;
-    }
-  }
-}
-
-/* ==================================
 c o n t e n t
 ================================== */
 .content {

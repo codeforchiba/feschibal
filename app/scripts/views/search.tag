@@ -34,9 +34,24 @@
 
     <section class="result">
       <ul class="tab">
-        <li class={'tab-item': true, active: path==='list'}><a href="#search/list?{queryString}">一覧</a></li>
-        <li class={'tab-item': true, active: path==='map'}><a href="#search/map?{queryString}">地図</a></li>
-        <li class={'tab-item': true, active: path==='cal'}><a href="#search/cal?{queryString}">カレンダー</a></li>
+        <li class={'tab-item': true, active: path==='list'}>
+          <a href="#search/list?{queryString}">
+            <img src="images/search/icon01.svg">
+            <p>一覧</p>
+          </a>
+        </li>
+        <li class={'tab-item': true, active: path==='map'}>
+          <a href="#search/map?{queryString}">
+            <img src="images/search/icon02.svg">
+            <p>地図</p>
+          </a>
+        </li>
+        <li class={'tab-item': true, active: path==='cal'}>
+          <a href="#search/cal?{queryString}">
+            <img src="images/search/icon03.svg">
+            <p>カレンダー</p>
+          </a>
+        </li>
       </ul>
       <div>
         <search-list show={ path==='list' } request={request} ></search-list>
@@ -129,6 +144,7 @@
       position: relative;
     }
 
+    /** 検索フォーム */
     form {
       padding: 20px 20px 0px 20px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -169,6 +185,53 @@
     }
     form .btn:hover {
       color: #fff;
+    }
+
+    /** 検索タブ */
+    .tab {
+      background: #D75247;
+      margin-bottom: 30px;
+    }
+
+    .tab .tab-item {
+      float: left;
+      width: 33.1%;
+      border-right: #8B332C solid 1px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .tab .tab-item a {
+      display: block;
+      color: #fff;
+      padding: 20px 0;
+      text-decoration: none;
+    }
+
+    .tab .tab-item a img {
+      width: 100px;
+    }
+
+    .tab .tab-item a p {
+      margin-bottom: 0;
+    }
+
+    .tab .tab-item a:hover, .tab .tab-item.active a {
+      background: #BB463C;
+    }
+
+    .tab .tab-item:last-child, .tab .tab-item:nth-of-type(3n) {
+      border-right: none;
+    }
+
+    .tab:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
     }
 
     @media all and (min-width: 641px) {
@@ -224,6 +287,14 @@
 
       form .btn-area {
         margin-bottom: 0;
+      }
+
+      .tab{
+        margin-bottom:0px;
+      }
+
+      .tab .tab-item{
+        font-size: 16px;
       }
     }
   </style>
