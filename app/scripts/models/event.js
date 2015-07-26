@@ -62,6 +62,7 @@
    *  @param.pageNo {Number} 指定上限件数でのページ番号
    *  @param.fromDate {Date} 開始日付
    *  @param.toDate {Date} 終了日付
+   *  @param.cities {Array<String>} 地域コード一覧
    */
   Event.find = function (param) {
     return this.findAll().then(function (fesList) {
@@ -92,6 +93,16 @@
           var latLng = L.latLng([fes.location.lat, fes.location.long]);
           fes.distance = latLng.distanceTo(param.basePoint);
           if (fes.distance > param.distance) {
+            return false;
+          }
+        }
+
+        // 地域による絞り込み
+        if (param.cities && param.cities.length > 0) {
+          var isInclude = _.some(param.cities, function(cityCode){
+            return fes.location.addressCode.indexOf(cityCode) >= 0;
+          });
+          if (!isInclude) {
             return false;
           }
         }
