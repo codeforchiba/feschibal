@@ -3,13 +3,21 @@
     <li class="festival-list-date" each={ fes, i in opts.feslist } onclick={parent.onSelectFes}>
       <dl>
         <dt>
-          <p class="day">
+          <p class="day" if={fes.periods.length <= 2}>
             <span class="bgcolor" each={ period in fes.periods } >
               {moment(period.start).format('MM/DD')}
               <span class="small">{moment(period.start).format('dd')}</span>
             </span>
           </p>
-
+          <p class="day" if={fes.periods.length > 2}>
+            <span class="bgcolor" >
+              {moment(fes.getStartDate()).format('MM/DD')}
+              <span class="small">{moment(fes.getStartDate()).format('dd')}</span>
+              -
+              {moment(fes.getEndDate()).format('MM/DD')}
+              <span class="small">{moment(fes.getEndDate()).format('dd')}</span>
+            </span>
+          </p>
           <p class="title">{fes.name}</p>
         </dt>
         <dd>
