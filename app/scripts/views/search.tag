@@ -21,10 +21,7 @@
 
       <h4>地域を選択してください。</h4>
       <div class="form-group">
-        <select class="form-control">
-          <option >-</option>
-          <option each={ city, i in cities } onclick={onSelectCity}>{city.city}{city.address}</option>
-        </select>
+        <select class="form-control" id="cities"></select>
       </div>
 
       <div class="form-group btn-area">
@@ -75,11 +72,11 @@
     };
 
     /** 期間(from) */
-    $(this.fromDate).datepicker(datepickerParam);
+    this.$fromDate = $(this.fromDate).datepicker(datepickerParam);
     /** 期間(to) */
-    $(this.toDate).datepicker(datepickerParam);
-    /** 地域一覧 */
-    this.cities = [];
+    this.$toDate = $(this.toDate).datepicker(datepickerParam);
+    /**  */
+    this.$cities = $(this.cities);
     /** 検索リクエスト */
     this.request = riot.observable();
     /** 表示ページパス */
@@ -88,10 +85,13 @@
     this.queryString = null;
 
     // 地域一覧の取得
-    cfc.City.findAll().then(function(cities){
+    cfc.City.findAllWards().then(function(cities){
+      var options = [];
+      options.push($("<option value=''>-</option>"));
       _.each(cities, function(city){
-        self.cities.push(city);
+        options.push($("<option value='"+city.cityCode+"'>"+city.city+"</option>"));
       });
+      self.$cities.append(options);
     });
 
     /**
@@ -100,8 +100,9 @@
     onSubmitSearch(e){
       var fragment = riot.route.currentPath();
       var param = {
-        fromDate: $(this.fromDate).val().replace(/\//g, "-"),
-        toDate: $(this.toDate).val().replace(/\//g, "-")
+        fromDate: this.$fromDate.val().replace(/\//g, "-"),
+        toDate: this.$toDate.val().replace(/\//g, "-"),
+        cities: [this.$cities.val()]
       };
       fragment += "?" + $.param(param);
       riot.route(fragment);
@@ -121,10 +122,19 @@
     riot.route.on('search', function (param) {
       self.queryString = $.param(param);
       if (param.fromDate) {
-        $(self.fromDate).datepicker('update', new Date(param.fromDate))
+        self.$fromDate.datepicker('update', new Date(param.fromDate));
+      } else {
+        self.$fromDate.datepicker('clearDates');
       }
       if (param.toDate) {
-        $(self.toDate).datepicker('update', new Date(param.toDate))
+        self.$toDate.datepicker('update', new Date(param.toDate))
+      } else {
+        self.$toDate.datepicker('clearDates');
+      }
+      if (param.cities && param.cities.length > 0) {
+        self.$cities.val(param.cities[0]);
+      } else {
+        self.$cities.val("");
       }
       self.update();
     });
