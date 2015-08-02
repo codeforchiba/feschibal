@@ -67,8 +67,15 @@
     this.fesCount = {"a":"b"};
 
     // 今週の開始日付と終了日付
-    this.startDateOfWeek = moment().weekday(1).toDate();
-    this.endDateOfWeek = moment().weekday(7).toDate();
+    if(moment().weekday() === 0){
+      // 日曜日の場合
+      this.startDateOfWeek = moment().weekday(-6).toDate();
+      this.endDateOfWeek = moment().toDate();
+    } else {
+      // 日曜日以外の場合
+      this.startDateOfWeek = moment().weekday(1).toDate();
+      this.endDateOfWeek = moment().weekday(7).toDate();
+    }
 
     /**
      * 地域から探すボタン押下時
@@ -93,10 +100,20 @@
      * 今度の土日開催の祭り検索
      */
     doSearchThisWeekEnd(e){
-      var param = {
-        fromDate: moment().weekday(6).format("YYYY-MM-DD"),
-        toDate: moment().weekday(7).format("YYYY-MM-DD")
-      };
+      var param;
+      if(moment().weekday() === 0){
+        // 日曜日の場合
+        param = {
+          fromDate: moment().weekday(-1).format("YYYY-MM-DD"),
+          toDate: moment().format("YYYY-MM-DD")
+        };
+      } else {
+        // 日曜日以外の場合
+        param = {
+          fromDate: moment().weekday(6).format("YYYY-MM-DD"),
+          toDate: moment().weekday(7).format("YYYY-MM-DD")
+        };
+      }
       riot.route("search/list?" + $.param(param));
     }
 
