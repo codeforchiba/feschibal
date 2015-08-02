@@ -1,0 +1,1620 @@
+[
+  {
+    "id": "101",
+    "name": "大森小地区盆踊り大会",
+    "periods": [
+      {
+        "start": "2015-08-29T10:00:00.000Z",
+        "end": "2015-08-29T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-30T10:00:00.000Z",
+        "end": "2015-08-30T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "大森小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区大森町268",
+      "addressCode": "121010011",
+      "lat": "35.580215",
+      "long": "140.145172"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "大森小地区盆踊り大会実行委員会"
+  },
+  {
+    "id": "201",
+    "name": "瑞穂夏まつり",
+    "periods": [
+      {
+        "start": "2015-08-22T00:00:00.000Z",
+        "end": "2015-08-22T02:00:00.000Z"
+      },
+      {
+        "start": "2015-08-22T07:00:00.000Z",
+        "end": "2015-08-22T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "瑞穂小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区瑞穂1丁目2",
+      "addressCode": "121020028",
+      "lat": "35.66436111",
+      "long": "140.0691111"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ねぷた、山車、ステージでの踊り、キッズダンス、演奏など"
+      ],
+      "specialProgram": [
+        "子ども御輿行進（9:00～11:00）",
+        "ステージ・縁日（17:00～21:00）"
+      ]
+    },
+    "organizer": "瑞穂夏まつり実行委員会",
+    "sponcers": [
+      "瑞穂自治会",
+      "ガーデンプラザ新検見川自治会"
+    ]
+  },
+  {
+    "id": "205",
+    "name": "み春野ふるさと夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-22T06:00:00.000Z",
+        "end": "2015-08-22T13:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "宇那谷み春野公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区み春野1丁目11",
+      "addressCode": "121020033",
+      "lat": "35.692238",
+      "long": "140.13826"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "others": [
+        "前夜祭"
+      ],
+      "specialProgram": [
+        "花火大会"
+      ]
+    },
+    "organizer": "み春野自治会",
+    "url": "http://blogs.yahoo.co.jp/miharuno_tsubasanooka"
+  },
+  {
+    "id": "207",
+    "name": "柏井ふるさと祭り",
+    "periods": [
+      {
+        "start": "2015-07-18T08:00:00.000Z",
+        "end": "2015-07-18T12:30:00.000Z"
+      },
+      {
+        "start": "2015-07-19T08:00:00.000Z",
+        "end": "2015-07-19T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "柏井小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区柏井4丁目48-1",
+      "addressCode": "121020006",
+      "lat": "35.708488",
+      "long": "140.106522"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "specialProgram": [
+        "両日とも午後8時より打ち上げ花火100発（3寸玉）"
+      ]
+    },
+    "organizer": "柏井ふるさと祭り実行委員会"
+  },
+  {
+    "id": "209",
+    "name": "夏祭り",
+    "periods": [
+      {
+        "start": "2015-07-18T01:00:00.000Z",
+        "end": "2015-07-18T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "芦太公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区柏井1-20",
+      "addressCode": "121020006",
+      "lat": "35.695487",
+      "long": "140.096042"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "野菜の即売"
+      ],
+      "specialProgram": [
+        "一條貫太、歌唱（7/18 18:00より）"
+      ]
+    },
+    "organizer": "柏井北自治会",
+    "remarks": "雨天順延",
+    "sponcers": [
+      "八千代台パークハイツ自治会"
+    ]
+  },
+  {
+    "id": "210",
+    "name": "門原地区盆踊り大会",
+    "periods": [
+      {
+        "start": "2015-07-25T10:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T10:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "長作小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町1273",
+      "addressCode": "121020018",
+      "lat": "35.68515",
+      "long": "140.074097"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "長作町内会第2区門原"
+  },
+  {
+    "id": "211",
+    "name": "瑞穂夏まつり",
+    "periods": [
+      {
+        "start": "2015-08-22T08:00:00.000Z",
+        "end": "2015-08-22T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "瑞穂小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区瑞穂1丁目2",
+      "addressCode": "121020028",
+      "lat": "35.663994",
+      "long": "140.068832"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "子供みこし行進"
+      ],
+      "specialProgram": [
+        "子供みこし行進、各種ステージ上での催し物"
+      ]
+    },
+    "organizer": "ガーデンプラザ新検見川自治会",
+    "url": "http://gardenplaza.web.fc2.com",
+    "sponcers": [
+      "瑞穂自治会"
+    ]
+  },
+  {
+    "id": "212",
+    "name": "緑丘町会町民ふれあい祭り",
+    "periods": [
+      {
+        "start": "2015-06-27T07:00:00.000Z",
+        "end": "2015-06-27T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "長作みどり公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町1623－1",
+      "addressCode": "121020018",
+      "lat": "35.685061",
+      "long": "140.082075"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "津軽三味線"
+      ],
+      "specialProgram": [
+        "緑丘町営歌クラブ・子どもの参加あり",
+        "津軽三味線奏者"
+      ]
+    },
+    "organizer": "長作台緑丘町会"
+  },
+  {
+    "id": "214",
+    "name": "第42回さつきが丘夏まつり",
+    "periods": [
+      {
+        "start": "2015-07-31T09:00:00.000Z",
+        "end": "2015-07-31T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-01T08:00:00.000Z",
+        "end": "2015-08-01T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-02T08:00:00.000Z",
+        "end": "2015-08-02T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "さつきが丘西公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区さつきが丘2丁目31",
+      "addressCode": "121020012",
+      "lat": "35.667236",
+      "long": "140.092712"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "お楽しみ抽選会"
+      ],
+      "specialProgram": [
+        "お楽しみ抽選会(8/1)",
+        "前夜祭（さつきが丘名店街協賛。7/31）"
+      ]
+    },
+    "organizer": "さつきが丘一丁目町内会（4団体）",
+    "remarks": "7/31は前夜祭（カラオケ）",
+    "sponcers": [
+      "さつきが丘二丁目町内会（6団体）",
+      "さつきが丘名店街"
+    ]
+  },
+  {
+    "id": "223",
+    "name": "蓮まつり",
+    "periods": [
+      {
+        "start": "2015-07-18T18:00:00.000Z",
+        "end": "2015-07-19T00:00:00.000Z"
+      },
+      {
+        "start": "2015-07-19T22:00:00.000Z",
+        "end": "2015-07-20T00:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "蓮まつり",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区畑町1051",
+      "addressCode": "121020021",
+      "lat": "35.663177",
+      "long": "140.074387"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "旧東大植物研究所の蓮見会"
+      ],
+      "specialProgram": [
+        "子供みこし",
+        "盆おどり"
+      ]
+    },
+    "organizer": "花園地区張娜自治会連合会"
+  },
+  {
+    "id": "224",
+    "name": "貝塚町会こども夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-22T03:00:00.000Z",
+        "end": "2015-08-22T09:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "協進建設株式会社駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町355-4",
+      "addressCode": "121020018",
+      "lat": "35.677776",
+      "long": "140.069901"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "長作町貝塚町会",
+    "url": "http://kaiduka-choukai.jimdo.com/"
+  },
+  {
+    "id": "225",
+    "name": "千種台ハイツ自治会夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-01T09:00:00.000Z",
+        "end": "2015-08-01T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千種第2公園（パンダ公園）",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区千草町337-5",
+      "addressCode": "121020016",
+      "lat": "35.682838",
+      "long": "140.11554"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ビンゴゲーム"
+      ],
+      "specialProgram": [
+        "太鼓",
+        "ビンゴゲーム"
+      ]
+    },
+    "organizer": "千種台ハイツ自治会"
+  },
+  {
+    "id": "301",
+    "name": "第29回「マイタウン夏祭り」",
+    "periods": [
+      {
+        "start": "2015-07-25T06:00:00.000Z",
+        "end": "2015-07-25T12:15:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "小中台西第２公園（わんぱく公園）",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区小中台町473-1",
+      "addressCode": "121030013",
+      "lat": "35.650475",
+      "long": "140.089324"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "others": [
+        "チャリティーバザー"
+      ],
+      "specialProgram": [
+        "子供みこし、子供フラダンス、子供ヒップホップ",
+        "すいか割り"
+      ]
+    },
+    "organizer": "稲毛スカイタウン自治会",
+    "url": "http://i-skt-jitikai.com"
+  },
+  {
+    "id": "403",
+    "name": "盆おどり大会",
+    "periods": [
+      {
+        "start": "2015-07-25T10:00:00.000Z",
+        "end": "2015-07-25T12:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "大宮町下長集会場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区大宮町948",
+      "addressCode": "121040009",
+      "lat": "35.600979",
+      "long": "140.162933"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "大宮町下長自治会"
+  },
+  {
+    "id": "404",
+    "name": "桜木第2県住夏祭り",
+    "periods": [
+      {
+        "start": "2015-07-19T08:00:00.000Z",
+        "end": "2015-07-19T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "桜木第２県住公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区桜木2-22",
+      "addressCode": "121040024",
+      "lat": "35.622096",
+      "long": "140.163003"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "ソーランおどり"
+      ]
+    },
+    "organizer": "桜木第2県住自治会"
+  },
+  {
+    "id": "405",
+    "name": "コスモスまつり",
+    "periods": [
+      {
+        "start": "2015-10-10T00:00:00.000Z",
+        "end": "2015-10-10T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-11T00:00:00.000Z",
+        "end": "2015-10-11T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-12T00:00:00.000Z",
+        "end": "2015-10-12T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "富田都市農業交流センター周辺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区富田町711-1",
+      "addressCode": "121040041",
+      "lat": "35.605294",
+      "long": "140.245387"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "地元野菜直売"
+      ],
+      "specialProgram": [
+        "地元野菜直売",
+        "地元農産物加工食品直売"
+      ]
+    },
+    "organizer": "コスモスまつり実行委員会"
+  },
+  {
+    "id": "406",
+    "name": "南町・ふれあい祭",
+    "periods": [
+      {
+        "start": "2015-11-17T15:00:00.000Z",
+        "end": "2015-11-17T15:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千城台南小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台南1丁目19-1",
+      "addressCode": "121040037",
+      "lat": "35.61836111",
+      "long": "140.191"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "餅つき・ゲーム"
+      ]
+    },
+    "organizer": "",
+    "remarks": "時間未定"
+  },
+  {
+    "id": "407",
+    "name": "千城台東町ふれあい祭",
+    "periods": [
+      {
+        "start": "2015-10-24T01:00:00.000Z",
+        "end": "2015-10-24T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-25T01:00:00.000Z",
+        "end": "2015-10-25T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千城台東町自治会館及び第10公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台東4丁目33-3",
+      "addressCode": "121040036",
+      "lat": "35.619831",
+      "long": "140.19928"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "吹き矢、シャボン玉、工作"
+      ]
+    },
+    "organizer": "千城台東町自治会"
+  },
+  {
+    "id": "408",
+    "name": "夏まつり団地祭",
+    "periods": [
+      {
+        "start": "2015-07-25T10:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T01:00:00.000Z",
+        "end": "2015-07-26T02:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T10:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千城台東県営住宅",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台東4-1",
+      "addressCode": "121040036",
+      "lat": "35.614901",
+      "long": "140.19347"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "",
+    "remarks": "7/26 10:00～山車"
+  },
+  {
+    "id": "410",
+    "name": "大宮台　夏まつり",
+    "periods": [
+      {
+        "start": "2015-07-24T09:00:00.000Z",
+        "end": "2015-07-24T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T09:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "大宮小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区大宮台7丁目8-1",
+      "addressCode": "121040008",
+      "lat": "35.596626",
+      "long": "140.181976"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "花車の運行"
+      ],
+      "specialProgram": [
+        "みこしパレード"
+      ]
+    },
+    "organizer": "大宮台自治会"
+  },
+  {
+    "id": "411",
+    "name": "いずみ台ローズタウン夏祭り・盆踊り",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T09:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "多部田第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区多部田町754-50",
+      "addressCode": "121040032",
+      "lat": "35.598066",
+      "long": "140.194776"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "いずみ台ローズタウン自治会",
+    "remarks": "7/25 9:00～子供みこし"
+  },
+  {
+    "id": "413",
+    "name": "第2回若松町親和自治会夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-01T08:00:00.000Z",
+        "end": "2015-08-01T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "若松公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町361-54",
+      "addressCode": "121040052",
+      "lat": "35.640019",
+      "long": "140.165033"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "じゃんけん大会"
+      ],
+      "specialProgram": [
+        "太鼓体験会、じゃんけん大会",
+        "ポスター表彰式"
+      ]
+    },
+    "organizer": "若松町親和自治会"
+  },
+  {
+    "id": "414",
+    "name": "若松町南部自治会 納涼盆おどり大会",
+    "periods": [
+      {
+        "start": "2015-07-18T09:00:00.000Z",
+        "end": "2015-07-18T11:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "若松中学校駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町2106－2",
+      "addressCode": "121040052",
+      "lat": "35.636227",
+      "long": "140.168655"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "若松町南部自治会"
+  },
+  {
+    "id": "415",
+    "name": "一丁目・二丁目合同夏祭り「納涼の夕べ」",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T08:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "若松台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松台2丁目25－1",
+      "addressCode": "121040051",
+      "lat": "35.65027778",
+      "long": "140.1718333"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "若松台一丁目自治会",
+    "sponcers": [
+      "若松台二丁目自治会"
+    ]
+  },
+  {
+    "id": "417",
+    "name": "納涼大会",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T11:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T00:00:00.000Z",
+        "end": "2015-07-26T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "小倉台公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区小倉台4丁目7",
+      "addressCode": "121040010",
+      "lat": "35.629307",
+      "long": "140.170792"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "others": [
+        "花火大会（祭り１日目のみ）"
+      ]
+    },
+    "organizer": "小倉小学校地区会長会",
+    "sponcers": [
+      "小倉商店街"
+    ]
+  },
+  {
+    "id": "420",
+    "name": "みつわ台5丁目連合 納涼盆踊り大会",
+    "periods": [
+      {
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T11:30:00.000Z"
+      },
+      {
+        "start": "2015-07-26T09:00:00.000Z",
+        "end": "2015-07-26T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "源弁天公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台5丁目47",
+      "addressCode": "121040048",
+      "lat": "35.646593",
+      "long": "140.140033"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "specialProgram": [
+        "抽選会、ビンゴ大会",
+        "花火大会"
+      ]
+    },
+    "organizer": "5丁目連合会（6自治会合同）",
+    "remarks": "雨天は7/27に順延"
+  },
+  {
+    "id": "423",
+    "name": "みつわ台夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-08T05:00:00.000Z",
+        "end": "2015-08-08T11:00:00.000Z"
+      },
+      {
+        "start": "2015-08-09T05:00:00.000Z",
+        "end": "2015-08-09T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "みつわ台3丁目第二公園野球場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台3丁目3-1",
+      "addressCode": "121040048",
+      "lat": "35.640957",
+      "long": "140.136292"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "みつわ台2丁目中央自治会他12団体",
+    "remarks": "店は21:00まで"
+  },
+  {
+    "id": "424",
+    "name": "みつわ台桜まつり",
+    "periods": [
+      {
+        "start": "2016-04-02T05:00:00.000Z",
+        "end": "2016-04-02T12:00:00.000Z"
+      },
+      {
+        "start": "2016-04-03T05:00:00.000Z",
+        "end": "2016-04-03T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "みつわ台3丁目桜通り",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台3丁目",
+      "addressCode": "121040048",
+      "lat": "35.63904",
+      "long": "140.138155"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ゆるキャラと撮影会、猿回し"
+      ]
+    },
+    "organizer": "みつわ台2丁目中央自治会他12団体",
+    "sponcers": [
+      "みつわ台3丁目自治会",
+      "みつわ台3-13団地管理組合"
+    ]
+  },
+  {
+    "id": "425",
+    "name": "都賀の台夏祭盆踊り大会",
+    "periods": [
+      {
+        "start": "2015-08-22T05:30:00.000Z",
+        "end": "2015-08-22T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "都賀の台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区都賀の台2丁目13－1",
+      "addressCode": "121040039",
+      "lat": "35.643883",
+      "long": "140.14183"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "子供神輿町内パレード"
+      ],
+      "specialProgram": [
+        "盆踊り（8/22 18時～20時）"
+      ]
+    },
+    "organizer": "都賀の台自治会"
+  },
+  {
+    "id": "426",
+    "name": "東寺山エステ・スクエア親睦夏祭り",
+    "periods": [
+      {
+        "start": "2015-07-25T08:00:00.000Z",
+        "end": "2015-07-25T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "東寺山第３公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区東寺山町423-1",
+      "addressCode": "121040047",
+      "lat": "35.629178",
+      "long": "140.127562"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "会長バンドの演奏"
+      ],
+      "specialProgram": [
+        "日本一うまい生ビール、千葉市一盛りのいい焼きそば",
+        "秘伝のタレ焼トリ"
+      ]
+    },
+    "organizer": "東寺山エステ・スクエア自治会"
+  },
+  {
+    "id": "428",
+    "name": "桜木小地区連合会盆踊り",
+    "periods": [
+      {
+        "start": "2015-08-08T08:30:00.000Z",
+        "end": "2015-08-08T11:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "桜木小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区桜木3丁目26－1",
+      "addressCode": "121040024",
+      "lat": "35.621132",
+      "long": "140.159134"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "小学生の踊り"
+      ],
+      "specialProgram": [
+        "小学生のよさこいソーラン",
+        "民踊"
+      ]
+    },
+    "organizer": "桜木小地区町内自治会連合会",
+    "remarks": "雨天は8/9に順延",
+    "sponcers": [
+      "桜木小地区スポーツ振興会",
+      "桜木小地区スポーツ連絡協議会"
+    ]
+  },
+  {
+    "id": "432",
+    "name": "桜木連合盆踊",
+    "periods": [
+      {
+        "start": "2015-08-08T08:30:00.000Z",
+        "end": "2015-08-08T11:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "桜木小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区桜木3丁目26－1",
+      "addressCode": "121040024",
+      "lat": "35.621132",
+      "long": "140.159134"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "子供によるヨサコイソウラン 17:30～18:00"
+      ]
+    },
+    "organizer": "桜木町内自治会連合会"
+  },
+  {
+    "id": "433",
+    "name": "はづき祭",
+    "periods": [
+      {
+        "start": "2015-08-01T01:00:00.000Z",
+        "end": "2015-08-01T03:00:00.000Z"
+      },
+      {
+        "start": "2015-08-01T09:00:00.000Z",
+        "end": "2015-08-01T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-02T09:00:00.000Z",
+        "end": "2015-08-02T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "加曽利公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区加曽利町1294番1他",
+      "addressCode": "121040015",
+      "lat": "35.62439",
+      "long": "140.164795"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "町内を子供みこし 8月1日10:00～12:00"
+      ]
+    },
+    "organizer": "若葉はづき会"
+  },
+  {
+    "id": "501",
+    "name": "2015とけサマーフェスティバル",
+    "periods": [
+      {
+        "start": "2015-08-22T00:00:00.000Z",
+        "end": "2015-08-22T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-23T00:00:00.000Z",
+        "end": "2015-08-23T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "創造の杜公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区あすみが丘5丁目41",
+      "addressCode": "121050001",
+      "lat": "35.524929",
+      "long": "140.257233"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true
+    },
+    "organizer": "土気商工会議所青年部",
+    "sponcers": [
+      "協賛：土気地区各自治会"
+    ]
+  },
+  {
+    "id": "502",
+    "name": "越智町夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-14T09:00:00.000Z",
+        "end": "2015-08-14T12:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "野馬の里 向かい空地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区越智町541",
+      "addressCode": "121050009",
+      "lat": "35.530224",
+      "long": "140.244339"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "specialProgram": [
+        "打ち上げ花火"
+      ]
+    },
+    "organizer": "越智町内会"
+  },
+  {
+    "id": "503",
+    "name": "古市場盆踊大会",
+    "periods": [
+      {
+        "start": "2015-08-01T09:00:00.000Z",
+        "end": "2015-08-01T12:30:00.000Z"
+      },
+      {
+        "start": "2015-08-02T09:00:00.000Z",
+        "end": "2015-08-02T12:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "古市場公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区古市場町474-277",
+      "addressCode": "121050030",
+      "lat": "35.549124",
+      "long": "140.147081"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "抽選会"
+      ]
+    },
+    "organizer": "古市場町内会",
+    "sponcers": [
+      "古市場みどり自治会",
+      "古市場第一・第二・第三自治会"
+    ]
+  },
+  {
+    "id": "505",
+    "name": "誉田町二丁目秋季祭礼",
+    "periods": [
+      {
+        "start": "2015-10-11T00:00:00.000Z",
+        "end": "2015-10-11T11:00:00.000Z"
+      },
+      {
+        "start": "2015-10-12T00:00:00.000Z",
+        "end": "2015-10-12T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "八幡神社～近隣周辺道路",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区誉田町2丁目21",
+      "addressCode": "121050032",
+      "lat": "35.549347",
+      "long": "140.211014"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "お神輿渡御、山車引廻し、お囃子、カラオケ/演芸大会、くじ引き大会、文化展示会"
+      ],
+      "specialProgram": [
+        "お囃子山車巡行、カラオケ演芸大会（両日）",
+        "大人・子ども御輿、山車巡行（10/12）"
+      ]
+    },
+    "organizer": "誉田町二丁目町内会",
+    "sponcers": [
+      "八幡神社氏子総代会"
+    ]
+  },
+  {
+    "id": "508",
+    "name": "オータムフェスティバル",
+    "periods": [
+      {
+        "start": "2015-11-03T00:00:00.000Z",
+        "end": "2015-11-03T07:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "のりくら公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野4丁目31",
+      "addressCode": "121050011",
+      "lat": "35.557381",
+      "long": "140.180361"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "おゆみ野4丁目自治会"
+  },
+  {
+    "id": "509",
+    "name": "誉田団地自治会夏祭り",
+    "periods": [
+      {
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "大膳野公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区大膳野町4-368",
+      "addressCode": "121050021",
+      "lat": "35.542731",
+      "long": "140.1999"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "誉田団地自治会"
+  },
+  {
+    "id": "511",
+    "name": "おゆみ野夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-01T07:00:00.000Z",
+        "end": "2015-08-01T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "泉谷小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野中央4丁目3",
+      "addressCode": "121050013",
+      "lat": "35.554535",
+      "long": "140.174215"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "ビンゴ大会"
+      ]
+    },
+    "organizer": "おゆみ野地区連協"
+  },
+  {
+    "id": "512",
+    "name": "さくらさくさくウォークラリー2015",
+    "periods": [
+      {
+        "start": "2015-04-05T00:30:00.000Z",
+        "end": "2015-04-05T04:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "鎌取コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野3丁目15-2",
+      "addressCode": "121050011",
+      "lat": "35.560043",
+      "long": "140.175792"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "ウォークラリー"
+      ]
+    },
+    "organizer": "さくらさくさくウォークラリー実行委員会"
+  },
+  {
+    "id": "517",
+    "name": "あきのみち公園みなみまつり",
+    "periods": [
+      {
+        "start": "2015-07-25T07:00:00.000Z",
+        "end": "2015-07-25T10:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "あきのみち公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野南6丁目1",
+      "addressCode": "121050014",
+      "lat": "35.545361",
+      "long": "140.179679"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true
+    },
+    "organizer": "あきのみち公園みなみまつり実行委員会",
+    "remarks": "雨天は7/26に順延"
+  },
+  {
+    "id": "217",
+    "name": "ルネ稲毛夏祭り",
+    "periods": [
+      {
+        "start": "2015-10-04T02:00:00.000Z",
+        "end": "2015-10-04T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "宮野木西公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区宮野木台1丁目7",
+      "addressCode": "121020030",
+      "lat": "35.654921",
+      "long": "140.092073"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": ""
+  },
+  {
+    "id": "504",
+    "name": "鎌取町盆踊り大会",
+    "periods": [
+      {
+        "start": "2015-08-08T10:00:00.000Z",
+        "end": "2015-08-08T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-09T10:00:00.000Z",
+        "end": "2015-08-09T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "鎌取第１公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野2丁目1",
+      "addressCode": "121050011",
+      "lat": "35.56644",
+      "long": "140.174925"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": ""
+  }
+]

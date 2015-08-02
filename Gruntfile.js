@@ -10,11 +10,20 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  //
+  grunt.loadTasks('tasks');
+
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    data: 'data'
   };
+
+  // load env file
+  var yaml = require("js-yaml");
+  var fs = require("fs");
+  var env = yaml.load(fs.readFileSync("env.yml"));
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -25,21 +34,25 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        files: ['<%= config.app %>/scripts/**/*.js'],
+        tasks: ['replace:dev', 'jshint'],
         options: {
           livereload: true
         }
+      },
+      riot: {
+        files: ['<%= config.app %>/scripts/**/*.tag'],
+        tasks: ['riot']
       },
       gruntfile: {
         files: ['Gruntfile.js']
       },
       sass: {
-        files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+        files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
         tasks: ['sass:server', 'autoprefixer']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
+        files: ['<%= config.app %>/styles/**/*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
       livereload: {
@@ -47,9 +60,10 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*'
+          '<%= config.app %>/**/*.html',
+          '.tmp/styles/**/*.css',
+          '<%= config.app %>/images/**/*',
+          '.tmp/scripts/**/*.js'
         ]
       }
     },
@@ -103,7 +117,6 @@ module.exports = function (grunt) {
         reporter: require('jshint-stylish')
       },
       all: [
-        'Gruntfile.js',
         '<%= config.app %>/scripts/{,*/}*.js',
         '!<%= config.app %>/scripts/vendor/*'
       ]
@@ -118,7 +131,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -127,7 +140,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
+          src: ['app.scss'],
           dest: '.tmp/styles',
           ext: '.css'
         }]
@@ -181,10 +194,16 @@ module.exports = function (grunt) {
           '<%= config.dist %>',
           '<%= config.dist %>/images',
           '<%= config.dist %>/styles'
-        ]
+        ],
+        patterns: {
+          js: [
+            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
+          ]
+        }
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      css: ['<%= config.dist %>/styles/{,*/}*.css'],
+      js: '<%= config.dist %>/scripts/*.js'
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -261,21 +280,34 @@ module.exports = function (grunt) {
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= config.app %>',
-          dest: '<%= config.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
-            '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
-          ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
-        }]
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= config.app %>',
+            dest: '<%= config.dist %>',
+            src: [
+              '*.{ico,png,txt}',
+              'images/{,*/}*.webp',
+              '{,*/}*.html',
+              'styles/fonts/{,*/}*.*',
+              'data/{,*/}*.*'
+            ]
+          }, {
+            src: 'node_modules/apache-server-configs/dist/.htaccess',
+            dest: '<%= config.dist %>/.htaccess'
+          }, {
+            expand: true,
+            cwd: 'deploy/gh-pages',
+            src: ['circle.yml', 'CNAME', 'sitemap.xml'],
+            dest: '<%= config.dist %>/'
+          }, {
+            expand: true,
+            cwd: 'data/json',
+            src: ['**/*.json'],
+            dest: '<%= config.dist %>/data'
+          }
+        ]
       },
       styles: {
         expand: true,
@@ -290,17 +322,176 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'sass:server',
-        'copy:styles'
+        'copy:styles',
+        'riot'
       ],
       dist: [
         'sass',
         'copy:styles',
         'imagemin',
-        'svgmin'
+        'svgmin',
+        'riot'
       ]
+    },
+
+    riot: {
+      options:{
+      },
+      dist: {
+        expand: true,
+        cwd: '<%= config.app %>/scripts',
+        src: '**/*.tag',
+        dest: '.tmp/scripts',
+        ext: '.js'
+      }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: '**/*'
+    },
+
+    'manipulate-csv': {
+      options: {
+        '12chiba': {
+          encoding: 'shift_jis',
+          filter: {
+            5: "0",
+            6: "0",
+            9: "千葉市"
+          },
+          unique: true,
+          removeColumn: [ 0, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+          from: ['都道府県CD', '市区町村CD', '町域CD', '都道府県', '市区町村', '町域'],
+          to: ['stateCode', 'cityCode', 'addressCode', 'state', 'city', 'address']
+        },
+        kouen_1: {
+          encoding: 'shift_jis',
+          filter: {
+            0: "稲毛"
+          },
+          unique: true,
+          removeColumn: [ 2, 3, 4, 9, 10, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29],
+          from: [
+            '施設、場所、イベントの名称', '施設、場所、イベントの名称（読み）', '経度（世界測地系）', '緯度（世界測地系）',
+            '郵便番号', '住所', '電話番号', 'FAX番号', 'アクセス', 'ホームページURL（PC）'
+          ],
+          to: [
+            'name', 'kanaName', 'longitude', 'latitude',
+            'postalCode', 'address', 'phone', 'fax', 'directions', 'url'
+          ]
+        },
+        chiba_festival: {
+          encoding: 'shift_jis',
+          removeColumn: [ 1, 3, 14, 20, 28, 31, 32, 33, 34, 39],
+          from: [
+            'No', '祭りの名称', '開催日１', '開始時間1', '終了時間1', '開催日２', '開始時間2', '終了時間2',
+            '開催日３', '開始時間3', '終了時間3', '備考', '会場名称',
+            '会場住所', '会場住所コード', '会場緯度', '会場経度',
+            '<踊り>', '<歌唱>', '<太鼓>', '<演奏>', '<出店・屋台>', '<花火>', '<その他>',
+            '目玉イベント1', '目玉イベント2', '主催団体1', '主催団体2', '主催団体3'
+          ],
+          to: [
+            'id', 'name', 'date1', 'startTime1', 'endTime1', 'date2', 'startTime2', 'endTime2',
+            'date3', 'startTime3', 'endTime3', 'remarks', 'location_name',
+            'location_address', 'location_code', 'location_lat', 'location_long',
+            'features_dancing', 'features_singing', 'features_drum', 'features_musicalPerformance',
+            'features_foodTruck', 'features_fireworks', 'features_others',
+            'specialProgram1', 'specialProgram2', 'organizer', 'sponcer1', 'sponcer2'
+          ]
+        }
+      },
+      files: {
+        expand: true,
+        cwd: '<%= config.data %>/csv/original/',
+        src: '*.csv',
+        filter: 'isFile',
+        dest: '<%= config.data %>/csv/processed',
+        ext: '.csv'
+      }
+    },
+
+    'map-json': {
+      options: {
+        chiba_festival: true
+      },
+      files: {
+        expand: true,
+        cwd: '<%= config.data %>/json/generated/',
+        src: '*.json',
+        filter: 'isFile',
+        dest: '<%= config.data %>/json/mapped',
+        ext: '.json'
+      }
+    },
+
+    convert: {
+      options: {
+        explicitArray: false,
+      },
+      csv2json: {
+        expand: true,
+        cwd: '<%= config.data %>/csv/processed/',
+        src: '*.csv',
+        filter: 'isFile',
+        dest: '<%= config.data %>/json/generated/',
+        ext: '.json'
+      }
+    },
+
+    replace: {
+      dev: {
+        options: {
+          patterns: [
+            {
+              json: env.dev
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: false,
+            src: ['.tmp/scripts/**/*.js'],
+            dest: '.'
+          },
+          {
+            expand: true,
+            flatten: false,
+            cwd: '<%= config.app %>/scripts',
+            src: ['**/*.js', '!vendor/**/*.*'],
+            dest: '.tmp/scripts'
+          }
+        ]
+      },
+      prod: {
+        options: {
+          patterns: [
+            {
+              json: env.prod
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: false,
+            src: ['.tmp/scripts/**/*.js'],
+            dest: '.'
+          },
+          {
+            expand: true,
+            flatten: false,
+            cwd: '<%= config.app %>/scripts',
+            src: ['**/*.js', '!vendor/**/*.*'],
+            dest: '.tmp/scripts'
+          }
+        ]
+      }
     }
   });
-
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
@@ -313,6 +504,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
+      'replace:dev',
       'autoprefixer',
       'connect:livereload',
       'watch'
@@ -323,6 +515,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
+    'replace:prod',
     'autoprefixer',
     'concat',
     'cssmin',
@@ -330,7 +523,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [

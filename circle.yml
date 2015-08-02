@@ -1,0 +1,26 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  node:
+    version: 0.10.34
+
+test:
+  override:
+    - grunt --version
+
+deployment:
+  publish_gh_pages:
+    branch: master
+    commands:
+      - git config --global user.name "CircleCI"
+      - git config --global user.email "circleci@code4chiba.org"
+      - grunt build
+
+general:
+  branches:
+    ignore:
+      - develop
+      - /feature\/.*/
+      - /hotfix\/.*/
+    only:
+      - master

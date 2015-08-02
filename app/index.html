@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <script type="text/javascript">
+      if (navigator.userAgent.indexOf('iPad') != -1) {
+        document.write('<meta content="width=1200" name="viewport">');
+      }else {
+        document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />');
+      }
+    </script>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>ちば自転車マップ</title>
+    <meta name="author" content="Code for Chiba">
+    <meta name="keywords" content="お祭り フェスティバル Matsuri Festival 千葉市" />
+    <meta name="description" content="千葉市で、長い間、親しまれているお祭りについて、お知らせする無料サービスです。いつ、どこで、どんなお祭りが行われるのか、ひと目でわかるように情報をまとめました。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="千葉市お祭りデータセンター" />
+    <meta property="og:url" content="http://festival.code4chiba.org/" />
+    <meta property="og:image" content="/images/facebook.jpg" />
+    <meta property="og:site_name" content="千葉市お祭りデータセンター" />
+    <meta property="og:description" content="千葉市で、長い間、親しまれているお祭りについて、お知らせする無料サービスです。いつ、どこで、どんなお祭りが行われるのか、ひと目でわかるように情報をまとめました。" />
+    <meta property="fb:admins" content="" />
+    <title>千葉市お祭りデータセンター </title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -16,345 +30,1489 @@
     <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
     <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
     <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Merriweather' type='text/css'>
     <!-- build:css(app) styles/vendor.css -->
-    <link rel="stylesheet" href="scripts/vendor/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css">
+    <link rel="stylesheet" href="styles/vendor/leaflet.label.css"/>
+    <link rel="stylesheet" href="styles/vendor/style.min.css"/>
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:css(.tmp) styles/app.css -->
+    <link rel="stylesheet" href="styles/app.css">
     <!-- endbuild -->
 
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
-    <link rel="icon" sizes="196x196" href="images/favicon-196.png">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/iphone.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/iphone.png">
+    <link rel="icon" sizes="196x196" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <div class="navbar-icon-container">
-            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
-            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
-          </div>
-          <a class="navbar-brand" href="#">ちば自転車マップ</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;情報</a></li>
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="legend-btn"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;凡例</a></li>
-            <!--
-            <li class="dropdown">
-                <a class="dropdown-toggle" id="downloadDrop" href="#" role="button" data-toggle="dropdown"><i class="fa fa-cloud-download white"></i>&nbsp;&nbsp;Download <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="data/boroughs.geojson" download="boroughs.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;Boroughs</a></li>
-                  <li><a href="data/subways.geojson" download="subways.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;Subway Lines</a></li>
-                  <li><a href="data/DOITT_THEATER_01_13SEPT2010.geojson" download="theaters.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;Theaters</a></li>
-                  <li><a href="data/DOITT_MUSEUM_01_13SEPT2010.geojson" download="museums.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;Museums</a></li>
-                </ul>
-            </li>
-        -->
-            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;POI List</a></li>
-          </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group has-feedback">
-                <input id="searchbox" type="text" placeholder="Search" class="form-control">
-                <span id="searchicon" class="fa fa-search form-control-feedback"></span>
-            </div>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
-    <div id="container">
-      <div id="sidebar">
-        <div class="sidebar-wrapper">
-          <div class="panel panel-default" id="features">
-            <div class="panel-heading">
-              <h3 class="panel-title">Points of Interest
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-xs-8 col-md-8">
-                  <input type="text" class="form-control search" placeholder="Filter" />
-                </div>
-                <div class="col-xs-4 col-md-4">
-                  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
-                </div>
-              </div>
-            </div>
-            <div class="sidebar-table">
-              <table class="table table-hover" id="feature-list">
-                <thead class="hidden">
-                  <tr>
-                    <th>Icon</th>
-                  <tr>
-                  <tr>
-                    <th>Name</th>
-                  <tr>
-                  <tr>
-                    <th>Chevron</th>
-                  <tr>
-                </thead>
-                <tbody class="list"></tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="map"></div>
-    </div>
-    <div id="loading">
-      <div class="loading-indicator">
-        <div class="progress progress-striped active">
-          <div class="progress-bar progress-bar-info progress-bar-full"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">千葉市自転車走りやすさマップ</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs" id="aboutTabs">
-              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;このプロジェクトについて</a></li>
-              <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;免責事項</a></li>
-              <!--
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>&nbsp;Metadata <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#boroughs-tab" data-toggle="tab">Boroughs</a></li>
-                  <li><a href="#subway-lines-tab" data-toggle="tab">Subway Lines</a></li>
-                  <li><a href="#theaters-tab" data-toggle="tab">Theaters</a></li>
-                  <li><a href="#museums-tab" data-toggle="tab">Museums</a></li>
-                </ul>
-              </li>
-          -->
-            </ul>
-            <div class="tab-content" id="aboutTabsContent">
-              <div class="tab-pane fade active in" id="about">
-                <p>この地図は千葉市が作成している<a href="http://www.city.chiba.jp/kensetsu/doboku/bicycle/soukoukankyouseibi.html" target="_blank">千葉市走りやすさマップ</a>をオンラインに移植をしたものです。
-                    紙のデータを<a href="http://umap.openstreetmap.fr/ja/" target="_blank">uMap</a>を使ってオンライン上でデータ化をして、
-                    そのデータを元に<a href="https://github.com/bmcbride/bootleaf" target="_blank">BootLeaf</a>をベースにオンライン地図にしました。
-                    このオンライン地図は、オープン！千葉の活動及び
-                    <a href="http://opendataday.org/index_ja.html" target="_blank">International Open Data Day 2015</a>の活動にて生まれました。
-                    全てのデータ及びプログラムは<a href="https://github.com/smellman/chiba_bicyclemap" target="_blank">Github</a>にて公開されています。
-                </p>
-                <div class="panel panel-primary">
-                  <div class="panel-heading">利用データ</div>
-                  <ul class="list-group">
-                    <li class="list-group-item">背景地図は<a href="http://www.gsi.go.jp/" target="_blank">国土地理院</a>の<a href="http://portal.cyberjapan.jp/help/development/ichiran.html" target="_blank">地理院タイル</a>を利用しています。</li>
-                    <li class="list-group-item">バス停のデータは<a href="http://nlftp.mlit.go.jp/ksj/" target="_blank">国土数値情報</a>を利用しています。</li>
-                    <li class="list-group-item">バス停のアイコンには<a href="https://www.mapbox.com/maki/" target="_blank">Maki</a>を利用しています。</li>
-                  </ul>
-                </div>
-                <!--
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Features</div>
-                  <ul class="list-group">
-                    <li class="list-group-item">Fullscreen mobile-friendly map template with responsive navbar and modal placeholders</li>
-                    <li class="list-group-item">jQuery loading of external GeoJSON files</li>
-                    <li class="list-group-item">Logical multiple layer marker clustering via the <a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">leaflet marker cluster plugin</a></li>
-                    <li class="list-group-item">Elegant client-side multi-layer feature search with autocomplete using <a href="http://twitter.github.io/typeahead.js/" target="_blank">typeahead.js</a></li>
-                    <li class="list-group-item">Responsive sidebar feature list synced with map bounds, which includes sorting and filtering via <a href="http://listjs.com/" target="_blank">list.js</a></li>
-                    <li class="list-group-item">Marker icons included in grouped layer control via the <a href="https://github.com/ismyrnow/Leaflet.groupedlayercontrol" target="_blank">grouped layer control plugin</a></li>
-                  </ul>
-                </div>
-                -->
-              </div>
-              <div id="disclaimer" class="tab-pane fade text-danger">
-                <p>自転車を走りながらの閲覧はやめましょう！</p>
-              </div>
-              <!--
-              <div class="tab-pane fade" id="boroughs-tab">
-                <p>Borough data courtesy of <a href="http://www.nyc.gov/html/dcp/html/bytes/meta_dis_nyboroughwi.shtml" target="_blank">New York City Department of City Planning</a></p>
-              </div>
-              <div class="tab-pane fade" id="subway-lines-tab">
-                <p><a href="http://spatialityblog.com/2010/07/08/mta-gis-data-update/#datalinks" target="_blank">MTA Subway data</a> courtesy of the <a href="http://www.urbanresearch.org/about/cur-components/cuny-mapping-service" target="_blank">CUNY Mapping Service at the Center for Urban Research</a></p>
-              </div>
-              <div class="tab-pane fade" id="theaters-tab">
-                <p>Theater data courtesy of <a href="https://data.cityofnewyork.us/Recreation/Theaters/kdu2-865w" target="_blank">NYC Department of Information & Telecommunications (DoITT)</a></p>
-              </div>
-              <div class="tab-pane fade" id="museums-tab">
-                <p>Museum data courtesy of <a href="https://data.cityofnewyork.us/Recreation/Museums-and-Galleries/sat5-adpb" target="_blank">NYC Department of Information & Telecommunications (DoITT)</a></p>
-              </div>
-          -->
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="modal fade" id="legendModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">凡例</h4>
-          </div>
-          <div class="modal-body">
-            <table class='table table-striped table-bordered table-condensed'>
-              <tr>
-                <th>
-                  <svg width="60px" height="20px">
-                    <line x1="0" y1="10" x2="60" y2="10" stroke="#00ffff" stroke-width="5"/>
-                  </svg>
-                </th>
-                <td colspan="3">自転車専用道路</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <svg width="60px" height="20px">
-                    <line x1="0" y1="10" x2="60" y2="10" stroke="#0000ff" stroke-width="5"/>
-                  </svg>
-                </th>
-                <td rowspan="4">自転車の走りやすさ</td>
-                <td colspan="2">◯</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <svg width="60px" height="20px">
-                    <line x1="0" y1="10" x2="60" y2="10" stroke="#00ff00" stroke-width="5"/>
-                  </svg>
-                </th>
-                <td colspan="2">△</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <svg width="60px" height="20px">
-                    <line x1="0" y1="10" x2="60" y2="10" stroke="#ff9900" stroke-width="5" stroke-dasharray="5,5"/>
-                  </svg>
-                </th>
-                <td rowspan="2">×</td>
-                <td>幅の広い歩道あり</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <svg width="60px" height="20px">
-                    <line x1="0" y1="10" x2="60" y2="10" stroke="#ff00ff" stroke-width="5" stroke-dasharray="5,5"/>
-                  </svg>
-                </th>
-                <td>幅の広い歩道なし</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <img src="images/bicycle_parking.svg" width="30px" height="30px" />
-                </th>
-                <td colspan="3">駐輪場(一時利用可) ※1日1回100円</td>
-              </tr>
-
-              <tr>
-                <th>
-                  <img src="http://umap.openstreetmap.fr/uploads/pictogram/bicycle-24.png" width="30px" height="30px" />
-                </th>
-                <td colspan="3">自転車店</td>
-              </tr>
-            </table>
-            <div class="panel panel-primary">
-              <div class="panel-heading">凡例の補足</div>
-              <ul class="list-group">
-                <li class="list-group-item">「◯」は、路肩や車線が広い道路や自動車交通からの威圧感が少ない道路です。</li>
-                <li class="list-group-item">「△」は、自転車の通行に十分な路肩幅員はないため、走行に注意が必要な道路です。</li>
-                <li class="list-group-item">「×」は、路肩や車線が狭く、自動車交通からの威圧感も多いため、自転車の通行にお勧めできない道路です。
-                    しかし、幅の広い歩道がある区間では、歩行者に十分注意して歩道を徐行することも可能です。</li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Login</h4>
-          </div>
-          <div class="modal-body">
-            <form id="contact-form">
-              <fieldset>
-                <div class="form-group">
-                  <label for="name">Username:</label>
-                  <input type="text" class="form-control" id="username">
-                </div>
-                <div class="form-group">
-                  <label for="email">Password:</label>
-                  <input type="password" class="form-control" id="password">
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="submit" class="btn btn-primary" data-dismiss="modal">Login</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="modal fade" id="featureModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title text-primary" id="feature-title"></h4>
-          </div>
-          <div class="modal-body" id="feature-info"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">
-              Developed by <a href='http://bryanmcbride.com'>bryanmcbride.com</a>
-            </h4>
-          </div>
-          <div class="modal-body">
-            <div id="attribution"></div>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <app></app>
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.5/typeahead.bundle.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/locales/bootstrap-datepicker.ja.min.js"></script>
     <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
-    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/lang/ja.js"></script>
+    <script src="//cdn.jsdelivr.net/riot/2.2.2/riot.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
     <!-- build:js(app) scripts/vendor.js -->
-    <script src="scripts/vendor/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
+    <script src="scripts/vendor/leaflet.label.js"></script>
     <!-- endbuild -->
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- build:js(.tmp) scripts/app.js -->
+    <script src="scripts/views/components/pager.js"></script>
+    <script src="scripts/views/app.js"></script>
+    <script src="scripts/views/app-header.js"></script>
+    <script src="scripts/views/app-footer.js"></script>
+    <script src="scripts/views/home.js"></script>
+    <script src="scripts/views/search.js"></script>
+    <script src="scripts/views/search-list.js"></script>
+    <script src="scripts/views/search-map.js"></script>
+    <script src="scripts/views/search-calendar.js"></script>
+    <script src="scripts/views/fes-detail.js"></script>
+    <script src="scripts/views/fes-list.js"></script>
+    <script src="scripts/views/fes-map.js"></script>
+
+    <script src="scripts/router.js"></script>
+    <script src="scripts/stores/storeBase.js"></script>
+    <script src="scripts/stores/eventStore.js"></script>
+    <script src="scripts/stores/cityStore.js"></script>
+    <script src="scripts/models/event.js"></script>
+    <script src="scripts/models/city.js"></script>
     <!-- endbuild -->
-  </body>
+    <script>
+      riot.mount('*');
+      riot.route.build();
+    </script>
+<!-- Google Analytics Tracking Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65290596-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- schema.org/Event json-ld -->
+<script type="application/ld+json">
+[
+  {
+    "startDate": "2015-08-29T19:00:00+09:00",
+    "endDate": "2015-08-29T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市中央区大森町268",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.580215",
+        "@type": "GeoCoordinates",
+        "longitude": "140.145172"
+      },
+      "@type": "Place",
+      "name": "大森小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "大森小地区盆踊り大会"
+  },
+  {
+    "startDate": "2015-08-30T19:00:00+09:00",
+    "endDate": "2015-08-30T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.580215",
+        "@type": "GeoCoordinates",
+        "longitude": "140.145172"
+      },
+      "@type": "Place",
+      "name": "大森小学校校庭",
+      "address": {
+        "addressLocality": "千葉市中央区大森町268",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "大森小地区盆踊り大会"
+  },
+  {
+    "startDate": "2015-08-22T15:00:00+09:00",
+    "endDate": "2015-08-22T22:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区み春野1丁目11",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.692238",
+        "@type": "GeoCoordinates",
+        "longitude": "140.13826"
+      },
+      "@type": "Place",
+      "name": "宇那谷み春野公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "み春野ふるさと夏祭り"
+  },
+  {
+    "startDate": "2015-07-18T17:00:00+09:00",
+    "endDate": "2015-07-18T21:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区柏井4丁目48-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.708488",
+        "@type": "GeoCoordinates",
+        "longitude": "140.106522"
+      },
+      "@type": "Place",
+      "name": "柏井小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "柏井ふるさと祭り"
+  },
+  {
+    "startDate": "2015-07-19T17:00:00+09:00",
+    "endDate": "2015-07-19T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.708488",
+        "@type": "GeoCoordinates",
+        "longitude": "140.106522"
+      },
+      "@type": "Place",
+      "name": "柏井小学校校庭",
+      "address": {
+        "addressLocality": "千葉市花見川区柏井4丁目48-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "柏井ふるさと祭り"
+  },
+  {
+    "startDate": "2015-07-25T19:00:00+09:00",
+    "endDate": "2015-07-25T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区長作町1273",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.68515",
+        "@type": "GeoCoordinates",
+        "longitude": "140.074097"
+      },
+      "@type": "Place",
+      "name": "長作小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "門原地区盆踊り大会"
+  },
+  {
+    "startDate": "2015-07-26T19:00:00+09:00",
+    "endDate": "2015-07-26T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.68515",
+        "@type": "GeoCoordinates",
+        "longitude": "140.074097"
+      },
+      "@type": "Place",
+      "name": "長作小学校校庭",
+      "address": {
+        "addressLocality": "千葉市花見川区長作町1273",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "門原地区盆踊り大会"
+  },
+  {
+    "startDate": "2015-08-22T17:00:00+09:00",
+    "endDate": "2015-08-22T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区瑞穂1丁目2",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.663994",
+        "@type": "GeoCoordinates",
+        "longitude": "140.068832"
+      },
+      "@type": "Place",
+      "name": "瑞穂小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "瑞穂夏まつり"
+  },
+  {
+    "startDate": "2015-07-31T18:00:00+09:00",
+    "endDate": "2015-07-31T21:00:00+09:00",
+    "description": "7/31は前夜祭（カラオケ）",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区さつきが丘2丁目31",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.667236",
+        "@type": "GeoCoordinates",
+        "longitude": "140.092712"
+      },
+      "@type": "Place",
+      "name": "さつきが丘西公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "第42回さつきが丘夏まつり"
+  },
+  {
+    "startDate": "2015-08-01T17:00:00+09:00",
+    "endDate": "2015-08-01T21:00:00+09:00",
+    "description": "7/31は前夜祭（カラオケ）",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.667236",
+        "@type": "GeoCoordinates",
+        "longitude": "140.092712"
+      },
+      "@type": "Place",
+      "name": "さつきが丘西公園",
+      "address": {
+        "addressLocality": "千葉市花見川区さつきが丘2丁目31",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "第42回さつきが丘夏まつり"
+  },
+  {
+    "startDate": "2015-08-02T17:00:00+09:00",
+    "endDate": "2015-08-02T21:00:00+09:00",
+    "description": "7/31は前夜祭（カラオケ）",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.667236",
+        "@type": "GeoCoordinates",
+        "longitude": "140.092712"
+      },
+      "@type": "Place",
+      "name": "さつきが丘西公園",
+      "address": {
+        "addressLocality": "千葉市花見川区さつきが丘2丁目31",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "第42回さつきが丘夏まつり"
+  },
+  {
+    "startDate": "2015-07-19T03:00:00+09:00",
+    "endDate": "2015-07-19T09:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区畑町1051",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.663177",
+        "@type": "GeoCoordinates",
+        "longitude": "140.074387"
+      },
+      "@type": "Place",
+      "name": "蓮まつり"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "蓮まつり"
+  },
+  {
+    "startDate": "2015-07-20T07:00:00+09:00",
+    "endDate": "2015-07-20T09:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.663177",
+        "@type": "GeoCoordinates",
+        "longitude": "140.074387"
+      },
+      "@type": "Place",
+      "name": "蓮まつり",
+      "address": {
+        "addressLocality": "千葉市花見川区畑町1051",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "蓮まつり"
+  },
+  {
+    "startDate": "2015-08-22T12:00:00+09:00",
+    "endDate": "2015-08-22T18:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区長作町355-4",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.677776",
+        "@type": "GeoCoordinates",
+        "longitude": "140.069901"
+      },
+      "@type": "Place",
+      "name": "協進建設株式会社駐車場"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "貝塚町会こども夏祭り"
+  },
+  {
+    "startDate": "2015-08-01T18:00:00+09:00",
+    "endDate": "2015-08-01T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区千種町337-5",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.682838",
+        "@type": "GeoCoordinates",
+        "longitude": "140.11554"
+      },
+      "@type": "Place",
+      "name": "千種第2公園（パンダ公園）"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "千種台ハイツ自治会夏祭り"
+  },
+  {
+    "startDate": "2015-07-25T15:00:00+09:00",
+    "endDate": "2015-07-25T21:15:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市稲毛区小中台町473-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.650475",
+        "@type": "GeoCoordinates",
+        "longitude": "140.089324"
+      },
+      "@type": "Place",
+      "name": "小中台西第２公園（わんぱく公園）"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "第29回「マイタウン夏祭り」"
+  },
+  {
+    "startDate": "2015-07-25T19:00:00+09:00",
+    "endDate": "2015-07-25T21:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区大宮町948",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.600979",
+        "@type": "GeoCoordinates",
+        "longitude": "140.162933"
+      },
+      "@type": "Place",
+      "name": "大宮町下長集会場"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "盆おどり大会"
+  },
+  {
+    "startDate": "2015-07-19T17:00:00+09:00",
+    "endDate": "2015-07-19T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区桜木2-22",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.622096",
+        "@type": "GeoCoordinates",
+        "longitude": "140.163003"
+      },
+      "@type": "Place",
+      "name": "桜木第２県住公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "桜木第2県住夏祭り"
+  },
+  {
+    "startDate": "2015-10-24T10:00:00+09:00",
+    "endDate": "2015-10-24T15:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区千城台東4丁目33-3",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.619831",
+        "@type": "GeoCoordinates",
+        "longitude": "140.19928"
+      },
+      "@type": "Place",
+      "name": "千城台東町自治会館及び第10公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "千城台東町ふれあい祭"
+  },
+  {
+    "startDate": "2015-10-25T10:00:00+09:00",
+    "endDate": "2015-10-25T15:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.619831",
+        "@type": "GeoCoordinates",
+        "longitude": "140.19928"
+      },
+      "@type": "Place",
+      "name": "千城台東町自治会館及び第10公園",
+      "address": {
+        "addressLocality": "千葉市若葉区千城台東4丁目33-3",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "千城台東町ふれあい祭"
+  },
+  {
+    "startDate": "2015-07-24T18:00:00+09:00",
+    "endDate": "2015-07-24T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区大宮台7丁目8-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.596626",
+        "@type": "GeoCoordinates",
+        "longitude": "140.181976"
+      },
+      "@type": "Place",
+      "name": "大宮小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "大宮台　夏まつり"
+  },
+  {
+    "startDate": "2015-07-25T18:00:00+09:00",
+    "endDate": "2015-07-25T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.596626",
+        "@type": "GeoCoordinates",
+        "longitude": "140.181976"
+      },
+      "@type": "Place",
+      "name": "大宮小学校校庭",
+      "address": {
+        "addressLocality": "千葉市若葉区大宮台7丁目8-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "大宮台　夏まつり"
+  },
+  {
+    "startDate": "2015-07-26T18:00:00+09:00",
+    "endDate": "2015-07-26T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.596626",
+        "@type": "GeoCoordinates",
+        "longitude": "140.181976"
+      },
+      "@type": "Place",
+      "name": "大宮小学校校庭",
+      "address": {
+        "addressLocality": "千葉市若葉区大宮台7丁目8-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "大宮台　夏まつり"
+  },
+  {
+    "startDate": "2015-08-01T17:00:00+09:00",
+    "endDate": "2015-08-01T20:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区若松町361-54",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.640019",
+        "@type": "GeoCoordinates",
+        "longitude": "140.165033"
+      },
+      "@type": "Place",
+      "name": "若松公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "第2回若松町親和自治会夏祭り"
+  },
+  {
+    "startDate": "2015-07-18T18:00:00+09:00",
+    "endDate": "2015-07-18T20:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区若松町2106−2",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.636227",
+        "@type": "GeoCoordinates",
+        "longitude": "140.168655"
+      },
+      "@type": "Place",
+      "name": "若松中学校駐車場"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "若松町南部自治会 納涼盆おどり大会"
+  },
+  {
+    "startDate": "2015-07-25T18:00:00+09:00",
+    "endDate": "2015-07-25T20:30:00+09:00",
+    "description": "雨天は7/27に順延",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台5丁目47",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.646593",
+        "@type": "GeoCoordinates",
+        "longitude": "140.140033"
+      },
+      "@type": "Place",
+      "name": "源弁天公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台5丁目連合 納涼盆踊り大会"
+  },
+  {
+    "startDate": "2015-07-26T18:00:00+09:00",
+    "endDate": "2015-07-26T20:00:00+09:00",
+    "description": "雨天は7/27に順延",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.646593",
+        "@type": "GeoCoordinates",
+        "longitude": "140.140033"
+      },
+      "@type": "Place",
+      "name": "源弁天公園",
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台5丁目47",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台5丁目連合 納涼盆踊り大会"
+  },
+  {
+    "startDate": "2015-08-08T14:00:00+09:00",
+    "endDate": "2015-08-08T20:00:00+09:00",
+    "description": "店は21:00まで",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台3丁目3-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.640957",
+        "@type": "GeoCoordinates",
+        "longitude": "140.136292"
+      },
+      "@type": "Place",
+      "name": "みつわ台3丁目第二公園野球場"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台夏祭り"
+  },
+  {
+    "startDate": "2015-08-09T14:00:00+09:00",
+    "endDate": "2015-08-09T20:00:00+09:00",
+    "description": "店は21:00まで",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.640957",
+        "@type": "GeoCoordinates",
+        "longitude": "140.136292"
+      },
+      "@type": "Place",
+      "name": "みつわ台3丁目第二公園野球場",
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台3丁目3-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台夏祭り"
+  },
+  {
+    "startDate": "2016-04-02T14:00:00+09:00",
+    "endDate": "2016-04-02T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台3丁目",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.63904",
+        "@type": "GeoCoordinates",
+        "longitude": "140.138155"
+      },
+      "@type": "Place",
+      "name": "みつわ台3丁目桜通り"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台桜まつり"
+  },
+  {
+    "startDate": "2016-04-03T14:00:00+09:00",
+    "endDate": "2016-04-03T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.63904",
+        "@type": "GeoCoordinates",
+        "longitude": "140.138155"
+      },
+      "@type": "Place",
+      "name": "みつわ台3丁目桜通り",
+      "address": {
+        "addressLocality": "千葉市若葉区みつわ台3丁目",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "みつわ台桜まつり"
+  },
+  {
+    "startDate": "2015-08-22T14:30:00+09:00",
+    "endDate": "2015-08-22T20:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区都賀の台2丁目13−1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.643883",
+        "@type": "GeoCoordinates",
+        "longitude": "140.14183"
+      },
+      "@type": "Place",
+      "name": "都賀の台小学校"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "都賀の台夏祭盆踊り大会"
+  },
+  {
+    "startDate": "2015-07-25T17:00:00+09:00",
+    "endDate": "2015-07-25T20:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区東寺山町423-1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.629178",
+        "@type": "GeoCoordinates",
+        "longitude": "140.127562"
+      },
+      "@type": "Place",
+      "name": "東寺山第３公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "東寺山エステ・スクエア親睦夏祭り"
+  },
+  {
+    "startDate": "2015-08-08T17:30:00+09:00",
+    "endDate": "2015-08-08T20:30:00+09:00",
+    "description": "雨天は8/9に順延",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区桜木3丁目26−1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.621132",
+        "@type": "GeoCoordinates",
+        "longitude": "140.159134"
+      },
+      "@type": "Place",
+      "name": "桜木小学校"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "桜木小地区連合会盆踊り"
+  },
+  {
+    "startDate": "2015-08-08T17:30:00+09:00",
+    "endDate": "2015-08-08T20:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市若葉区桜木3丁目26−1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.621132",
+        "@type": "GeoCoordinates",
+        "longitude": "140.159134"
+      },
+      "@type": "Place",
+      "name": "桜木小学校校庭"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "桜木連合盆踊"
+  },
+  {
+    "startDate": "2015-08-22T09:00:00+09:00",
+    "endDate": "2015-08-22T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区あすみが丘5丁目41",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.524929",
+        "@type": "GeoCoordinates",
+        "longitude": "140.257233"
+      },
+      "@type": "Place",
+      "name": "創造の杜公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "2015とけサマーフェスティバル"
+  },
+  {
+    "startDate": "2015-08-23T09:00:00+09:00",
+    "endDate": "2015-08-23T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.524929",
+        "@type": "GeoCoordinates",
+        "longitude": "140.257233"
+      },
+      "@type": "Place",
+      "name": "創造の杜公園",
+      "address": {
+        "addressLocality": "千葉市緑区あすみが丘5丁目41",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "2015とけサマーフェスティバル"
+  },
+  {
+    "startDate": "2015-08-14T18:00:00+09:00",
+    "endDate": "2015-08-14T21:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区越智町541",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.530224",
+        "@type": "GeoCoordinates",
+        "longitude": "140.244339"
+      },
+      "@type": "Place",
+      "name": "野馬の里 向かい空地"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "越智町夏祭り"
+  },
+  {
+    "startDate": "2015-08-01T18:00:00+09:00",
+    "endDate": "2015-08-01T21:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区古市場町474-277",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.549124",
+        "@type": "GeoCoordinates",
+        "longitude": "140.147081"
+      },
+      "@type": "Place",
+      "name": "古市場公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "古市場盆踊大会"
+  },
+  {
+    "startDate": "2015-08-02T18:00:00+09:00",
+    "endDate": "2015-08-02T21:30:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.549124",
+        "@type": "GeoCoordinates",
+        "longitude": "140.147081"
+      },
+      "@type": "Place",
+      "name": "古市場公園",
+      "address": {
+        "addressLocality": "千葉市緑区古市場町474-277",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "古市場盆踊大会"
+  },
+  {
+    "startDate": "2015-10-11T09:00:00+09:00",
+    "endDate": "2015-10-11T20:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区誉田町2丁目21",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.549347",
+        "@type": "GeoCoordinates",
+        "longitude": "140.211014"
+      },
+      "@type": "Place",
+      "name": "八幡神社〜近隣周辺道路"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "誉田町二丁目秋季祭礼"
+  },
+  {
+    "startDate": "2015-10-12T09:00:00+09:00",
+    "endDate": "2015-10-12T20:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.549347",
+        "@type": "GeoCoordinates",
+        "longitude": "140.211014"
+      },
+      "@type": "Place",
+      "name": "八幡神社〜近隣周辺道路",
+      "address": {
+        "addressLocality": "千葉市緑区誉田町2丁目21",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "誉田町二丁目秋季祭礼"
+  },
+  {
+    "startDate": "2015-11-03T09:00:00+09:00",
+    "endDate": "2015-11-03T16:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野4丁目31",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.557381",
+        "@type": "GeoCoordinates",
+        "longitude": "140.180361"
+      },
+      "@type": "Place",
+      "name": "おゆみ野のりくら公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "オータムフェスティバル"
+  },
+  {
+    "startDate": "2015-07-25T18:00:00+09:00",
+    "endDate": "2015-07-25T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区大膳野町4-368",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.542731",
+        "@type": "GeoCoordinates",
+        "longitude": "140.1999"
+      },
+      "@type": "Place",
+      "name": "大膳野公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "誉田団地自治会夏祭り"
+  },
+  {
+    "startDate": "2015-08-01T16:00:00+09:00",
+    "endDate": "2015-08-01T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野中央4丁目3",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.554535",
+        "@type": "GeoCoordinates",
+        "longitude": "140.174215"
+      },
+      "@type": "Place",
+      "name": "泉谷小学校"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "おゆみ野夏祭り"
+  },
+  {
+    "startDate": "2015-04-05T09:30:00+09:00",
+    "endDate": "2015-04-05T13:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野3丁目15-2",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.560043",
+        "@type": "GeoCoordinates",
+        "longitude": "140.175792"
+      },
+      "@type": "Place",
+      "name": "鎌取コミュニティセンター"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "さくらさくさくウォークラリー2015"
+  },
+  {
+    "startDate": "2015-07-25T16:00:00+09:00",
+    "endDate": "2015-07-25T19:00:00+09:00",
+    "description": "雨天は7/26に順延",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野南6丁目1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.545361",
+        "@type": "GeoCoordinates",
+        "longitude": "140.179679"
+      },
+      "@type": "Place",
+      "name": "おゆみ野あきのみち公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "あきのみち公園みなみまつり"
+  },
+  {
+    "startDate": "2015-10-04T11:00:00+09:00",
+    "endDate": "2015-10-04T15:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市花見川区宮野木台1丁目7",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.654921",
+        "@type": "GeoCoordinates",
+        "longitude": "140.092073"
+      },
+      "@type": "Place",
+      "name": "宮野木西公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "ルネ稲毛夏祭り"
+  },
+  {
+    "startDate": "2015-08-08T19:00:00+09:00",
+    "endDate": "2015-08-08T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野2丁目1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      },
+      "geo": {
+        "latitude": "35.56644",
+        "@type": "GeoCoordinates",
+        "longitude": "140.174925"
+      },
+      "@type": "Place",
+      "name": "鎌取第１公園"
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "鎌取町盆踊り大会"
+  },
+  {
+    "startDate": "2015-08-09T19:00:00+09:00",
+    "endDate": "2015-08-09T21:00:00+09:00",
+    "description": "",
+    "offers": {
+      "url": "http://festival.code4chiba.org",
+      "price": 0,
+      "@type": "Offer",
+      "priceCurrency": "JPY"
+    },
+    "location": {
+      "geo": {
+        "latitude": "35.56644",
+        "@type": "GeoCoordinates",
+        "longitude": "140.174925"
+      },
+      "@type": "Place",
+      "name": "鎌取第１公園",
+      "address": {
+        "addressLocality": "千葉市緑区おゆみ野2丁目1",
+        "addressRegion": "千葉県",
+        "@type": "PostalAddress"
+      }
+    },
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "鎌取町盆踊り大会"
+  }
+]
+</script>
+</body>
 </html>
