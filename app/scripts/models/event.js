@@ -45,6 +45,15 @@
      */
     getImage: function() {
       return this.image || "images/common/pic01.jpg";
+    },
+
+    /**
+     * ユニークな祭り開催日を返します。
+     */
+    getUniquePeriods: function() {
+      return _.uniq(this.periods, function(period){
+        return period.start.getMonth() + "-" + period.start.getDay();
+      });
     }
   };
 
