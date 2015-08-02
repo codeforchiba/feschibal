@@ -24,11 +24,11 @@ function convertJson(data, writer) {
         location: {
           name: obj.location_name,
           state: "千葉県",
-          stateCode: "JP12",
+          stateCode: "12",
           city: "千葉市",
-          cityCode: "JP1212",
+          cityCode: "1212",
           address: obj.location_address.slice(3),
-          addressCode: "JP" + obj.location_code,
+          addressCode: obj.location_code,
           lat: obj.location_lat,
           long: obj.location_long
         },
@@ -67,6 +67,14 @@ function convertJson(data, writer) {
         if (obj.specialProgram2.length > 0) {
           info.features.specialProgram.push(obj.specialProgram2);
         }
+      }
+
+      if (obj.remarks.length > 0) {
+        info.remarks = obj.remarks;
+      }
+
+      if (obj.url.length > 0) {
+        info.url = obj.url;
       }
 
       if (obj.sponcer1.length > 0) {
