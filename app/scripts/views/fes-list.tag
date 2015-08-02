@@ -1,8 +1,10 @@
 <fes-list>
   <ul class="festival-list">
-    <li class="festival-list-date" each={ fes, i in opts.feslist } onclick={parent.onSelectFes}>
-      <dl>
-        <dt>
+    <wrap each={ fes, i in opts.feslist }>
+      <div class="clearfix" if={ i%3 === 0}></div>
+      <li class="festival-list-date" onclick={parent.onSelectFes}>
+        <dl>
+          <dt>
           <p class="day" if={fes.getUniquePeriods().length <= 2}>
             <span class="bgcolor" each={ period in fes.getUniquePeriods() } >
               {moment(period.start).format('MM/DD')}
@@ -19,14 +21,15 @@
             </span>
           </p>
           <p class="title">{fes.name}</p>
-        </dt>
-        <dd>
-          <a href="javascript:void(0)">
-            <img class="roll_fout" src="{fes.getImage()}">
-          </a>
-        </dd>
-      </dl>
-    </li>
+          </dt>
+          <dd>
+            <a href="javascript:void(0)">
+              <img class="roll_fout" src="{fes.getImage()}">
+            </a>
+          </dd>
+        </dl>
+      </li>
+    </wrap>
   </ul>
 
   <script>
@@ -76,7 +79,7 @@
       margin-bottom: 0;
     }
 
-    .festival-list-date:nth-child(3n) {
+    wrap:nth-child(3n) .festival-list-date {
       margin-right: 0px;
     }
 
@@ -145,11 +148,11 @@
         width: 100%;
       }
 
-      .festival-list-date:nth-child(3n) {
+      wrap:nth-child(3n) .festival-list-date {
         margin-right: 6%;
       }
 
-      .festival-list-date:nth-child(2n) {
+      wrap:nth-child(2n) .festival-list-date {
         margin-right: 0;
       }
     }
