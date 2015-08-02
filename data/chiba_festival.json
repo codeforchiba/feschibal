@@ -15,11 +15,11 @@
     "location": {
       "name": "大森小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "中央区大森町268",
-      "addressCode": "JP121010011",
+      "addressCode": "121010011",
       "lat": "35.580215",
       "long": "140.145172"
     },
@@ -34,6 +34,51 @@
     "organizer": "大森小地区盆踊り大会実行委員会"
   },
   {
+    "id": "201",
+    "name": "瑞穂夏まつり",
+    "periods": [
+      {
+        "start": "2015-08-22T00:00:00.000Z",
+        "end": "2015-08-22T02:00:00.000Z"
+      },
+      {
+        "start": "2015-08-22T07:00:00.000Z",
+        "end": "2015-08-22T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "瑞穂小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区瑞穂1丁目2",
+      "addressCode": "121020028",
+      "lat": "35.66436111",
+      "long": "140.0691111"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ねぷた、山車、ステージでの踊り、キッズダンス、演奏など"
+      ],
+      "specialProgram": [
+        "子ども御輿行進（9:00～11:00）",
+        "ステージ・縁日（17:00～21:00）"
+      ]
+    },
+    "organizer": "瑞穂夏まつり実行委員会",
+    "sponcers": [
+      "瑞穂自治会",
+      "ガーデンプラザ新検見川自治会"
+    ]
+  },
+  {
     "id": "205",
     "name": "み春野ふるさと夏祭り",
     "periods": [
@@ -45,11 +90,11 @@
     "location": {
       "name": "宇那谷み春野公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区み春野1丁目11",
-      "addressCode": "JP121020033",
+      "addressCode": "121020033",
       "lat": "35.692238",
       "long": "140.13826"
     },
@@ -67,7 +112,8 @@
         "花火大会"
       ]
     },
-    "organizer": "み春野自治会"
+    "organizer": "み春野自治会",
+    "url": "http://blogs.yahoo.co.jp/miharuno_tsubasanooka"
   },
   {
     "id": "207",
@@ -85,11 +131,11 @@
     "location": {
       "name": "柏井小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区柏井4丁目48-1",
-      "addressCode": "JP121020006",
+      "addressCode": "121020006",
       "lat": "35.708488",
       "long": "140.106522"
     },
@@ -107,6 +153,46 @@
     "organizer": "柏井ふるさと祭り実行委員会"
   },
   {
+    "id": "209",
+    "name": "夏祭り",
+    "periods": [
+      {
+        "start": "2015-07-18T01:00:00.000Z",
+        "end": "2015-07-18T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "芦太公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区柏井1-20",
+      "addressCode": "121020006",
+      "lat": "35.695487",
+      "long": "140.096042"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "野菜の即売"
+      ],
+      "specialProgram": [
+        "一條貫太、歌唱（7/18 18:00より）"
+      ]
+    },
+    "organizer": "柏井北自治会",
+    "remarks": "雨天順延",
+    "sponcers": [
+      "八千代台パークハイツ自治会"
+    ]
+  },
+  {
     "id": "210",
     "name": "門原地区盆踊り大会",
     "periods": [
@@ -122,11 +208,11 @@
     "location": {
       "name": "長作小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区長作町1273",
-      "addressCode": "JP121020018",
+      "addressCode": "121020018",
       "lat": "35.68515",
       "long": "140.074097"
     },
@@ -152,11 +238,11 @@
     "location": {
       "name": "瑞穂小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区瑞穂1丁目2",
-      "addressCode": "JP121020028",
+      "addressCode": "121020028",
       "lat": "35.663994",
       "long": "140.068832"
     },
@@ -175,9 +261,47 @@
       ]
     },
     "organizer": "ガーデンプラザ新検見川自治会",
+    "url": "http://gardenplaza.web.fc2.com",
     "sponcers": [
       "瑞穂自治会"
     ]
+  },
+  {
+    "id": "212",
+    "name": "緑丘町会町民ふれあい祭り",
+    "periods": [
+      {
+        "start": "2015-06-27T07:00:00.000Z",
+        "end": "2015-06-27T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "長作みどり公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町1623－1",
+      "addressCode": "121020018",
+      "lat": "35.685061",
+      "long": "140.082075"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "津軽三味線"
+      ],
+      "specialProgram": [
+        "緑丘町営歌クラブ・子どもの参加あり",
+        "津軽三味線奏者"
+      ]
+    },
+    "organizer": "長作台緑丘町会"
   },
   {
     "id": "214",
@@ -199,11 +323,11 @@
     "location": {
       "name": "さつきが丘西公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区さつきが丘2丁目31",
-      "addressCode": "JP121020012",
+      "addressCode": "121020012",
       "lat": "35.667236",
       "long": "140.092712"
     },
@@ -223,6 +347,7 @@
       ]
     },
     "organizer": "さつきが丘一丁目町内会（4団体）",
+    "remarks": "7/31は前夜祭（カラオケ）",
     "sponcers": [
       "さつきが丘二丁目町内会（6団体）",
       "さつきが丘名店街"
@@ -244,11 +369,11 @@
     "location": {
       "name": "蓮まつり",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区畑町1051",
-      "addressCode": "JP121020021",
+      "addressCode": "121020021",
       "lat": "35.663177",
       "long": "140.074387"
     },
@@ -281,11 +406,11 @@
     "location": {
       "name": "協進建設株式会社駐車場",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区長作町355-4",
-      "addressCode": "JP121020018",
+      "addressCode": "121020018",
       "lat": "35.677776",
       "long": "140.069901"
     },
@@ -297,7 +422,8 @@
       "foodTruck": true,
       "fireworks": false
     },
-    "organizer": "長作町貝塚町会"
+    "organizer": "長作町貝塚町会",
+    "url": "http://kaiduka-choukai.jimdo.com/"
   },
   {
     "id": "225",
@@ -311,11 +437,11 @@
     "location": {
       "name": "千種第2公園（パンダ公園）",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
-      "address": "花見川区千種町337-5",
-      "addressCode": "JP121020016",
+      "cityCode": "1212",
+      "address": "花見川区千草町337-5",
+      "addressCode": "121020016",
       "lat": "35.682838",
       "long": "140.11554"
     },
@@ -348,11 +474,11 @@
     "location": {
       "name": "小中台西第２公園（わんぱく公園）",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "稲毛区小中台町473-1",
-      "addressCode": "JP121030013",
+      "addressCode": "121030013",
       "lat": "35.650475",
       "long": "140.089324"
     },
@@ -371,7 +497,8 @@
         "すいか割り"
       ]
     },
-    "organizer": "稲毛スカイタウン自治会"
+    "organizer": "稲毛スカイタウン自治会",
+    "url": "http://i-skt-jitikai.com"
   },
   {
     "id": "403",
@@ -385,11 +512,11 @@
     "location": {
       "name": "大宮町下長集会場",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区大宮町948",
-      "addressCode": "JP121040009",
+      "addressCode": "121040009",
       "lat": "35.600979",
       "long": "140.162933"
     },
@@ -415,11 +542,11 @@
     "location": {
       "name": "桜木第２県住公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区桜木2-22",
-      "addressCode": "JP121040024",
+      "addressCode": "121040024",
       "lat": "35.622096",
       "long": "140.163003"
     },
@@ -437,6 +564,85 @@
     "organizer": "桜木第2県住自治会"
   },
   {
+    "id": "405",
+    "name": "コスモスまつり",
+    "periods": [
+      {
+        "start": "2015-10-10T00:00:00.000Z",
+        "end": "2015-10-10T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-11T00:00:00.000Z",
+        "end": "2015-10-11T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-12T00:00:00.000Z",
+        "end": "2015-10-12T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "富田都市農業交流センター周辺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区富田町711-1",
+      "addressCode": "121040041",
+      "lat": "35.605294",
+      "long": "140.245387"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "地元野菜直売"
+      ],
+      "specialProgram": [
+        "地元野菜直売",
+        "地元農産物加工食品直売"
+      ]
+    },
+    "organizer": "コスモスまつり実行委員会"
+  },
+  {
+    "id": "406",
+    "name": "南町・ふれあい祭",
+    "periods": [
+      {
+        "start": "2015-11-17T15:00:00.000Z",
+        "end": "2015-11-17T15:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千城台南小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台南1丁目19-1",
+      "addressCode": "121040037",
+      "lat": "35.61836111",
+      "long": "140.191"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "餅つき・ゲーム"
+      ]
+    },
+    "organizer": "",
+    "remarks": "時間未定"
+  },
+  {
     "id": "407",
     "name": "千城台東町ふれあい祭",
     "periods": [
@@ -452,11 +658,11 @@
     "location": {
       "name": "千城台東町自治会館及び第10公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区千城台東4丁目33-3",
-      "addressCode": "JP121040036",
+      "addressCode": "121040036",
       "lat": "35.619831",
       "long": "140.19928"
     },
@@ -472,6 +678,45 @@
       ]
     },
     "organizer": "千城台東町自治会"
+  },
+  {
+    "id": "408",
+    "name": "夏まつり団地祭",
+    "periods": [
+      {
+        "start": "2015-07-25T10:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T01:00:00.000Z",
+        "end": "2015-07-26T02:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T10:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千城台東県営住宅",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台東4-1",
+      "addressCode": "121040036",
+      "lat": "35.614901",
+      "long": "140.19347"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "",
+    "remarks": "7/26 10:00～山車"
   },
   {
     "id": "410",
@@ -493,11 +738,11 @@
     "location": {
       "name": "大宮小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区大宮台7丁目8-1",
-      "addressCode": "JP121040008",
+      "addressCode": "121040008",
       "lat": "35.596626",
       "long": "140.181976"
     },
@@ -518,6 +763,41 @@
     "organizer": "大宮台自治会"
   },
   {
+    "id": "411",
+    "name": "いずみ台ローズタウン夏祭り・盆踊り",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T09:00:00.000Z",
+        "end": "2015-07-26T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "多部田第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区多部田町754-50",
+      "addressCode": "121040032",
+      "lat": "35.598066",
+      "long": "140.194776"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "いずみ台ローズタウン自治会",
+    "remarks": "7/25 9:00～子供みこし"
+  },
+  {
     "id": "413",
     "name": "第2回若松町親和自治会夏祭り",
     "periods": [
@@ -529,11 +809,11 @@
     "location": {
       "name": "若松公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区若松町361-54",
-      "addressCode": "JP121040052",
+      "addressCode": "121040052",
       "lat": "35.640019",
       "long": "140.165033"
     },
@@ -566,11 +846,11 @@
     "location": {
       "name": "若松中学校駐車場",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区若松町2106－2",
-      "addressCode": "JP121040052",
+      "addressCode": "121040052",
       "lat": "35.636227",
       "long": "140.168655"
     },
@@ -583,6 +863,79 @@
       "fireworks": false
     },
     "organizer": "若松町南部自治会"
+  },
+  {
+    "id": "415",
+    "name": "一丁目・二丁目合同夏祭り「納涼の夕べ」",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T08:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "若松台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松台2丁目25－1",
+      "addressCode": "121040051",
+      "lat": "35.65027778",
+      "long": "140.1718333"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "若松台一丁目自治会",
+    "sponcers": [
+      "若松台二丁目自治会"
+    ]
+  },
+  {
+    "id": "417",
+    "name": "納涼大会",
+    "periods": [
+      {
+        "start": "2015-07-25T00:00:00.000Z",
+        "end": "2015-07-25T11:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T00:00:00.000Z",
+        "end": "2015-07-26T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "小倉台公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区小倉台4丁目7",
+      "addressCode": "121040010",
+      "lat": "35.629307",
+      "long": "140.170792"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "others": [
+        "花火大会（祭り１日目のみ）"
+      ]
+    },
+    "organizer": "小倉小学校地区会長会",
+    "sponcers": [
+      "小倉商店街"
+    ]
   },
   {
     "id": "420",
@@ -600,11 +953,11 @@
     "location": {
       "name": "源弁天公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区みつわ台5丁目47",
-      "addressCode": "JP121040048",
+      "addressCode": "121040048",
       "lat": "35.646593",
       "long": "140.140033"
     },
@@ -620,7 +973,8 @@
         "花火大会"
       ]
     },
-    "organizer": "5丁目連合会（6自治会合同）"
+    "organizer": "5丁目連合会（6自治会合同）",
+    "remarks": "雨天は7/27に順延"
   },
   {
     "id": "423",
@@ -638,11 +992,11 @@
     "location": {
       "name": "みつわ台3丁目第二公園野球場",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区みつわ台3丁目3-1",
-      "addressCode": "JP121040048",
+      "addressCode": "121040048",
       "lat": "35.640957",
       "long": "140.136292"
     },
@@ -654,7 +1008,8 @@
       "foodTruck": true,
       "fireworks": false
     },
-    "organizer": "みつわ台2丁目中央自治会他12団体"
+    "organizer": "みつわ台2丁目中央自治会他12団体",
+    "remarks": "店は21:00まで"
   },
   {
     "id": "424",
@@ -672,11 +1027,11 @@
     "location": {
       "name": "みつわ台3丁目桜通り",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区みつわ台3丁目",
-      "addressCode": "JP121040048",
+      "addressCode": "121040048",
       "lat": "35.63904",
       "long": "140.138155"
     },
@@ -709,11 +1064,11 @@
     "location": {
       "name": "都賀の台小学校",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区都賀の台2丁目13－1",
-      "addressCode": "JP121040039",
+      "addressCode": "121040039",
       "lat": "35.643883",
       "long": "140.14183"
     },
@@ -745,11 +1100,11 @@
     "location": {
       "name": "東寺山第３公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区東寺山町423-1",
-      "addressCode": "JP121040047",
+      "addressCode": "121040047",
       "lat": "35.629178",
       "long": "140.127562"
     },
@@ -782,11 +1137,11 @@
     "location": {
       "name": "桜木小学校",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区桜木3丁目26－1",
-      "addressCode": "JP121040024",
+      "addressCode": "121040024",
       "lat": "35.621132",
       "long": "140.159134"
     },
@@ -806,6 +1161,7 @@
       ]
     },
     "organizer": "桜木小地区町内自治会連合会",
+    "remarks": "雨天は8/9に順延",
     "sponcers": [
       "桜木小地区スポーツ振興会",
       "桜木小地区スポーツ連絡協議会"
@@ -823,11 +1179,11 @@
     "location": {
       "name": "桜木小学校校庭",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "若葉区桜木3丁目26－1",
-      "addressCode": "JP121040024",
+      "addressCode": "121040024",
       "lat": "35.621132",
       "long": "140.159134"
     },
@@ -845,6 +1201,47 @@
     "organizer": "桜木町内自治会連合会"
   },
   {
+    "id": "433",
+    "name": "はづき祭",
+    "periods": [
+      {
+        "start": "2015-08-01T01:00:00.000Z",
+        "end": "2015-08-01T03:00:00.000Z"
+      },
+      {
+        "start": "2015-08-01T09:00:00.000Z",
+        "end": "2015-08-01T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-02T09:00:00.000Z",
+        "end": "2015-08-02T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "加曽利公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区加曽利町1294番1他",
+      "addressCode": "121040015",
+      "lat": "35.62439",
+      "long": "140.164795"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "町内を子供みこし 8月1日10:00～12:00"
+      ]
+    },
+    "organizer": "若葉はづき会"
+  },
+  {
     "id": "501",
     "name": "2015とけサマーフェスティバル",
     "periods": [
@@ -860,11 +1257,11 @@
     "location": {
       "name": "創造の杜公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区あすみが丘5丁目41",
-      "addressCode": "JP121050001",
+      "addressCode": "121050001",
       "lat": "35.524929",
       "long": "140.257233"
     },
@@ -893,11 +1290,11 @@
     "location": {
       "name": "野馬の里 向かい空地",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区越智町541",
-      "addressCode": "JP121050009",
+      "addressCode": "121050009",
       "lat": "35.530224",
       "long": "140.244339"
     },
@@ -930,11 +1327,11 @@
     "location": {
       "name": "古市場公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区古市場町474-277",
-      "addressCode": "JP121050030",
+      "addressCode": "121050030",
       "lat": "35.549124",
       "long": "140.147081"
     },
@@ -971,11 +1368,11 @@
     "location": {
       "name": "八幡神社～近隣周辺道路",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区誉田町2丁目21",
-      "addressCode": "JP121050032",
+      "addressCode": "121050032",
       "lat": "35.549347",
       "long": "140.211014"
     },
@@ -1009,13 +1406,13 @@
       }
     ],
     "location": {
-      "name": "おゆみ野のりくら公園",
+      "name": "のりくら公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区おゆみ野4丁目31",
-      "addressCode": "JP121050011",
+      "addressCode": "121050011",
       "lat": "35.557381",
       "long": "140.180361"
     },
@@ -1041,11 +1438,11 @@
     "location": {
       "name": "大膳野公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区大膳野町4-368",
-      "addressCode": "JP121050021",
+      "addressCode": "121050021",
       "lat": "35.542731",
       "long": "140.1999"
     },
@@ -1071,11 +1468,11 @@
     "location": {
       "name": "泉谷小学校",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区おゆみ野中央4丁目3",
-      "addressCode": "JP121050013",
+      "addressCode": "121050013",
       "lat": "35.554535",
       "long": "140.174215"
     },
@@ -1104,11 +1501,11 @@
     "location": {
       "name": "鎌取コミュニティセンター",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区おゆみ野3丁目15-2",
-      "addressCode": "JP121050011",
+      "addressCode": "121050011",
       "lat": "35.560043",
       "long": "140.175792"
     },
@@ -1135,13 +1532,13 @@
       }
     ],
     "location": {
-      "name": "おゆみ野あきのみち公園",
+      "name": "あきのみち公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区おゆみ野南6丁目1",
-      "addressCode": "JP121050014",
+      "addressCode": "121050014",
       "lat": "35.545361",
       "long": "140.179679"
     },
@@ -1153,7 +1550,8 @@
       "foodTruck": true,
       "fireworks": true
     },
-    "organizer": "あきのみち公園みなみまつり実行委員会"
+    "organizer": "あきのみち公園みなみまつり実行委員会",
+    "remarks": "雨天は7/26に順延"
   },
   {
     "id": "217",
@@ -1167,11 +1565,11 @@
     "location": {
       "name": "宮野木西公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "花見川区宮野木台1丁目7",
-      "addressCode": "JP121020030",
+      "addressCode": "121020030",
       "lat": "35.654921",
       "long": "140.092073"
     },
@@ -1201,11 +1599,11 @@
     "location": {
       "name": "鎌取第１公園",
       "state": "千葉県",
-      "stateCode": "JP12",
+      "stateCode": "12",
       "city": "千葉市",
-      "cityCode": "JP1212",
+      "cityCode": "1212",
       "address": "緑区おゆみ野2丁目1",
-      "addressCode": "JP121050011",
+      "addressCode": "121050011",
       "lat": "35.56644",
       "long": "140.174925"
     },
