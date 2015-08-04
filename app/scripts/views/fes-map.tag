@@ -25,10 +25,10 @@
 
       // Put the Pointer Icon
       var centerPointerIcon = L.icon({
-        iconUrl: 'images/icon_pointer.png',
-        iconRetinaUrl: 'images/icon_pointer.png',
-        iconSize: [35, 35],
-        iconAnchor: [17, 17],
+        iconUrl: 'images/icon_pointer_360.png',
+        iconRetinaUrl: 'images/icon_pointer_360.png',
+        iconSize: [50, 50],
+        iconAnchor: [25, 25],
         popupAnchor: [0, 0]
       });
       var optionIcon = {
@@ -64,8 +64,12 @@
     this.on('update', function() {
       // 祭りデータから地図のマーカーデータを生成します。
       markers.clearLayers();
+      var icon = L.icon({
+        iconUrl: 'images/marker-icon.png',
+        iconSize: [30, 40]
+      });
       _.each(opts.feslist, function(fes){
-        var marker = L.marker(new L.LatLng(fes.location.lat, fes.location.long)).bindLabel(fes.name, { noHide: true, clickable: true });
+        var marker = L.marker(new L.LatLng(fes.location.lat, fes.location.long), {icon: icon}).bindLabel(fes.name, { noHide: true, clickable: true });
         marker.on('click', function (e) {
           riot.route("detail/" + fes.id);
         });
