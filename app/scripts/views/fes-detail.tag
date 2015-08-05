@@ -84,7 +84,11 @@
         self.update();
 
         marker && map.removeLayer(marker);
-        marker = L.marker([fes.location.lat, fes.location.long]);
+        var icon = L.icon({
+          iconUrl: 'images/marker-icon.png',
+          iconSize: [30, 40]
+        });
+        marker = L.marker([fes.location.lat, fes.location.long], {icon: icon});
         marker.addTo(map);
 
         map.setView([fes.location.lat, fes.location.long], 14);
