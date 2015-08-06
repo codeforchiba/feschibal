@@ -100,3 +100,16 @@ c o n t e n t
     width: 100%;
   }
 }
+
+/* ==================================
+c l e a r f i x
+================================== */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
