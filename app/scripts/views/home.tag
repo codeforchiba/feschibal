@@ -55,7 +55,7 @@
   </article>
 
   <script>
-    var self  = this;
+    var self = this;
 
     // 今週開催の祭り一覧
     this.fesList = [];
