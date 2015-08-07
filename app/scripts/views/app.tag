@@ -3,6 +3,8 @@
   <home show={ path === 'home' }></home>
   <search show={ path === 'search' }></search>
   <fes-detail show={ path === 'detail' }></fes-detail>
+  <about show={ path === 'about' }></about>
+  <credit show={ path === 'credit' }></credit>
   <app-footer></app-footer>
 
   <script>

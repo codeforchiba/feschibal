@@ -74,10 +74,13 @@
     <script src="scripts/vendor/leaflet.label.js"></script>
     <!-- endbuild -->
     <!-- build:js(.tmp) scripts/app.js -->
+    <script src="scripts/views/components/google-analytics.js"></script>
     <script src="scripts/views/components/pager.js"></script>
+    <script src="scripts/views/about.js"></script>
     <script src="scripts/views/app.js"></script>
     <script src="scripts/views/app-header.js"></script>
     <script src="scripts/views/app-footer.js"></script>
+    <script src="scripts/views/credit.js"></script>
     <script src="scripts/views/home.js"></script>
     <script src="scripts/views/search.js"></script>
     <script src="scripts/views/search-list.js"></script>
@@ -98,17 +101,6 @@
       riot.mount('*');
       riot.route.build();
     </script>
-<!-- Google Analytics Tracking Code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65290596-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <!-- schema.org/Event json-ld -->
 <script type="application/ld+json">
 [
