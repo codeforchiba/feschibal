@@ -7,6 +7,9 @@
       <li>
         <a href="javascript:void(0)" onclick="{showCredit}">クレジット</a>
       </li>
+      <li>
+        <a href="https://codeforchiba.typeform.com/to/qzQYxn" class = "typeform-share link" target =  "_blank" data-mode = "1">問い合わせ</a>
+        </li>
     </ul>
     <p>
       <a href="http://code4chiba.org/">
@@ -26,6 +29,7 @@
   </footer>
 
   <google-analytics></google-analytics>
+  <typeform></typeform>
 
   <script>
     showAbout(e) {
