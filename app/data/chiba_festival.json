@@ -720,7 +720,7 @@
   },
   {
     "id": "410",
-    "name": "大宮台　夏まつり",
+    "name": "大宮台 夏まつり",
     "periods": [
       {
         "start": "2015-07-24T09:00:00.000Z",
@@ -1616,5 +1616,323 @@
       "fireworks": false
     },
     "organizer": ""
+  },
+  {
+    "id": "302",
+    "name": "天台町内会盆踊り",
+    "periods": [
+      {
+        "start": "2015-08-23T09:00:00.000Z",
+        "end": "2015-08-23T11:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "作草部公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "千葉市稲毛区天台1-1",
+      "addressCode": "121030020",
+      "lat": "35.630357",
+      "long": "140.113787"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ゲーム"
+      ]
+    },
+    "organizer": ""
+  },
+  {
+    "id": "1001",
+    "name": "寒川神社 例大祭",
+    "periods": [
+      {
+        "start": "2015-08-19T09:00:00.000Z",
+        "end": "2015-08-19T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-19T23:00:00.000Z",
+        "end": "2015-08-20T11:00:00.000Z"
+      },
+      {
+        "start": "2015-08-21T01:00:00.000Z",
+        "end": "2015-08-21T03:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "寒川神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区寒川町1丁目123",
+      "addressCode": "121010021",
+      "lat": "35.597307",
+      "long": "140.120246"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "specialProgram": [
+        "御浜下り"
+      ]
+    },
+    "organizer": "寒川神社",
+    "url": "http://www5a.biglobe.ne.jp/~samugawa/"
+  },
+  {
+    "id": "102",
+    "name": "第40回千葉の親子三代夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-15T02:00:00.000Z",
+        "end": "2015-08-15T11:00:00.000Z"
+      },
+      {
+        "start": "2015-08-16T04:00:00.000Z",
+        "end": "2015-08-16T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央1-12-1",
+      "addressCode": "121010036",
+      "lat": "35.610252",
+      "long": "140.120777"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "パレード"
+      ]
+    },
+    "organizer": "千葉市を美しくする会",
+    "url": "http://www.bikai.org/matsuri.html"
+  },
+  {
+    "id": "1002",
+    "name": "第889回妙見大祭",
+    "periods": [
+      {
+        "start": "2015-08-16T03:30:00.000Z",
+        "end": "2015-08-16T10:00:00.000Z"
+      },
+      {
+        "start": "2015-08-22T05:00:00.000Z",
+        "end": "2015-08-22T10:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千葉神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区院内1-16-1",
+      "addressCode": "121010009",
+      "lat": "35.611914",
+      "long": "140.123829"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "千葉神社",
+    "url": "http://www.chibajinja.com/073reisai.html"
+  },
+  {
+    "id": "601",
+    "name": "真砂夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-15T08:00:00.000Z",
+        "end": "2015-08-15T12:30:00.000Z"
+      },
+      {
+        "start": "2015-08-16T08:00:00.000Z",
+        "end": "2015-08-16T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "真砂中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5丁目15",
+      "addressCode": "121060013",
+      "lat": "35.641996",
+      "long": "140.064375"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "真砂地区(第31地区)町内自治会連絡協議会"
+  },
+  {
+    "id": "602",
+    "name": "第28回新稲毛ガーデンタワーサマーフェスティバル",
+    "periods": [
+      {
+        "start": "2015-08-22T05:30:00.000Z",
+        "end": "2015-08-22T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "新稲毛ガーデンタワー 中庭2階「スカイガーデン」",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目",
+      "addressCode": "121060006",
+      "lat": "35.625873",
+      "long": "140.071274"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "サマーフェスティバル実行委員会",
+    "sponcers": [
+      "新稲毛ガーデンタワー自治会"
+    ]
+  },
+  {
+    "id": "603",
+    "name": "第34回高浜北夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-22T06:00:00.000Z",
+        "end": "2015-08-22T12:30:00.000Z"
+      },
+      {
+        "start": "2015-08-23T01:00:00.000Z",
+        "end": "2015-08-23T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "高浜北団地中央プレイロット",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜4丁目",
+      "addressCode": "121060007",
+      "lat": "35.625594",
+      "long": "140.068624"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "山車、神輿"
+      ]
+    },
+    "organizer": "高浜北夏祭り実行委員会",
+    "url": "http://kitadanchi.org/"
+  },
+  {
+    "id": "604",
+    "name": "稲毛東映マンション子供夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-29T08:45:00.000Z",
+        "end": "2015-08-29T11:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "稲毛東映マンション前稲岸公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸4丁目",
+      "addressCode": "121060002",
+      "lat": "35.635535",
+      "long": "140.077057"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "稲毛東映マンション子供夏祭り実行委員会",
+    "remarks": "雨天の場合は屋内での売店のみ"
+  },
+  {
+    "id": "605",
+    "name": "第37回磯辺夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-29T09:00:00.000Z",
+        "end": "2015-08-29T12:00:00.000Z"
+      },
+      {
+        "start": "2015-08-30T09:00:00.000Z",
+        "end": "2015-08-30T12:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "中磯辺公園グラウンド",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺4-27",
+      "addressCode": "121060001",
+      "lat": "35.630115",
+      "long": "140.056704"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "磯辺夏祭り実行委員会"
   }
 ]
