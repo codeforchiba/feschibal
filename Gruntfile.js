@@ -385,7 +385,7 @@ module.exports = function (grunt) {
         },
         chiba_festival: {
           encoding: 'shift_jis',
-          removeColumn: [ 1, 3, 14, 20, 28, 31, 32, 33, 34, 39],
+          removeColumn: [ 1, 3, 14, 20, 28, 31, 32, 33, 34, 39, 40],
           from: [
             'No', '祭りの名称', '開催日１', '開始時間1', '終了時間1', '開催日２', '開始時間2', '終了時間2',
             '開催日３', '開始時間3', '終了時間3', '備考', '会場名称',
@@ -525,6 +525,12 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'gh-pages'
+  ]);
+
+  grunt.registerTask('build-data', [
+    'manipulate-csv',
+    'convert',
+    'map-json'
   ]);
 
   grunt.registerTask('default', [
