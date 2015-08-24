@@ -301,11 +301,6 @@ module.exports = function (grunt) {
             cwd: 'deploy/gh-pages',
             src: ['circle.yml', 'CNAME', 'sitemap.xml'],
             dest: '<%= config.dist %>/'
-          }, {
-            expand: true,
-            cwd: 'data/json',
-            src: ['**/*.json'],
-            dest: '<%= config.dist %>/data'
           }
         ]
       },

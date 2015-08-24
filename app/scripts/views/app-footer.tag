@@ -9,21 +9,14 @@
       </li>
       <li>
         <a href="https://codeforchiba.typeform.com/to/qzQYxn" class = "typeform-share link" target =  "_blank" data-mode = "1">問い合わせ</a>
-        </li>
+      </li>
+      <li>
+        <a href="https://codeforchiba.typeform.com/to/tpiHfF" class = "typeform-share link" target = "_blank" data-mode = "1">お祭りデータの登録依頼</a>
+      </li>
     </ul>
     <p>
       <a href="http://code4chiba.org/">
         <img src="images/common/codeforchiba.gif" alt="Code For Chiba">
-      </a>
-    </p>
-    <p class="copyright">
-      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-        <img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" />
-      </a>
-      <br />
-      このサービスは
-      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-        クリエイティブ・コモンズ 表示 3.0 非移植 ライセンスの下に提供されています。
       </a>
     </p>
   </footer>
