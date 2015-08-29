@@ -609,40 +609,6 @@
     "organizer": "コスモスまつり実行委員会"
   },
   {
-    "id": "406",
-    "name": "南町・ふれあい祭",
-    "periods": [
-      {
-        "start": "2015-11-17T15:00:00.000Z",
-        "end": "2015-11-17T15:00:00.000Z"
-      }
-    ],
-    "location": {
-      "name": "千城台南小学校",
-      "state": "千葉県",
-      "stateCode": "12",
-      "city": "千葉市",
-      "cityCode": "1212",
-      "address": "若葉区千城台南1丁目19-1",
-      "addressCode": "121040037",
-      "lat": "35.61836111",
-      "long": "140.191"
-    },
-    "features": {
-      "dancing": true,
-      "singing": true,
-      "drum": true,
-      "musicalPerformance": true,
-      "foodTruck": true,
-      "fireworks": false,
-      "others": [
-        "餅つき・ゲーム"
-      ]
-    },
-    "organizer": "",
-    "remarks": "時間未定"
-  },
-  {
     "id": "407",
     "name": "千城台東町ふれあい祭",
     "periods": [
@@ -1934,5 +1900,302 @@
       "fireworks": false
     },
     "organizer": "磯辺夏祭り実行委員会"
+  },
+  {
+    "id": "518",
+    "name": "ゆみ～るふれあい市夏祭り",
+    "periods": [
+      {
+        "start": "2015-08-22T04:00:00.000Z",
+        "end": "2015-08-22T08:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "おゆみ野センターモール",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野3-15",
+      "addressCode": "121050011",
+      "lat": "35.56122",
+      "long": "140.177361"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "移動遊具設置の子どもの外遊びコーナー"
+      ],
+      "specialProgram": [
+        "流しそうめん 無料サービス 先着150食"
+      ]
+    },
+    "organizer": "ゆみ～るふれあい市夏祭り実行委員会",
+    "remarks": "小雨決行、悪天候時は 8/23 に延期"
+  },
+  {
+    "id": "218",
+    "name": "第23回花見川区民まつり",
+    "periods": [
+      {
+        "start": "2015-10-25T01:00:00.000Z",
+        "end": "2015-10-25T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "花島公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区花島町308",
+      "addressCode": "121020022",
+      "lat": "35.681971",
+      "long": "140.097403"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "花見川区民まつり実行委員会"
+  },
+  {
+    "id": "606",
+    "name": "第23回美浜区民フェスティバル",
+    "periods": [
+      {
+        "start": "2015-10-04T00:20:00.000Z",
+        "end": "2015-10-04T06:40:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "稲毛海浜公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜7丁目2",
+      "addressCode": "121060007",
+      "lat": "35.619857",
+      "long": "140.060811"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "神輿、ダンス、フリーマーケット"
+      ]
+    },
+    "organizer": "美浜区民フェスティバル実行委員会"
+  },
+  {
+    "id": "303",
+    "name": "第23回稲毛区民まつり",
+    "periods": [
+      {
+        "start": "2015-10-25T00:10:00.000Z",
+        "end": "2015-10-25T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "穴川中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区穴川4丁目12",
+      "addressCode": "121030001",
+      "lat": "35.63681",
+      "long": "140.106009"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "稲毛区民まつり実行委員会"
+  },
+  {
+    "id": "103",
+    "name": "第23回中央区ふるさとまつり",
+    "periods": [
+      {
+        "start": "2015-10-18T01:00:00.000Z",
+        "end": "2015-10-18T07:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央1-12-1",
+      "addressCode": "121010036",
+      "lat": "35.610252",
+      "long": "140.120777"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "フリーマーケット、スタンプラリー"
+      ]
+    },
+    "organizer": "中央区ふるさとまつり実行委員会"
+  },
+  {
+    "id": "434",
+    "name": "第23回若葉区民まつり",
+    "periods": [
+      {
+        "start": "2015-11-01T00:30:00.000Z",
+        "end": "2015-11-01T05:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "東京情報大学",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区御成台4-1",
+      "addressCode": "121040012",
+      "lat": "35.637611",
+      "long": "140.203167"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "フリーマーケット、産直市、スポーツイベント"
+      ]
+    },
+    "organizer": "若葉区民まつり実行委員会"
+  },
+  {
+    "id": "519",
+    "name": "第23回緑区ふるさとまつり",
+    "periods": [
+      {
+        "start": "2015-11-01T01:00:00.000Z",
+        "end": "2015-11-01T06:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "昭和の森公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区土気町22",
+      "addressCode": "121050024",
+      "lat": "35.517634",
+      "long": "140.280334"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "芸能ステージ、こどもコーナー、スポレクコーナー"
+      ]
+    },
+    "organizer": "緑区ふるさとまつり実行委員会"
+  },
+  {
+    "id": "104",
+    "name": "千葉湊大漁まつり～第39回千葉市民産業まつり～",
+    "periods": [
+      {
+        "start": "2015-11-08T01:00:00.000Z",
+        "end": "2015-11-08T06:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "千葉ポートパーク",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央港1",
+      "addressCode": "121010037",
+      "lat": "35.599374",
+      "long": "140.10006"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "千葉市民産業まつり実行委員会"
+  },
+  {
+    "id": "1003",
+    "name": "有吉日枝神社秋祭り",
+    "periods": [
+      {
+        "start": "2015-10-18T01:00:00.000Z",
+        "end": "2015-10-18T06:40:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "有吉日枝神社境内 貝塚公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野中央5-2-3",
+      "addressCode": "121050013",
+      "lat": "35.557876",
+      "long": "140.172254"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "有吉囃子は子どもたちによって復活しています"
+      ],
+      "specialProgram": [
+        "有吉囃子",
+        "町内有志のステージでのカラオケ披露"
+      ]
+    },
+    "organizer": "日枝神社 有吉町内会",
+    "url": "http://www.ariyoshi.or.jp/akimatsuri.html"
   }
 ]
