@@ -2197,5 +2197,84 @@
     },
     "organizer": "日枝神社 有吉町内会",
     "url": "http://www.ariyoshi.or.jp/akimatsuri.html"
+  },
+  {
+    "id": "1004",
+    "name": "登渡神社御祭礼",
+    "periods": [
+      {
+        "start": "2015-09-04T07:00:00.000Z",
+        "end": "2015-09-04T11:30:00.000Z"
+      },
+      {
+        "start": "2015-09-05T02:00:00.000Z",
+        "end": "2015-09-05T12:00:00.000Z"
+      },
+      {
+        "start": "2015-09-06T07:00:00.000Z",
+        "end": "2015-09-06T11:30:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "登渡神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区登戸3-3-8",
+      "addressCode": "121010047",
+      "lat": "35.612136",
+      "long": "140.106411"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "神輿の町内巡業"
+      ]
+    },
+    "organizer": "登渡神社"
+  },
+  {
+    "id": "1005",
+    "name": "子守神社例大祭",
+    "periods": [
+      {
+        "start": "2015-09-14T15:00:00.000Z",
+        "end": "2015-09-14T15:00:00.000Z"
+      },
+      {
+        "start": "2015-09-15T15:00:00.000Z",
+        "end": "2015-09-15T15:00:00.000Z"
+      },
+      {
+        "start": "2015-09-16T15:00:00.000Z",
+        "end": "2015-09-16T15:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "子守神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町2-990",
+      "addressCode": "121020026",
+      "lat": "35.664086",
+      "long": "140.049344"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "子守神社"
   }
 ]
