@@ -2276,5 +2276,39 @@
       "fireworks": false
     },
     "organizer": "子守神社"
+  },
+  {
+    "id": "304",
+    "name": "小深町ふれあい祭り",
+    "periods": [
+      {
+        "start": "2015-09-19T09:00:00.000Z",
+        "end": "2015-09-18T15:00:00.000Z"
+      },
+      {
+        "start": "2015-09-20T03:00:00.000Z",
+        "end": "2015-09-19T15:00:00.000Z"
+      }
+    ],
+    "location": {
+      "name": "八幡神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区小深町43-2",
+      "addressCode": "121030014",
+      "lat": "35.658935",
+      "long": "140.15254"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": ""
   }
 ]
