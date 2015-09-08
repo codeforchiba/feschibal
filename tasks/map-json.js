@@ -20,6 +20,8 @@ function processDateRange(date, startTime, endTime) {
 
   if (endTime.length > 0) {
     dateObj.end = moment(date + " " + endTime, "YYYY/MM/DD HH:mm");
+  } else {
+    dateObj.end = moment(date, "YYYY/MM/DD").add(24, 'h');
   }
 
   return dateObj;
