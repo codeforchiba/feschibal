@@ -9,18 +9,30 @@ var moment = require('moment');
 var defaultOptions = {
 }
 
+function processDateRange(date, startTime, endTime) {
+  dateObj = {};
+
+  if (startTime.length > 0) {
+    dateObj.start = moment(date + " " + startTime, "YYYY/MM/DD HH:mm");
+  } else {
+    dateObj.start = moment(date, "YYYY/MM/DD");
+  }
+
+  if (endTime.length > 0) {
+    dateObj.end = moment(date + " " + endTime, "YYYY/MM/DD HH:mm");
+  } else {
+    dateObj.end = moment(date, "YYYY/MM/DD").add(24, 'h');
+  }
+
+  return dateObj;
+}
+
 function convertJson(data, writer) {
   oboe(data)
     .node('!.*', function(obj) {
       info = {
         id: obj.id,
         name: obj.name,
-        periods: [
-          {
-            start: moment(obj.date1 + " " + obj.startTime1, "YYYY/MM/DD HH:mm"),
-            end: moment(obj.date1 + " " + obj.endTime1, "YYYY/MM/DD HH:mm")
-          }
-        ],
         location: {
           name: obj.location_name,
           state: "千葉県",
@@ -43,18 +55,17 @@ function convertJson(data, writer) {
         organizer: obj.organizer
       };
 
+      info.periods = []
+      if (obj.date1.length > 0) {
+        info.periods.push(processDateRange(obj.date1, obj.startTime1, obj.endTime1));
+      }
+
       if (obj.date2.length > 0) {
-        info.periods.push({
-          start: moment(obj.date2 + " " + obj.startTime2, "YYYY/MM/DD HH:mm"),
-          end: moment(obj.date2 + " " + obj.endTime2, "YYYY/MM/DD HH:mm")
-        })
+        info.periods.push(processDateRange(obj.date2, obj.startTime2, obj.endTime2));
       }
 
       if (obj.date3.length > 0) {
-        info.periods.push({
-          start: moment(obj.date3 + " " + obj.startTime3, "YYYY/MM/DD HH:mm"),
-          end: moment(obj.date3 + " " + obj.endTime3, "YYYY/MM/DD HH:mm")
-        })
+        info.periods.push(processDateRange(obj.date3, obj.startTime3, obj.endTime3));
       }
 
       if (obj.features_others.length > 0) {

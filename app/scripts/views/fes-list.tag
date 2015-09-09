@@ -16,8 +16,8 @@
               {moment(fes.getStartDate()).format('MM/DD')}
               <span class="small">{moment(fes.getStartDate()).format('dd')}</span>
               -
-              {moment(fes.getEndDate()).format('MM/DD')}
-              <span class="small">{moment(fes.getEndDate()).format('dd')}</span>
+              {moment(fes.getUniquePeriods()[fes.getUniquePeriods().length - 1].start).format('MM/DD')}
+              <span class="small">{moment(fes.getUniquePeriods()[fes.getUniquePeriods().length - 1].start).format('dd')}</span>
             </span>
           </p>
           <p class="title">{fes.name}</p>
