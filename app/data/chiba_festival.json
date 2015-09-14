@@ -2341,5 +2341,73 @@
         "end": "2015-10-20T15:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "607",
+    "name": "幕張西地区盆踊り大会",
+    "location": {
+      "name": "幕張西第一公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-10",
+      "addressCode": "121060012",
+      "lat": "35.663777",
+      "long": "140.036089"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "第30地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2015-07-24T09:30:00.000Z",
+        "end": "2015-07-24T12:00:00.000Z"
+      },
+      {
+        "start": "2015-07-25T09:30:00.000Z",
+        "end": "2015-07-25T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "608",
+    "name": "第5回 浜田まつり",
+    "location": {
+      "name": "日神パレステージ海浜幕張とコロンブスシティの間の道路",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区浜田1",
+      "addressCode": "121060010",
+      "lat": "35.660448",
+      "long": "140.034758"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false
+    },
+    "organizer": "日神パレステージ海浜幕張自治会",
+    "periods": [
+      {
+        "start": "2015-04-26T02:00:00.000Z",
+        "end": "2015-04-26T07:00:00.000Z"
+      }
+    ],
+    "sponcers": [
+      "コロンブスシティ自治会"
+    ]
   }
 ]
