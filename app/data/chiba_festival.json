@@ -2258,24 +2258,25 @@
       "singing": false,
       "drum": false,
       "musicalPerformance": false,
-      "foodTruck": false,
+      "foodTruck": true,
       "fireworks": false
     },
     "organizer": "子守神社",
     "periods": [
       {
-        "start": "2015-09-14T15:00:00.000Z",
-        "end": "2015-09-15T15:00:00.000Z"
+        "start": "2015-09-15T04:00:00.000Z",
+        "end": "2015-09-15T11:00:00.000Z"
       },
       {
-        "start": "2015-09-15T15:00:00.000Z",
-        "end": "2015-09-16T15:00:00.000Z"
+        "start": "2015-09-16T09:00:00.000Z",
+        "end": "2015-09-16T11:00:00.000Z"
       },
       {
-        "start": "2015-09-16T15:00:00.000Z",
-        "end": "2015-09-17T15:00:00.000Z"
+        "start": "2015-09-17T04:00:00.000Z",
+        "end": "2015-09-17T12:30:00.000Z"
       }
-    ]
+    ],
+    "remarks": "神輿は、15日と 17日"
   },
   {
     "id": "304",
@@ -2308,6 +2309,36 @@
       {
         "start": "2015-09-20T03:00:00.000Z",
         "end": "2015-09-20T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "1006",
+    "name": "三代王神社秋季例大祭",
+    "location": {
+      "name": "三代王神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区武石町1-4",
+      "addressCode": "121020015",
+      "lat": "35.665878",
+      "long": "140.060411"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "三代王神社",
+    "periods": [
+      {
+        "start": "2015-10-19T15:00:00.000Z",
+        "end": "2015-10-20T15:00:00.000Z"
       }
     ]
   }
