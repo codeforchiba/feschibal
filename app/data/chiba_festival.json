@@ -1973,6 +1973,40 @@
     "remarks": "小雨決行、悪天候時は 8/23 に延期"
   },
   {
+    "id": "218",
+    "name": "第23回花見川区民まつり",
+    "location": {
+      "name": "花島公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区花島町308",
+      "addressCode": "121020022",
+      "lat": "35.681971",
+      "long": "140.097403"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "昔あそび、グラウンドゴルフ、フリーマーケット"
+      ]
+    },
+    "organizer": "花見川区民まつり実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-25T01:00:00.000Z",
+        "end": "2015-10-25T06:00:00.000Z"
+      }
+    ],
+    "remarks": "小雨決行"
+  },
+  {
     "id": "606",
     "name": "第23回美浜区民フェスティバル",
     "location": {
