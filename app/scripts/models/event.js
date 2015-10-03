@@ -88,7 +88,7 @@
         if (param.fromDate) {
           var fromDate = getDateTime(param.fromDate);
           isInclude = _.some(fes.periods, function (period) {
-            return getDateTime(period.end) >= fromDate;
+            return getDateTime(period.start) >= fromDate;
           });
           if (!isInclude) {
             return false;
