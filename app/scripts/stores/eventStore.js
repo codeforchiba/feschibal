@@ -18,7 +18,7 @@
         // 日付をDate型に変換
         data.periods = _.map(data.periods, function (period) {
           period.start = new Date(period.start);
-          period.end = new Date(period.end);
+          period.end = (period.end ?  new Date(period.end) : null);
           return period;
         });
         this.dataStore[data.id] = new cfc.Event(data);

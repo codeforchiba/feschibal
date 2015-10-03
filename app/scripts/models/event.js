@@ -37,7 +37,12 @@
      * @returns {Date} 最終日の終了日時
      */
     getEndDate: function () {
-      return this.periods[this.periods.length - 1].end;
+      var endDatetime = this.periods[this.periods.length - 1].end;
+      if (endDatetime) {
+        return endDatetime;
+      } else {
+        return this.periods[this.periods.length - 1].start;
+      }
     },
 
     /**
