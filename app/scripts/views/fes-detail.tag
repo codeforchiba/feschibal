@@ -205,6 +205,8 @@
       font-size: 13px;
       padding: 1px 30px;
       border-radius: 10px;
+      clear: left;
+      margin-bottom: 20px;
     }
     .info-area .fes-infos dd {
       padding-left: 120px;
