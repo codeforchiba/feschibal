@@ -609,6 +609,40 @@
     ]
   },
   {
+    "id": "406",
+    "name": "南町・ふれあい祭",
+    "location": {
+      "name": "千城台南小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台南1丁目19-1",
+      "addressCode": "121040037",
+      "lat": "35.61836111",
+      "long": "140.191"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "餅つき・ゲーム"
+      ]
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2015-11-17T15:00:00.000Z",
+        "end": "2015-11-18T15:00:00.000Z"
+      }
+    ],
+    "remarks": "時間未定"
+  },
+  {
     "id": "407",
     "name": "千城台東町ふれあい祭",
     "location": {
@@ -1958,7 +1992,10 @@
       "drum": false,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "others": [
+        "昔あそび、グラウンドゴルフ、フリーマーケット"
+      ]
     },
     "organizer": "花見川区民まつり実行委員会",
     "periods": [
@@ -1966,7 +2003,8 @@
         "start": "2015-10-25T01:00:00.000Z",
         "end": "2015-10-25T06:00:00.000Z"
       }
-    ]
+    ],
+    "remarks": "小雨決行"
   },
   {
     "id": "606",
@@ -1986,11 +2024,11 @@
       "dancing": true,
       "singing": false,
       "drum": true,
-      "musicalPerformance": false,
+      "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
       "others": [
-        "神輿、ダンス、フリーマーケット"
+        "神輿、ワークショップ、フリーマーケット、浜焼き"
       ]
     },
     "organizer": "美浜区民フェスティバル実行委員会",
@@ -2408,6 +2446,83 @@
     ],
     "sponcers": [
       "コロンブスシティ自治会"
+    ]
+  },
+  {
+    "id": "105",
+    "name": "第37回 蘇我コミュニティ祭り",
+    "location": {
+      "name": "蘇我コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区今井1-14-35",
+      "addressCode": "121010007",
+      "lat": "35.582806",
+      "long": "140.129392"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "ミニサッカー大会、プラネタリウム"
+      ]
+    },
+    "organizer": "蘇我コミュニティまつり実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-03T00:00:00.000Z",
+        "end": "2015-10-03T07:30:00.000Z"
+      },
+      {
+        "start": "2015-10-04T00:00:00.000Z",
+        "end": "2015-10-04T07:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "305",
+    "name": "薗生神社例祭",
+    "location": {
+      "name": "薗生神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区園生町624",
+      "addressCode": "121030018",
+      "lat": "35.64836",
+      "long": "140.103332"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "神輿、子供芋掘り、子供縁日"
+      ],
+      "specialProgram": [
+        "20年ぶりに復活した神輿渡御"
+      ]
+    },
+    "organizer": "園生神社",
+    "periods": [
+      {
+        "start": "2015-09-22T01:00:00.000Z",
+        "end": "2015-09-22T04:00:00.000Z"
+      },
+      {
+        "start": "2015-09-23T01:00:00.000Z",
+        "end": "2015-09-23T08:00:00.000Z"
+      }
     ]
   }
 ]
