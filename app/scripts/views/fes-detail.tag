@@ -44,6 +44,8 @@
             <li each={ program in fes.features.specialProgram }>{program}</li>
           </ul>
         </dd>
+        <dt>URL</dt>
+        <dd><a href={fes.url} target="_blank">{fes.url}</a></dd>
         <dt>備　考</dt>
         <dd>{fes.remarks}</dd>
         </dl>
