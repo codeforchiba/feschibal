@@ -37,10 +37,6 @@
     onSelectFes(e){
       riot.route("detail/" + e.item.fes.id);
     }
-
-    this.on('updated', function() {
-      Ts.reload();
-    });
   </script>
 
   <style scoped>
