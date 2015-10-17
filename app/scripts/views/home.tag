@@ -10,7 +10,7 @@
       <div class="homesearch-list">
         <a href="javascript:void(0)" onclick={doClickCitySearchPanel}>
           <img src="images/home/icon01.svg">
-          <p>地域から探す</p>
+          <p class="matsuri-style">地域から探す</p>
         </a>
       </div>
 
@@ -18,7 +18,7 @@
         <a href="javascript:void(0)" onclick={doSearchToday}>
           <img src="images/home/icon02.svg">
 
-          <p>本日開催の祭り</p>
+          <p class="matsuri-style">本日開催の祭り</p>
         </a>
       </div>
 
@@ -26,12 +26,12 @@
         <a href="javascript:void(0)" onclick={doSearchThisWeekEnd}>
           <img src="images/home/icon03.svg">
 
-          <p>土日開催の祭り</p>
+          <p class="matsuri-style">土日開催の祭り</p>
         </a>
       </div>
     </section>
     <section id="city-search" style="display:none">
-      <ul class="homesearch">
+      <ul class="homesearch matsuri-style">
         <li class="homesearch-list" each={ city in cities }>
           <a href="javascript:void(0)" onclick={parent.doSearchCity}>
             <p>{city.city}</p>
@@ -42,7 +42,7 @@
     </section>
     <section class="week">
       <dl class="week-day">
-        <dt>今週開催の祭り</dt>
+        <dt class="matsuri-style">今週開催の祭り</dt>
         <dd>{moment(startDateOfWeek).format('M/D')} - {moment(endDateOfWeek).format('M/D')}</dd>
       </dl>
 

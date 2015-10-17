@@ -1,7 +1,7 @@
 <search>
   <div class="main">
     <div class="main-img">
-      <h2>祭りを検索する</h2>
+      <h2 class="matsuri-style">祭りを検索する</h2>
       <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
     </div>
   </div>
@@ -9,7 +9,7 @@
   <article class="content">
 
     <form onsubmit={onSubmitSearch}>
-      <h4>期間を選択してください。</h4>
+      <h4 class="matsuri-style">期間を選択してください。</h4>
       <div class="form-group row">
         <div class="col-xs-6">
           <input type="text" class="form-control" id="fromDate" >
@@ -19,13 +19,13 @@
         </div>
       </div>
 
-      <h4>地域を選択してください。</h4>
+      <h4 class="matsuri-style">地域を選択してください。</h4>
       <div class="form-group">
         <select class="form-control" id="cities"></select>
       </div>
 
       <div class="form-group btn-area">
-        <button type="submit" class="btn btn-search">検索する</button>
+        <button type="submit" class="btn btn-search matsuri-style">検索する</button>
       </div>
     </form>
 
@@ -34,19 +34,19 @@
         <li class={'tab-item': true, active: path==='list'}>
           <a href="#search/list?{queryString}">
             <img src="images/search/icon01.svg">
-            <p>一覧</p>
+            <p class="matsuri-style">一覧</p>
           </a>
         </li>
         <li class={'tab-item': true, active: path==='map'}>
           <a href="#search/map?{queryString}">
             <img src="images/search/icon02.svg">
-            <p>地図</p>
+            <p class="matsuri-style">地図</p>
           </a>
         </li>
         <li class={'tab-item': true, active: path==='cal'}>
           <a href="#search/cal?{queryString}">
             <img src="images/search/icon03.svg">
-            <p>カレンダー</p>
+            <p class="matsuri-style">カレンダー</p>
           </a>
         </li>
       </ul>
