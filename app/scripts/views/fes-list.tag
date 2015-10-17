@@ -8,19 +8,19 @@
           <p class="day" if={fes.getUniquePeriods().length <= 2}>
             <span class="bgcolor" each={ period in fes.getUniquePeriods() } >
               {moment(period.start).format('MM/DD')}
-              <span class="small">{moment(period.start).format('dd')}</span>
+              <span class="small matsuri-style">{moment(period.start).format('dd')}</span>
             </span>
           </p>
           <p class="day" if={fes.getUniquePeriods().length > 2}>
             <span class="bgcolor" >
               {moment(fes.getStartDate()).format('MM/DD')}
-              <span class="small">{moment(fes.getStartDate()).format('dd')}</span>
+              <span class="small matsuri-style">{moment(fes.getStartDate()).format('dd')}</span>
               -
               {moment(fes.getUniquePeriods()[fes.getUniquePeriods().length - 1].start).format('MM/DD')}
-              <span class="small">{moment(fes.getUniquePeriods()[fes.getUniquePeriods().length - 1].start).format('dd')}</span>
+              <span class="small matsuri-style">{moment(fes.getUniquePeriods()[fes.getUniquePeriods().length - 1].start).format('dd')}</span>
             </span>
           </p>
-          <p class="title">{fes.name}</p>
+          <p class="title matsuri-style">{fes.name}</p>
           </dt>
           <dd>
             <a href="javascript:void(0)">
@@ -37,6 +37,11 @@
     onSelectFes(e){
       riot.route("detail/" + e.item.fes.id);
     }
+
+    this.on('updated', function() {
+      Ts.reload();
+    });
+
   </script>
 
   <style scoped>

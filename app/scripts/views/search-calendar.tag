@@ -73,5 +73,13 @@
     .fc-sun {
       background-color:#FFF5F5;
     }
+
+    .fc-event .fc-toolbar .fc-left, .fc-event .fc-day-header, .fc-event .fc-content {
+      font-family: "勘亭流",Kanteiryu,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
+    }
+
+    .fc-event .fc-toolbar, .fc-left {
+      font-size: 15px;
+    }
   </style>
 </search-calendar>

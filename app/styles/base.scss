@@ -1,6 +1,5 @@
 body {
   background: url(../images/common/base-bg.jpg);
-  font-family: "勘亭流",Kanteiryu,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
 }
 
 .block {
@@ -113,4 +112,11 @@ c l e a r f i x
   content: "";
   display: table;
   clear: both;
+}
+
+/* ==================================
+m a t s u r i - s t y l e
+================================== */
+.matsuri-style {
+  font-family: "勘亭流",Kanteiryu,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
 }
