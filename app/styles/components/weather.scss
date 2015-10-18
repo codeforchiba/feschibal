@@ -1,0 +1,112 @@
+.icon-weather {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: 100%;
+  // 晴れ
+  &.c100,&.c123,&.c124 {
+    background-image: url(../images/weather/32.png);
+  }
+
+  // 晴れ時々曇り
+  &.c101 {
+    background-image: url(../images/weather/34.png);
+  }
+
+  // 晴れ時々雨(雪)
+  &.c102,&.c103,&.c104,&.c105,&.c106,&.c107,&.c108,
+  &.c112,&.c113,&.c114,&.c115,&.c116,&.c117,&.c118,
+  &.c120,&.c121,&.c122,&.c125,&.c126,&.c127,&.c128,&.c129,
+  &.c132,&.c160,&.c170,&.c181{
+    background-image: url(../images/weather/39.png);
+  }
+
+  // 晴れのち曇り
+  &.c110,&.c111,&.c210,&.c211 {
+    background-image: url(../images/weather/28.png);
+  }
+
+  // 晴れのち雷雨
+  &.c119,&.c140 {
+    background-image: url(../images/weather/38.png);
+  }
+
+  // 晴れのち霧
+  &.c130,&.c131 {
+    background-image: url(../images/weather/19.png);
+  }
+
+  // 曇り
+  &.c200,&.c231 {
+    background-image: url(../images/weather/13.png);
+  }
+
+  // 曇りのち晴れ
+  &.c201,&.c223 {
+    background-image: url(../images/weather/41.png);
+  }
+
+  // 曇り時々雨
+  &.c202,&.c203,&.c204,&.c205,&.c206,&.c207,
+  &.c220,&.c221,&.c222,&.c260,&.c270{
+    background-image: url(../images/weather/42.png);
+  }
+
+  // 曇り時々雷雨
+  &.c208,&.c240,&.c250,
+  &.c350 {
+    background-image: url(../images/weather/00.png);
+  }
+
+  // 霧
+  &.c209 {
+    background-image: url(../images/weather/20.png);
+  }
+
+  // 曇りのち一時雨
+  &.c212,&.c213,&.c214,&.c224,&.c225,&.c226,&.c227,&.c281,&.c309,&.c313,&.c317,&.c321 {
+    background-image: url(../images/weather/11.png);
+  }
+
+  // 曇りのち雪
+  &.c215,&.c216,&.c217,&.c218,&.c228,&.c229,&.c230,
+  &.c303,&.c304,&.c314,&.c315,&.c322,&.c326,&.c327,&.c329,&.c340,&.c371 {
+    background-image: url(../images/weather/08.png);
+  }
+
+  // 曇りのち雪,雷
+  &.c219 {
+    background-image: url(../images/weather/10.png);
+  }
+
+  // 雨
+  &.c300,&.c328 {
+    background-image: url(../images/weather/12.png);
+  }
+
+  // 雨時々晴れ
+  &.c301,&.c302,&.c311,&.c316,&.c320,&.c323,&.c324,&.c325,&.c361,&.c420,&.c421 {
+    background-image: url(../images/weather/39.png);
+  }
+
+  // 大雨
+  &.c306,&.c307,&.c308 {
+    background-image: url(../images/weather/01.png);
+  }
+
+  // 雪
+  &.c400,&.c401,&.c402,&.c403,&.c409,&.c411,&.c413,&.c414,
+  &.c422,&.c423,&.c424,&.c425,&.c426,&.c427{
+    background-image: url(../images/weather/08.png);
+  }
+
+  // 大雪
+  &.c405,&.c406,&.c407,&.c450 {
+    background-image: url(../images/weather/10.png);
+  }
+
+  // なし
+  &.none {
+    background-image: url(../images/weather/na.png);
+  }
+}
