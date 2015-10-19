@@ -18,7 +18,32 @@
             </span>
           </li>
         </ul>
-
+        <div class="weather">
+          <ul>
+            <li each={ period, i in fes.periods }>
+              <div class="date">{moment(period.start).format('MM/DD')}</div>
+              <div>
+                <span if={period.weather.weatherCode != null } class="icon-weather c{period.weather.weatherCode}"></span>
+                <span if={period.weather == null || period.weather.weatherCode == null } class="icon-weather none"></span>
+              </div>
+              <div>
+                <span if={period.weather.weather != null }>{period.weather.weather}</span>
+                <span if={period.weather == null || period.weather.weather == null}>--</span>
+              </div>
+              <div>
+                <span if={period.weather.temperatureMax != null } class="temperatureMax">{period.weather.temperatureMax}</span>
+                <span if={period.weather == null || period.weather.temperatureMax == null}>--</span>
+                /
+                <span if={period.weather.temperatureMin != null } class="temperatureMin">{period.weather.temperatureMin}</span>
+                <span if={period.weather == null || period.weather.temperatureMin == null}>--</span>
+              </div>
+              <div>
+                <span if={period.weather.precipitation != null }>{period.weather.precipitation}%</span>
+                <span if={period.weather == null || period.weather.precipitation == null}>--</span>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="features">
           <img if={fes.features.dancing} src="images/detail/Detail_icon01.svg" />
           <img if={fes.features.singing} src="images/detail/Detail_icon02.svg" />
@@ -98,16 +123,17 @@
 
         map.setView([fes.location.lat, fes.location.long], 14);
 
-        self.searchAroundRes(fes);
-
-        Ts.reload();
+        // 周辺の祭り取得
+        self.fetchAroundRes(fes);
+        // 天気予報取得
+        self.fetchWeather(fes);
       });
     });
 
     /**
-     * 指定した祭りの周辺の祭り情報を検索します
+     * 指定した祭りの周辺の祭り情報を取得します
      */
-    searchAroundRes(fes){
+    fetchAroundRes(fes){
       var latLng = L.latLng([fes.location.lat, fes.location.long]);
       var param = {
         fromDate : new Date(),
@@ -123,6 +149,18 @@
           return fes.id !== _fes.id;
         });
         self.update();
+      });
+    }
+
+    /**
+     * 指定した祭りの開催日の天気を取得します。
+     */
+    fetchWeather(fes){
+      _.each(fes.periods, function(period){
+        cfc.Weather.findByDate(period.start).done(function(weather) {
+          period.weather = weather;
+          self.update();
+        });
       });
     }
 
@@ -152,7 +190,6 @@
     .info-area .day-time {
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-      margin-bottom: 30px;
       padding-bottom: 20px;
       padding-top: 20px;
     }
@@ -187,6 +224,37 @@
       font-size: 0;
       clear: both;
       visibility: hidden;
+    }
+
+    /** 天気予報 */
+    .info-area .weather {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .info-area .weather ul:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size: 0;
+      clear: both;
+      visibility: hidden;
+    }
+    .info-area .weather li {
+      float: left;
+      text-align: center;
+      margin-right: 30px;
+    }
+
+    .info-area .weather .temperatureMax {
+      font-weight: bold;
+      color: #ff3300;
+    }
+
+    .info-area .weather .temperatureMin {
+      font-weight: bold;
+      color: #0066ff;
     }
 
     /** 祭り内容 */
