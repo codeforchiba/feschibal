@@ -2524,5 +2524,297 @@
         "end": "2015-09-23T08:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "435",
+    "name": "第18回富田コスモス祭り",
+    "location": {
+      "name": "富田都市農業交流センター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区富田町711-1",
+      "addressCode": "121040041",
+      "lat": "35.606728",
+      "long": "140.242882"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "新鮮野菜の即売、収穫体験"
+      ],
+      "specialProgram": [
+        "似顔絵体験、ガマの油売り",
+        "ビームライフル体験"
+      ]
+    },
+    "organizer": "コスモスまつり実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-10T00:00:00.000Z",
+        "end": "2015-10-10T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-11T00:00:00.000Z",
+        "end": "2015-10-11T06:00:00.000Z"
+      },
+      {
+        "start": "2015-10-12T00:00:00.000Z",
+        "end": "2015-10-12T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "306",
+    "name": "ちばモノレール祭り 2015",
+    "location": {
+      "name": "千葉モノレール萩台車両基地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区萩台町199-1",
+      "addressCode": "121030025",
+      "lat": "35.641242",
+      "long": "140.126753"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "モノレールの展示、見学"
+      ]
+    },
+    "organizer": "ちばモノレール祭り実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-17T01:00:00.000Z",
+        "end": "2015-10-17T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "轟け ちば和太鼓フェスタ 2015",
+    "location": {
+      "name": "千葉神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区院内1-16-1",
+      "addressCode": "121010009",
+      "lat": "35.611914",
+      "long": "140.123829"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "ちば和太鼓フェスタ実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-18T01:00:00.000Z",
+        "end": "2015-10-18T10:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "219",
+    "name": "千葉市ふるさと農園 収穫祭",
+    "location": {
+      "name": "千葉市ふるさと農園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区三角町656-3",
+      "addressCode": "121020013",
+      "lat": "35.678298",
+      "long": "140.118288"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "生け花教室、芋掘り、小松菜掘り、折り紙教室"
+      ]
+    },
+    "organizer": "千葉市ふるさと農園",
+    "periods": [
+      {
+        "start": "2015-10-24T01:00:00.000Z",
+        "end": "2015-10-24T05:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "name": "ちば羽衣秋まつり / ちば YOSAKOI 2015",
+    "location": {
+      "name": "中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央1-12-1",
+      "addressCode": "121010036",
+      "lat": "35.610252",
+      "long": "140.120777"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "ちばYOSAKOI実行委員会",
+    "periods": [
+      {
+        "start": "2015-10-24T05:00:00.000Z",
+        "end": "2015-10-24T11:00:00.000Z"
+      },
+      {
+        "start": "2015-10-25T02:00:00.000Z",
+        "end": "2015-10-25T11:00:00.000Z"
+      }
+    ],
+    "remarks": "小雨決行、荒天中止"
+  },
+  {
+    "id": "436",
+    "name": "ちばZOOフェスタ 2015",
+    "location": {
+      "name": "千葉市動物公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区源町280",
+      "addressCode": "121040049",
+      "lat": "35.644699",
+      "long": "140.124054"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "specialProgram": [
+        "アニマル・コスプレコンテスト(8日のみ)"
+      ]
+    },
+    "organizer": "ちばZOOフェスタ実行委員会",
+    "periods": [
+      {
+        "start": "2015-11-07T00:30:00.000Z",
+        "end": "2015-11-07T07:30:00.000Z"
+      },
+      {
+        "start": "2015-11-08T00:30:00.000Z",
+        "end": "2015-11-08T07:30:00.000Z"
+      }
+    ],
+    "sponcers": [
+      "千葉市"
+    ]
+  },
+  {
+    "id": "437",
+    "name": "縄文ムラまつり",
+    "location": {
+      "name": "加曽利貝塚公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区桜木8-33-1",
+      "addressCode": "121040024",
+      "lat": "35.62498",
+      "long": "140.163959"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "縄文体験、縄文かるた、土器作り"
+      ]
+    },
+    "organizer": "加曽利貝塚博物館",
+    "periods": [
+      {
+        "start": "2015-11-07T00:00:00.000Z",
+        "end": "2015-11-07T08:00:00.000Z"
+      },
+      {
+        "start": "2015-11-08T00:00:00.000Z",
+        "end": "2015-11-08T08:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "307",
+    "name": "第10回稲毛あかり祭り「夜灯」",
+    "location": {
+      "name": "あかり広場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛東2",
+      "addressCode": "121030008",
+      "lat": "35.637438",
+      "long": "140.085935"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false
+    },
+    "organizer": "夜灯実行委員会",
+    "periods": [
+      {
+        "start": "2015-11-21T04:30:00.000Z",
+        "end": "2015-11-21T11:30:00.000Z"
+      },
+      {
+        "start": "2015-11-22T04:30:00.000Z",
+        "end": "2015-11-22T11:30:00.000Z"
+      }
+    ],
+    "url": "http://yotoboshi.org/",
+    "sponcers": [
+      "稲毛商店街振興組合",
+      "稲毛サービス会"
+    ]
   }
 ]
