@@ -2,7 +2,7 @@
   <div if={ fes != null }>
     <div class="main">
       <div class="main-img">
-        <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
+        <img id="header-img" src="images/festival/{fes.id}/header.jpg" alt="千葉市お祭りデータセンター">
       </div>
     </div>
     <article class="content">
@@ -86,6 +86,15 @@
     self.fes = null;
     /** 周辺の祭り */
     self.aroundFes = [];
+
+    /**
+     * タイトル画像がなければデフォルトの画像を表示
+     */
+    $(self["header-img"]).error(function(){
+      $(this).attr({
+        src: 'images/home/main.jpg'
+      });
+    });
 
     /**
      * 地図の生成
