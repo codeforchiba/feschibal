@@ -24,7 +24,7 @@
           </dt>
           <dd>
             <a href="javascript:void(0)">
-              <img class="roll_fout" src="{fes.getImage()}">
+              <img class="roll_fout" src="{fes.getImage()}" onload={onImgLoad}>
             </a>
           </dd>
         </dl>
@@ -41,6 +41,21 @@
     this.on('updated', function() {
       Ts.reload();
     });
+
+    /**
+     * 画像があればその画像を表示
+     */
+    onImgLoad(evt) {
+      var $target = $(evt.target);
+      var img = new Image();
+      var url = 'images/festival/' + evt.item.fes.id + '/item_01.jpg';
+      img.onload = function() {
+        $target.attr({
+          src: url
+        });
+      };
+      img.src = url;
+    }
 
   </script>
 
@@ -97,6 +112,17 @@
       visibility: hidden;
     }
 
+    .festival-list-date dd {
+      width: 300px;
+      height: 422px;
+      overflow: hidden;
+      display: block;
+    }
+
+    .festival-list-date dd img {
+      height: 422px;
+    }
+
     @media only screen and (max-width: 640px) {
       .festival-list {
         padding: 0;
@@ -144,13 +170,13 @@
       }
 
       .festival-list-date dd {
+        width: 100%;
         height: 110px;
-        overflow: hidden;
-        background: #383838;
       }
 
       .festival-list-date dd img {
         width: 100%;
+        height: auto;
       }
 
       wrap:nth-child(3n) .festival-list-date {
