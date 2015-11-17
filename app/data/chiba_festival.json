@@ -2899,5 +2899,41 @@
         "end": "2015-11-01T08:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "308",
+    "name": "新嘗祭",
+    "location": {
+      "name": "稲毛浅間神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛1-5-10",
+      "addressCode": "121030005",
+      "lat": "35.636623",
+      "long": "140.082432"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "斎行(10:00～)、神楽(13:00～)"
+      ],
+      "specialProgram": [
+        "神楽(千葉県指定無形文化財)"
+      ]
+    },
+    "organizer": "稲毛浅間神社",
+    "periods": [
+      {
+        "start": "2015-11-23T01:00:00.000Z",
+        "end": "2015-11-23T06:00:00.000Z"
+      }
+    ]
   }
 ]
