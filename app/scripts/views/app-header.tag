@@ -4,7 +4,7 @@
       <h1>
         <a class="roll_fout" href="#"><img class="logo" src="images/common/logo.png" alt="千葉市お祭りデータセンター"></a>
         <div class="pull-right">
-          <a href="https://codeforchiba.typeform.com/to/tpiHfF" class="btn regist-btn" target = "_blank" data-mode = "1"><img src="images/common/btn_icon.png" alt=""/> お祭りデータ登録</a>
+          <a href="https://codeforchiba.typeform.com/to/tpiHfF" class="btn regist-btn typeform-share link" target = "_blank" data-mode = "1"><img src="images/common/btn_icon.png" alt=""/> お祭りデータ登録</a>
         </div>
       </h1>
     </div>

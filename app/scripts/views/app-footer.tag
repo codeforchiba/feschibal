@@ -41,7 +41,7 @@
     }
 
     ul {
-      width: 600px;
+      width: 500px;
       margin: 10px auto 30px;
     }
 
