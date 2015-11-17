@@ -24,7 +24,7 @@
           </dt>
           <dd>
             <a href="javascript:void(0)">
-              <img class="roll_fout" src="{fes.getImage()}" onload={onImgLoad}>
+              <img class="roll_fout" src="images/festival/{fes.id}/item_01.jpg" onerror={onErrorImgLoad}>
             </a>
           </dd>
         </dl>
@@ -39,22 +39,16 @@
     }
 
     this.on('updated', function() {
-      Ts.reload();
+      //Ts.reload();
     });
 
     /**
-     * 画像があればその画像を表示
+     * 画像h表示に失敗した場合はデフォルト画像を表示
      */
-    onImgLoad(evt) {
-      var $target = $(evt.target);
-      var img = new Image();
-      var url = 'images/festival/' + evt.item.fes.id + '/item_01.jpg';
-      img.onload = function() {
-        $target.attr({
-          src: url
-        });
-      };
-      img.src = url;
+    onErrorImgLoad(evt) {
+      $(evt.target).attr({
+        src: 'images/common/pic01.jpg'
+      });
     }
 
   </script>

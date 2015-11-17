@@ -147,6 +147,8 @@
         self.fetchWeather(fes);
         // 祭りに関する画像を取得
         self.fetchImages(fes);
+
+        Ts.reload();
       });
     });
 
