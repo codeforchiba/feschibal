@@ -24,7 +24,7 @@
           </dt>
           <dd>
             <a href="javascript:void(0)">
-              <img class="roll_fout" src="images/festival/{fes.id}/item_01.jpg" onerror={onErrorImgLoad}>
+              <img class="roll_fout" src="images/festival/{fes.id}/header.jpg" onerror={onErrorImgLoad}>
             </a>
           </dd>
         </dl>
