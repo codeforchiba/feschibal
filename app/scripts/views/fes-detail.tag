@@ -2,7 +2,7 @@
   <div if={ fes != null }>
     <div class="main">
       <div class="main-img">
-        <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
+        <img id="header-img" src="images/festival/{fes.id}/header.jpg" alt="千葉市お祭りデータセンター">
       </div>
     </div>
     <article class="content">
@@ -74,6 +74,13 @@
         <dt>備　考</dt>
         <dd>{fes.remarks}</dd>
         </dl>
+        <div class="img-area">
+        <span each={ imageUrl, i in imageUrls }>
+          <a href="{imageUrl}"data-lightbox="festival-image">
+            <img src="{imageUrl}" alt="祭り画像">
+          </a>
+        </span>
+        </div>
       </div>
       <div id="map-detail"></div>
       <div class="title matsuri-style">周辺のお祭り</div>
@@ -86,6 +93,17 @@
     self.fes = null;
     /** 周辺の祭り */
     self.aroundFes = [];
+    /** 祭り画像 */
+    self.imageUrls = [];
+
+    /**
+     * タイトル画像がなければデフォルトの画像を表示
+     */
+    $(self["header-img"]).error(function(){
+      $(this).attr({
+        src: 'images/home/main.jpg'
+      });
+    });
 
     /**
      * 地図の生成
@@ -127,6 +145,10 @@
         self.fetchAroundRes(fes);
         // 天気予報取得
         self.fetchWeather(fes);
+        // 祭りに関する画像を取得
+        self.fetchImages(fes);
+
+        Ts.reload();
       });
     });
 
@@ -162,6 +184,29 @@
           self.update();
         });
       });
+    }
+
+    /**
+     * 指定した祭りに関連する画像を取得
+     */
+    fetchImages(fes){
+      self.imageUrls = [];
+      self.fetchImage(fes.id, 1);
+    }
+
+    fetchImage(fesId, index){
+      var img = new Image();
+      var indexStr = String(index);
+      indexStr.length === 1 && (indexStr = "0" + indexStr);
+      var url = 'images/festival/' + fesId + '/item_' + indexStr + '.jpg';
+      img.onload = function() {
+        self.imageUrls.push(url);
+        self.fetchImage(fesId, index + 1);
+      };
+      img.onerror = function() {
+        self.update();
+      };
+      img.src = url;
     }
 
     // 祭り選択時
@@ -282,6 +327,18 @@
     .info-area .fes-infos dd {
       padding-left: 120px;
       margin-bottom: 20px;
+    }
+
+    /** 祭り画像 */
+    .info-area .img-area {
+      clear: both;
+    }
+    .info-area .img-area img {
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      margin-right: 30px;
     }
 
     /** 地図 */
