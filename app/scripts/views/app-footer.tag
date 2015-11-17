@@ -57,6 +57,10 @@
       text-align: center;
     }
 
+    p img {
+      width: 240px;
+    }
+
     .copyright {
       background: #2c2c2c;
       padding: 10px 0;

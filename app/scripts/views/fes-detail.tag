@@ -21,25 +21,29 @@
         <div class="weather">
           <ul>
             <li each={ period, i in fes.periods }>
-              <div class="date">{moment(period.start).format('MM/DD')}</div>
-              <div>
-                <span if={period.weather.weatherCode != null } class="icon-weather c{period.weather.weatherCode}"></span>
-                <span if={period.weather == null || period.weather.weatherCode == null } class="icon-weather none"></span>
+              <div class="left-weather">
+                <div class="date">{moment(period.start).format('MM/DD')}</div>
+                <div>
+                  <span if={period.weather.weatherCode != null } class="icon-weather c{period.weather.weatherCode}"></span>
+                  <span if={period.weather == null || period.weather.weatherCode == null } class="icon-weather none"></span>
+                </div>
               </div>
-              <div>
-                <span if={period.weather.weather != null }>{period.weather.weather}</span>
-                <span if={period.weather == null || period.weather.weather == null}>--</span>
-              </div>
-              <div>
-                <span if={period.weather.temperatureMax != null } class="temperatureMax">{period.weather.temperatureMax}</span>
-                <span if={period.weather == null || period.weather.temperatureMax == null}>--</span>
-                /
-                <span if={period.weather.temperatureMin != null } class="temperatureMin">{period.weather.temperatureMin}</span>
-                <span if={period.weather == null || period.weather.temperatureMin == null}>--</span>
-              </div>
-              <div>
-                <span if={period.weather.precipitation != null }>{period.weather.precipitation}%</span>
-                <span if={period.weather == null || period.weather.precipitation == null}>--</span>
+              <div class="right-weather">
+                <div>
+                  <span if={period.weather.weather != null }>{period.weather.weather}</span>
+                  <span if={period.weather == null || period.weather.weather == null}>--</span>
+                </div>
+                <div>
+                  <span if={period.weather.temperatureMax != null } class="temperatureMax">{period.weather.temperatureMax}</span>
+                  <span if={period.weather == null || period.weather.temperatureMax == null}>--</span>
+                  /
+                  <span if={period.weather.temperatureMin != null } class="temperatureMin">{period.weather.temperatureMin}</span>
+                  <span if={period.weather == null || period.weather.temperatureMin == null}>--</span>
+                </div>
+                <div>
+                  <span if={period.weather.precipitation != null }>{period.weather.precipitation}%</span>
+                  <span if={period.weather == null || period.weather.precipitation == null}>--</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -226,7 +230,7 @@
     .detail-title {
       color: #E39727;
       font-weight: bold;
-      font-size: 36px;
+      font-size: 46px;
       line-height: 1.2em;
       margin-bottom: 20px;
     }
@@ -290,16 +294,29 @@
       float: left;
       text-align: center;
       margin-right: 30px;
+      display: table;
+    }
+
+    .info-area .weather .left-weather,
+    .info-area .weather .right-weather
+    {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .info-area .weather .left-weather {
+      padding-right: 10px;
     }
 
     .info-area .weather .temperatureMax {
       font-weight: bold;
       color: #ff3300;
+      font-size: 24px;
     }
 
     .info-area .weather .temperatureMin {
       font-weight: bold;
       color: #0066ff;
+      font-size: 24px;
     }
 
     /** 祭り内容 */
@@ -318,7 +335,7 @@
     .info-area .fes-infos dt {
       float: left;
       border: solid 1px #A0A0A0;
-      font-size: 13px;
+      font-size: 18px;
       padding: 1px 30px;
       border-radius: 10px;
       clear: left;
@@ -327,6 +344,8 @@
     .info-area .fes-infos dd {
       padding-left: 120px;
       margin-bottom: 20px;
+      font-size: 16px;
+      min-height: 29px;
     }
 
     /** 祭り画像 */

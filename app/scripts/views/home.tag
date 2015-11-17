@@ -1,7 +1,7 @@
 <home>
   <div class="main">
     <div class="main-img">
-      <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
+      <img src="images/home/top.jpg" alt="千葉市お祭りデータセンター">
     </div>
   </div>
 
@@ -167,6 +167,8 @@
     .homesearch {
       background: #f5ac42;
       margin-bottom: 30px;
+      border-top: 3px solid #fccb83;
+      border-bottom: 4px solid #cb7e01;
     }
 
     .homesearch .homesearch-list {
