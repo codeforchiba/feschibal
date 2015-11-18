@@ -39,7 +39,7 @@
     }
 
     this.on('updated', function() {
-      //Ts.reload();
+      Ts.reload();
     });
 
     /**
