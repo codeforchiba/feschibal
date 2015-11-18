@@ -2,7 +2,7 @@
   <div if={ fes != null }>
     <div class="main">
       <div class="main-img">
-        <img src="images/home/main.jpg" alt="千葉市お祭りデータセンター">
+        <img id="header-img" src="images/festival/{fes.id}/header.jpg" alt="千葉市お祭りデータセンター">
       </div>
     </div>
     <article class="content">
@@ -21,25 +21,29 @@
         <div class="weather">
           <ul>
             <li each={ period, i in fes.periods }>
-              <div class="date">{moment(period.start).format('MM/DD')}</div>
-              <div>
-                <span if={period.weather.weatherCode != null } class="icon-weather c{period.weather.weatherCode}"></span>
-                <span if={period.weather == null || period.weather.weatherCode == null } class="icon-weather none"></span>
+              <div class="left-weather">
+                <div class="date">{moment(period.start).format('MM/DD')}</div>
+                <div>
+                  <span if={period.weather.weatherCode != null } class="icon-weather c{period.weather.weatherCode}"></span>
+                  <span if={period.weather == null || period.weather.weatherCode == null } class="icon-weather none"></span>
+                </div>
               </div>
-              <div>
-                <span if={period.weather.weather != null }>{period.weather.weather}</span>
-                <span if={period.weather == null || period.weather.weather == null}>--</span>
-              </div>
-              <div>
-                <span if={period.weather.temperatureMax != null } class="temperatureMax">{period.weather.temperatureMax}</span>
-                <span if={period.weather == null || period.weather.temperatureMax == null}>--</span>
-                /
-                <span if={period.weather.temperatureMin != null } class="temperatureMin">{period.weather.temperatureMin}</span>
-                <span if={period.weather == null || period.weather.temperatureMin == null}>--</span>
-              </div>
-              <div>
-                <span if={period.weather.precipitation != null }>{period.weather.precipitation}%</span>
-                <span if={period.weather == null || period.weather.precipitation == null}>--</span>
+              <div class="right-weather">
+                <div>
+                  <span if={period.weather.weather != null }>{period.weather.weather}</span>
+                  <span if={period.weather == null || period.weather.weather == null}>--</span>
+                </div>
+                <div>
+                  <span if={period.weather.temperatureMax != null } class="temperatureMax">{period.weather.temperatureMax}</span>
+                  <span if={period.weather == null || period.weather.temperatureMax == null}>--</span>
+                  /
+                  <span if={period.weather.temperatureMin != null } class="temperatureMin">{period.weather.temperatureMin}</span>
+                  <span if={period.weather == null || period.weather.temperatureMin == null}>--</span>
+                </div>
+                <div>
+                  <span if={period.weather.precipitation != null }>{period.weather.precipitation}%</span>
+                  <span if={period.weather == null || period.weather.precipitation == null}>--</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -74,6 +78,13 @@
         <dt>備　考</dt>
         <dd>{fes.remarks}</dd>
         </dl>
+        <div class="img-area">
+        <span each={ imageUrl, i in imageUrls }>
+          <a href="{imageUrl}"data-lightbox="festival-image">
+            <img src="{imageUrl}" alt="祭り画像">
+          </a>
+        </span>
+        </div>
       </div>
       <div id="map-detail"></div>
       <div class="title matsuri-style">周辺のお祭り</div>
@@ -86,6 +97,17 @@
     self.fes = null;
     /** 周辺の祭り */
     self.aroundFes = [];
+    /** 祭り画像 */
+    self.imageUrls = [];
+
+    /**
+     * タイトル画像がなければデフォルトの画像を表示
+     */
+    $(self["header-img"]).error(function(){
+      $(this).attr({
+        src: 'images/home/main.jpg'
+      });
+    });
 
     /**
      * 地図の生成
@@ -127,6 +149,10 @@
         self.fetchAroundRes(fes);
         // 天気予報取得
         self.fetchWeather(fes);
+        // 祭りに関する画像を取得
+        self.fetchImages(fes);
+
+        Ts.reload();
       });
     });
 
@@ -164,6 +190,29 @@
       });
     }
 
+    /**
+     * 指定した祭りに関連する画像を取得
+     */
+    fetchImages(fes){
+      self.imageUrls = [];
+      self.fetchImage(fes.id, 1);
+    }
+
+    fetchImage(fesId, index){
+      var img = new Image();
+      var indexStr = String(index);
+      indexStr.length === 1 && (indexStr = "0" + indexStr);
+      var url = 'images/festival/' + fesId + '/item_' + indexStr + '.jpg';
+      img.onload = function() {
+        self.imageUrls.push(url);
+        self.fetchImage(fesId, index + 1);
+      };
+      img.onerror = function() {
+        self.update();
+      };
+      img.src = url;
+    }
+
     // 祭り選択時
     onSelectFes(e){
       //map.panTo(new L.LatLng(e.item.fes.coordinates[1], e.item.fes.coordinates[0]));
@@ -181,7 +230,7 @@
     .detail-title {
       color: #E39727;
       font-weight: bold;
-      font-size: 36px;
+      font-size: 46px;
       line-height: 1.2em;
       margin-bottom: 20px;
     }
@@ -245,16 +294,29 @@
       float: left;
       text-align: center;
       margin-right: 30px;
+      display: table;
+    }
+
+    .info-area .weather .left-weather,
+    .info-area .weather .right-weather
+    {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .info-area .weather .left-weather {
+      padding-right: 10px;
     }
 
     .info-area .weather .temperatureMax {
       font-weight: bold;
       color: #ff3300;
+      font-size: 24px;
     }
 
     .info-area .weather .temperatureMin {
       font-weight: bold;
       color: #0066ff;
+      font-size: 24px;
     }
 
     /** 祭り内容 */
@@ -273,7 +335,7 @@
     .info-area .fes-infos dt {
       float: left;
       border: solid 1px #A0A0A0;
-      font-size: 13px;
+      font-size: 18px;
       padding: 1px 30px;
       border-radius: 10px;
       clear: left;
@@ -282,6 +344,20 @@
     .info-area .fes-infos dd {
       padding-left: 120px;
       margin-bottom: 20px;
+      font-size: 16px;
+      min-height: 29px;
+    }
+
+    /** 祭り画像 */
+    .info-area .img-area {
+      clear: both;
+    }
+    .info-area .img-area img {
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      margin-right: 30px;
     }
 
     /** 地図 */

@@ -2417,7 +2417,7 @@
   },
   {
     "id": "608",
-    "name": "第5回 浜田まつり",
+    "name": "第5回浜田まつり",
     "location": {
       "name": "日神パレステージ海浜幕張とコロンブスシティの間の道路",
       "state": "千葉県",
@@ -2450,7 +2450,7 @@
   },
   {
     "id": "105",
-    "name": "第37回 蘇我コミュニティ祭り",
+    "name": "第37回蘇我コミュニティ祭り",
     "location": {
       "name": "蘇我コミュニティセンター",
       "state": "千葉県",
@@ -2815,6 +2815,125 @@
     "sponcers": [
       "稲毛商店街振興組合",
       "稲毛サービス会"
+    ]
+  },
+  {
+    "id": "609",
+    "name": "見浜園灯ろうまつり",
+    "location": {
+      "name": "見浜園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区ひび野2-116",
+      "addressCode": "121060011",
+      "lat": "35.643801",
+      "long": "140.040252"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "松籟亭ガイド、生け花展"
+      ],
+      "specialProgram": [
+        "見浜園無料開放日 11/21 8:00 ? 17:00",
+        "25周年記念抽選会 11/21 ? 11/23 限定"
+      ]
+    },
+    "organizer": "県立幕張海浜公園パークセンター",
+    "periods": [
+      {
+        "start": "2015-11-20T23:00:00.000Z",
+        "end": "2015-11-21T11:30:00.000Z"
+      },
+      {
+        "start": "2015-11-21T23:00:00.000Z",
+        "end": "2015-11-22T11:30:00.000Z"
+      },
+      {
+        "start": "2015-11-22T23:00:00.000Z",
+        "end": "2015-11-23T11:30:00.000Z"
+      }
+    ],
+    "remarks": "荒天中止"
+  },
+  {
+    "id": "610",
+    "name": "第29回浜風祭",
+    "location": {
+      "name": "神田外語大学",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区若葉1-4-1",
+      "addressCode": "121060015",
+      "lat": "35.657279",
+      "long": "140.04324"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "民族衣装体験"
+      ]
+    },
+    "organizer": "神田外語大学浜風祭委員会",
+    "periods": [
+      {
+        "start": "2015-10-31T01:00:00.000Z",
+        "end": "2015-10-31T08:00:00.000Z"
+      },
+      {
+        "start": "2015-11-01T01:00:00.000Z",
+        "end": "2015-11-01T08:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "308",
+    "name": "新嘗祭",
+    "location": {
+      "name": "稲毛浅間神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛1-5-10",
+      "addressCode": "121030005",
+      "lat": "35.636623",
+      "long": "140.082432"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "斎行(10:00～)、神楽(13:00～)"
+      ],
+      "specialProgram": [
+        "神楽(千葉県指定無形文化財)"
+      ]
+    },
+    "organizer": "稲毛浅間神社",
+    "periods": [
+      {
+        "start": "2015-11-23T01:00:00.000Z",
+        "end": "2015-11-23T06:00:00.000Z"
+      }
     ]
   }
 ]
