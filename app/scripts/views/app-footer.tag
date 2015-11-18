@@ -41,7 +41,7 @@
     }
 
     ul {
-      width: 600px;
+      width: 500px;
       margin: 10px auto 30px;
     }
 
@@ -55,6 +55,10 @@
 
     p {
       text-align: center;
+    }
+
+    p img {
+      width: 240px;
     }
 
     .copyright {

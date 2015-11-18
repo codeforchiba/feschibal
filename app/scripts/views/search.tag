@@ -203,6 +203,8 @@
     .tab {
       background: #D75247;
       margin-bottom: 30px;
+      border-top: 3px solid #F1776D;
+      border-bottom: 4px solid #8B332C;
     }
 
     .tab .tab-item {
