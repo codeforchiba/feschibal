@@ -9,6 +9,7 @@
       lang: 'ja',
       timezone: 'local',
       firstDay: 2,
+      height: 'auto',
       eventClick: function(calEvent, jsEvent, view) {
         riot.route("detail/" + calEvent.fes.id);
         return false;
