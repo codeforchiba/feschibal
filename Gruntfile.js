@@ -80,9 +80,10 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           middleware: function(connect) {
+            var serveStatic = require('serve-static');
             return [
-              connect.static('.tmp'),
-              connect.static(config.app)
+              serveStatic('.tmp'),
+              serveStatic(config.app)
             ];
           }
         }
