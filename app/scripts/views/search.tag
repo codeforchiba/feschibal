@@ -9,7 +9,7 @@
   <article class="content">
 
     <form onsubmit={onSubmitSearch}>
-      <h4 class="matsuri-style">期間を選択してください。</h4>
+      <h4>期間を選択してください。</h4>
       <div class="form-group row">
         <div class="col-xs-6">
           <input type="text" class="form-control" id="fromDate" >
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <h4 class="matsuri-style">地域を選択してください。</h4>
+      <h4>地域を選択してください。</h4>
       <div class="form-group">
         <select class="form-control" id="cities"></select>
       </div>
@@ -34,19 +34,19 @@
         <li class={'tab-item': true, active: path==='list'}>
           <a href="#search/list?{queryString}">
             <img src="images/search/icon01.svg">
-            <p class="matsuri-style">一覧</p>
+            <p>一覧</p>
           </a>
         </li>
         <li class={'tab-item': true, active: path==='map'}>
           <a href="#search/map?{queryString}">
             <img src="images/search/icon02.svg">
-            <p class="matsuri-style">地図</p>
+            <p>地図</p>
           </a>
         </li>
         <li class={'tab-item': true, active: path==='cal'}>
           <a href="#search/cal?{queryString}">
             <img src="images/search/icon03.svg">
-            <p class="matsuri-style">カレンダー</p>
+            <p>カレンダー</p>
           </a>
         </li>
       </ul>
