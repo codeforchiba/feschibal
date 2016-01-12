@@ -1,6 +1,6 @@
 <app-footer>
   <footer>
-    <ul class="clearfix matsuri-style">
+    <ul class="clearfix">
       <li>
         <a href="javascript:void(0)" onclick="{showAbout}">このサービスについて</a>
       </li>
