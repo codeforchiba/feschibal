@@ -1,5 +1,5 @@
 <about>
-  <article class="content matsuri-style">
+  <article class="content">
     <section id="about-introduction">
       <img src="/images/facebook.jpg">
       <p>本サービスは、千葉市で長い間親しまれているお祭りについて、お知らせする無料サービスです。</p>

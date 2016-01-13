@@ -1,8 +1,8 @@
 <credit>
   <article class="content">
     <section id="credit-list">
-      <h1 class="matsuri-style">クレジット</h1>
-      <h2 class="matsuri-style">企画</h2>
+      <h1>クレジット</h1>
+      <h2>企画</h2>
       <ul class="clearfix">
         <li>
           <member uuid="6735387e-450f-44ee-9ced-91ae797c0c97"></member>
@@ -21,7 +21,7 @@
         <li>YAMAMOTO Munehiro</li>
         <li>SHIMIZU Yasuo</li>
       </ul>
-      <h2 class="matsuri-style">エンジニア</h2>
+      <h2>エンジニア</h2>
       <ul class="clearfix">
         <li>
           <member uuid="ddb396bd-dc7b-4d20-ae7a-df2e2470c377"></member>
@@ -36,12 +36,12 @@
           <member uuid="8c633cf3-fb3c-4710-86cb-6bce874d98c0"></member>
         </li>
       </ul>
-      <h2 class="matsuri-style">デザイナー</h2>
+      <h2>デザイナー</h2>
       <ul class="clearfix">
         <li>
           <member uuid="aebfcc03-ead7-445c-9e41-f78ae07fd2ce"></member>
       </ul>
-      <h2 class="matsuri-style">アドバイザー</h2>
+      <h2>アドバイザー</h2>
       <ul class="clearfix">
         <li>
           <member uuid="b9010dbd-ef0b-484a-a64b-6c7ee0baf73f"></member>
@@ -56,7 +56,7 @@
       </ul>
     </section>
     <section id="credit-navi">
-      <p class="matsuri-style">
+      <p>
         <a href="javascript:void(0)" onclick="{doHome}">
           トップへ戻る
         </a>

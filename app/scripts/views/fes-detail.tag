@@ -7,11 +7,11 @@
     </div>
     <article class="content">
       <div class="info-area">
-        <h4 class="detail-title matsuri-style">{fes.name}</h4>
+        <h4 class="detail-title">{fes.name}</h4>
         <ul class="day-time">
           <li each={ period, i in fes.periods }>
             <span class="date">{moment(period.start).format('MM/DD')}</span>
-            <span class={matsuri-style:true,day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
+            <span class={day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
             <span class="clock">
               <span if={moment(period.start).format('HH:mm') != '00:00'}>{moment(period.start).format('HH:mm')}</span>
               <span if={moment(period.end).format('HH:mm') != '00:00'}> - {moment(period.end).format('HH:mm')}</span>
@@ -57,7 +57,7 @@
           <img if={fes.features.fireworks} src="images/detail/Detail_icon06.svg" />
         </div>
 
-        <dl class="fes-infos matsuri-style">
+        <dl class="fes-infos">
         <dt>会　場</dt>
         <dd>{fes.location.name}</dd>
         <dt>住　所</dt>
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div id="map-detail"></div>
-      <div class="title matsuri-style">周辺のお祭り</div>
+      <div class="title">周辺のお祭り</div>
       <fes-list feslist={aroundFes}></fes-list>
     </article>
   </div>
@@ -151,8 +151,6 @@
         self.fetchWeather(fes);
         // 祭りに関する画像を取得
         self.fetchImages(fes);
-
-        Ts.reload();
       });
     });
 
