@@ -61,7 +61,8 @@
 
     <script>
       try {
-        window.weatherData = <%- JSON.stringify(weatherData) %>;
+        window.cfc = window.cfc || {};
+        window.cfc.weatherData = <%- JSON.stringify(weatherData) %>;
       } catch(e){}
     </script>
 
