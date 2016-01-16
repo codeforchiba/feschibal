@@ -495,7 +495,8 @@ module.exports = function (grunt) {
       dev: {
         options: {
           background: true,
-          delay: 1
+          delay: 1,
+          port: 9000
         }
       },
       prod: {
