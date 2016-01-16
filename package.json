@@ -31,6 +31,7 @@
   "devDependencies": {
     "apache-server-configs": "^2.14.0",
     "bluebird": "^3.1.1",
+    "connect-livereload": "^0.5.4",
     "csv-parse": "^1.0.1",
     "csv-stringify": "0.0.8",
     "grunt": "^0.4.5",
