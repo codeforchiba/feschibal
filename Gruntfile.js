@@ -80,9 +80,10 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           middleware: function(connect) {
+            var serveStatic = require('serve-static');
             return [
-              connect.static('.tmp'),
-              connect.static(config.app)
+              serveStatic('.tmp'),
+              serveStatic(config.app)
             ];
           }
         }
@@ -485,6 +486,25 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    express: {
+      options: {
+        script: 'bin/www'
+      },
+      dev: {
+        options: {
+          background: true,
+          delay: 1,
+          port: 9000
+        }
+      },
+      prod: {
+        options: {
+          background: false,
+          node_env: 'production'
+        }
+      }
     }
   });
 
@@ -496,14 +516,21 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
 
-    grunt.task.run([
+    var tasks = [
       'clean:server',
       'concurrent:server',
       'replace:dev',
-      'autoprefixer',
-      'connect:livereload',
-      'watch'
-    ]);
+      'autoprefixer'
+    ];
+
+    if (target === 'express') {
+      tasks.push("express:dev");
+    } else {
+      tasks.push("connect:livereload");
+    }
+
+    tasks.push("watch");
+    grunt.task.run(tasks);
   });
 
   grunt.registerTask('build', [
@@ -518,9 +545,10 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin',
-    'gh-pages'
+    'htmlmin'
   ]);
+
+  grunt.registerTask('gh-pages-release', ['build', 'gh-pages']);
 
   grunt.registerTask('build-data', [
     'manipulate-csv',

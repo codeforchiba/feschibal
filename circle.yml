@@ -14,7 +14,7 @@ deployment:
     commands:
       - git config --global user.name "CircleCI"
       - git config --global user.email "circleci@code4chiba.org"
-      - grunt build
+      - grunt gh-pages-release
 
 general:
   branches:

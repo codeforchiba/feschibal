@@ -59,6 +59,13 @@
   <body>
     <app></app>
 
+    <script>
+      try {
+        window.cfc = window.cfc || {};
+        window.cfc.weatherData = <%- JSON.stringify(weatherData) %>;
+      } catch(e){}
+    </script>
+
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
