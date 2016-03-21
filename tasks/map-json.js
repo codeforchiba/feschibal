@@ -56,16 +56,14 @@ function convertJson(data, writer) {
       };
 
       info.periods = []
-      if (obj.date1.length > 0) {
-        info.periods.push(processDateRange(obj.date1, obj.startTime1, obj.endTime1));
-      }
-
-      if (obj.date2.length > 0) {
-        info.periods.push(processDateRange(obj.date2, obj.startTime2, obj.endTime2));
-      }
-
-      if (obj.date3.length > 0) {
-        info.periods.push(processDateRange(obj.date3, obj.startTime3, obj.endTime3));
+      for (var count = 1; count < 10; count++) {
+        var suffix = String(count);
+        if (obj['date' + suffix].length > 0) {
+          info.periods.push(
+            processDateRange(obj['date' + suffix], obj['startTime' + suffix],
+                             obj['endTime' + suffix]
+          ));
+        }
       }
 
       if (obj.features_others.length > 0) {
@@ -88,11 +86,11 @@ function convertJson(data, writer) {
         info.url = obj.url;
       }
 
-      if (obj.sponcer1.length > 0) {
-        info.sponcers = [obj.sponcer1];
+      if (obj.sponsor1.length > 0) {
+        info.sponsors = [obj.sponsor1];
 
-        if (obj.sponcer2.length > 0) {
-          info.sponcers.push(obj.sponcer2);
+        if (obj.sponsor2.length > 0) {
+          info.sponsors.push(obj.sponsor2);
         }
       }
 
