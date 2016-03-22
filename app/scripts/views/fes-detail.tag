@@ -293,6 +293,7 @@
       text-align: center;
       margin-right: 30px;
       display: table;
+      height: 80px;
     }
 
     .info-area .weather .left-weather,
