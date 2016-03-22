@@ -55,6 +55,7 @@ m a i n
     overflow: hidden;
 
     img {
+      width: 100%;
       vertical-align: bottom;
     }
   }
@@ -80,9 +81,6 @@ m a i n
     .main-img {
       width: 100%;
       height: auto;
-    }
-    .main-img img {
-      width: 100%;
     }
   }
 }
