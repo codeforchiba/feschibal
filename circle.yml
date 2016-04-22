@@ -23,4 +23,4 @@ deployment:
     branch: feature/introduce-gke
     commands:
       - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
-      - kubectl rolling-update proxy --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
