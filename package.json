@@ -18,7 +18,6 @@
   "homepage": "https://github.com/codeforchiba/feschibal",
   "scripts": {
     "start": "node ./bin/www",
-    "install": "grunt build"
   },
   "dependencies": {
     "body-parser": "1.13.2",
