@@ -20,7 +20,16 @@ test:
 
 deployment:
   release:
-    branch: feature/introduce-gke
+    branch: master
     commands:
       - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
       - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+
+general:
+  branches:
+    ignore:
+      - develop
+      - /feature\/.*/
+      - /hotfix\/.*/
+    only:
+      - master
