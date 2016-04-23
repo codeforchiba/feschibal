@@ -8,7 +8,7 @@ var request = require('request');
 router.get('/', function(req, res, next) {
   var url = env.url.weather.url;
   var cityCode = env.url.weather.cityCode;
-  var apikey = process.env.APIKEY;
+  var apikey = process.env.YUMAKE_API_KEY;
 
   var path = url + "?code=" + cityCode + "&key=" + apikey;
   debug("weather path:" + path);

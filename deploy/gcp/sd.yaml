@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: server-dispatcher
+spec:
+  selector:
+    app: server
+  ports:
+    -
+      protocol: "TCP"
+      port: 9000
