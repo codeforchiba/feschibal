@@ -381,21 +381,27 @@ module.exports = function (grunt) {
         },
         chiba_festival: {
           encoding: 'shift_jis',
-          removeColumn: [ 1, 3, 14, 20, 28, 31, 32, 33, 34, 39, 40],
+          removeColumn: [ 1, 3, 32, 38, 46, 49, 50, 51, 52, 57, 58],
           from: [
-            'No', '祭りの名称', '開催日１', '開始時間1', '終了時間1', '開催日２', '開始時間2', '終了時間2',
-            '開催日３', '開始時間3', '終了時間3', '備考', '会場名称',
+            'No', '祭りの名称', '開催日1', '開始時間1', '終了時間1', '開催日2', '開始時間2', '終了時間2',
+            '開催日3', '開始時間3', '終了時間3', '開催日4', '開始時間4', '終了時間4',
+            '開催日5', '開始時間5', '終了時間5', '開催日6', '開始時間6', '終了時間6',
+            '開催日7', '開始時間7', '終了時間7', '開催日8', '開始時間8', '終了時間8',
+            '開催日9', '開始時間9', '終了時間9', '備考', '会場名称',
             '会場住所', '会場住所コード', '会場緯度', '会場経度',
             '<踊り>', '<歌唱>', '<太鼓>', '<演奏>', '<出店・屋台>', '<花火>', '<その他>',
             '目玉イベント1', '目玉イベント2', '主催団体1', '主催団体2', '主催団体3'
           ],
           to: [
             'id', 'name', 'date1', 'startTime1', 'endTime1', 'date2', 'startTime2', 'endTime2',
-            'date3', 'startTime3', 'endTime3', 'remarks', 'location_name',
+            'date3', 'startTime3', 'endTime3', 'date4', 'startTime4', 'endTime4',
+            'date5', 'startTime5', 'endTime5', 'date6', 'startTime6', 'endTime6',
+            'date7', 'startTime7', 'endTime7', 'date8', 'startTime8', 'endTime8',
+            'date9', 'startTime9', 'endTime9', 'remarks', 'location_name',
             'location_address', 'location_code', 'location_lat', 'location_long',
             'features_dancing', 'features_singing', 'features_drum', 'features_musicalPerformance',
             'features_foodTruck', 'features_fireworks', 'features_others',
-            'specialProgram1', 'specialProgram2', 'organizer', 'sponcer1', 'sponcer2'
+            'specialProgram1', 'specialProgram2', 'organizer', 'sponsor1', 'sponsor2'
           ]
         }
       },

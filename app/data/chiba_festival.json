@@ -73,7 +73,7 @@
         "end": "2015-08-22T12:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "瑞穂自治会",
       "ガーデンプラザ新検見川自治会"
     ]
@@ -188,7 +188,7 @@
       }
     ],
     "remarks": "雨天順延",
-    "sponcers": [
+    "sponsors": [
       "八千代台パークハイツ自治会"
     ]
   },
@@ -262,7 +262,7 @@
       }
     ],
     "url": "http://gardenplaza.web.fc2.com",
-    "sponcers": [
+    "sponsors": [
       "瑞穂自治会"
     ]
   },
@@ -348,7 +348,7 @@
       }
     ],
     "remarks": "7/31は前夜祭（カラオケ）",
-    "sponcers": [
+    "sponsors": [
       "さつきが丘二丁目町内会（6団体）",
       "さつきが丘名店街"
     ]
@@ -893,7 +893,7 @@
         "end": "2015-07-25T08:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "若松台二丁目自治会"
     ]
   },
@@ -933,7 +933,7 @@
         "end": "2015-07-26T11:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "小倉商店街"
     ]
   },
@@ -1047,7 +1047,7 @@
         "end": "2016-04-03T12:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "みつわ台3丁目自治会",
       "みつわ台3-13団地管理組合"
     ]
@@ -1162,7 +1162,7 @@
       }
     ],
     "remarks": "雨天は8/9に順延",
-    "sponcers": [
+    "sponsors": [
       "桜木小地区スポーツ振興会",
       "桜木小地区スポーツ連絡協議会"
     ]
@@ -1274,7 +1274,7 @@
         "end": "2015-08-23T12:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "協賛：土気地区各自治会"
     ]
   },
@@ -1347,7 +1347,7 @@
         "end": "2015-08-02T12:30:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "古市場みどり自治会",
       "古市場第一・第二・第三自治会"
     ]
@@ -1392,7 +1392,7 @@
         "end": "2015-10-12T11:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "八幡神社氏子総代会"
     ]
   },
@@ -1828,7 +1828,7 @@
         "end": "2015-08-22T12:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "新稲毛ガーデンタワー自治会"
     ]
   },
@@ -2444,7 +2444,7 @@
         "end": "2015-04-26T07:00:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "コロンブスシティ自治会"
     ]
   },
@@ -2737,7 +2737,7 @@
         "end": "2015-11-08T07:30:00.000Z"
       }
     ],
-    "sponcers": [
+    "sponsors": [
       "千葉市"
     ]
   },
@@ -2812,7 +2812,7 @@
       }
     ],
     "url": "http://yotoboshi.org/",
-    "sponcers": [
+    "sponsors": [
       "稲毛商店街振興組合",
       "稲毛サービス会"
     ]
@@ -2842,8 +2842,8 @@
         "松籟亭ガイド、生け花展"
       ],
       "specialProgram": [
-        "見浜園無料開放日 11/21 8:00 ? 17:00",
-        "25周年記念抽選会 11/21 ? 11/23 限定"
+        "見浜園無料開放日 11/21 8:00～17:00",
+        "25周年記念抽選会 11/21～11/23 限定"
       ]
     },
     "organizer": "県立幕張海浜公園パークセンター",
@@ -2934,6 +2934,272 @@
         "start": "2015-11-23T01:00:00.000Z",
         "end": "2015-11-23T06:00:00.000Z"
       }
+    ]
+  },
+  {
+    "id": "108",
+    "name": "千葉城さくら祭り",
+    "location": {
+      "name": "亥鼻公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区亥鼻1-6",
+      "addressCode": "121010006",
+      "lat": "35.604928",
+      "long": "140.126215"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "キッズパーク(郷土博物館駐車場) 12:00～17:00"
+      ],
+      "specialProgram": [
+        "千葉城と桜のライトアップ 18:00～21:00",
+        "千葉シティ 5BEACHエンジェルズ 公開オーディション 3/26 14:00～16:00"
+      ]
+    },
+    "organizer": "千葉城さくら祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-03-25T15:00:00.000Z",
+        "end": "2016-03-26T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-26T15:00:00.000Z",
+        "end": "2016-03-27T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-27T15:00:00.000Z",
+        "end": "2016-03-28T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-28T15:00:00.000Z",
+        "end": "2016-03-29T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-29T15:00:00.000Z",
+        "end": "2016-03-30T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-30T15:00:00.000Z",
+        "end": "2016-03-31T15:00:00.000Z"
+      },
+      {
+        "start": "2016-03-31T15:00:00.000Z",
+        "end": "2016-04-01T15:00:00.000Z"
+      },
+      {
+        "start": "2016-04-01T15:00:00.000Z",
+        "end": "2016-04-02T15:00:00.000Z"
+      },
+      {
+        "start": "2016-04-02T15:00:00.000Z",
+        "end": "2016-04-03T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "611",
+    "name": "第6回浜田まつり",
+    "location": {
+      "name": "日神パレステージ海浜幕張とコロンブスシティの間の道路",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区浜田1",
+      "addressCode": "121060010",
+      "lat": "35.660448",
+      "long": "140.034758"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "子ども神輿・山車"
+      ]
+    },
+    "organizer": "日神パレステージ海浜幕張自治会",
+    "periods": [
+      {
+        "start": "2016-04-24T02:00:00.000Z",
+        "end": "2016-04-24T07:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "コロンブスシティ自治会",
+      "ステラガーデン幕張自治会"
+    ]
+  },
+  {
+    "id": "438",
+    "name": "下志津駐屯地 つつじ祭り",
+    "location": {
+      "name": "陸上自衛隊下志津駐屯地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町902",
+      "addressCode": "121040052",
+      "lat": "35.652336",
+      "long": "140.148141"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false,
+      "others": [
+        "記念式典、対空戦闘訓練展示、装備品展示"
+      ],
+      "specialProgram": [
+        "観閲行進"
+      ]
+    },
+    "organizer": "陸上自衛隊",
+    "periods": [
+      {
+        "start": "2016-04-29T00:00:00.000Z",
+        "end": "2016-04-29T06:00:00.000Z"
+      }
+    ],
+    "url": "http://www.mod.go.jp/gsdf/aasch/aaspr-hp/sta-intro/event/memorial/memorial.html"
+  },
+  {
+    "id": "109",
+    "name": "2016 JFE さくら祭り",
+    "location": {
+      "name": "さくら通り",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区川崎町",
+      "addressCode": "121010018",
+      "lat": "35.583356",
+      "long": "140.123644"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "specialProgram": [
+        "研究所敷地内でお花見"
+      ]
+    },
+    "organizer": "JFEさくらまつり実行委員会",
+    "periods": [
+      {
+        "start": "2016-04-02T01:00:00.000Z",
+        "end": "2016-04-02T07:00:00.000Z"
+      },
+      {
+        "start": "2016-04-03T01:00:00.000Z",
+        "end": "2016-04-03T07:00:00.000Z"
+      }
+    ],
+    "url": "http://www.jfe-steel.co.jp/works/east/chiba/community/sakuramaturi.html",
+    "sponsors": [
+      "蘇我町内会",
+      "今井連合町会"
+    ]
+  },
+  {
+    "id": "612",
+    "name": "第19回ベイタウンまつり",
+    "location": {
+      "name": "幕張ベイタウン・コア、美浜プロムナード",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区打瀬2-13",
+      "addressCode": "121060003",
+      "lat": "35.639694",
+      "long": "140.046889"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "幕張ベイタウンのメインストリートを交通規制した大規模な祭り"
+      ],
+      "specialProgram": [
+        "170のフリマ店舗、30の模擬店",
+        "各種ステージイベント"
+      ]
+    },
+    "organizer": "幕張ベイタウン自治会連合会",
+    "periods": [
+      {
+        "start": "2016-05-21T01:00:00.000Z",
+        "end": "2016-05-21T06:40:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日開催",
+    "url": "http://baytown.chiba.jp/"
+  },
+  {
+    "id": "520",
+    "name": "泉蔵寺花まつり",
+    "location": {
+      "name": "泉蔵寺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野有吉31-4",
+      "addressCode": "121050012",
+      "lat": "35.557703",
+      "long": "140.165702"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "others": [
+        "昔の遊び体験、餅投げ、移動販売車、フリーマーケット"
+      ],
+      "specialProgram": [
+        "有吉ばやしと境内での餅投げ",
+        "泉蔵寺本堂でのギターコンサート"
+      ]
+    },
+    "organizer": "有吉町内会",
+    "periods": [
+      {
+        "start": "2016-04-10T01:00:00.000Z",
+        "end": "2016-04-10T15:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天決行",
+    "sponsors": [
+      "有吉囃子連",
+      "NPO法人 Hands for others"
     ]
   }
 ]
