@@ -10,10 +10,11 @@
   };
 
   WeatherStore.prototype = {
-    /** アクセス先URL */
-    url: '@@url.weather.url?code=@@url.weather.cityCode&key=@@url.weather.apikey&format=jsonp',
 
     storeData: function (data) {
+      if (_.isEmpty(data)){
+        return;
+      }
       var reportDateTime = new Date(data.reportDateTime);
       for (var i = 0; i < 7; i++) {
         var weather = new cfc.Weather();
@@ -37,9 +38,7 @@
      */
     getJSON: function (url) {
       var d = new $.Deferred();
-      this._jsonp(url, function (data) {
-        d.resolve(data);
-      });
+      d.resolve(nm.weatherData);
       return d.promise();
     },
 

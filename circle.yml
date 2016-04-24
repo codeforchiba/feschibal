@@ -1,20 +1,29 @@
 machine:
-  timezone:
-    Asia/Tokyo
-  node:
-    version: 0.10.34
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json
+    - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update kubectl
+    - sudo chmod 757 /home/ubuntu/.config/gcloud/logs -R
+    - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
+    - gcloud config set compute/zone $GCP_ZONE
+    - gcloud config set project $GCP_PROJECT
+    - gcloud container clusters get-credentials festival
+    - docker build -t $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --rm=false .
 
 test:
   override:
-    - grunt --version
+    - docker version
+    - kubectl version
 
 deployment:
-  publish_gh_pages:
+  release:
     branch: master
     commands:
-      - git config --global user.name "CircleCI"
-      - git config --global user.email "circleci@code4chiba.org"
-      - grunt build
+      - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
 
 general:
   branches:
