@@ -2,6 +2,8 @@
 
 [Code for Chiba](http://code4chiba.org) の feschibalプロジェクトのソースコードです。
 
+https://circleci.com/gh/codeforchiba/feschibal/tree/master.svg?style=shield&circle-token=55757713b71498526946dbfceaf48a286a776a90
+
 ## 使用ライブラリ
 
 主に以下のライブラリを使用して作られています。
