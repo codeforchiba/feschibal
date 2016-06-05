@@ -2,18 +2,18 @@ kind: ReplicationController
 apiVersion: v1
 metadata:
   name: server
-  namespace: cfc-festival
+  namespace: cfc-festival-staging
 spec:
   replicas: 1
   selector:
     app: server
-    environment: production
+    environment: staging
   template:
     metadata:
       labels:
         app: server
         tier: frontend
-        environment: production
+        environment: staging
     spec:
       containers:
         -
