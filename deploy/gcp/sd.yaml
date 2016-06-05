@@ -2,9 +2,11 @@ kind: Service
 apiVersion: v1
 metadata:
   name: server-dispatcher
+  namespace: cfc-festival
 spec:
   selector:
     app: server
+    environment: production
   ports:
     -
       protocol: "TCP"
