@@ -19,17 +19,22 @@ test:
     - kubectl version
 
 deployment:
-  release:
+  production:
     branch: master
     commands:
       - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
-      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival
+  staging:
+    branch: develop
+    commands:
+      - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival-staging
 
 general:
   branches:
     ignore:
-      - develop
       - /feature\/.*/
       - /hotfix\/.*/
     only:
       - master
+      - develop
