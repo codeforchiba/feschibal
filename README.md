@@ -2,6 +2,9 @@
 
 [Code for Chiba](http://code4chiba.org) の feschibalプロジェクトのソースコードです。
 
+![Circle CI Build Status](https://circleci.com/gh/codeforchiba/feschibal/tree/master.svg?style=shield&circle-token=55757713b71498526946dbfceaf48a286a776a90)
+[![Stories in ToDo](https://badge.waffle.io/codeforchiba/feschibal.svg?label=todo&title=ToDo)](http://waffle.io/codeforchiba/feschibal)
+
 ## 使用ライブラリ
 
 主に以下のライブラリを使用して作られています。
