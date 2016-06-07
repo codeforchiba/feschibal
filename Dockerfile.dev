@@ -1,0 +1,20 @@
+FROM mhart/alpine-node:4.4
+
+ENV ADDITIONAL_PKGS="make g++ python nasm autoconf automake zlib-dev git"
+
+WORKDIR /var/www/feschibal
+COPY . /var/www/feschibal/
+
+RUN npm update -g npm && \
+  npm install -g grunt-cli
+
+RUN apk add --no-cache ${ADDITIONAL_PKGS} && \
+  npm install --unsafe-perm && \
+  grunt build
+
+EXPOSE 9000
+ENV NODE_ENV="development"
+
+RUN npm install
+
+CMD ["grunt", "serve:express"]
