@@ -1,7 +1,18 @@
 <home>
   <div class="main">
     <div class="main-img">
-      <img src="images/home/top.jpg" alt="千葉市お祭りデータセンター">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/home/top.jpg" alt="千葉市お祭りデータセンター"></div>
+          <div class="swiper-slide"><img src="images/home/civictech.jpg" alt="MA11 シビックテック部門賞 & MA11 CIVICTECH for Citizen賞 受賞"></div>
+          <div class="swiper-slide"><img src="images/home/projectdesign.jpg" alt="月刊事業構想４月号掲載"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-orange"></div>
+        <div class="swiper-button-prev swiper-button-orange"></div>
+      </div>
     </div>
   </div>
 
@@ -161,6 +172,23 @@
         });
       });
     });
+
+    /**
+     * swiper用
+     */
+    jQuery(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        effect: 'fade',
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+      });
+    });
   </script>
 
   <style scoped>
@@ -262,6 +290,61 @@
       width: 100%;
     }
 
+    /**
+     * swiper用
+     */
+
+    .main .main-img .swiper-container .swiper-wrapper .swiper-slide::before {
+      background: url(../images/common/t.svg) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #ffffff;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #e94a1a;
+      opacity: 1;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+      opacity: 1;
+    }
+
+    .swiper-button-prev.swiper-button-disabled.swiper-button-orange,
+    .swiper-container-rtl .swiper-button-next.swiper-button-disabled.swiper-button-orange {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f3a534'%2F%3E%3C%2Fsvg%3E");
+    }
+
+    .swiper-button-prev.swiper-button-orange,
+    .swiper-container-rtl .swiper-button-next.swiper-button-orange {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23e94a1a'%2F%3E%3C%2Fsvg%3E");
+    }
+
+    .swiper-button-next.swiper-button-disabled.swiper-button-orange,
+    .swiper-container-rtl .swiper-button-prev.swiper-button-disabled.swiper-button-orange {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f3a534'%2F%3E%3C%2Fsvg%3E");
+    }
+
+    .swiper-button-next.swiper-button-orange,
+    .swiper-container-rtl .swiper-button-prev.swiper-button-orange {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23e94a1a'%2F%3E%3C%2Fsvg%3E");
+    }
+
+    .swiper-button-next,.swiper-button-prev {
+      top: 104px;
+    }
+
     @media only screen and (max-width: 640px) {
 
       .homesearch .homesearch-list {
@@ -284,6 +367,19 @@
       .week .week-day dd {
         font-size: 28px;
         background: url(images/common/week-day-bg01.gif) top 11px left -60px no-repeat, url(images/common/week-day-bg01.gif) top 11px right -60px no-repeat, url(images/common/week-day-bg02.gif) center bottom 0px no-repeat;
+      }
+
+      .swiper-button-prev,.swiper-button-next {
+        height: 22px;
+        top: 48px;
+      }
+
+      .swiper-button-prev {
+        left: 4px;
+      }
+
+      .swiper-button-next {
+        right: 4px;
       }
     }
   </style>
