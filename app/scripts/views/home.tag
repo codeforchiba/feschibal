@@ -381,6 +381,10 @@
       .swiper-button-next {
         right: 4px;
       }
+
+      .swiper-pagination {
+        bottom: 2px !important;
+      }
     }
   </style>
 </home>
