@@ -185,7 +185,7 @@
         spaceBetween: 30,
         effect: 'fade',
         centeredSlides: true,
-        autoplay: 2500,
+        autoplay: 6000,
         autoplayDisableOnInteraction: false
       });
     });
