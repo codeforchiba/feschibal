@@ -4,7 +4,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="images/home/top.jpg" alt="千葉市お祭りデータセンター"></div>
-          <div class="swiper-slide"><img src="images/home/civictech.jpg" alt="MA11 シビックテック部門賞 & MA11 CIVICTECH for Citizen賞 受賞"></div>
+          <div class="swiper-slide"><img src="images/home/civictech.jpg" alt="MA11 シビックテック部門賞 &amp; MA11 CIVICTECH for Citizen賞 受賞"></div>
           <div class="swiper-slide"><img src="images/home/projectdesign.jpg" alt="月刊事業構想４月号掲載"></div>
         </div>
         <!-- Add Pagination -->
