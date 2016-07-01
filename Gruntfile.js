@@ -436,7 +436,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.dev
+              json: env.development
             }
           ]
         },
@@ -460,7 +460,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.prod
+              json: env.production
             }
           ]
         },
