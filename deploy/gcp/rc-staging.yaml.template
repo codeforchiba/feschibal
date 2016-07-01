@@ -28,3 +28,6 @@ spec:
             -
               name: YUMAKE_API_KEY
               value: ${YUMAKE_API_KEY}
+            -
+              name: NODE_ENV
+              value: staging
