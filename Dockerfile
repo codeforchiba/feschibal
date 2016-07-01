@@ -21,7 +21,6 @@ RUN apk add --no-cache ${ADDITIONAL_PKGS} && \
   rm -rf /tmp/npm* /var/cache/apk/* /root/.npm /root/.node-gyp node_modules
 
 EXPOSE 9000
-ENV NODE_ENV="production"
 
 RUN npm install
 
