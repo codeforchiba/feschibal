@@ -496,7 +496,6 @@ module.exports = function (grunt) {
       prod: {
         options: {
           background: false,
-          node_env: 'production'
         }
       }
     }
