@@ -22,6 +22,6 @@ RUN apk add --no-cache ${ADDITIONAL_PKGS} && \
 
 EXPOSE 9000
 
-RUN npm install
+RUN npm install --only=production
 
 CMD ["npm", "start"]
