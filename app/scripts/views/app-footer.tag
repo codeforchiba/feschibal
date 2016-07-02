@@ -16,7 +16,7 @@
     </ul>
     <p>
       <a href="http://code4chiba.org/">
-        <img src="images/common/codeforchiba.gif" alt="Code For Chiba">
+        <img src="images/common/codeforchiba.png" alt="Code For Chiba">
       </a>
     </p>
   </footer>
