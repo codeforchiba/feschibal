@@ -6,10 +6,12 @@ var express = require('express');
 var app = express();
 
 var config;
-if (app.get('env') === 'development') {
-  config = env.dev;
+if (app.get('env') === 'production') {
+  config = env.production;
+} else if (app.get('env') === 'staging') {
+  config = env.staging;
 } else {
-  config = env.prod;
+  config = env.development;
 }
 
 module.exports = config;

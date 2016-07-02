@@ -297,11 +297,6 @@ module.exports = function (grunt) {
           }, {
             src: 'node_modules/apache-server-configs/dist/.htaccess',
             dest: '<%= config.dist %>/.htaccess'
-          }, {
-            expand: true,
-            cwd: 'deploy/gh-pages',
-            src: ['circle.yml', 'CNAME', 'sitemap.xml'],
-            dest: '<%= config.dist %>/'
           }
         ]
       },
@@ -340,13 +335,6 @@ module.exports = function (grunt) {
         dest: '.tmp/scripts',
         ext: '.js'
       }
-    },
-
-    'gh-pages': {
-      options: {
-        base: 'dist'
-      },
-      src: '**/*'
     },
 
     'manipulate-csv': {
@@ -448,7 +436,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.dev
+              json: env.development
             }
           ]
         },
@@ -472,7 +460,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.prod
+              json: env.production
             }
           ]
         },
@@ -508,7 +496,6 @@ module.exports = function (grunt) {
       prod: {
         options: {
           background: false,
-          node_env: 'production'
         }
       }
     }
@@ -553,8 +540,6 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
-
-  grunt.registerTask('gh-pages-release', ['build', 'gh-pages']);
 
   grunt.registerTask('build-data', [
     'manipulate-csv',

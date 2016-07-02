@@ -11,6 +11,8 @@ dependencies:
     - gcloud config set compute/zone $GCP_ZONE
     - gcloud config set project $GCP_PROJECT
     - gcloud container clusters get-credentials festival
+  override:
+    - docker info
     - docker build -t $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --rm=false .
 
 test:
