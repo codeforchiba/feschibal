@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var env = require('../app_server/env');
+var config = require('config');
 var debug = require('debug')('feschibal:index');
 var request = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var url = env.url.weather.url;
-  var cityCode = env.url.weather.cityCode;
+  var url = config.url.weather.url;
+  var cityCode = config.url.weather.cityCode;
   var apikey = process.env.YUMAKE_API_KEY;
 
   var path = url + "?code=" + cityCode + "&key=" + apikey;

@@ -23,7 +23,7 @@ module.exports = function (grunt) {
   // load env file
   var yaml = require("js-yaml");
   var fs = require("fs");
-  var env = yaml.load(fs.readFileSync("env.yml"));
+  var env = yaml.load(fs.readFileSync("config/default.yml"));
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -436,7 +436,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.development
+              json: env
             }
           ]
         },
@@ -460,7 +460,7 @@ module.exports = function (grunt) {
         options: {
           patterns: [
             {
-              json: env.production
+              json: env
             }
           ]
         },
