@@ -51,6 +51,7 @@ function convertJson(data, writer) {
           musicalPerformance: obj.features_musicalPerformance === "1",
           foodTruck: obj.features_foodTruck === "1",
           fireworks: obj.features_fireworks === "1",
+          mikoshi: obj.features_mikoshi === "1"
         },
         organizer: obj.organizer
       };
