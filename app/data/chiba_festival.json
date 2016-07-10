@@ -19,17 +19,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "大森小地区盆踊り大会実行委員会",
     "periods": [
       {
-        "start": "2015-08-29T10:00:00.000Z",
-        "end": "2015-08-29T12:00:00.000Z"
+        "start": "2015-08-29T19:00:00.000Z",
+        "end": "2015-08-29T21:00:00.000Z"
       },
       {
-        "start": "2015-08-30T10:00:00.000Z",
-        "end": "2015-08-30T12:00:00.000Z"
+        "start": "2015-08-30T19:00:00.000Z",
+        "end": "2015-08-30T21:00:00.000Z"
       }
     ]
   },
@@ -54,6 +55,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "ねぷた、山車、ステージでの踊り、キッズダンス、演奏など"
       ],
@@ -65,12 +67,12 @@
     "organizer": "瑞穂夏まつり実行委員会",
     "periods": [
       {
-        "start": "2015-08-22T00:00:00.000Z",
-        "end": "2015-08-22T02:00:00.000Z"
+        "start": "2015-08-22T09:00:00.000Z",
+        "end": "2015-08-22T11:00:00.000Z"
       },
       {
-        "start": "2015-08-22T07:00:00.000Z",
-        "end": "2015-08-22T12:00:00.000Z"
+        "start": "2015-08-22T16:00:00.000Z",
+        "end": "2015-08-22T21:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -99,6 +101,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "others": [
         "前夜祭"
       ],
@@ -109,8 +112,8 @@
     "organizer": "み春野自治会",
     "periods": [
       {
-        "start": "2015-08-22T06:00:00.000Z",
-        "end": "2015-08-22T13:00:00.000Z"
+        "start": "2015-08-22T15:00:00.000Z",
+        "end": "2015-08-22T22:00:00.000Z"
       }
     ],
     "url": "http://blogs.yahoo.co.jp/miharuno_tsubasanooka"
@@ -136,6 +139,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "両日とも午後8時より打ち上げ花火100発（3寸玉）"
       ]
@@ -143,12 +147,12 @@
     "organizer": "柏井ふるさと祭り実行委員会",
     "periods": [
       {
-        "start": "2015-07-18T08:00:00.000Z",
-        "end": "2015-07-18T12:30:00.000Z"
+        "start": "2015-07-18T17:00:00.000Z",
+        "end": "2015-07-18T21:30:00.000Z"
       },
       {
-        "start": "2015-07-19T08:00:00.000Z",
-        "end": "2015-07-19T12:00:00.000Z"
+        "start": "2015-07-19T17:00:00.000Z",
+        "end": "2015-07-19T21:00:00.000Z"
       }
     ]
   },
@@ -173,6 +177,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "野菜の即売"
       ],
@@ -183,8 +188,8 @@
     "organizer": "柏井北自治会",
     "periods": [
       {
-        "start": "2015-07-18T01:00:00.000Z",
-        "end": "2015-07-18T12:00:00.000Z"
+        "start": "2015-07-18T10:00:00.000Z",
+        "end": "2015-07-18T21:00:00.000Z"
       }
     ],
     "remarks": "雨天順延",
@@ -212,17 +217,18 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "長作町内会第2区門原",
     "periods": [
       {
-        "start": "2015-07-25T10:00:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
+        "start": "2015-07-25T19:00:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       },
       {
-        "start": "2015-07-26T10:00:00.000Z",
-        "end": "2015-07-26T12:00:00.000Z"
+        "start": "2015-07-26T19:00:00.000Z",
+        "end": "2015-07-26T21:00:00.000Z"
       }
     ]
   },
@@ -247,6 +253,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子供みこし行進"
       ],
@@ -257,8 +264,8 @@
     "organizer": "ガーデンプラザ新検見川自治会",
     "periods": [
       {
-        "start": "2015-08-22T08:00:00.000Z",
-        "end": "2015-08-22T12:00:00.000Z"
+        "start": "2015-08-22T17:00:00.000Z",
+        "end": "2015-08-22T21:00:00.000Z"
       }
     ],
     "url": "http://gardenplaza.web.fc2.com",
@@ -287,6 +294,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "津軽三味線"
       ],
@@ -298,8 +306,8 @@
     "organizer": "長作台緑丘町会",
     "periods": [
       {
-        "start": "2015-06-27T07:00:00.000Z",
-        "end": "2015-06-27T11:00:00.000Z"
+        "start": "2015-06-27T16:00:00.000Z",
+        "end": "2015-06-27T20:00:00.000Z"
       }
     ]
   },
@@ -324,6 +332,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "お楽しみ抽選会"
       ],
@@ -335,16 +344,16 @@
     "organizer": "さつきが丘一丁目町内会（4団体）",
     "periods": [
       {
-        "start": "2015-07-31T09:00:00.000Z",
-        "end": "2015-07-31T12:00:00.000Z"
+        "start": "2015-07-31T18:00:00.000Z",
+        "end": "2015-07-31T21:00:00.000Z"
       },
       {
-        "start": "2015-08-01T08:00:00.000Z",
-        "end": "2015-08-01T12:00:00.000Z"
+        "start": "2015-08-01T17:00:00.000Z",
+        "end": "2015-08-01T21:00:00.000Z"
       },
       {
-        "start": "2015-08-02T08:00:00.000Z",
-        "end": "2015-08-02T12:00:00.000Z"
+        "start": "2015-08-02T17:00:00.000Z",
+        "end": "2015-08-02T21:00:00.000Z"
       }
     ],
     "remarks": "7/31は前夜祭（カラオケ）",
@@ -374,6 +383,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "旧東大植物研究所の蓮見会"
       ],
@@ -385,12 +395,12 @@
     "organizer": "花園地区張娜自治会連合会",
     "periods": [
       {
-        "start": "2015-07-18T18:00:00.000Z",
-        "end": "2015-07-19T00:00:00.000Z"
+        "start": "2015-07-19T03:00:00.000Z",
+        "end": "2015-07-19T09:00:00.000Z"
       },
       {
-        "start": "2015-07-19T22:00:00.000Z",
-        "end": "2015-07-20T00:00:00.000Z"
+        "start": "2015-07-20T07:00:00.000Z",
+        "end": "2015-07-20T09:00:00.000Z"
       }
     ]
   },
@@ -414,13 +424,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "長作町貝塚町会",
     "periods": [
       {
-        "start": "2015-08-22T03:00:00.000Z",
-        "end": "2015-08-22T09:00:00.000Z"
+        "start": "2015-08-22T12:00:00.000Z",
+        "end": "2015-08-22T18:00:00.000Z"
       }
     ],
     "url": "http://kaiduka-choukai.jimdo.com/"
@@ -446,6 +457,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ビンゴゲーム"
       ],
@@ -457,8 +469,8 @@
     "organizer": "千種台ハイツ自治会",
     "periods": [
       {
-        "start": "2015-08-01T09:00:00.000Z",
-        "end": "2015-08-01T12:00:00.000Z"
+        "start": "2015-08-01T18:00:00.000Z",
+        "end": "2015-08-01T21:00:00.000Z"
       }
     ]
   },
@@ -483,6 +495,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": true,
       "others": [
         "チャリティーバザー"
       ],
@@ -494,8 +507,8 @@
     "organizer": "稲毛スカイタウン自治会",
     "periods": [
       {
-        "start": "2015-07-25T06:00:00.000Z",
-        "end": "2015-07-25T12:15:00.000Z"
+        "start": "2015-07-25T15:00:00.000Z",
+        "end": "2015-07-25T21:15:00.000Z"
       }
     ],
     "url": "http://i-skt-jitikai.com"
@@ -520,13 +533,14 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "大宮町下長自治会",
     "periods": [
       {
-        "start": "2015-07-25T10:00:00.000Z",
-        "end": "2015-07-25T12:30:00.000Z"
+        "start": "2015-07-25T19:00:00.000Z",
+        "end": "2015-07-25T21:30:00.000Z"
       }
     ]
   },
@@ -551,6 +565,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "ソーランおどり"
       ]
@@ -558,8 +573,8 @@
     "organizer": "桜木第2県住自治会",
     "periods": [
       {
-        "start": "2015-07-19T08:00:00.000Z",
-        "end": "2015-07-19T12:00:00.000Z"
+        "start": "2015-07-19T17:00:00.000Z",
+        "end": "2015-07-19T21:00:00.000Z"
       }
     ]
   },
@@ -584,6 +599,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "地元野菜直売"
       ],
@@ -595,16 +611,16 @@
     "organizer": "コスモスまつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-10T00:00:00.000Z",
-        "end": "2015-10-10T06:00:00.000Z"
+        "start": "2015-10-10T09:00:00.000Z",
+        "end": "2015-10-10T15:00:00.000Z"
       },
       {
-        "start": "2015-10-11T00:00:00.000Z",
-        "end": "2015-10-11T06:00:00.000Z"
+        "start": "2015-10-11T09:00:00.000Z",
+        "end": "2015-10-11T15:00:00.000Z"
       },
       {
-        "start": "2015-10-12T00:00:00.000Z",
-        "end": "2015-10-12T06:00:00.000Z"
+        "start": "2015-10-12T09:00:00.000Z",
+        "end": "2015-10-12T15:00:00.000Z"
       }
     ]
   },
@@ -629,6 +645,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "餅つき・ゲーム"
       ]
@@ -636,8 +653,8 @@
     "organizer": "",
     "periods": [
       {
-        "start": "2015-11-17T15:00:00.000Z",
-        "end": "2015-11-18T15:00:00.000Z"
+        "start": "2015-11-18T00:00:00.000Z",
+        "end": "2015-11-19T00:00:00.000Z"
       }
     ],
     "remarks": "時間未定"
@@ -663,6 +680,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "吹き矢、シャボン玉、工作"
       ]
@@ -670,12 +688,12 @@
     "organizer": "千城台東町自治会",
     "periods": [
       {
-        "start": "2015-10-24T01:00:00.000Z",
-        "end": "2015-10-24T06:00:00.000Z"
+        "start": "2015-10-24T10:00:00.000Z",
+        "end": "2015-10-24T15:00:00.000Z"
       },
       {
-        "start": "2015-10-25T01:00:00.000Z",
-        "end": "2015-10-25T06:00:00.000Z"
+        "start": "2015-10-25T10:00:00.000Z",
+        "end": "2015-10-25T15:00:00.000Z"
       }
     ]
   },
@@ -699,21 +717,22 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
       {
-        "start": "2015-07-25T10:00:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
-      },
-      {
-        "start": "2015-07-26T01:00:00.000Z",
-        "end": "2015-07-26T02:00:00.000Z"
+        "start": "2015-07-25T19:00:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       },
       {
         "start": "2015-07-26T10:00:00.000Z",
-        "end": "2015-07-26T12:00:00.000Z"
+        "end": "2015-07-26T11:00:00.000Z"
+      },
+      {
+        "start": "2015-07-26T19:00:00.000Z",
+        "end": "2015-07-26T21:00:00.000Z"
       }
     ],
     "remarks": "7/26 10:00～山車"
@@ -739,6 +758,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "花車の運行"
       ],
@@ -749,16 +769,16 @@
     "organizer": "大宮台自治会",
     "periods": [
       {
-        "start": "2015-07-24T09:00:00.000Z",
-        "end": "2015-07-24T12:00:00.000Z"
+        "start": "2015-07-24T18:00:00.000Z",
+        "end": "2015-07-24T21:00:00.000Z"
       },
       {
-        "start": "2015-07-25T09:00:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
+        "start": "2015-07-25T18:00:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       },
       {
-        "start": "2015-07-26T09:00:00.000Z",
-        "end": "2015-07-26T12:00:00.000Z"
+        "start": "2015-07-26T18:00:00.000Z",
+        "end": "2015-07-26T21:00:00.000Z"
       }
     ]
   },
@@ -782,17 +802,18 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "いずみ台ローズタウン自治会",
     "periods": [
       {
-        "start": "2015-07-25T00:00:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       },
       {
-        "start": "2015-07-26T09:00:00.000Z",
-        "end": "2015-07-26T12:00:00.000Z"
+        "start": "2015-07-26T18:00:00.000Z",
+        "end": "2015-07-26T21:00:00.000Z"
       }
     ],
     "remarks": "7/25 9:00～子供みこし"
@@ -818,6 +839,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "じゃんけん大会"
       ],
@@ -829,8 +851,8 @@
     "organizer": "若松町親和自治会",
     "periods": [
       {
-        "start": "2015-08-01T08:00:00.000Z",
-        "end": "2015-08-01T11:00:00.000Z"
+        "start": "2015-08-01T17:00:00.000Z",
+        "end": "2015-08-01T20:00:00.000Z"
       }
     ]
   },
@@ -854,13 +876,14 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "若松町南部自治会",
     "periods": [
       {
-        "start": "2015-07-18T09:00:00.000Z",
-        "end": "2015-07-18T11:30:00.000Z"
+        "start": "2015-07-18T18:00:00.000Z",
+        "end": "2015-07-18T20:30:00.000Z"
       }
     ]
   },
@@ -884,13 +907,14 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "若松台一丁目自治会",
     "periods": [
       {
-        "start": "2015-07-25T00:00:00.000Z",
-        "end": "2015-07-25T08:00:00.000Z"
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T17:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -918,6 +942,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "others": [
         "花火大会（祭り１日目のみ）"
       ]
@@ -925,12 +950,12 @@
     "organizer": "小倉小学校地区会長会",
     "periods": [
       {
-        "start": "2015-07-25T00:00:00.000Z",
-        "end": "2015-07-25T11:00:00.000Z"
+        "start": "2015-07-25T09:00:00.000Z",
+        "end": "2015-07-25T20:00:00.000Z"
       },
       {
-        "start": "2015-07-26T00:00:00.000Z",
-        "end": "2015-07-26T11:00:00.000Z"
+        "start": "2015-07-26T09:00:00.000Z",
+        "end": "2015-07-26T20:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -958,6 +983,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "抽選会、ビンゴ大会",
         "花火大会"
@@ -966,12 +992,12 @@
     "organizer": "5丁目連合会（6自治会合同）",
     "periods": [
       {
-        "start": "2015-07-25T09:00:00.000Z",
-        "end": "2015-07-25T11:30:00.000Z"
+        "start": "2015-07-25T18:00:00.000Z",
+        "end": "2015-07-25T20:30:00.000Z"
       },
       {
-        "start": "2015-07-26T09:00:00.000Z",
-        "end": "2015-07-26T11:00:00.000Z"
+        "start": "2015-07-26T18:00:00.000Z",
+        "end": "2015-07-26T20:00:00.000Z"
       }
     ],
     "remarks": "雨天は7/27に順延"
@@ -996,17 +1022,18 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "みつわ台2丁目中央自治会他12団体",
     "periods": [
       {
-        "start": "2015-08-08T05:00:00.000Z",
-        "end": "2015-08-08T11:00:00.000Z"
+        "start": "2015-08-08T14:00:00.000Z",
+        "end": "2015-08-08T20:00:00.000Z"
       },
       {
-        "start": "2015-08-09T05:00:00.000Z",
-        "end": "2015-08-09T11:00:00.000Z"
+        "start": "2015-08-09T14:00:00.000Z",
+        "end": "2015-08-09T20:00:00.000Z"
       }
     ],
     "remarks": "店は21:00まで"
@@ -1032,6 +1059,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ゆるキャラと撮影会、猿回し"
       ]
@@ -1039,12 +1067,12 @@
     "organizer": "みつわ台2丁目中央自治会他12団体",
     "periods": [
       {
-        "start": "2016-04-02T05:00:00.000Z",
-        "end": "2016-04-02T12:00:00.000Z"
+        "start": "2016-04-02T14:00:00.000Z",
+        "end": "2016-04-02T21:00:00.000Z"
       },
       {
-        "start": "2016-04-03T05:00:00.000Z",
-        "end": "2016-04-03T12:00:00.000Z"
+        "start": "2016-04-03T14:00:00.000Z",
+        "end": "2016-04-03T21:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -1073,6 +1101,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子供神輿町内パレード"
       ],
@@ -1083,8 +1112,8 @@
     "organizer": "都賀の台自治会",
     "periods": [
       {
-        "start": "2015-08-22T05:30:00.000Z",
-        "end": "2015-08-22T11:00:00.000Z"
+        "start": "2015-08-22T14:30:00.000Z",
+        "end": "2015-08-22T20:00:00.000Z"
       }
     ]
   },
@@ -1109,6 +1138,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "会長バンドの演奏"
       ],
@@ -1120,8 +1150,8 @@
     "organizer": "東寺山エステ・スクエア自治会",
     "periods": [
       {
-        "start": "2015-07-25T08:00:00.000Z",
-        "end": "2015-07-25T11:00:00.000Z"
+        "start": "2015-07-25T17:00:00.000Z",
+        "end": "2015-07-25T20:00:00.000Z"
       }
     ]
   },
@@ -1146,6 +1176,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "小学生の踊り"
       ],
@@ -1157,8 +1188,8 @@
     "organizer": "桜木小地区町内自治会連合会",
     "periods": [
       {
-        "start": "2015-08-08T08:30:00.000Z",
-        "end": "2015-08-08T11:30:00.000Z"
+        "start": "2015-08-08T17:30:00.000Z",
+        "end": "2015-08-08T20:30:00.000Z"
       }
     ],
     "remarks": "雨天は8/9に順延",
@@ -1188,6 +1219,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "子供によるヨサコイソウラン 17:30～18:00"
       ]
@@ -1195,8 +1227,8 @@
     "organizer": "桜木町内自治会連合会",
     "periods": [
       {
-        "start": "2015-08-08T08:30:00.000Z",
-        "end": "2015-08-08T11:30:00.000Z"
+        "start": "2015-08-08T17:30:00.000Z",
+        "end": "2015-08-08T20:30:00.000Z"
       }
     ]
   },
@@ -1221,6 +1253,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "specialProgram": [
         "町内を子供みこし 8月1日10:00～12:00"
       ]
@@ -1228,16 +1261,16 @@
     "organizer": "若葉はづき会",
     "periods": [
       {
-        "start": "2015-08-01T01:00:00.000Z",
-        "end": "2015-08-01T03:00:00.000Z"
-      },
-      {
-        "start": "2015-08-01T09:00:00.000Z",
+        "start": "2015-08-01T10:00:00.000Z",
         "end": "2015-08-01T12:00:00.000Z"
       },
       {
-        "start": "2015-08-02T09:00:00.000Z",
-        "end": "2015-08-02T12:00:00.000Z"
+        "start": "2015-08-01T18:00:00.000Z",
+        "end": "2015-08-01T21:00:00.000Z"
+      },
+      {
+        "start": "2015-08-02T18:00:00.000Z",
+        "end": "2015-08-02T21:00:00.000Z"
       }
     ]
   },
@@ -1261,17 +1294,18 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": true
+      "fireworks": true,
+      "mikoshi": false
     },
     "organizer": "土気商工会議所青年部",
     "periods": [
       {
-        "start": "2015-08-22T00:00:00.000Z",
-        "end": "2015-08-22T12:00:00.000Z"
+        "start": "2015-08-22T09:00:00.000Z",
+        "end": "2015-08-22T21:00:00.000Z"
       },
       {
-        "start": "2015-08-23T00:00:00.000Z",
-        "end": "2015-08-23T12:00:00.000Z"
+        "start": "2015-08-23T09:00:00.000Z",
+        "end": "2015-08-23T21:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -1299,6 +1333,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "打ち上げ花火"
       ]
@@ -1306,8 +1341,8 @@
     "organizer": "越智町内会",
     "periods": [
       {
-        "start": "2015-08-14T09:00:00.000Z",
-        "end": "2015-08-14T12:30:00.000Z"
+        "start": "2015-08-14T18:00:00.000Z",
+        "end": "2015-08-14T21:30:00.000Z"
       }
     ]
   },
@@ -1332,6 +1367,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "抽選会"
       ]
@@ -1339,12 +1375,12 @@
     "organizer": "古市場町内会",
     "periods": [
       {
-        "start": "2015-08-01T09:00:00.000Z",
-        "end": "2015-08-01T12:30:00.000Z"
+        "start": "2015-08-01T18:00:00.000Z",
+        "end": "2015-08-01T21:30:00.000Z"
       },
       {
-        "start": "2015-08-02T09:00:00.000Z",
-        "end": "2015-08-02T12:30:00.000Z"
+        "start": "2015-08-02T18:00:00.000Z",
+        "end": "2015-08-02T21:30:00.000Z"
       }
     ],
     "sponsors": [
@@ -1373,6 +1409,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "お神輿渡御、山車引廻し、お囃子、カラオケ/演芸大会、くじ引き大会、文化展示会"
       ],
@@ -1384,12 +1421,12 @@
     "organizer": "誉田町二丁目町内会",
     "periods": [
       {
-        "start": "2015-10-11T00:00:00.000Z",
-        "end": "2015-10-11T11:00:00.000Z"
+        "start": "2015-10-11T09:00:00.000Z",
+        "end": "2015-10-11T20:00:00.000Z"
       },
       {
-        "start": "2015-10-12T00:00:00.000Z",
-        "end": "2015-10-12T11:00:00.000Z"
+        "start": "2015-10-12T09:00:00.000Z",
+        "end": "2015-10-12T20:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -1416,13 +1453,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "おゆみ野4丁目自治会",
     "periods": [
       {
-        "start": "2015-11-03T00:00:00.000Z",
-        "end": "2015-11-03T07:00:00.000Z"
+        "start": "2015-11-03T09:00:00.000Z",
+        "end": "2015-11-03T16:00:00.000Z"
       }
     ]
   },
@@ -1446,13 +1484,14 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "誉田団地自治会",
     "periods": [
       {
-        "start": "2015-07-25T09:00:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
+        "start": "2015-07-25T18:00:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       }
     ]
   },
@@ -1477,6 +1516,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "ビンゴ大会"
       ]
@@ -1484,8 +1524,8 @@
     "organizer": "おゆみ野地区連協",
     "periods": [
       {
-        "start": "2015-08-01T07:00:00.000Z",
-        "end": "2015-08-01T12:00:00.000Z"
+        "start": "2015-08-01T16:00:00.000Z",
+        "end": "2015-08-01T21:00:00.000Z"
       }
     ]
   },
@@ -1510,6 +1550,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ウォークラリー"
       ]
@@ -1517,8 +1558,8 @@
     "organizer": "さくらさくさくウォークラリー実行委員会",
     "periods": [
       {
-        "start": "2015-04-05T00:30:00.000Z",
-        "end": "2015-04-05T04:00:00.000Z"
+        "start": "2015-04-05T09:30:00.000Z",
+        "end": "2015-04-05T13:00:00.000Z"
       }
     ]
   },
@@ -1542,13 +1583,14 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": true
+      "fireworks": true,
+      "mikoshi": false
     },
     "organizer": "あきのみち公園みなみまつり実行委員会",
     "periods": [
       {
-        "start": "2015-07-25T07:00:00.000Z",
-        "end": "2015-07-25T10:00:00.000Z"
+        "start": "2015-07-25T16:00:00.000Z",
+        "end": "2015-07-25T19:00:00.000Z"
       }
     ],
     "remarks": "雨天は7/26に順延"
@@ -1573,13 +1615,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
       {
-        "start": "2015-10-04T02:00:00.000Z",
-        "end": "2015-10-04T06:00:00.000Z"
+        "start": "2015-10-04T11:00:00.000Z",
+        "end": "2015-10-04T15:00:00.000Z"
       }
     ]
   },
@@ -1603,17 +1646,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
       {
-        "start": "2015-08-08T10:00:00.000Z",
-        "end": "2015-08-08T12:00:00.000Z"
+        "start": "2015-08-08T19:00:00.000Z",
+        "end": "2015-08-08T21:00:00.000Z"
       },
       {
-        "start": "2015-08-09T10:00:00.000Z",
-        "end": "2015-08-09T12:00:00.000Z"
+        "start": "2015-08-09T19:00:00.000Z",
+        "end": "2015-08-09T21:00:00.000Z"
       }
     ]
   },
@@ -1638,6 +1682,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ゲーム"
       ]
@@ -1645,8 +1690,8 @@
     "organizer": "",
     "periods": [
       {
-        "start": "2015-08-23T09:00:00.000Z",
-        "end": "2015-08-23T11:30:00.000Z"
+        "start": "2015-08-23T18:00:00.000Z",
+        "end": "2015-08-23T20:30:00.000Z"
       }
     ]
   },
@@ -1671,6 +1716,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "御浜下り"
       ]
@@ -1678,16 +1724,16 @@
     "organizer": "寒川神社",
     "periods": [
       {
-        "start": "2015-08-19T09:00:00.000Z",
-        "end": "2015-08-19T12:00:00.000Z"
+        "start": "2015-08-19T18:00:00.000Z",
+        "end": "2015-08-19T21:00:00.000Z"
       },
       {
-        "start": "2015-08-19T23:00:00.000Z",
-        "end": "2015-08-20T11:00:00.000Z"
+        "start": "2015-08-20T08:00:00.000Z",
+        "end": "2015-08-20T20:00:00.000Z"
       },
       {
-        "start": "2015-08-21T01:00:00.000Z",
-        "end": "2015-08-21T03:00:00.000Z"
+        "start": "2015-08-21T10:00:00.000Z",
+        "end": "2015-08-21T12:00:00.000Z"
       }
     ],
     "url": "http://www5a.biglobe.ne.jp/~samugawa/"
@@ -1713,6 +1759,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "パレード"
       ]
@@ -1720,12 +1767,12 @@
     "organizer": "千葉市を美しくする会",
     "periods": [
       {
-        "start": "2015-08-15T02:00:00.000Z",
-        "end": "2015-08-15T11:00:00.000Z"
+        "start": "2015-08-15T11:00:00.000Z",
+        "end": "2015-08-15T20:00:00.000Z"
       },
       {
-        "start": "2015-08-16T04:00:00.000Z",
-        "end": "2015-08-16T11:00:00.000Z"
+        "start": "2015-08-16T13:00:00.000Z",
+        "end": "2015-08-16T20:00:00.000Z"
       }
     ],
     "url": "http://www.bikai.org/matsuri.html"
@@ -1750,17 +1797,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "千葉神社",
     "periods": [
       {
-        "start": "2015-08-16T03:30:00.000Z",
-        "end": "2015-08-16T10:00:00.000Z"
+        "start": "2015-08-16T12:30:00.000Z",
+        "end": "2015-08-16T19:00:00.000Z"
       },
       {
-        "start": "2015-08-22T05:00:00.000Z",
-        "end": "2015-08-22T10:30:00.000Z"
+        "start": "2015-08-22T14:00:00.000Z",
+        "end": "2015-08-22T19:30:00.000Z"
       }
     ],
     "url": "http://www.chibajinja.com/073reisai.html"
@@ -1785,17 +1833,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "真砂地区(第31地区)町内自治会連絡協議会",
     "periods": [
       {
-        "start": "2015-08-15T08:00:00.000Z",
-        "end": "2015-08-15T12:30:00.000Z"
+        "start": "2015-08-15T17:00:00.000Z",
+        "end": "2015-08-15T21:30:00.000Z"
       },
       {
-        "start": "2015-08-16T08:00:00.000Z",
-        "end": "2015-08-16T12:00:00.000Z"
+        "start": "2015-08-16T17:00:00.000Z",
+        "end": "2015-08-16T21:00:00.000Z"
       }
     ]
   },
@@ -1819,13 +1868,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "サマーフェスティバル実行委員会",
     "periods": [
       {
-        "start": "2015-08-22T05:30:00.000Z",
-        "end": "2015-08-22T12:00:00.000Z"
+        "start": "2015-08-22T14:30:00.000Z",
+        "end": "2015-08-22T21:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -1853,6 +1903,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "山車、神輿"
       ]
@@ -1860,12 +1911,12 @@
     "organizer": "高浜北夏祭り実行委員会",
     "periods": [
       {
-        "start": "2015-08-22T06:00:00.000Z",
-        "end": "2015-08-22T12:30:00.000Z"
+        "start": "2015-08-22T15:00:00.000Z",
+        "end": "2015-08-22T21:30:00.000Z"
       },
       {
-        "start": "2015-08-23T01:00:00.000Z",
-        "end": "2015-08-23T12:00:00.000Z"
+        "start": "2015-08-23T10:00:00.000Z",
+        "end": "2015-08-23T21:00:00.000Z"
       }
     ],
     "url": "http://kitadanchi.org/"
@@ -1890,13 +1941,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "稲毛東映マンション子供夏祭り実行委員会",
     "periods": [
       {
-        "start": "2015-08-29T08:45:00.000Z",
-        "end": "2015-08-29T11:00:00.000Z"
+        "start": "2015-08-29T17:45:00.000Z",
+        "end": "2015-08-29T20:00:00.000Z"
       }
     ],
     "remarks": "雨天の場合は屋内での売店のみ"
@@ -1921,17 +1973,18 @@
       "drum": false,
       "musicalPerformance": true,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "磯辺夏祭り実行委員会",
     "periods": [
       {
-        "start": "2015-08-29T09:00:00.000Z",
-        "end": "2015-08-29T12:00:00.000Z"
+        "start": "2015-08-29T18:00:00.000Z",
+        "end": "2015-08-29T21:00:00.000Z"
       },
       {
-        "start": "2015-08-30T09:00:00.000Z",
-        "end": "2015-08-30T12:00:00.000Z"
+        "start": "2015-08-30T18:00:00.000Z",
+        "end": "2015-08-30T21:00:00.000Z"
       }
     ]
   },
@@ -1956,6 +2009,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "移動遊具設置の子どもの外遊びコーナー"
       ],
@@ -1966,8 +2020,8 @@
     "organizer": "ゆみ～るふれあい市夏祭り実行委員会",
     "periods": [
       {
-        "start": "2015-08-22T04:00:00.000Z",
-        "end": "2015-08-22T08:00:00.000Z"
+        "start": "2015-08-22T13:00:00.000Z",
+        "end": "2015-08-22T17:00:00.000Z"
       }
     ],
     "remarks": "小雨決行、悪天候時は 8/23 に延期"
@@ -1993,6 +2047,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "昔あそび、グラウンドゴルフ、フリーマーケット"
       ]
@@ -2000,8 +2055,8 @@
     "organizer": "花見川区民まつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-25T01:00:00.000Z",
-        "end": "2015-10-25T06:00:00.000Z"
+        "start": "2015-10-25T10:00:00.000Z",
+        "end": "2015-10-25T15:00:00.000Z"
       }
     ],
     "remarks": "小雨決行"
@@ -2027,6 +2082,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿、ワークショップ、フリーマーケット、浜焼き"
       ]
@@ -2034,8 +2090,8 @@
     "organizer": "美浜区民フェスティバル実行委員会",
     "periods": [
       {
-        "start": "2015-10-04T00:20:00.000Z",
-        "end": "2015-10-04T06:40:00.000Z"
+        "start": "2015-10-04T09:20:00.000Z",
+        "end": "2015-10-04T15:40:00.000Z"
       }
     ]
   },
@@ -2059,13 +2115,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "稲毛区民まつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-25T00:10:00.000Z",
-        "end": "2015-10-25T06:00:00.000Z"
+        "start": "2015-10-25T09:10:00.000Z",
+        "end": "2015-10-25T15:00:00.000Z"
       }
     ]
   },
@@ -2090,6 +2147,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "フリーマーケット、スタンプラリー"
       ]
@@ -2097,8 +2155,8 @@
     "organizer": "中央区ふるさとまつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-18T01:00:00.000Z",
-        "end": "2015-10-18T07:00:00.000Z"
+        "start": "2015-10-18T10:00:00.000Z",
+        "end": "2015-10-18T16:00:00.000Z"
       }
     ]
   },
@@ -2123,6 +2181,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "フリーマーケット、産直市、スポーツイベント"
       ]
@@ -2130,8 +2189,8 @@
     "organizer": "若葉区民まつり実行委員会",
     "periods": [
       {
-        "start": "2015-11-01T00:30:00.000Z",
-        "end": "2015-11-01T05:30:00.000Z"
+        "start": "2015-11-01T09:30:00.000Z",
+        "end": "2015-11-01T14:30:00.000Z"
       }
     ]
   },
@@ -2156,6 +2215,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "芸能ステージ、こどもコーナー、スポレクコーナー"
       ]
@@ -2163,8 +2223,8 @@
     "organizer": "緑区ふるさとまつり実行委員会",
     "periods": [
       {
-        "start": "2015-11-01T01:00:00.000Z",
-        "end": "2015-11-01T06:00:00.000Z"
+        "start": "2015-11-01T10:00:00.000Z",
+        "end": "2015-11-01T15:00:00.000Z"
       }
     ]
   },
@@ -2188,13 +2248,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "千葉市民産業まつり実行委員会",
     "periods": [
       {
-        "start": "2015-11-08T01:00:00.000Z",
-        "end": "2015-11-08T06:30:00.000Z"
+        "start": "2015-11-08T10:00:00.000Z",
+        "end": "2015-11-08T15:30:00.000Z"
       }
     ]
   },
@@ -2219,6 +2280,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "有吉囃子は子どもたちによって復活しています"
       ],
@@ -2230,8 +2292,8 @@
     "organizer": "日枝神社 有吉町内会",
     "periods": [
       {
-        "start": "2015-10-18T01:00:00.000Z",
-        "end": "2015-10-18T06:40:00.000Z"
+        "start": "2015-10-18T10:00:00.000Z",
+        "end": "2015-10-18T15:40:00.000Z"
       }
     ],
     "url": "http://www.ariyoshi.or.jp/akimatsuri.html"
@@ -2257,6 +2319,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿の町内巡業"
       ]
@@ -2264,16 +2327,16 @@
     "organizer": "登渡神社",
     "periods": [
       {
-        "start": "2015-09-04T07:00:00.000Z",
-        "end": "2015-09-04T11:30:00.000Z"
+        "start": "2015-09-04T16:00:00.000Z",
+        "end": "2015-09-04T20:30:00.000Z"
       },
       {
-        "start": "2015-09-05T02:00:00.000Z",
-        "end": "2015-09-05T12:00:00.000Z"
+        "start": "2015-09-05T11:00:00.000Z",
+        "end": "2015-09-05T21:00:00.000Z"
       },
       {
-        "start": "2015-09-06T07:00:00.000Z",
-        "end": "2015-09-06T11:30:00.000Z"
+        "start": "2015-09-06T16:00:00.000Z",
+        "end": "2015-09-06T20:30:00.000Z"
       }
     ]
   },
@@ -2297,21 +2360,22 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "子守神社",
     "periods": [
       {
-        "start": "2015-09-15T04:00:00.000Z",
-        "end": "2015-09-15T11:00:00.000Z"
+        "start": "2015-09-15T13:00:00.000Z",
+        "end": "2015-09-15T20:00:00.000Z"
       },
       {
-        "start": "2015-09-16T09:00:00.000Z",
-        "end": "2015-09-16T11:00:00.000Z"
+        "start": "2015-09-16T18:00:00.000Z",
+        "end": "2015-09-16T20:00:00.000Z"
       },
       {
-        "start": "2015-09-17T04:00:00.000Z",
-        "end": "2015-09-17T12:30:00.000Z"
+        "start": "2015-09-17T13:00:00.000Z",
+        "end": "2015-09-17T21:30:00.000Z"
       }
     ],
     "remarks": "神輿は、15日と 17日"
@@ -2336,17 +2400,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
       {
-        "start": "2015-09-19T09:00:00.000Z",
-        "end": "2015-09-19T15:00:00.000Z"
+        "start": "2015-09-19T18:00:00.000Z",
+        "end": "2015-09-20T00:00:00.000Z"
       },
       {
-        "start": "2015-09-20T03:00:00.000Z",
-        "end": "2015-09-20T15:00:00.000Z"
+        "start": "2015-09-20T12:00:00.000Z",
+        "end": "2015-09-21T00:00:00.000Z"
       }
     ]
   },
@@ -2370,13 +2435,14 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "三代王神社",
     "periods": [
       {
-        "start": "2015-10-19T15:00:00.000Z",
-        "end": "2015-10-20T15:00:00.000Z"
+        "start": "2015-10-20T00:00:00.000Z",
+        "end": "2015-10-21T00:00:00.000Z"
       }
     ]
   },
@@ -2400,17 +2466,18 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "第30地区町内自治会連絡協議会",
     "periods": [
       {
-        "start": "2015-07-24T09:30:00.000Z",
-        "end": "2015-07-24T12:00:00.000Z"
+        "start": "2015-07-24T18:30:00.000Z",
+        "end": "2015-07-24T21:00:00.000Z"
       },
       {
-        "start": "2015-07-25T09:30:00.000Z",
-        "end": "2015-07-25T12:00:00.000Z"
+        "start": "2015-07-25T18:30:00.000Z",
+        "end": "2015-07-25T21:00:00.000Z"
       }
     ],
     "remarks": "雨天中止"
@@ -2435,13 +2502,14 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "日神パレステージ海浜幕張自治会",
     "periods": [
       {
-        "start": "2015-04-26T02:00:00.000Z",
-        "end": "2015-04-26T07:00:00.000Z"
+        "start": "2015-04-26T11:00:00.000Z",
+        "end": "2015-04-26T16:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -2469,6 +2537,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ミニサッカー大会、プラネタリウム"
       ]
@@ -2476,12 +2545,12 @@
     "organizer": "蘇我コミュニティまつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-03T00:00:00.000Z",
-        "end": "2015-10-03T07:30:00.000Z"
+        "start": "2015-10-03T09:00:00.000Z",
+        "end": "2015-10-03T16:30:00.000Z"
       },
       {
-        "start": "2015-10-04T00:00:00.000Z",
-        "end": "2015-10-04T07:30:00.000Z"
+        "start": "2015-10-04T09:00:00.000Z",
+        "end": "2015-10-04T16:30:00.000Z"
       }
     ]
   },
@@ -2506,6 +2575,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿、子供芋掘り、子供縁日"
       ],
@@ -2516,12 +2586,12 @@
     "organizer": "園生神社",
     "periods": [
       {
-        "start": "2015-09-22T01:00:00.000Z",
-        "end": "2015-09-22T04:00:00.000Z"
+        "start": "2015-09-22T10:00:00.000Z",
+        "end": "2015-09-22T13:00:00.000Z"
       },
       {
-        "start": "2015-09-23T01:00:00.000Z",
-        "end": "2015-09-23T08:00:00.000Z"
+        "start": "2015-09-23T10:00:00.000Z",
+        "end": "2015-09-23T17:00:00.000Z"
       }
     ]
   },
@@ -2546,6 +2616,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "新鮮野菜の即売、収穫体験"
       ],
@@ -2557,16 +2628,16 @@
     "organizer": "コスモスまつり実行委員会",
     "periods": [
       {
-        "start": "2015-10-10T00:00:00.000Z",
-        "end": "2015-10-10T06:00:00.000Z"
+        "start": "2015-10-10T09:00:00.000Z",
+        "end": "2015-10-10T15:00:00.000Z"
       },
       {
-        "start": "2015-10-11T00:00:00.000Z",
-        "end": "2015-10-11T06:00:00.000Z"
+        "start": "2015-10-11T09:00:00.000Z",
+        "end": "2015-10-11T15:00:00.000Z"
       },
       {
-        "start": "2015-10-12T00:00:00.000Z",
-        "end": "2015-10-12T06:00:00.000Z"
+        "start": "2015-10-12T09:00:00.000Z",
+        "end": "2015-10-12T15:00:00.000Z"
       }
     ]
   },
@@ -2591,6 +2662,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "モノレールの展示、見学"
       ]
@@ -2598,8 +2670,8 @@
     "organizer": "ちばモノレール祭り実行委員会",
     "periods": [
       {
-        "start": "2015-10-17T01:00:00.000Z",
-        "end": "2015-10-17T06:00:00.000Z"
+        "start": "2015-10-17T10:00:00.000Z",
+        "end": "2015-10-17T15:00:00.000Z"
       }
     ]
   },
@@ -2623,13 +2695,14 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "ちば和太鼓フェスタ実行委員会",
     "periods": [
       {
-        "start": "2015-10-18T01:00:00.000Z",
-        "end": "2015-10-18T10:00:00.000Z"
+        "start": "2015-10-18T10:00:00.000Z",
+        "end": "2015-10-18T19:00:00.000Z"
       }
     ]
   },
@@ -2654,6 +2727,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "生け花教室、芋掘り、小松菜掘り、折り紙教室"
       ]
@@ -2661,8 +2735,8 @@
     "organizer": "千葉市ふるさと農園",
     "periods": [
       {
-        "start": "2015-10-24T01:00:00.000Z",
-        "end": "2015-10-24T05:00:00.000Z"
+        "start": "2015-10-24T10:00:00.000Z",
+        "end": "2015-10-24T14:00:00.000Z"
       }
     ]
   },
@@ -2686,17 +2760,18 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "ちばYOSAKOI実行委員会",
     "periods": [
       {
-        "start": "2015-10-24T05:00:00.000Z",
-        "end": "2015-10-24T11:00:00.000Z"
+        "start": "2015-10-24T14:00:00.000Z",
+        "end": "2015-10-24T20:00:00.000Z"
       },
       {
-        "start": "2015-10-25T02:00:00.000Z",
-        "end": "2015-10-25T11:00:00.000Z"
+        "start": "2015-10-25T11:00:00.000Z",
+        "end": "2015-10-25T20:00:00.000Z"
       }
     ],
     "remarks": "小雨決行、荒天中止"
@@ -2722,6 +2797,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "アニマル・コスプレコンテスト(8日のみ)"
       ]
@@ -2729,12 +2805,12 @@
     "organizer": "ちばZOOフェスタ実行委員会",
     "periods": [
       {
-        "start": "2015-11-07T00:30:00.000Z",
-        "end": "2015-11-07T07:30:00.000Z"
+        "start": "2015-11-07T09:30:00.000Z",
+        "end": "2015-11-07T16:30:00.000Z"
       },
       {
-        "start": "2015-11-08T00:30:00.000Z",
-        "end": "2015-11-08T07:30:00.000Z"
+        "start": "2015-11-08T09:30:00.000Z",
+        "end": "2015-11-08T16:30:00.000Z"
       }
     ],
     "sponsors": [
@@ -2762,6 +2838,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "縄文体験、縄文かるた、土器作り"
       ]
@@ -2769,12 +2846,12 @@
     "organizer": "加曽利貝塚博物館",
     "periods": [
       {
-        "start": "2015-11-07T00:00:00.000Z",
-        "end": "2015-11-07T08:00:00.000Z"
+        "start": "2015-11-07T09:00:00.000Z",
+        "end": "2015-11-07T17:00:00.000Z"
       },
       {
-        "start": "2015-11-08T00:00:00.000Z",
-        "end": "2015-11-08T08:00:00.000Z"
+        "start": "2015-11-08T09:00:00.000Z",
+        "end": "2015-11-08T17:00:00.000Z"
       }
     ]
   },
@@ -2798,17 +2875,18 @@
       "drum": false,
       "musicalPerformance": true,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "夜灯実行委員会",
     "periods": [
       {
-        "start": "2015-11-21T04:30:00.000Z",
-        "end": "2015-11-21T11:30:00.000Z"
+        "start": "2015-11-21T13:30:00.000Z",
+        "end": "2015-11-21T20:30:00.000Z"
       },
       {
-        "start": "2015-11-22T04:30:00.000Z",
-        "end": "2015-11-22T11:30:00.000Z"
+        "start": "2015-11-22T13:30:00.000Z",
+        "end": "2015-11-22T20:30:00.000Z"
       }
     ],
     "url": "http://yotoboshi.org/",
@@ -2838,6 +2916,7 @@
       "musicalPerformance": true,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "松籟亭ガイド、生け花展"
       ],
@@ -2849,16 +2928,16 @@
     "organizer": "県立幕張海浜公園パークセンター",
     "periods": [
       {
-        "start": "2015-11-20T23:00:00.000Z",
-        "end": "2015-11-21T11:30:00.000Z"
+        "start": "2015-11-21T08:00:00.000Z",
+        "end": "2015-11-21T20:30:00.000Z"
       },
       {
-        "start": "2015-11-21T23:00:00.000Z",
-        "end": "2015-11-22T11:30:00.000Z"
+        "start": "2015-11-22T08:00:00.000Z",
+        "end": "2015-11-22T20:30:00.000Z"
       },
       {
-        "start": "2015-11-22T23:00:00.000Z",
-        "end": "2015-11-23T11:30:00.000Z"
+        "start": "2015-11-23T08:00:00.000Z",
+        "end": "2015-11-23T20:30:00.000Z"
       }
     ],
     "remarks": "荒天中止"
@@ -2884,6 +2963,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "民族衣装体験"
       ]
@@ -2891,12 +2971,12 @@
     "organizer": "神田外語大学浜風祭委員会",
     "periods": [
       {
-        "start": "2015-10-31T01:00:00.000Z",
-        "end": "2015-10-31T08:00:00.000Z"
+        "start": "2015-10-31T10:00:00.000Z",
+        "end": "2015-10-31T17:00:00.000Z"
       },
       {
-        "start": "2015-11-01T01:00:00.000Z",
-        "end": "2015-11-01T08:00:00.000Z"
+        "start": "2015-11-01T10:00:00.000Z",
+        "end": "2015-11-01T17:00:00.000Z"
       }
     ]
   },
@@ -2921,6 +3001,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "斎行(10:00～)、神楽(13:00～)"
       ],
@@ -2931,8 +3012,8 @@
     "organizer": "稲毛浅間神社",
     "periods": [
       {
-        "start": "2015-11-23T01:00:00.000Z",
-        "end": "2015-11-23T06:00:00.000Z"
+        "start": "2015-11-23T10:00:00.000Z",
+        "end": "2015-11-23T15:00:00.000Z"
       }
     ]
   },
@@ -2957,6 +3038,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "キッズパーク(郷土博物館駐車場) 12:00～17:00"
       ],
@@ -2968,40 +3050,40 @@
     "organizer": "千葉城さくら祭り実行委員会",
     "periods": [
       {
-        "start": "2016-03-25T15:00:00.000Z",
-        "end": "2016-03-26T15:00:00.000Z"
+        "start": "2016-03-26T00:00:00.000Z",
+        "end": "2016-03-27T00:00:00.000Z"
       },
       {
-        "start": "2016-03-26T15:00:00.000Z",
-        "end": "2016-03-27T15:00:00.000Z"
+        "start": "2016-03-27T00:00:00.000Z",
+        "end": "2016-03-28T00:00:00.000Z"
       },
       {
-        "start": "2016-03-27T15:00:00.000Z",
-        "end": "2016-03-28T15:00:00.000Z"
+        "start": "2016-03-28T00:00:00.000Z",
+        "end": "2016-03-29T00:00:00.000Z"
       },
       {
-        "start": "2016-03-28T15:00:00.000Z",
-        "end": "2016-03-29T15:00:00.000Z"
+        "start": "2016-03-29T00:00:00.000Z",
+        "end": "2016-03-30T00:00:00.000Z"
       },
       {
-        "start": "2016-03-29T15:00:00.000Z",
-        "end": "2016-03-30T15:00:00.000Z"
+        "start": "2016-03-30T00:00:00.000Z",
+        "end": "2016-03-31T00:00:00.000Z"
       },
       {
-        "start": "2016-03-30T15:00:00.000Z",
-        "end": "2016-03-31T15:00:00.000Z"
+        "start": "2016-03-31T00:00:00.000Z",
+        "end": "2016-04-01T00:00:00.000Z"
       },
       {
-        "start": "2016-03-31T15:00:00.000Z",
-        "end": "2016-04-01T15:00:00.000Z"
+        "start": "2016-04-01T00:00:00.000Z",
+        "end": "2016-04-02T00:00:00.000Z"
       },
       {
-        "start": "2016-04-01T15:00:00.000Z",
-        "end": "2016-04-02T15:00:00.000Z"
+        "start": "2016-04-02T00:00:00.000Z",
+        "end": "2016-04-03T00:00:00.000Z"
       },
       {
-        "start": "2016-04-02T15:00:00.000Z",
-        "end": "2016-04-03T15:00:00.000Z"
+        "start": "2016-04-03T00:00:00.000Z",
+        "end": "2016-04-04T00:00:00.000Z"
       }
     ]
   },
@@ -3026,6 +3108,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子ども神輿・山車"
       ]
@@ -3033,8 +3116,8 @@
     "organizer": "日神パレステージ海浜幕張自治会",
     "periods": [
       {
-        "start": "2016-04-24T02:00:00.000Z",
-        "end": "2016-04-24T07:00:00.000Z"
+        "start": "2016-04-24T11:00:00.000Z",
+        "end": "2016-04-24T16:00:00.000Z"
       }
     ],
     "sponsors": [
@@ -3063,6 +3146,7 @@
       "musicalPerformance": true,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "記念式典、対空戦闘訓練展示、装備品展示"
       ],
@@ -3073,8 +3157,8 @@
     "organizer": "陸上自衛隊",
     "periods": [
       {
-        "start": "2016-04-29T00:00:00.000Z",
-        "end": "2016-04-29T06:00:00.000Z"
+        "start": "2016-04-29T09:00:00.000Z",
+        "end": "2016-04-29T15:00:00.000Z"
       }
     ],
     "url": "http://www.mod.go.jp/gsdf/aasch/aaspr-hp/sta-intro/event/memorial/memorial.html"
@@ -3100,6 +3184,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "研究所敷地内でお花見"
       ]
@@ -3107,12 +3192,12 @@
     "organizer": "JFEさくらまつり実行委員会",
     "periods": [
       {
-        "start": "2016-04-02T01:00:00.000Z",
-        "end": "2016-04-02T07:00:00.000Z"
+        "start": "2016-04-02T10:00:00.000Z",
+        "end": "2016-04-02T16:00:00.000Z"
       },
       {
-        "start": "2016-04-03T01:00:00.000Z",
-        "end": "2016-04-03T07:00:00.000Z"
+        "start": "2016-04-03T10:00:00.000Z",
+        "end": "2016-04-03T16:00:00.000Z"
       }
     ],
     "url": "http://www.jfe-steel.co.jp/works/east/chiba/community/sakuramaturi.html",
@@ -3142,6 +3227,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "幕張ベイタウンのメインストリートを交通規制した大規模な祭り"
       ],
@@ -3153,8 +3239,8 @@
     "organizer": "幕張ベイタウン自治会連合会",
     "periods": [
       {
-        "start": "2016-05-21T01:00:00.000Z",
-        "end": "2016-05-21T06:40:00.000Z"
+        "start": "2016-05-21T10:00:00.000Z",
+        "end": "2016-05-21T15:40:00.000Z"
       }
     ],
     "remarks": "雨天時は翌日開催",
@@ -3181,6 +3267,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "昔の遊び体験、餅投げ、移動販売車、フリーマーケット"
       ],
@@ -3192,8 +3279,8 @@
     "organizer": "有吉町内会",
     "periods": [
       {
-        "start": "2016-04-10T01:00:00.000Z",
-        "end": "2016-04-10T15:00:00.000Z"
+        "start": "2016-04-10T10:00:00.000Z",
+        "end": "2016-04-11T00:00:00.000Z"
       }
     ],
     "remarks": "雨天決行",
@@ -3201,5 +3288,234 @@
       "有吉囃子連",
       "NPO法人 Hands for others"
     ]
+  },
+  {
+    "id": "613",
+    "name": "大盆踊り大会",
+    "location": {
+      "name": "幕張西第一公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-10",
+      "addressCode": "121060012",
+      "lat": "35.663777",
+      "long": "140.036089"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "7/30 19:30? 小学生以下のお子様限定お菓子配布(先着 800名)"
+      ]
+    },
+    "organizer": "第30地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2016-07-29T18:30:00.000Z",
+        "end": "2016-07-29T21:00:00.000Z"
+      },
+      {
+        "start": "2016-07-30T18:30:00.000Z",
+        "end": "2016-07-30T21:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "309",
+    "name": "夏祭り",
+    "location": {
+      "name": "千草台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区天台5-11-1",
+      "addressCode": "121030020",
+      "lat": "35.638194",
+      "long": "140.116278"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "7/24 9:00 ? 12:00 神輿巡業"
+      ]
+    },
+    "organizer": "天台ともしび自治会",
+    "periods": [
+      {
+        "start": "2016-07-23T18:00:00.000Z",
+        "end": "2016-07-23T21:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T18:00:00.000Z",
+        "end": "2016-07-24T21:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "521",
+    "name": "あきのみち公園みなみまつり",
+    "location": {
+      "name": "あきのみち公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野南6丁目1",
+      "addressCode": "121050014",
+      "lat": "35.545361",
+      "long": "140.179679"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "specialProgram": [
+        "子どもゲーム大会",
+        "手づくり花火大会"
+      ]
+    },
+    "organizer": "あきのみち公園みなみまつり実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-23T16:00:00.000Z",
+        "end": "2016-07-23T19:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "614",
+    "name": "第38回磯辺夏まつり",
+    "location": {
+      "name": "中磯辺公園グラウンド",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺4-27",
+      "addressCode": "121060001",
+      "lat": "35.630115",
+      "long": "140.056704"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "磯辺地区7自治会参加による自主運営六千人規模"
+      ],
+      "specialProgram": [
+        "科学的櫓の組み立て（丸太づくり）、磯辺・千葉西両高校のブラスバンド演奏        ",
+        "千葉音羽太鼓による獅子舞と太鼓演奏、坂東みなつね社中、藤蔭社中の踊り"
+      ]
+    },
+    "organizer": "磯辺63自治会内磯辺夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-27T00:00:00.000Z",
+        "end": "2016-08-28T00:00:00.000Z"
+      },
+      {
+        "start": "2016-08-28T00:00:00.000Z",
+        "end": "2016-08-29T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "name": "第41回千葉の親子三代夏祭り",
+    "location": {
+      "name": "中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央1-12-1",
+      "addressCode": "121010036",
+      "lat": "35.610252",
+      "long": "140.120777"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "千葉開府890年"
+      ],
+      "specialProgram": [
+        "DanSpark 2016、パレード",
+        "よさこい鳴子踊り、親子三代千葉おどり"
+      ]
+    },
+    "organizer": "千葉市を美しくする会",
+    "periods": [
+      {
+        "start": "2016-08-20T11:00:00.000Z",
+        "end": "2016-08-20T20:00:00.000Z"
+      },
+      {
+        "start": "2016-08-21T13:00:00.000Z",
+        "end": "2016-08-21T20:15:00.000Z"
+      }
+    ],
+    "url": "http://www.bikai.org/matsuri.html"
+  },
+  {
+    "id": "111",
+    "name": "サマーフェスティバル",
+    "location": {
+      "name": "ハーモニープラザ",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区千葉寺町1208-2",
+      "addressCode": "121010034",
+      "lat": "35.594572",
+      "long": "140.134612"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "千葉市ハーモニープラザ",
+    "periods": [
+      {
+        "start": "2016-07-10T10:00:00.000Z",
+        "end": "2016-07-10T15:00:00.000Z"
+      }
+    ],
+    "url": "http://www.chp.or.jp/danjo/event/pdf/28/kouza-news/natsu-go1.pdf"
   }
 ]

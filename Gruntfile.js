@@ -369,7 +369,7 @@ module.exports = function (grunt) {
         },
         chiba_festival: {
           encoding: 'shift_jis',
-          removeColumn: [ 1, 3, 32, 38, 46, 49, 50, 51, 52, 57, 58],
+          removeColumn: [ 1, 3, 32, 38, 47, 50, 51, 52, 53, 58, 59],
           from: [
             'No', '祭りの名称', '開催日1', '開始時間1', '終了時間1', '開催日2', '開始時間2', '終了時間2',
             '開催日3', '開始時間3', '終了時間3', '開催日4', '開始時間4', '終了時間4',
@@ -377,7 +377,7 @@ module.exports = function (grunt) {
             '開催日7', '開始時間7', '終了時間7', '開催日8', '開始時間8', '終了時間8',
             '開催日9', '開始時間9', '終了時間9', '備考', '会場名称',
             '会場住所', '会場住所コード', '会場緯度', '会場経度',
-            '<踊り>', '<歌唱>', '<太鼓>', '<演奏>', '<出店・屋台>', '<花火>', '<その他>',
+            '<踊り>', '<歌唱>', '<太鼓>', '<演奏>', '<出店・屋台>', '<花火>', '<神輿>', '<その他>',
             '目玉イベント1', '目玉イベント2', '主催団体1', '主催団体2', '主催団体3'
           ],
           to: [
@@ -388,7 +388,7 @@ module.exports = function (grunt) {
             'date9', 'startTime9', 'endTime9', 'remarks', 'location_name',
             'location_address', 'location_code', 'location_lat', 'location_long',
             'features_dancing', 'features_singing', 'features_drum', 'features_musicalPerformance',
-            'features_foodTruck', 'features_fireworks', 'features_others',
+            'features_foodTruck', 'features_fireworks', 'features_mikoshi', 'features_others',
             'specialProgram1', 'specialProgram2', 'organizer', 'sponsor1', 'sponsor2'
           ]
         }
