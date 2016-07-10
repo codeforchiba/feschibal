@@ -55,6 +55,7 @@
           <img if={fes.features.musicalPerformance} src="images/detail/Detail_icon04.svg" />
           <img if={fes.features.foodTruck} src="images/detail/Detail_icon05.svg" />
           <img if={fes.features.fireworks} src="images/detail/Detail_icon06.svg" />
+          <img if={fes.features.mikoshi} src="images/detail/Details_icon07.svg" />
         </div>
 
         <dl class="fes-infos">

@@ -19,7 +19,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "大森小地区盆踊り大会実行委員会",
     "periods": [
@@ -54,6 +55,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "ねぷた、山車、ステージでの踊り、キッズダンス、演奏など"
       ],
@@ -99,6 +101,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "others": [
         "前夜祭"
       ],
@@ -136,6 +139,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "両日とも午後8時より打ち上げ花火100発（3寸玉）"
       ]
@@ -173,6 +177,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "野菜の即売"
       ],
@@ -212,7 +217,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "長作町内会第2区門原",
     "periods": [
@@ -247,6 +253,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子供みこし行進"
       ],
@@ -287,6 +294,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "津軽三味線"
       ],
@@ -324,6 +332,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "お楽しみ抽選会"
       ],
@@ -374,6 +383,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "旧東大植物研究所の蓮見会"
       ],
@@ -414,7 +424,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "長作町貝塚町会",
     "periods": [
@@ -446,6 +457,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ビンゴゲーム"
       ],
@@ -483,6 +495,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": true,
       "others": [
         "チャリティーバザー"
       ],
@@ -520,7 +533,8 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "大宮町下長自治会",
     "periods": [
@@ -551,6 +565,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "ソーランおどり"
       ]
@@ -584,6 +599,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "地元野菜直売"
       ],
@@ -629,6 +645,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "餅つき・ゲーム"
       ]
@@ -663,6 +680,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "吹き矢、シャボン玉、工作"
       ]
@@ -699,7 +717,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
@@ -739,6 +758,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "花車の運行"
       ],
@@ -782,7 +802,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "いずみ台ローズタウン自治会",
     "periods": [
@@ -818,6 +839,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "じゃんけん大会"
       ],
@@ -854,7 +876,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "若松町南部自治会",
     "periods": [
@@ -884,7 +907,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "若松台一丁目自治会",
     "periods": [
@@ -918,6 +942,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "others": [
         "花火大会（祭り１日目のみ）"
       ]
@@ -958,6 +983,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "抽選会、ビンゴ大会",
         "花火大会"
@@ -996,7 +1022,8 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "みつわ台2丁目中央自治会他12団体",
     "periods": [
@@ -1032,6 +1059,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ゆるキャラと撮影会、猿回し"
       ]
@@ -1073,6 +1101,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子供神輿町内パレード"
       ],
@@ -1109,6 +1138,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "会長バンドの演奏"
       ],
@@ -1146,6 +1176,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "小学生の踊り"
       ],
@@ -1188,6 +1219,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "子供によるヨサコイソウラン 17:30～18:00"
       ]
@@ -1221,6 +1253,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "specialProgram": [
         "町内を子供みこし 8月1日10:00～12:00"
       ]
@@ -1261,7 +1294,8 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": true
+      "fireworks": true,
+      "mikoshi": false
     },
     "organizer": "土気商工会議所青年部",
     "periods": [
@@ -1299,6 +1333,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": true,
+      "mikoshi": false,
       "specialProgram": [
         "打ち上げ花火"
       ]
@@ -1332,6 +1367,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "抽選会"
       ]
@@ -1373,6 +1409,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "お神輿渡御、山車引廻し、お囃子、カラオケ/演芸大会、くじ引き大会、文化展示会"
       ],
@@ -1416,7 +1453,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "おゆみ野4丁目自治会",
     "periods": [
@@ -1446,7 +1484,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "誉田団地自治会",
     "periods": [
@@ -1477,6 +1516,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "ビンゴ大会"
       ]
@@ -1510,6 +1550,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ウォークラリー"
       ]
@@ -1542,7 +1583,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": true
+      "fireworks": true,
+      "mikoshi": false
     },
     "organizer": "あきのみち公園みなみまつり実行委員会",
     "periods": [
@@ -1573,7 +1615,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
@@ -1603,7 +1646,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
@@ -1638,6 +1682,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ゲーム"
       ]
@@ -1671,6 +1716,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "御浜下り"
       ]
@@ -1713,6 +1759,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "パレード"
       ]
@@ -1750,7 +1797,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "千葉神社",
     "periods": [
@@ -1785,7 +1833,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "真砂地区(第31地区)町内自治会連絡協議会",
     "periods": [
@@ -1819,7 +1868,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "サマーフェスティバル実行委員会",
     "periods": [
@@ -1853,6 +1903,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "山車、神輿"
       ]
@@ -1890,7 +1941,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "稲毛東映マンション子供夏祭り実行委員会",
     "periods": [
@@ -1921,7 +1973,8 @@
       "drum": false,
       "musicalPerformance": true,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "磯辺夏祭り実行委員会",
     "periods": [
@@ -1956,6 +2009,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "移動遊具設置の子どもの外遊びコーナー"
       ],
@@ -1993,6 +2047,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "昔あそび、グラウンドゴルフ、フリーマーケット"
       ]
@@ -2027,6 +2082,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿、ワークショップ、フリーマーケット、浜焼き"
       ]
@@ -2059,7 +2115,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "稲毛区民まつり実行委員会",
     "periods": [
@@ -2090,6 +2147,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "フリーマーケット、スタンプラリー"
       ]
@@ -2123,6 +2181,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "フリーマーケット、産直市、スポーツイベント"
       ]
@@ -2156,6 +2215,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "芸能ステージ、こどもコーナー、スポレクコーナー"
       ]
@@ -2188,7 +2248,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "千葉市民産業まつり実行委員会",
     "periods": [
@@ -2219,6 +2280,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "有吉囃子は子どもたちによって復活しています"
       ],
@@ -2257,6 +2319,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿の町内巡業"
       ]
@@ -2297,7 +2360,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "子守神社",
     "periods": [
@@ -2336,7 +2400,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "",
     "periods": [
@@ -2370,7 +2435,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "三代王神社",
     "periods": [
@@ -2400,7 +2466,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "第30地区町内自治会連絡協議会",
     "periods": [
@@ -2435,7 +2502,8 @@
       "drum": true,
       "musicalPerformance": true,
       "foodTruck": true,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "日神パレステージ海浜幕張自治会",
     "periods": [
@@ -2469,6 +2537,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "ミニサッカー大会、プラネタリウム"
       ]
@@ -2506,6 +2575,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "神輿、子供芋掘り、子供縁日"
       ],
@@ -2546,6 +2616,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "新鮮野菜の即売、収穫体験"
       ],
@@ -2591,6 +2662,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "モノレールの展示、見学"
       ]
@@ -2623,7 +2695,8 @@
       "drum": true,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "ちば和太鼓フェスタ実行委員会",
     "periods": [
@@ -2654,6 +2727,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "生け花教室、芋掘り、小松菜掘り、折り紙教室"
       ]
@@ -2686,7 +2760,8 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "ちばYOSAKOI実行委員会",
     "periods": [
@@ -2722,6 +2797,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "アニマル・コスプレコンテスト(8日のみ)"
       ]
@@ -2762,6 +2838,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "縄文体験、縄文かるた、土器作り"
       ]
@@ -2798,7 +2875,8 @@
       "drum": false,
       "musicalPerformance": true,
       "foodTruck": false,
-      "fireworks": false
+      "fireworks": false,
+      "mikoshi": false
     },
     "organizer": "夜灯実行委員会",
     "periods": [
@@ -2838,6 +2916,7 @@
       "musicalPerformance": true,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "松籟亭ガイド、生け花展"
       ],
@@ -2884,6 +2963,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "民族衣装体験"
       ]
@@ -2921,6 +3001,7 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "斎行(10:00～)、神楽(13:00～)"
       ],
@@ -2957,6 +3038,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "キッズパーク(郷土博物館駐車場) 12:00～17:00"
       ],
@@ -3026,6 +3108,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": true,
       "others": [
         "子ども神輿・山車"
       ]
@@ -3063,6 +3146,7 @@
       "musicalPerformance": true,
       "foodTruck": false,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "記念式典、対空戦闘訓練展示、装備品展示"
       ],
@@ -3100,6 +3184,7 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "specialProgram": [
         "研究所敷地内でお花見"
       ]
@@ -3142,6 +3227,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "幕張ベイタウンのメインストリートを交通規制した大規模な祭り"
       ],
@@ -3181,6 +3267,7 @@
       "musicalPerformance": true,
       "foodTruck": true,
       "fireworks": false,
+      "mikoshi": false,
       "others": [
         "昔の遊び体験、餅投げ、移動販売車、フリーマーケット"
       ],
@@ -3201,5 +3288,234 @@
       "有吉囃子連",
       "NPO法人 Hands for others"
     ]
+  },
+  {
+    "id": "613",
+    "name": "大盆踊り大会",
+    "location": {
+      "name": "幕張西第一公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-10",
+      "addressCode": "121060012",
+      "lat": "35.663777",
+      "long": "140.036089"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "7/30 19:30? 小学生以下のお子様限定お菓子配布(先着 800名)"
+      ]
+    },
+    "organizer": "第30地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2016-07-29T09:30:00.000Z",
+        "end": "2016-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-30T09:30:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "309",
+    "name": "夏祭り",
+    "location": {
+      "name": "千草台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区天台5-11-1",
+      "addressCode": "121030020",
+      "lat": "35.638194",
+      "long": "140.116278"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "7/24 9:00 ? 12:00 神輿巡業"
+      ]
+    },
+    "organizer": "天台ともしび自治会",
+    "periods": [
+      {
+        "start": "2016-07-23T09:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T09:00:00.000Z",
+        "end": "2016-07-24T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "521",
+    "name": "あきのみち公園みなみまつり",
+    "location": {
+      "name": "あきのみち公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野南6丁目1",
+      "addressCode": "121050014",
+      "lat": "35.545361",
+      "long": "140.179679"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "specialProgram": [
+        "子どもゲーム大会",
+        "手づくり花火大会"
+      ]
+    },
+    "organizer": "あきのみち公園みなみまつり実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-23T07:00:00.000Z",
+        "end": "2016-07-23T10:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "614",
+    "name": "第38回磯辺夏まつり",
+    "location": {
+      "name": "中磯辺公園グラウンド",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺4-27",
+      "addressCode": "121060001",
+      "lat": "35.630115",
+      "long": "140.056704"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "磯辺地区7自治会参加による自主運営六千人規模"
+      ],
+      "specialProgram": [
+        "科学的櫓の組み立て（丸太づくり）、磯辺・千葉西両高校のブラスバンド演奏        ",
+        "千葉音羽太鼓による獅子舞と太鼓演奏、坂東みなつね社中、藤蔭社中の踊り"
+      ]
+    },
+    "organizer": "磯辺63自治会内磯辺夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-26T15:00:00.000Z",
+        "end": "2016-08-27T15:00:00.000Z"
+      },
+      {
+        "start": "2016-08-27T15:00:00.000Z",
+        "end": "2016-08-28T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "name": "第41回千葉の親子三代夏祭り",
+    "location": {
+      "name": "中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央1-12-1",
+      "addressCode": "121010036",
+      "lat": "35.610252",
+      "long": "140.120777"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "千葉開府890年"
+      ],
+      "specialProgram": [
+        "DanSpark 2016、パレード",
+        "よさこい鳴子踊り、親子三代千葉おどり"
+      ]
+    },
+    "organizer": "千葉市を美しくする会",
+    "periods": [
+      {
+        "start": "2016-08-20T02:00:00.000Z",
+        "end": "2016-08-20T11:00:00.000Z"
+      },
+      {
+        "start": "2016-08-21T04:00:00.000Z",
+        "end": "2016-08-21T11:15:00.000Z"
+      }
+    ],
+    "url": "http://www.bikai.org/matsuri.html"
+  },
+  {
+    "id": "111",
+    "name": "サマーフェスティバル",
+    "location": {
+      "name": "ハーモニープラザ",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区千葉寺町1208-2",
+      "addressCode": "121010034",
+      "lat": "35.594572",
+      "long": "140.134612"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "千葉市ハーモニープラザ",
+    "periods": [
+      {
+        "start": "2016-07-10T01:00:00.000Z",
+        "end": "2016-07-10T06:00:00.000Z"
+      }
+    ],
+    "url": "http://www.chp.or.jp/danjo/event/pdf/28/kouza-news/natsu-go1.pdf"
   }
 ]
