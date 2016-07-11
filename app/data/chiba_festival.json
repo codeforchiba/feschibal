@@ -1697,7 +1697,7 @@
   },
   {
     "id": "1001",
-    "name": "寒川神社 例大祭",
+    "name": "寒川神社例大祭",
     "location": {
       "name": "寒川神社",
       "state": "千葉県",
@@ -3517,5 +3517,209 @@
       }
     ],
     "url": "http://www.chp.or.jp/danjo/event/pdf/28/kouza-news/natsu-go1.pdf"
+  },
+  {
+    "id": "1007",
+    "name": "家内安全・安産子育て大祭",
+    "location": {
+      "name": "稲毛浅間神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛1-5-10",
+      "addressCode": "121030005",
+      "lat": "35.636623",
+      "long": "140.082432"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲毛浅間神社",
+    "periods": [
+      {
+        "start": "2016-07-14T08:30:00.000Z",
+        "end": "2016-07-14T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-15T01:00:00.000Z",
+        "end": "2016-07-15T11:00:00.000Z"
+      }
+    ],
+    "url": "http://www.inage-sengenjinja.or.jp/h21taisai.html"
+  },
+  {
+    "id": "1008",
+    "name": "検見川神社例祭神幸祭",
+    "location": {
+      "name": "検見川神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区検見川町1-641",
+      "addressCode": "121020008",
+      "lat": "35.653524",
+      "long": "140.065977"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "ほおずき市"
+      ]
+    },
+    "organizer": "検見川神社",
+    "periods": [
+      {
+        "start": "2016-07-31T15:00:00.000Z",
+        "end": "2016-08-01T15:00:00.000Z"
+      },
+      {
+        "start": "2016-08-01T15:00:00.000Z",
+        "end": "2016-08-02T15:00:00.000Z"
+      },
+      {
+        "start": "2016-08-02T15:00:00.000Z",
+        "end": "2016-08-03T15:00:00.000Z"
+      }
+    ],
+    "url": "http://www.kemigawa-jinja.com/05gyoji.html"
+  },
+  {
+    "id": "1009",
+    "name": "第890回妙見大祭",
+    "location": {
+      "name": "千葉神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区院内1-16-1",
+      "addressCode": "121010009",
+      "lat": "35.611914",
+      "long": "140.123829"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "神輿渡御、おほこ旗祈願祭",
+        "昇殿勇め、千葉締め"
+      ]
+    },
+    "organizer": "千葉神社",
+    "periods": [
+      {
+        "start": "2016-08-16T03:30:00.000Z",
+        "end": "2016-08-16T10:00:00.000Z"
+      },
+      {
+        "start": "2016-08-22T05:00:00.000Z",
+        "end": "2016-08-22T10:30:00.000Z"
+      }
+    ],
+    "url": "http://www.chibajinja.com/073reisai.html"
+  },
+  {
+    "id": "1010",
+    "name": "寒川神社例大祭",
+    "location": {
+      "name": "寒川神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区寒川町1丁目123",
+      "addressCode": "121010021",
+      "lat": "35.597307",
+      "long": "140.120246"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "御浜下り"
+      ]
+    },
+    "organizer": "寒川神社",
+    "periods": [
+      {
+        "start": "2016-08-19T09:00:00.000Z",
+        "end": "2016-08-19T12:00:00.000Z"
+      },
+      {
+        "start": "2016-08-19T23:00:00.000Z",
+        "end": "2016-08-20T11:00:00.000Z"
+      },
+      {
+        "start": "2016-08-21T01:00:00.000Z",
+        "end": "2016-08-21T03:00:00.000Z"
+      }
+    ],
+    "url": "http://www5a.biglobe.ne.jp/~samugawa/"
+  },
+  {
+    "id": "1011",
+    "name": "登渡神社御例祭",
+    "location": {
+      "name": "登渡神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区登戸3-3-8",
+      "addressCode": "121010047",
+      "lat": "35.612097",
+      "long": "140.106406"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "神輿渡御"
+      ]
+    },
+    "organizer": "登渡神社",
+    "periods": [
+      {
+        "start": "2016-09-03T15:00:00.000Z",
+        "end": "2016-09-04T15:00:00.000Z"
+      },
+      {
+        "start": "2016-09-04T15:00:00.000Z",
+        "end": "2016-09-05T15:00:00.000Z"
+      },
+      {
+        "start": "2016-09-05T15:00:00.000Z",
+        "end": "2016-09-06T15:00:00.000Z"
+      }
+    ]
   }
 ]
