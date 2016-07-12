@@ -6,13 +6,11 @@
      * 地図の生成
      **/
     var map = L.map(this["map-result"], {
+      layers: MQ.mapLayer(),
+      zoom: 18,
       dragging: true
     });
-    L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
-      maxZoom: 18,
-      subdomains: ["otile1", "otile2", "otile3", "otile4"],
-      attribution: 'Tiles courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
-    }).addTo(map);
+
     // マーカー一覧(geoJson)
     var markers = L.markerClusterGroup();
     markers.addTo(map);

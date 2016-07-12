@@ -55,7 +55,7 @@
           <img if={fes.features.musicalPerformance} src="images/detail/Detail_icon04.svg" />
           <img if={fes.features.foodTruck} src="images/detail/Detail_icon05.svg" />
           <img if={fes.features.fireworks} src="images/detail/Detail_icon06.svg" />
-          <img if={fes.features.mikoshi} src="images/detail/Details_icon07.svg" />
+          <img if={fes.features.mikoshi} src="images/detail/Detail_icon07.svg" />
         </div>
 
         <dl class="fes-infos">
@@ -115,18 +115,10 @@
      **/
     var marker = null;
     var map = L.map(self["map-detail"], {
+      layers: MQ.mapLayer(),
+      zoom: 18,
       dragging: true
     });
-    L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
-      maxZoom: 18,
-      subdomains: ["otile1", "otile2", "otile3", "otile4"],
-      attribution: 'Tiles courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
-    }).addTo(map);
-//    L.tileLayer("http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
-//      maxZoom: 18,
-//      attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
-//      opacity: 0.8
-//    }).addTo(map);
 
     /**
      * 詳細画面表示時
