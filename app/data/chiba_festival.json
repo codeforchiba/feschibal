@@ -1670,7 +1670,7 @@
       "stateCode": "12",
       "city": "千葉市",
       "cityCode": "1212",
-      "address": "千葉市稲毛区天台1-1",
+      "address": "稲毛区天台1-1",
       "addressCode": "121030020",
       "lat": "35.630357",
       "long": "140.113787"
@@ -1712,11 +1712,11 @@
     "features": {
       "dancing": false,
       "singing": false,
-      "drum": false,
+      "drum": true,
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
-      "mikoshi": false,
+      "mikoshi": true,
       "specialProgram": [
         "御浜下り"
       ]
@@ -1798,7 +1798,14 @@
       "musicalPerformance": false,
       "foodTruck": true,
       "fireworks": false,
-      "mikoshi": false
+      "mikoshi": true,
+      "others": [
+        "神輿渡御"
+      ],
+      "specialProgram": [
+        "おほこ旗祈願祭",
+        "昇殿勇め、千葉締め"
+      ]
     },
     "organizer": "千葉神社",
     "periods": [
@@ -2694,7 +2701,7 @@
       "singing": false,
       "drum": true,
       "musicalPerformance": false,
-      "foodTruck": false,
+      "foodTruck": true,
       "fireworks": false,
       "mikoshi": false
     },
@@ -3796,5 +3803,118 @@
       }
     ],
     "remarks": "雨天時も、お店はオープン"
+  },
+  {
+    "id": "221",
+    "name": "第21回幕張本郷ふれあい祭り",
+    "location": {
+      "name": "メイプルイン幕張駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張本郷1-12-1",
+      "addressCode": "121020027",
+      "lat": "35.671598",
+      "long": "140.039879"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "人形劇、パフォーマンス大会"
+      ],
+      "specialProgram": [
+        "毎年恒例パフォーマンス大会",
+        "フラダンス・よさこい・津軽三味線"
+      ]
+    },
+    "organizer": "幕張本郷事業者有志の会",
+    "periods": [
+      {
+        "start": "2016-08-02T07:00:00.000Z",
+        "end": "2016-08-02T11:45:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止",
+    "url": "http://blogs.makusta.com/fureai/",
+    "sponsors": [
+      "幕張本郷ふれあい祭り実行委員会"
+    ]
+  },
+  {
+    "id": "222",
+    "name": "第12回幕張子ども夏祭り 2016",
+    "location": {
+      "name": "幕張小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町4丁目781",
+      "addressCode": "121020026",
+      "lat": "35.661653",
+      "long": "140.054089"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false
+    },
+    "organizer": "幕張中学校区青少年育成委員会",
+    "periods": [
+      {
+        "start": "2016-07-18T08:30:00.000Z",
+        "end": "2016-07-18T10:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は、体育館で実施",
+    "sponsors": [
+      "幕張地区子ども会育成会"
+    ]
+  },
+  {
+    "id": "615",
+    "name": "磯辺幼稚園夏祭り",
+    "location": {
+      "name": "磯辺幼稚園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺7-16-1",
+      "addressCode": "121060001",
+      "lat": "35.636119",
+      "long": "140.052949"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "小さなお子様にプレゼントあり"
+      ]
+    },
+    "organizer": "磯辺幼稚園",
+    "periods": [
+      {
+        "start": "2016-08-27T07:30:00.000Z",
+        "end": "2016-08-27T09:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
   }
 ]
