@@ -3916,5 +3916,355 @@
       }
     ],
     "remarks": "雨天中止"
+  },
+  {
+    "id": "616",
+    "name": "稲毛海岸4丁目自治会夏祭り",
+    "location": {
+      "name": "稲毛海岸4丁目自治会館",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸4丁目4",
+      "addressCode": "121060002",
+      "lat": "35.636727",
+      "long": "140.076453"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "山車の引き回し 19:00～"
+      ]
+    },
+    "organizer": "稲毛海岸4丁目自治会・祭礼実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-14T08:00:00.000Z",
+        "end": "2016-07-14T15:00:00.000Z"
+      },
+      {
+        "start": "2016-07-15T08:00:00.000Z",
+        "end": "2016-07-15T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "617",
+    "name": "高浜第二県営夏まつり",
+    "location": {
+      "name": "高浜第二県営集会所",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜1丁目",
+      "addressCode": "121060007",
+      "lat": "35.620684",
+      "long": "140.073956"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜第二県営夏まつり実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-16T08:00:00.000Z",
+        "end": "2016-07-16T12:30:00.000Z"
+      },
+      {
+        "start": "2016-07-17T08:00:00.000Z",
+        "end": "2016-07-17T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "618",
+    "name": "稲浜地区夏祭り",
+    "location": {
+      "name": "稲毛海岸2丁目公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸2丁目3",
+      "addressCode": "121060002",
+      "lat": "35.629612",
+      "long": "140.085151"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲浜地区夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-23T08:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "第47回団地祭",
+    "location": {
+      "name": "千葉市立幸町小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幸町2-12-12",
+      "addressCode": "121060004",
+      "lat": "35.621451",
+      "long": "140.091487"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "幸町団地祭実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-29T08:30:00.000Z",
+        "end": "2016-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-30T07:00:00.000Z",
+        "end": "2016-07-30T15:00:00.000Z"
+      },
+      {
+        "start": "2016-07-31T00:00:00.000Z",
+        "end": "2016-07-31T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "620",
+    "name": "第43回心のふるさと高洲夏祭り",
+    "location": {
+      "name": "高洲運動公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲2丁目",
+      "addressCode": "121060006",
+      "lat": "35.624037",
+      "long": "140.079272"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高洲夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-30T07:00:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-31T07:00:00.000Z",
+        "end": "2016-07-31T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "621",
+    "name": "磯辺ふるさと祭り",
+    "location": {
+      "name": "北磯辺公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺6丁目4",
+      "addressCode": "121060001",
+      "lat": "35.637155",
+      "long": "140.054244"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "磯辺ふるさと祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-30T09:00:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-31T09:00:00.000Z",
+        "end": "2016-07-31T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "622",
+    "name": "平成28年度団地祭",
+    "location": {
+      "name": "稲毛海岸3丁目団地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸3丁目",
+      "addressCode": "121060002",
+      "lat": "35.633865",
+      "long": "140.079648"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲毛海岸3丁目団地団地祭実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-30T09:00:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-31T09:00:00.000Z",
+        "end": "2016-07-31T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "623",
+    "name": "パイロットハウス検見川納涼会",
+    "location": {
+      "name": "パイロットハウス検見川集会所",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺6丁目",
+      "addressCode": "121060001",
+      "lat": "35.637257",
+      "long": "140.057386"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "パイロットハウス検見川納涼会実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-20T07:00:00.000Z",
+        "end": "2016-08-20T11:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は、21日に延期"
+  },
+  {
+    "id": "624",
+    "name": "高浜北夏祭り",
+    "location": {
+      "name": "高浜北団地中央プレイロット",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜4丁目",
+      "addressCode": "121060007",
+      "lat": "35.625594",
+      "long": "140.068624"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜北夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-20T06:00:00.000Z",
+        "end": "2016-08-20T12:30:00.000Z"
+      },
+      {
+        "start": "2016-08-21T01:00:00.000Z",
+        "end": "2016-08-21T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "625",
+    "name": "平成28年度真砂夏祭り",
+    "location": {
+      "name": "真砂中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5-15",
+      "addressCode": "121060013",
+      "lat": "35.641941",
+      "long": "140.064243"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "第31地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2016-08-20T08:00:00.000Z",
+        "end": "2016-08-20T13:00:00.000Z"
+      },
+      {
+        "start": "2016-08-21T08:00:00.000Z",
+        "end": "2016-08-21T12:00:00.000Z"
+      }
+    ]
   }
 ]
