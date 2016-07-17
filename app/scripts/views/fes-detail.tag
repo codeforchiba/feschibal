@@ -69,6 +69,7 @@
             <li>
               <span if={fes.features.dancing}>踊り　</span><span if={fes.features.singing}>歌唱　</span><span if={fes.features.drum}>太鼓　</span>
               <span if={fes.features.musicalPerformance}>演奏　</span><span if={fes.features.foodTruck}>屋台　</span><span if={fes.features.fireworks}>花火　</span>
+              <span if={fes.features.mikoshi}>神輿　</span>
             </li>
             <li each={ program in fes.features.others }>{program}</li>
             <li each={ program in fes.features.specialProgram }>{program}</li>
