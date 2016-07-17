@@ -4461,5 +4461,76 @@
         "end": "2016-08-20T15:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "439",
+    "name": "第37回西都賀１、２丁目自治会夏祭り",
+    "location": {
+      "name": "西都賀中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区西都賀2-4",
+      "addressCode": "121040044",
+      "lat": "35.637316",
+      "long": "140.145861"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "specialProgram": [
+        "午前中に子供神輿"
+      ]
+    },
+    "organizer": "西都賀１、２丁目自治会",
+    "periods": [
+      {
+        "start": "2016-07-30T08:00:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-31T07:30:00.000Z",
+        "end": "2016-07-31T11:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "225",
+    "name": "かいづかの夏祭り",
+    "location": {
+      "name": "長作町貝塚町会、協進建設駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町355-4",
+      "addressCode": "121020018",
+      "lat": "35.678104",
+      "long": "140.069523"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "長作町貝塚町会",
+    "periods": [
+      {
+        "start": "2016-08-20T07:00:00.000Z",
+        "end": "2016-08-20T09:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は、21日に延期",
+    "url": "https://www.facebook.com/nagasakumach.kaizukachyokai"
   }
 ]
