@@ -4266,5 +4266,200 @@
         "end": "2016-08-21T12:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "522",
+    "name": "東光院 みたま祭り",
+    "location": {
+      "name": "東光院",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区平山町278",
+      "addressCode": "121050029",
+      "lat": "35.578317",
+      "long": "140.186818"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "specialProgram": [
+        "お願い花火",
+        "流し万灯"
+      ]
+    },
+    "organizer": "平山お願い薬師 東光院",
+    "periods": [
+      {
+        "start": "2016-08-14T10:00:00.000Z",
+        "end": "2016-08-14T12:30:00.000Z"
+      }
+    ],
+    "url": "http://www.tokoin.com/"
+  },
+  {
+    "id": "626",
+    "name": "美浜こどもまつり",
+    "location": {
+      "name": "千葉市美浜文化ホール",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5-15-2",
+      "addressCode": "121060013",
+      "lat": "35.641058",
+      "long": "140.062568"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "ゲームコーナー、各種ワークショップ"
+      ],
+      "specialProgram": [
+        "カブトムシの森"
+      ]
+    },
+    "organizer": "千葉市美浜文化ホール",
+    "periods": [
+      {
+        "start": "2016-07-20T01:45:00.000Z",
+        "end": "2016-07-20T07:45:00.000Z"
+      },
+      {
+        "start": "2016-07-21T01:45:00.000Z",
+        "end": "2016-07-21T07:45:00.000Z"
+      }
+    ],
+    "url": "http://chiba-aw.jp/event/mihama20160720"
+  },
+  {
+    "id": "311",
+    "name": "敬愛フェスティバル 2016",
+    "location": {
+      "name": "敬愛大学 稲毛キャンバス",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区穴川1-5-21",
+      "addressCode": "121030001",
+      "lat": "35.633089",
+      "long": "140.103412"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "稲毛の街と大学を繋げる一大イベント。10月16日は稲毛区民まつりとの同日開催です。"
+      ]
+    },
+    "organizer": "敬愛大学学友会",
+    "periods": [
+      {
+        "start": "2016-10-15T01:00:00.000Z",
+        "end": "2016-10-15T15:00:00.000Z"
+      },
+      {
+        "start": "2016-10-16T01:00:00.000Z",
+        "end": "2016-10-16T15:00:00.000Z"
+      }
+    ],
+    "url": "http://www.u-keiai.ac.jp",
+    "sponsors": [
+      "敬愛フェスティバル実行委員会"
+    ]
+  },
+  {
+    "id": "223",
+    "name": "花園ハス祭り",
+    "location": {
+      "name": "花園公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区花園2丁目11",
+      "addressCode": "121020023",
+      "lat": "35.653965",
+      "long": "140.07191"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "7/16 6:00～ 観蓮会 旧東大緑地植物実験所にて"
+      ],
+      "specialProgram": [
+        "子供みこし行進"
+      ]
+    },
+    "organizer": "花園ハス祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-15T15:00:00.000Z",
+        "end": "2016-07-16T15:00:00.000Z"
+      },
+      {
+        "start": "2016-07-16T15:00:00.000Z",
+        "end": "2016-07-17T15:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "大賀ハスのふるさとの会"
+    ]
+  },
+  {
+    "id": "224",
+    "name": "第7回瑞穂夏祭り",
+    "location": {
+      "name": "瑞穂小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区瑞穂1丁目2",
+      "addressCode": "121020028",
+      "lat": "35.664017",
+      "long": "140.068742"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2016-08-19T15:00:00.000Z",
+        "end": "2016-08-20T15:00:00.000Z"
+      }
+    ]
   }
 ]
