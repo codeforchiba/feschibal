@@ -3406,6 +3406,11 @@
         "start": "2016-07-23T07:00:00.000Z",
         "end": "2016-07-23T10:30:00.000Z"
       }
+    ],
+    "remarks": "雨天時は 24日に延期",
+    "sponsors": [
+      "おゆみ野南中学校区青少年育成委員会",
+      "おゆみ野地区町内自治会連絡協議会"
     ]
   },
   {
@@ -4532,5 +4537,165 @@
     ],
     "remarks": "雨天時は、21日に延期",
     "url": "https://www.facebook.com/nagasakumach.kaizukachyokai"
+  },
+  {
+    "id": "226",
+    "name": "第33回 朝日ヶ丘ビレジ夏祭り",
+    "location": {
+      "name": "朝日ヶ丘第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区朝日ヶ丘3丁目2665-6",
+      "addressCode": "121020001",
+      "lat": "35.655408",
+      "long": "140.081847"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "夜店は両日とも17時から"
+      ]
+    },
+    "organizer": "朝日ヶ丘ビレジ自治会",
+    "periods": [
+      {
+        "start": "2016-07-23T05:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T03:30:00.000Z",
+        "end": "2016-07-24T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "227",
+    "name": "こてはし台ふるさと祭り",
+    "location": {
+      "name": "こてはし台中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区こてはし台4-21",
+      "addressCode": "121020009",
+      "lat": "35.687954",
+      "long": "140.119788"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "子供神輿",
+        "阿波踊り、蓮太鼓演奏"
+      ]
+    },
+    "organizer": "こてはし台自治会",
+    "periods": [
+      {
+        "start": "2016-07-30T07:00:00.000Z",
+        "end": "2016-07-30T12:30:00.000Z"
+      },
+      {
+        "start": "2016-07-31T07:00:00.000Z",
+        "end": "2016-07-31T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "312",
+    "name": "作草部親交会盆踊り大会",
+    "location": {
+      "name": "ヤックス作草部店 屋上駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区作草部1丁目10-2",
+      "addressCode": "121030015",
+      "lat": "35.62913",
+      "long": "140.115353"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "specialProgram": [
+        "子供会による１０台の樽太鼓と櫓の上で小学上級生の太鼓"
+      ]
+    },
+    "organizer": "作草部親交会",
+    "periods": [
+      {
+        "start": "2016-07-22T09:00:00.000Z",
+        "end": "2016-07-22T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-23T09:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "ヤックス作草部店"
+    ]
+  },
+  {
+    "id": "523",
+    "name": "第29回おゆみ野夏祭り 2016",
+    "location": {
+      "name": "泉谷小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野中央4丁目3",
+      "addressCode": "121050013",
+      "lat": "35.554535",
+      "long": "140.174215"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "盆踊りにて熱心に踊った方 50名に粗品進呈。小学生以下先着 700名にお菓子プレゼント"
+      ],
+      "specialProgram": [
+        "よさこい鳴子踊り",
+        "地域の子供達の熱演"
+      ]
+    },
+    "organizer": "おゆみ野夏祭り実行委員会 2016",
+    "periods": [
+      {
+        "start": "2016-07-30T07:00:00.000Z",
+        "end": "2016-07-30T11:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期",
+    "sponsors": [
+      "おゆみ野地区町内自治会連絡協議会"
+    ]
   }
 ]
