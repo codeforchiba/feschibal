@@ -176,7 +176,7 @@
     /**
      * swiper用
      */
-    this.on('update', function() {
+    window.onload = function () {
       var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
@@ -189,8 +189,8 @@
         centeredSlides: true,
         autoplay: 6000,
         autoplayDisableOnInteraction: false
-      });
-    });
+      })
+    };
   </script>
 
   <style scoped>
