@@ -4540,7 +4540,7 @@
   },
   {
     "id": "226",
-    "name": "第33回 朝日ヶ丘ビレジ夏祭り",
+    "name": "第33回朝日ヶ丘ビレジ夏祭り",
     "location": {
       "name": "朝日ヶ丘第2公園",
       "state": "千葉県",
@@ -4696,6 +4696,222 @@
     "remarks": "雨天時は翌日に延期",
     "sponsors": [
       "おゆみ野地区町内自治会連絡協議会"
+    ]
+  },
+  {
+    "id": "440",
+    "name": "第39回みつわ台夏まつり",
+    "location": {
+      "name": "みつわ台3丁目第二公園野球場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台3丁目3-1",
+      "addressCode": "121040048",
+      "lat": "35.640957",
+      "long": "140.136292"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "被災地熊本へのチャリティーフリーマーケット",
+        "こどもみこし"
+      ]
+    },
+    "organizer": "みつわ台祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-13T02:00:00.000Z",
+        "end": "2016-08-13T12:00:00.000Z"
+      },
+      {
+        "start": "2016-08-14T02:00:00.000Z",
+        "end": "2016-08-14T12:00:00.000Z"
+      }
+    ],
+    "remarks": "2日間で3万人が集まる地域のお祭りに是非足をお運び下さい！",
+    "url": "http://mitsuwadai-matsuri.com"
+  },
+  {
+    "id": "1012",
+    "name": "子守神社例大祭",
+    "location": {
+      "name": "子守神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町2-990",
+      "addressCode": "121020026",
+      "lat": "35.664086",
+      "long": "140.049344"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true
+    },
+    "organizer": "子守神社",
+    "periods": [
+      {
+        "start": "2016-09-14T15:00:00.000Z",
+        "end": "2016-09-15T15:00:00.000Z"
+      },
+      {
+        "start": "2016-09-15T15:00:00.000Z",
+        "end": "2016-09-16T15:00:00.000Z"
+      },
+      {
+        "start": "2016-09-16T15:00:00.000Z",
+        "end": "2016-09-17T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "627",
+    "name": "ベイタウン夏まつり 2016",
+    "location": {
+      "name": "幕張ベイタウン・コア、美浜プロムナード",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区打瀬2-13",
+      "addressCode": "121060003",
+      "lat": "35.639694",
+      "long": "140.046889"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true
+    },
+    "organizer": "ベイタウン夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-27T06:00:00.000Z",
+        "end": "2016-08-27T11:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "幕張ベイタウン自治会連合会",
+      "幕張ベイタウン商店街振興組合"
+    ]
+  },
+  {
+    "id": "112",
+    "name": "第2回夏祭り",
+    "location": {
+      "name": "千葉市生涯学習センター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区弁天3-7-7",
+      "addressCode": "121010053",
+      "lat": "35.61829",
+      "long": "140.114155"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "アニメ上映会「トムとジェリー」、どうぶつしょうぎ"
+      ]
+    },
+    "organizer": "千葉市生涯学習センター",
+    "periods": [
+      {
+        "start": "2016-08-28T01:00:00.000Z",
+        "end": "2016-08-28T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "228",
+    "name": "納涼祭",
+    "location": {
+      "name": "東花園公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区花園5丁目10",
+      "addressCode": "121020023",
+      "lat": "35.654286",
+      "long": "140.076408"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "花園文化会",
+    "periods": [
+      {
+        "start": "2016-08-06T10:00:00.000Z",
+        "end": "2016-08-06T12:00:00.000Z"
+      },
+      {
+        "start": "2016-08-07T10:00:00.000Z",
+        "end": "2016-08-07T12:00:00.000Z"
+      }
+    ],
+    "remarks": "夜店は、18:30～"
+  },
+  {
+    "id": "229",
+    "name": "幕張本郷西町会納涼夏祭り",
+    "location": {
+      "name": "浄土公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張本郷6丁目14",
+      "addressCode": "121020027",
+      "lat": "35.675652",
+      "long": "140.042584"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "幕張本郷西町会 夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-27T07:00:00.000Z",
+        "end": "2016-08-27T12:00:00.000Z"
+      }
     ]
   }
 ]
