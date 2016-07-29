@@ -116,10 +116,12 @@
      **/
     var marker = null;
     var map = L.map(self["map-detail"], {
-      layers: MQ.mapLayer(),
-      zoom: 18,
       dragging: true
     });
+    L.tileLayer("https://tile.openstreetmap.jp/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: 'Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
+    }).addTo(map);
 
     /**
      * 詳細画面表示時

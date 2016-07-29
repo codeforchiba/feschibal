@@ -6,10 +6,12 @@
      * 地図の生成
      **/
     var map = L.map(this["map-result"], {
-      layers: MQ.mapLayer(),
-      zoom: 18,
       dragging: true
     });
+    L.tileLayer("https://tile.openstreetmap.jp/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: 'Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
+    }).addTo(map);
 
     // マーカー一覧(geoJson)
     var markers = L.markerClusterGroup();
