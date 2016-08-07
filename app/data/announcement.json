@@ -1,26 +1,35 @@
 [
-    {
-        "title": "月刊事業構想に掲載されました",
-        "postedAt": "2016-05-12T18:00:00+09:00",
-        "description": "月刊事業構想に掲載されたよー\nやったね。",
-        "thumbnailUrl": "images/announcement/project_design.jpg"
-    },
-    {
-        "title": "MA11でシビック部門賞を受賞しました",
-        "postedAt": "2015-11-30T18:00:00+09:00",
-        "description": "MA11でシビック部門賞を受賞たよー\nやったね。",
-        "thumbnailUrl": "images/announcement/civic_tech.jpg"
-    },
-    {
-        "title": "メンテナンスのため12時〜17時までアクセスしづらい状況がありますがご了承ください。",
-        "postedAt": "2015-01-01T18:00:00+09:00",
-        "description": "月刊事業構想に掲載されたよー\nやったね。",
-        "thumbnailUrl": "images/announcement/project_design.jpg"
-    },
-    {
-        "title": "メンテナンスのため12時〜17時までアクセスしづらい状況がありますがご了承ください。",
-        "postedAt": "2015-12-31T18:00:00+09:00",
-        "description": "月刊事業構想に掲載されたよー\nやったね。",
-        "thumbnailUrl": "images/announcement/project_design.jpg"
-    }
+  {
+    "title": "YuMakeウェブサイトに掲載されました",
+    "postedAt": "2016-08-08T08:08:00+09:00",
+    "description": "天気情報API を提供いただいている YuMake の事例紹介ページに掲載されました。"
+  },
+  {
+    "title": "月刊事業構想 4月号に掲載されました",
+    "postedAt": "2016-03-23T08:08:00+09:00",
+    "description": "月刊事業構想 4月号の Code for Japan への取材記事にて千葉市お祭りデータセンターが取り上げられました。",
+    "thumbnailUrl": "images/announcement/20160323080800.jpg"
+  },
+  {
+    "title": "MA11 で CIVICTECH部門賞を受賞しました",
+    "postedAt": "2015-11-10T08:12:00+09:00",
+    "description": "日本最大級のアプリコンテスト Mashup Awards 11 の CIVICTECH部門で千葉市お祭りデータセンターが優勝しました。",
+    "thumbnailUrl": "images/announcement/20151110081200.jpg"
+  },
+  {
+    "title": "MA11 で CIVICTECH for Citizen賞を受賞しました",
+    "postedAt": "2015-10-31T08-08-00+09:00",
+    "description": "日本最大級のアプリコンテスト Mashup Awards 11 の CIVICTECH部門で千葉市お祭りデータセンターが CIVICTECH for Citizen賞を受賞しました。この結果をもって、来月の CIVICTECH部門の決勝にも進出しました。"
+  }
+  {
+    "title": "千葉市ウェブサイトに掲載されました",
+    "postedAt": "2015-08-21T17:50:00+09:00",
+    "description": "千葉市のウェブサイトに、オープンデータを活用するアプリとして紹介されました。"
+  }
+  {
+    "title": "お祭りデータセンターをリリースしました",
+    "postedAt": "2015-08-08T08:08:08+09:00",
+    "description": "Code for Chiba 初のサービスとなる千葉市お祭りデータセンターをリリースしました。",
+    "thumbnailUrl": "images/announcement/20150808080808.jpg"
+  }
 ]
