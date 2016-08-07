@@ -70,7 +70,7 @@
       <div class="announcement-contents">
         <dl each={ announcement in announcements.slice(0,3) }>
           <dt>{moment(announcement.postedAt).format('MM.DD')}<dt>
-          <dd><a href ="#">{announcement.title}</a></dd>
+          <dd><a href ="javascript:void(0)" onclick={parent.onSelectAnnouncement}>{announcement.title}</a></dd>
         </dl>
       </div>
     </section>
@@ -209,6 +209,11 @@
         autoplayDisableOnInteraction: false
       })
     };
+
+    // お知らせ本文選択時
+    onSelectAnnouncement(e){
+      riot.route("announcement");
+    }
   </script>
 
   <style scoped>
