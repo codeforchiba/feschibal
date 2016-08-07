@@ -10,23 +10,22 @@
 
   StoreBase.prototype = {
 
-    /** 祭りデータキャッシュ */
+    /** データキャッシュ */
     dataStore: null,
 
     /**
-     * 全祭りデータを返すJQueryDeferrdを返します。
+     * 全データを返すJQueryDeferrdを返します。
      *
      * @return JQueryDeferred
      */
     findAll: function () {
-
       if (this.dataStore) {
         var d = new $.Deferred();
         d.resolve(_.values(this.dataStore));
         return d.promise();
       } else {
         var self = this;
-        return this.getJSON(this.url).then(function (dataList) {
+        return this.getJSON(this.url).then(function(dataList) {
           self.dataStore = {};
           self.storeData(dataList);
           return _.values(self.dataStore);
@@ -39,7 +38,7 @@
     },
 
     /**
-     * 指定したＩＤに該当する祭りデータを返すJQueryDeferrdを返します。
+     * 指定したＩＤに該当するデータを返すJQueryDeferrdを返します。
      *
      * @param id
      * @return JQueryDeferred

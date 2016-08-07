@@ -11,7 +11,7 @@
 
   AnnouncementStore.prototype = {
     /** アクセス先URL */
-    url: 'data/announcement.json',
+    url: '@@url.announcement',
 
     storeData: function(dataList){
       _.each(dataList, function (data) {
