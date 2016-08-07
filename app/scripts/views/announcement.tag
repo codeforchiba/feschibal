@@ -7,9 +7,9 @@
   </div>
   
   <article class="content">
-    <announcement-list show={ path==='list'} request={request} ></announcement-list>
+    <announcement-list announcementlist={announcements} ></announcement-list>
     <!-- ページネーション -->
-    <div class="pagenation">
+    <div class="pagenation" style="display:none">
       <ul>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>

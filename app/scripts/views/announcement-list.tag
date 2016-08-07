@@ -1,12 +1,18 @@
 <announcement-list>
-  <div class="content_box clearfix">
-    <div class="item">
-    <h3>タイトル</h3>
-    <img src="https://placehold.jp/250x300.png" alt=""/>
-    <p>本文</p>  
-    <div style="clear:left;" />
+  <div class="content_box">
+    <div class="item" each={announcement,i in opts.announcementlist}>
+      <h3>{announcement.title}</h3>
+      <img src="{announcement.thumbnailUrl}" alt=""/>
+      <p>{announcement.description}</p>
+      <div style="clear:left;" />
+    </div>
   </div>
-
+  <script>
+      cfc.Announcement.findAll().then(function(announcements) {
+        self.announcements = announcements;
+        self.update();
+      });
+  </script>
   <style scoped>
   .float {
     float:left;
