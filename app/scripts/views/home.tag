@@ -63,6 +63,17 @@
 
       <fes-list feslist={fesList}></fes-list>
     </section>
+    <section class="announcement">
+      <div class="announcement-bar">
+        <p>お知らせ</p>
+      </div>
+      <div class="announcement-contents">
+        <dl each={ announcement in announcements.slice(0,3) }>
+          <dt>{moment(announcement.postedAt).format('MM.DD')}<dt>
+          <dd><a href ="javascript:void(0)" onclick={parent.onSelectAnnouncement}>{announcement.title}</a></dd>
+        </dl>
+      </div>
+    </section>
   </article>
 
   <script>
@@ -73,6 +84,9 @@
 
     // 区一覧
     this.cities = [];
+
+    // お知らせ一覧
+    this.announcements = [];
 
     // 区毎の祭りの件数
     this.fesCount = {"a":"b"};
@@ -171,6 +185,10 @@
           self.update();
         });
       });
+      cfc.Announcement.findAll().then(function(announcements) {
+        self.announcements = announcements;
+        self.update();
+      });
     });
 
     /**
@@ -191,6 +209,11 @@
         autoplayDisableOnInteraction: false
       })
     };
+
+    // お知らせ本文選択時
+    onSelectAnnouncement(e){
+      riot.route("announcement");
+    }
   </script>
 
   <style scoped>
@@ -295,7 +318,6 @@
     /**
      * swiper用
      */
-
     .main .main-img .swiper-container .swiper-wrapper .swiper-slide::before {
       background: url(../images/common/t.svg) no-repeat;
       background-size: cover;
@@ -320,6 +342,42 @@
 
     .swiper-button-next,.swiper-button-prev {
       top: 104px;
+    }
+
+    /**
+     * お知らせ用
+     */
+    section.announcement {
+      margin: 30px 0 0 0;
+      padding: 20px;
+    }
+
+    section.announcement div.announcement-bar {
+      margin-bottom: 20px;
+      border: solid 2px #f7bd68;
+      font-size: 20px;
+    }
+
+    section.announcement div.announcement-bar p {
+      margin: 5px 0 5px 10px;
+      padding-left: 10px;
+      border-left: 10px solid #f3a534;
+      font-weight: bold;
+    }
+
+    section.announcement div.announcement-contents {
+      margin-bottom: 50px;
+    }
+
+    section.announcement div.announcement-contents dl {
+      margin-bottom: 1.5px;
+      padding: 5px 0 5px 0;
+      border-bottom: solid 2px #dfdddf;
+    }
+
+    section.announcement div.announcement-contents dl dt {
+      margin:0 30px 0 10px;
+      float: left;
     }
 
     @media only screen and (max-width: 640px) {
