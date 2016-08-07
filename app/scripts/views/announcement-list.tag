@@ -1,9 +1,9 @@
 <announcement-list>
   <div class="content_box">
-    <div class="item clearfix" each={announcement,i in opts.announcementlist}>
+    <div class="item clearfix" each={announcement in opts.announcementlist}>
       <h3>{announcement.title}</h3>
       <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={announcement.thumbnailUrl != ''}/>
-      <p each={description, j in lineFeedSplit(announcement.description)}>{description}</p>
+      <p each={description in lineFeedSplit(announcement.description)}>{description}</p>
     </div>
   </div>
   <script>
@@ -13,7 +13,6 @@
       });
 
       lineFeedSplit(description){
-        description = description.replace(/(?:\r\n|[\r\n])$/);
         return description.split(/(?:\r\n|[\r\n])/);
       }
   </script>
@@ -22,7 +21,7 @@
     float:left;
     width:300px;
     height:200px;
-    background: #999; 
+    background: #999;
   }
 
   .content_box {
