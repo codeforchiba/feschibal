@@ -1,21 +1,22 @@
 <announcement-list>
   <div class="content_box">
-    <div class="item clearfix" each={announcement in opts.announcementlist}>
+    <div class="item clearfix" each={announcement in opts.list}>
       <h3>{announcement.title}</h3>
-      <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={announcement.thumbnailUrl != ''}/>
+      <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={ thumbnailAvailable(announcement) }/>
       <p each={description in lineFeedSplit(announcement.description)}>{description}</p>
     </div>
   </div>
-  <script>
-      cfc.Announcement.findAll().then(function(announcements) {
-        self.announcements = announcements;
-        self.update();
-      });
 
-      lineFeedSplit(description){
-        return description.split(/(?:\r\n|[\r\n])/);
-      }
+  <script>
+    lineFeedSplit(description){
+      return description.split(/(?:\r\n|[\r\n])/);
+    }
+
+    thumbnailAvailable(announcement) {
+      return "thumbnailUrl" in announcement;
+    }
   </script>
+
   <style scoped>
   .float {
     float:left;

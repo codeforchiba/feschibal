@@ -7,8 +7,21 @@
   </div>
 
   <article class="content">
-    <announcement-list announcementlist={announcements} ></announcement-list>
+    <announcement-list list={announcements} ></announcement-list>
   </article>
+
+  <script>
+    var self = this;
+
+    self.announcements = [];
+
+    riot.route.on('routeChange:announcement', function() {
+      cfc.Announcement.findAll().then(function(announcements) {
+        self.announcements = announcements;
+        self.update();
+      });
+    });
+  </script>
 
   <style scorped>
   .main .main-img h2 {
