@@ -1,10 +1,9 @@
 <announcement-list>
   <div class="content_box">
-    <div class="item" each={announcement,i in opts.announcementlist}>
+    <div class="item clearfix" each={announcement,i in opts.announcementlist}>
       <h3>{announcement.title}</h3>
-      <img src="{announcement.thumbnailUrl}" alt=""/>
-      <p>{announcement.description}</p>
-      <div style="clear:left;" />
+      <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={announcement.thumbnailUrl != ''}/>
+      <p each={description, j in lineFeedSplit(announcement.description)}>{description}</p>
     </div>
   </div>
   <script>
@@ -12,6 +11,11 @@
         self.announcements = announcements;
         self.update();
       });
+
+      lineFeedSplit(description){
+        description = description.replace(/(?:\r\n|[\r\n])$/);
+        return description.split(/(?:\r\n|[\r\n])/);
+      }
   </script>
   <style scoped>
   .float {
@@ -41,12 +45,6 @@
     margin-right: 32px;
     margin-bottom: 32px;
     float: left;
-  }
-
-  .item > p {
-    line-height: 1.7;
-    margin-left: 32px;
-    margin-bottom: 32px;
   }
   </style>
 </announcement-list>
