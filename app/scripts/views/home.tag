@@ -63,6 +63,13 @@
 
       <fes-list feslist={fesList}></fes-list>
     </section>
+    <section>
+      <ul>
+        <li each={ announcement in announcements }>
+          {announcement.title}
+        </li>
+      </ul>
+    </section>
   </article>
 
   <script>
@@ -73,6 +80,9 @@
 
     // 区一覧
     this.cities = [];
+
+    // お知らせ一覧
+    this.announcements = [];
 
     // 区毎の祭りの件数
     this.fesCount = {"a":"b"};
@@ -170,6 +180,10 @@
         $.when.apply($, requests).done(function(){
           self.update();
         });
+      });
+      cfc.Announcement.findAll().then(function(announcements) {
+        self.announcements = announcements;
+        self.update();
       });
     });
 
