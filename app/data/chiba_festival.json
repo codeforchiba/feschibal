@@ -4991,5 +4991,76 @@
       }
     ],
     "remarks": "8/5(金) は前夜祭でカラオケ大会"
+  },
+  {
+    "id": "629",
+    "name": "第43回高洲ふれあい祭り",
+    "location": {
+      "name": "高洲公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目2",
+      "addressCode": "121060006",
+      "lat": "35.627811",
+      "long": "140.075915"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高洲ふれあい祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-06T08:00:00.000Z",
+        "end": "2016-08-06T12:30:00.000Z"
+      },
+      {
+        "start": "2016-08-07T08:00:00.000Z",
+        "end": "2016-08-07T12:00:00.000Z"
+      }
+    ],
+    "remarks": "子供みこし・山車は、8/7(日) 10:00～"
+  },
+  {
+    "id": "630",
+    "name": "第36回納涼盆踊り大会",
+    "location": {
+      "name": "幸町公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幸町1丁目4",
+      "addressCode": "121060004",
+      "lat": "35.610616",
+      "long": "140.100022"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2016-07-28T15:00:00.000Z",
+        "end": "2016-07-29T15:00:00.000Z"
+      },
+      {
+        "start": "2016-07-29T15:00:00.000Z",
+        "end": "2016-07-30T15:00:00.000Z"
+      }
+    ]
   }
 ]
