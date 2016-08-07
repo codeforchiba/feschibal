@@ -15,7 +15,8 @@
 
     storeData: function(dataList){
       _.each(dataList, function (data) {
-        this.dataStore[data.id] = new cfc.Announcement(data);
+        data.id = moment(data.postedAt).format('YYYYMMDD');
+        this.dataStore[data.postedAt] = new cfc.Announcement(data);
       }, this);
     }
   };
