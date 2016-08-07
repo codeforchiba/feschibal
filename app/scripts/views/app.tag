@@ -5,6 +5,8 @@
   <fes-detail show={ path === 'detail' }></fes-detail>
   <about show={ path === 'about' }></about>
   <credit show={ path === 'credit' }></credit>
+  <announcement show={ path === 'announcement' }></announcement>
+  
   <app-footer></app-footer>
 
   <script>
