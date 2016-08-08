@@ -5,6 +5,8 @@
   <fes-detail show={ path === 'detail' }></fes-detail>
   <about show={ path === 'about' }></about>
   <credit show={ path === 'credit' }></credit>
+  <announcement show={ path === 'announcement' }></announcement>
+
   <app-footer></app-footer>
 
   <script>
@@ -12,8 +14,6 @@
 
     /** 表示ページパス */
     this.path = null;
-    /** 選択された祭り */
-    this.fes = null;
 
     /**
      * 画面切替時
