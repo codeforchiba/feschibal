@@ -64,15 +64,13 @@
       <fes-list feslist={fesList}></fes-list>
     </section>
     <section class="announcement">
-      <div class="announcement-bar">
-        <p>お知らせ</p>
-      </div>
-      <div class="announcement-contents">
-        <dl each={ announcement in announcements.slice(0,3) }>
-          <dt>{moment(announcement.postedAt).format('MM.DD')}<dt>
-          <dd><a href ="javascript:void(0)" onclick={parent.onSelectAnnouncement}>{announcement.title}</a></dd>
-        </dl>
-      </div>
+      <h1>お知らせ</h1>
+      <ul>
+        <li each={ announcement in announcements.slice(0,3) }>
+          <span class="date">{moment(announcement.postedAt).format('MM.DD')}</span>
+          <a href ="javascript:void(0)" onclick={parent.onSelectAnnouncement}>{announcement.title}</a>
+        </li>
+      </ul>
     </section>
   </article>
 
@@ -352,36 +350,36 @@
       padding: 20px;
     }
 
-    section.announcement div.announcement-bar {
+    section.announcement h1 {
       margin-bottom: 20px;
+      padding: 6px 0;
       border: solid 2px #f7bd68;
       font-size: 20px;
     }
 
-    section.announcement div.announcement-bar p {
+    section.announcement h1:first-letter {
       margin: 5px 0 5px 10px;
       padding-left: 10px;
       border-left: 10px solid #f3a534;
-      font-weight: bold;
     }
 
-    section.announcement div.announcement-contents {
+    section.announcement ul {
       margin-bottom: 50px;
     }
 
-    section.announcement div.announcement-contents dl {
+    section.announcement ul li {
       margin-bottom: 1.5px;
       padding: 5px 0 5px 0;
-      border-bottom: solid 2px #dfdddf;
+      border-bottom: solid 1px #dfdddf;
     }
 
-    section.announcement div.announcement-contents dl dt {
+    section.announcement ul li span.date {
+      display: inline-block;
       margin:0 30px 0 10px;
-      float: left;
+      font-weight: bold;
     }
 
     @media only screen and (max-width: 640px) {
-
       .homesearch .homesearch-list {
         width: 33.1%;
         font-size: 14px;
@@ -419,6 +417,15 @@
 
       .swiper-pagination {
         bottom: 2px !important;
+      }
+
+      section.announcement ul {
+        margin-bottom: 20px;
+      }
+
+      section.announcement ul li span.date {
+        display: block;
+        margin:0;
       }
     }
   </style>
