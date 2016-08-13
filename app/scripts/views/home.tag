@@ -210,7 +210,7 @@
 
     // お知らせ本文選択時
     onSelectAnnouncement(e){
-      riot.route("announcement/current");
+      riot.route("announcement");
     }
   </script>
 
