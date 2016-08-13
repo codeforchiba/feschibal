@@ -89,6 +89,8 @@
     // 区毎の祭りの件数
     this.fesCount = {"a":"b"};
 
+    this.swiper = null;
+
     // 今週の開始日付と終了日付
     if(moment().weekday() === 0){
       // 日曜日の場合
@@ -187,13 +189,26 @@
         self.announcements = announcements;
         self.update();
       });
+      if (self.swiper != null) {
+        self.createSwiper(true);
+      }
     });
 
     /**
      * swiper用
      */
     window.onload = function () {
-      var swiper = new Swiper('.swiper-container', {
+      self.createSwiper(false);
+    };
+
+    createSwiper(withDestroy) {
+      var activeIndex = 0;
+      if (self.swiper != null && withDestroy) {
+        activeIndex = self.swiper.activeIndex;
+        self.swiper.destroy(true, true);
+      }
+
+      self.swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -204,9 +219,13 @@
         effect: 'fade',
         centeredSlides: true,
         autoplay: 6000,
-        autoplayDisableOnInteraction: false
+        autoplayDisableOnInteraction: true
       })
-    };
+
+      if (activeIndex > 0) {
+        self.swiper.slideTo(activeIndex, 0, false, true);
+      }
+    }
 
     // お知らせ本文選択時
     onSelectAnnouncement(e){
