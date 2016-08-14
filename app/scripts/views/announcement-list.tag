@@ -1,6 +1,6 @@
 <announcement-list>
   <ul>
-    <li class="clearfix" each={announcement in opts.list}>
+    <li id="{moment(announcement.postedAt, moment.ISO_8601).format('YYYYMMDD')}" class="clearfix" each={announcement in opts.list}>
       <h3>{announcement.title}</h3>
       <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={ thumbnailAvailable(announcement) }/>
       <p each={description in lineFeedSplit(announcement.description)}>{description}</p>

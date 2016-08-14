@@ -66,8 +66,8 @@
     <section class="announcement">
       <h1>お知らせ</h1>
       <ul>
-        <li each={ announcement in announcements.slice(0,3) }>
-          <span class="date">{moment(announcement.postedAt).format('MM.DD')}</span>
+        <li id="{moment(announcement.postedAt, moment.ISO_8601).format('YYYYMMDD')}" each={ announcement in announcements.slice(0,3) }>
+          <span class="date">{moment(announcement.postedAt, moment.ISO_8601).format('MM.DD')}</span>
           <a href ="javascript:void(0)" onclick={parent.onSelectAnnouncement}>{announcement.title}</a>
         </li>
       </ul>
@@ -92,7 +92,7 @@
     this.swiper = null;
 
     // 今週の開始日付と終了日付
-    if(moment().weekday() === 0){
+    if (moment().weekday() === 0){
       // 日曜日の場合
       this.startDateOfWeek = moment().weekday(-6).toDate();
       this.endDateOfWeek = moment().toDate();
@@ -152,6 +152,11 @@
         cities: [e.item.city.cityCode]
       };
       riot.route("search/list?" + $.param(param));
+    }
+
+    // お知らせ本文選択時
+    onSelectAnnouncement(e){
+      riot.route("announcement/" + e.target.parentElement.id);
     }
 
     /**
@@ -220,16 +225,11 @@
         centeredSlides: true,
         autoplay: 6000,
         autoplayDisableOnInteraction: true
-      })
+      });
 
       if (activeIndex > 0) {
         self.swiper.slideTo(activeIndex, 0, false, true);
       }
-    }
-
-    // お知らせ本文選択時
-    onSelectAnnouncement(e){
-      riot.route("announcement");
     }
   </script>
 
