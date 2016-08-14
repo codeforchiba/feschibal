@@ -150,7 +150,7 @@
    * @param el
    * @param handler
    */
-  riot.route.attacheExec = function(el, handler){
+  riot.route.attachExec = function(el, handler){
     el = $(el);
     var checkVisible = setInterval(function(){
       if(!el.length || !el.is(':visible')){
