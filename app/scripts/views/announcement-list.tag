@@ -1,11 +1,11 @@
 <announcement-list>
-  <div class="content_box">
-    <div class="item clearfix" each={announcement in opts.list}>
+  <ul>
+    <li id="{moment(announcement.postedAt, moment.ISO_8601).format('YYYYMMDD')}" class="clearfix" each={announcement in opts.list}>
       <h3>{announcement.title}</h3>
       <img src="{announcement.thumbnailUrl}" alt="" width="250" height="300" if={ thumbnailAvailable(announcement) }/>
       <p each={description in lineFeedSplit(announcement.description)}>{description}</p>
-    </div>
-  </div>
+    </li>
+  </ul>
 
   <script>
     lineFeedSplit(description){
@@ -18,33 +18,59 @@
   </script>
 
   <style scoped>
-  .float {
-    float:left;
-    width:300px;
-    height:200px;
-    background: #999;
-  }
+    ul {
+      width: 680px;
+      margin: 0 auto;
+    }
 
-  .content_box {
-    width: 680px;
-    margin: 0 auto;
-  }
+    ul li h3 {
+      margin: 32px 0;
+      padding: 8px 0;
+      border: solid 2px #f7bd68;
+      font-size: 17pt;
+    }
 
-  .item > h3 {
-    font-size: 17pt;
-    text-align: left;
-    margin-bottom: 32px;
-    margin-top: 32px;
-    line-height: 44px;
-    border: 2px solid #f5ac42;
-  }
+    ul li h3:first-letter {
+      margin: 5px 0 5px 10px;
+      padding-left: 10px;
+      border-left: 10px solid #f3a534;
+    }
 
-  .item > img {
-    width: 250px;
-    height: 300px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-    float: left;
-  }
+    ul li img {
+      width: 250px;
+      height: 300px;
+      margin-right: 32px;
+      margin-bottom: 32px;
+      float: left;
+    }
+
+    @media only screen and (max-width: 640px) {
+      ul {
+        width: auto;
+      }
+
+      ul li {
+        margin: 0 10px;
+      }
+
+      ul li h3 {
+        margin: 12px 0;
+        padding: 0 0 0 10px;
+        border-width: 0;
+        border-left: 10px solid #f3a534;
+        font-size: 14pt;
+      }
+
+      ul li h3:first-letter {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      ul li img {
+        float: none;
+        margin: 16px auto;
+      }
+    }
   </style>
 </announcement-list>

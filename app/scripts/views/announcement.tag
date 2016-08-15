@@ -15,7 +15,7 @@
 
     self.announcements = [];
 
-    riot.route.on('routeChange:announcement', function() {
+    riot.route.on('announcement', function() {
       cfc.Announcement.findAll().then(function(announcements) {
         self.announcements = announcements;
         self.update();
