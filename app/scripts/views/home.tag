@@ -224,7 +224,7 @@
         effect: 'fade',
         centeredSlides: true,
         autoplay: 6000,
-        autoplayDisableOnInteraction: true
+        autoplayDisableOnInteraction: false
       });
 
       if (activeIndex > 0) {
