@@ -5062,5 +5062,149 @@
         "end": "2016-07-30T15:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "631",
+    "name": "平成28年度 真砂夏祭り",
+    "location": {
+      "name": "真砂中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5丁目15",
+      "addressCode": "121060013",
+      "lat": "35.641941",
+      "long": "140.064243"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "第31地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2016-08-26T15:00:00.000Z",
+        "end": "2016-08-27T15:00:00.000Z"
+      },
+      {
+        "start": "2016-08-27T15:00:00.000Z",
+        "end": "2016-08-28T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "632",
+    "name": "稲毛東映マンション夏祭り",
+    "location": {
+      "name": "稲岸公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸4丁目15",
+      "addressCode": "121060002",
+      "lat": "35.634397",
+      "long": "140.076921"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false
+    },
+    "organizer": "東映マンション自治会",
+    "periods": [
+      {
+        "start": "2016-08-27T08:45:00.000Z",
+        "end": "2016-08-27T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "231",
+    "name": "朝日ヶ丘の夏祭り サマーフェスタ",
+    "location": {
+      "name": "朝日ヶ丘公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区朝日ヶ丘4丁目2698-77",
+      "addressCode": "121020001",
+      "lat": "35.655637",
+      "long": "140.077008"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "朝日ヶ丘自治会",
+    "periods": [
+      {
+        "start": "2016-08-27T08:00:00.000Z",
+        "end": "2016-08-27T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天の場合、中止"
+  },
+  {
+    "id": "313",
+    "name": "第11回稲毛あかり祭り「夜灯」",
+    "location": {
+      "name": "稲毛公園周辺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛1-10 ",
+      "addressCode": "121030005",
+      "lat": "35.636442",
+      "long": "140.083188"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "昔、稲毛で実際に行われていた「夜灯漁」を再現したお祭り"
+      ],
+      "specialProgram": [
+        "園児からお年寄りまで、さまざまな方が作った 約8000個の手作り灯ろうが稲毛の街中に並び、 ステージでは地元チームのダンスや歌、バンド演奏が 行われる。"
+      ]
+    },
+    "organizer": "稲毛あかり祭夜灯実行委員会",
+    "periods": [
+      {
+        "start": "2016-11-11T15:00:00.000Z",
+        "end": "2016-11-12T15:00:00.000Z"
+      },
+      {
+        "start": "2016-11-18T15:00:00.000Z",
+        "end": "2016-11-19T15:00:00.000Z"
+      },
+      {
+        "start": "2016-11-19T15:00:00.000Z",
+        "end": "2016-11-20T15:00:00.000Z"
+      }
+    ],
+    "url": "https://www.facebook.com/inagenoakari/"
   }
 ]
