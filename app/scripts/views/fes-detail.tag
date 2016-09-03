@@ -18,7 +18,7 @@
             </span>
           </li>
         </ul>
-        <div class="weather">
+        <div class="weather" if={moment(fes.getEndDate()).isSameOrAfter(moment(),'day')}>
           <ul>
             <li each={ period, i in fes.periods }>
               <div class="left-weather">
