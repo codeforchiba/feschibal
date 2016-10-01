@@ -272,7 +272,6 @@
     /** 天気予報 */
     .info-area .weather {
       border-bottom: 1px solid #ccc;
-      margin-bottom: 30px;
       padding-bottom: 20px;
       padding-top: 20px;
     }
@@ -317,6 +316,7 @@
     /** 祭り内容 */
     .info-area .features {
       clear: both;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
     .info-area .features img {
