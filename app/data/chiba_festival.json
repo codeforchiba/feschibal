@@ -5206,5 +5206,142 @@
       }
     ],
     "url": "https://www.facebook.com/inagenoakari/"
+  },
+  {
+    "id": "633",
+    "name": "第24回美浜区民フェスティバル",
+    "location": {
+      "name": "稲毛海浜公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜7丁目2",
+      "addressCode": "121060007",
+      "lat": "35.619857",
+      "long": "140.060811"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "神輿、ワークショップ、フリーマーケット、警察・自衛隊車両展示"
+      ]
+    },
+    "organizer": "美浜区民フェスティバル実行委員会",
+    "periods": [
+      {
+        "start": "2016-10-02T00:20:00.000Z",
+        "end": "2016-10-02T06:40:00.000Z"
+      }
+    ],
+    "remarks": "荒天中止"
+  },
+  {
+    "id": "634",
+    "name": "第36回真砂コミュニティふれあいまつり",
+    "location": {
+      "name": "真砂コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂2丁目3?1",
+      "addressCode": "121060013",
+      "lat": "35.640139",
+      "long": "140.069525"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "真砂コミュニティセンター",
+    "periods": [
+      {
+        "start": "2016-10-15T01:00:00.000Z",
+        "end": "2016-10-15T07:00:00.000Z"
+      },
+      {
+        "start": "2016-10-16T01:00:00.000Z",
+        "end": "2016-10-16T07:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天の場合、一部中止"
+  },
+  {
+    "id": "635",
+    "name": "高洲コミュニティまつり",
+    "location": {
+      "name": "高洲コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目12?1",
+      "addressCode": "121060006",
+      "lat": "35.63922",
+      "long": "140.06066"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高洲コミュニティセンター",
+    "periods": [
+      {
+        "start": "2016-11-05T01:00:00.000Z",
+        "end": "2016-11-05T06:00:00.000Z"
+      },
+      {
+        "start": "2016-11-06T01:00:00.000Z",
+        "end": "2016-11-06T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "314",
+    "name": "ちばモノレール祭り 2016",
+    "location": {
+      "name": "千葉モノレール萩台車両基地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区萩台町199-1",
+      "addressCode": "121030025",
+      "lat": "35.641242",
+      "long": "140.126753"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "ちばモノレール祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-10-15T01:00:00.000Z",
+        "end": "2016-10-15T06:00:00.000Z"
+      }
+    ]
   }
 ]
