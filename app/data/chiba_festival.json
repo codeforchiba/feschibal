@@ -1278,7 +1278,7 @@
     "id": "501",
     "name": "2015とけサマーフェスティバル",
     "location": {
-      "name": "創造の杜公園",
+      "name": "創造の杜",
       "state": "千葉県",
       "stateCode": "12",
       "city": "千葉市",
@@ -3446,12 +3446,12 @@
     "organizer": "磯辺63自治会内磯辺夏祭り実行委員会",
     "periods": [
       {
-        "start": "2016-08-26T15:00:00.000Z",
-        "end": "2016-08-27T15:00:00.000Z"
+        "start": "2016-08-27T09:00:00.000Z",
+        "end": "2016-08-27T12:00:00.000Z"
       },
       {
-        "start": "2016-08-27T15:00:00.000Z",
-        "end": "2016-08-28T15:00:00.000Z"
+        "start": "2016-08-28T07:00:00.000Z",
+        "end": "2016-08-28T11:50:00.000Z"
       }
     ]
   },
@@ -5380,7 +5380,7 @@
     "remarks": "小雨決行"
   },
   {
-    "id": "314",
+    "id": "315",
     "name": "第24回稲毛区民まつり",
     "location": {
       "name": "穴川中央公園",
@@ -6053,7 +6053,7 @@
     ]
   },
   {
-    "id": "315",
+    "id": "316",
     "name": "平成28年度小仲台地区納涼盆踊り大会",
     "location": {
       "name": "向原公園",
@@ -6092,7 +6092,7 @@
     ]
   },
   {
-    "id": "316",
+    "id": "317",
     "name": "天台ともしび自治会夏祭り",
     "location": {
       "name": "千草台小学校",
@@ -6127,7 +6127,7 @@
     ]
   },
   {
-    "id": "317",
+    "id": "318",
     "name": "天台親和会納涼夏祭り",
     "location": {
       "name": "ひかり公園",
@@ -6165,7 +6165,7 @@
     ]
   },
   {
-    "id": "318",
+    "id": "319",
     "name": "園生町草野町内会盆踊り大会",
     "location": {
       "name": "園生第二公園",
@@ -6203,7 +6203,7 @@
     ]
   },
   {
-    "id": "319",
+    "id": "320",
     "name": "小深町八幡神社秋の例大祭",
     "location": {
       "name": "小深町自治会館",
@@ -6241,7 +6241,7 @@
     ]
   },
   {
-    "id": "320",
+    "id": "321",
     "name": "町内納涼盆踊り大会",
     "location": {
       "name": "作草部公園",
@@ -6275,7 +6275,7 @@
     ]
   },
   {
-    "id": "321",
+    "id": "322",
     "name": "ふれあいイベント夏",
     "location": {
       "name": "宮の杜こぶし公園",
@@ -6376,5 +6376,578 @@
         "end": "2016-10-22T05:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "239",
+    "name": "第50回幕張地区文化祭",
+    "location": {
+      "name": "幕張公民館",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町4?602",
+      "addressCode": "121020026",
+      "lat": "35.660265",
+      "long": "140.055428"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2016-10-15T00:30:00.000Z",
+        "end": "2016-10-15T06:45:00.000Z"
+      },
+      {
+        "start": "2016-10-16T00:30:00.000Z",
+        "end": "2016-10-16T06:45:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "636",
+    "name": "ふれあい祭り",
+    "location": {
+      "name": "幕張西小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-8?1",
+      "addressCode": "121060012",
+      "lat": "35.664865",
+      "long": "140.038036"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "空手、ヒップホップ、ドッチボール、グラウンドゴルフ"
+      ]
+    },
+    "organizer": "NPO法人幕張西スポーツクラブ",
+    "periods": [
+      {
+        "start": "2016-10-30T00:00:00.000Z",
+        "end": "2016-10-30T05:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "442",
+    "name": "2016納涼盆踊り大会",
+    "location": {
+      "name": "都川水の里公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区大宮町258-1他",
+      "addressCode": "121040009",
+      "lat": "35.603887",
+      "long": "140.153057"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "抽選会"
+      ]
+    },
+    "organizer": "加曾利町内会",
+    "periods": [
+      {
+        "start": "2016-07-30T09:30:00.000Z",
+        "end": "2016-07-30T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "443",
+    "name": "第3回若松町親和自治会夏祭り",
+    "location": {
+      "name": "若松公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町361-54",
+      "addressCode": "121040052",
+      "lat": "35.640019",
+      "long": "140.165033"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "じゃんけん大会、抽選会"
+      ]
+    },
+    "organizer": "若松町親和自治会",
+    "periods": [
+      {
+        "start": "2016-08-06T08:00:00.000Z",
+        "end": "2016-08-06T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "444",
+    "name": "若松町中広町内会盆踊り大会",
+    "location": {
+      "name": "若松町中広会館脇千葉経済大学グランド",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町429-79",
+      "addressCode": "121040052",
+      "lat": "35.642781",
+      "long": "140.1616"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2016-07-23T09:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T09:00:00.000Z",
+        "end": "2016-07-24T11:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "445",
+    "name": "小倉小地区納涼大会",
+    "location": {
+      "name": "小倉台公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区小倉台4-7",
+      "addressCode": "121040010",
+      "lat": "35.629316",
+      "long": "140.170549"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "others": [
+        "子供みこし巡業"
+      ]
+    },
+    "organizer": "小倉小地区納涼大会実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-23T01:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T01:00:00.000Z",
+        "end": "2016-07-24T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "446",
+    "name": "みつわ台5丁目納涼盆踊り大会",
+    "location": {
+      "name": "源弁天公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台5-47",
+      "addressCode": "121040048",
+      "lat": "35.646593",
+      "long": "140.140033"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "others": [
+        "ビンゴ、三角くじ、おたのしみ抽選会"
+      ]
+    },
+    "organizer": "みつわ台5丁目連合自治会",
+    "periods": [
+      {
+        "start": "2016-07-30T09:00:00.000Z",
+        "end": "2016-07-30T11:30:00.000Z"
+      },
+      {
+        "start": "2016-07-31T09:00:00.000Z",
+        "end": "2016-07-31T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "447",
+    "name": "若松町北部自治会納涼盆踊り大会",
+    "location": {
+      "name": "若松町公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区若松町492-1他",
+      "addressCode": "121040052",
+      "lat": "35.644681",
+      "long": "140.152983"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "ヒップホップダンス"
+      ]
+    },
+    "organizer": "若松町北部自治会",
+    "periods": [
+      {
+        "start": "2016-07-23T10:00:00.000Z",
+        "end": "2016-07-23T12:00:00.000Z"
+      },
+      {
+        "start": "2016-07-24T10:00:00.000Z",
+        "end": "2016-07-24T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "448",
+    "name": "ふるさと夏祭り",
+    "location": {
+      "name": "高品公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区高品町1596",
+      "addressCode": "121040030",
+      "lat": "35.619474",
+      "long": "140.133835"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "千葉ふるさと夏まつり振興会",
+    "periods": [
+      {
+        "start": "2016-07-31T07:00:00.000Z",
+        "end": "2016-07-31T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "525",
+    "name": "誉田町1丁目盆踊り大会",
+    "location": {
+      "name": "誉田南公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区誉田町1丁目",
+      "addressCode": "121050032",
+      "lat": "35.548708",
+      "long": "140.19966"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "誉田町1丁目盆踊大会実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-06T10:00:00.000Z",
+        "end": "2016-08-06T12:00:00.000Z"
+      },
+      {
+        "start": "2016-08-07T10:00:00.000Z",
+        "end": "2016-08-07T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "2016 とけサマーフェスティバル 30th",
+    "location": {
+      "name": "創造の杜",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区あすみが丘5-41",
+      "addressCode": "121050001",
+      "lat": "35.524703",
+      "long": "140.257994"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false
+    },
+    "organizer": "とけサマーフェスティバル実行委員会",
+    "periods": [
+      {
+        "start": "2016-08-20T01:00:00.000Z",
+        "end": "2016-08-20T11:00:00.000Z"
+      },
+      {
+        "start": "2016-08-21T01:00:00.000Z",
+        "end": "2016-08-21T11:00:00.000Z"
+      }
+    ],
+    "url": "http://www.tokefes.rdy.jp/"
+  },
+  {
+    "id": "637",
+    "name": "高浜夏祭り",
+    "location": {
+      "name": "高浜第一公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜1-5",
+      "addressCode": "121060007",
+      "lat": "35.61799",
+      "long": "140.073883"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜6丁目自治会",
+    "periods": [
+      {
+        "start": "2016-07-30T09:00:00.000Z",
+        "end": "2016-07-30T12:30:00.000Z"
+      },
+      {
+        "start": "2016-07-31T09:00:00.000Z",
+        "end": "2016-07-31T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "638",
+    "name": "幕張西5・6丁目 秋祭り",
+    "location": {
+      "name": "幕張西第三公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西6-2-1他",
+      "addressCode": "121060012",
+      "lat": "35.662178",
+      "long": "140.032633"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "もちつき"
+      ]
+    },
+    "organizer": "幕張西5・6丁目自治会",
+    "periods": [
+      {
+        "start": "2016-11-20T01:00:00.000Z",
+        "end": "2016-11-20T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "639",
+    "name": "検見川宿舎自治会夏祭り",
+    "location": {
+      "name": "検見川宿舎",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂2丁目4",
+      "addressCode": "121060013",
+      "lat": "35.639118",
+      "long": "140.070153"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "specialProgram": [
+        "小学生中心の妖怪第一体操"
+      ]
+    },
+    "organizer": "検見川宿舎自治会",
+    "periods": [
+      {
+        "start": "2016-07-23T08:00:00.000Z",
+        "end": "2016-07-23T12:30:00.000Z"
+      },
+      {
+        "start": "2016-07-24T00:00:00.000Z",
+        "end": "2016-07-24T02:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "640",
+    "name": "いそべふれあい夏祭り",
+    "location": {
+      "name": "磯辺公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺1-26",
+      "addressCode": "121060001",
+      "lat": "35.62954",
+      "long": "140.064997"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "こどもによる山車の町内巡行"
+      ]
+    },
+    "organizer": "いそべふれあい夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2016-07-30T01:30:00.000Z",
+        "end": "2016-07-30T11:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "323",
+    "name": "第54回千葉大祭",
+    "location": {
+      "name": "千葉大学 西千葉キャンパス",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区弥生町1-33",
+      "addressCode": "121030028",
+      "lat": "35.6277542",
+      "long": "140.1035722"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "千葉大祭実行委員会",
+    "periods": [
+      {
+        "start": "2016-11-03T00:00:00.000Z",
+        "end": "2016-11-03T09:00:00.000Z"
+      },
+      {
+        "start": "2016-11-04T00:00:00.000Z",
+        "end": "2016-11-04T09:00:00.000Z"
+      },
+      {
+        "start": "2016-11-05T00:00:00.000Z",
+        "end": "2016-11-05T09:00:00.000Z"
+      },
+      {
+        "start": "2016-11-06T00:00:00.000Z",
+        "end": "2016-11-06T06:00:00.000Z"
+      }
+    ],
+    "url": "http://chibafes.com/"
   }
 ]
