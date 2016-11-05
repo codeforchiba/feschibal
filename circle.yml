@@ -25,12 +25,16 @@ deployment:
     branch: master
     commands:
       - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
-      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival
+      - kubectl rolling-update $CURRENT_RC_NAME --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival:
+          environment:
+            CURRENT_RC_NAME: $(kubectl get rc --namespace=cfc-festival | grep '^server' | cut -d ' ' -f 1)
   staging:
     branch: develop
     commands:
       - gcloud docker push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
-      - kubectl rolling-update server --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival-staging
+      - kubectl rolling-update $CURRENT_RC_NAME  --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival-staging:
+          environment:
+            CURRENT_RC_NAME: $(kubectl get rc --namespace=cfc-festival-staging | grep '^server' | cut -d ' ' -f 1)
 
 general:
   branches:
