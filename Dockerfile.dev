@@ -13,7 +13,7 @@ RUN apk add --no-cache ${ADDITIONAL_PKGS} && \
   npm install --unsafe-perm && \
   grunt build
 
-EXPOSE 9000
+EXPOSE 9000 35729
 ENV NODE_ENV="development"
 
 CMD ["grunt", "serve:express"]
