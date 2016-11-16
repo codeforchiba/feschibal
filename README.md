@@ -16,7 +16,8 @@
 
 ## 開発ツール
 
-本プロジェクトでは開発ツールとしてGruntを使用しています。
+本プロジェクトでは開発ツールとしてDockerとGruntを使用しています。
+DockerではGruntを動かす為のnodeやnpmの環境を提供しています。
 Gruntが担うタスクは以下の機能になります。
 
 - scssのコンパイル
@@ -24,70 +25,90 @@ Gruntが担うタスクは以下の機能になります。
 - 開発用httpサーバの起動
 - リリース用モジュール（ソース圧縮、結合等）の生成
 
+## Dockerを用いた開発環境
+(以下、Docker環境)
 ### 開発ツールのインストール
+- [Docker](https://www.docker.com/products/overview)をインストール
 
-1. [node](https://nodejs.org/)のインストール（nodeが既にインストールされている場合はスキップ可）
-
-※注　macの場合nodeが/usr/local下にインストールされると権限の問題でnpmコマンドが失敗します。    
-　　　インストール先を変更するか、権限を与えるようにしてください。
-
-2. gruntのインストール
-
-```
-$ npm install -g grunt-cli
-```
-
-## 開発環境準備
-
-1. ソースをチェックアウトし、プロジェクトのディレクトリに移動する
+### 開発環境準備
+ソースをチェックアウトし、プロジェクトのディレクトリに移動します。
 
 ```
 $ git clone https://github.com/codeforchiba/feschibal.git
 $ cd feschibal
 ```
+### 開発環境で実行する
+#### 1. DockerImageを用意する
 
-2. プロジェクトのルートディレクトリで以下のコマンドを実行し、必要なモジュールのセットアップ
+- DockerHubから取得する場合
+```
+$ docker pull codeforchiba/feschibal
+$ docker tag codeforchiba/feschibal festival-server-dev
+```
 
+- 自分でビルドする場合
+```
+$ docker build -t festival-server-dev -f Dockerfile.dev .
+```
+
+#### 2. Dockerコンテナを起動する
+- 取得したDockerImageをDockerコンテナとして起動
+```
+$ docker run -d -p 9000:9000 -p 35729:35729 -v $(pwd)/app:/var/www/feschibal/app festival-server-dev
+```
+
+以下の URL で動作確認できます。
+```
+http://localhost:9000/
+```
+
+## ローカル環境で開発する
+プロジェクトのディレクトリ配下でファイルを編集します。
+
+ファイルを更新すると、開発環境を起動している間はscssファイルもtagファイルも変更を自動で検知し
+自動でコンパイルしてくれます。
+また、livereload-jsがブラウザを自動でリロードしてくれます。
+
+## node.jsを用いた開発環境
+ローカル環境にnode.jsをインストールして開発環境を作ります。
+### 開発ツールのインストール
+- [node](https://nodejs.org/en/)のインストール
+
+**（nodeが既にインストールされている場合はスキップ可）**
+
+※注　macの場合nodeが/usr/local下にインストールされると権限の問題でnpmコマンドが失敗します。
+インストール先を変更するか、権限を与えるようにしてください。
+
+### 開発環境準備
+- npmとgruntをアップデートする
+
+```
+$ npm install -g npm
+$ npm install -g grunt-cli
+```
+
+### 開発環境で実行する
+#### 1. 必要なモジュールのセットアップ
+プロジェクトのディレクトリ直下で実行してください。
 ```
 $ npm install
 ```
 
-## ローカル環境で実行する（クライアントのみ）
+#### 2. 開発環境を起動する
 
+- 開発用サーバーを起動する場合
 ```
 $ grunt serve
 ```
 
-以下の URL で動作確認できます。
-
-    http://localhost:9000/
-
-## ローカル環境で実行する（クライアント　＋　サーバー）
-
+- expressサーバーを起動する場合
 ```
 $ grunt serve:express
 ```
 
 以下の URL で動作確認できます。
-
-    http://localhost:9000/
-
-### ローカル環境で開発する
-
-"grunt serve" or "grunt serve:express" で、サーバを起動している最中はscssファイルもtagファイルも変更を自動で検知し、自動でコンパイルしてくれます。
-
-## その他Gruntのタスク
-
-#### リリースモジュールの生成
-
 ```
-$ grunt build
-```
-
-#### リリースモジュールでの動作確認
-
-```
-$ grunt serve:dist
+http://localhost:9000/
 ```
 
 ## ディレクトリ構造
