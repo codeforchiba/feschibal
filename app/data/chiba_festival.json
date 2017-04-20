@@ -6949,5 +6949,117 @@
       }
     ],
     "url": "http://chibafes.com/"
+  },
+  {
+    "id": "324",
+    "name": "あったか。ハート祭り",
+    "location": {
+      "name": "長沼原勤労市民プラザ",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区長沼原町304-1",
+      "addressCode": "121030024",
+      "lat": "35.668396",
+      "long": "140.129942"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "お笑いステージ、こども楽校、ワークショップ"
+      ]
+    },
+    "organizer": "Fun Space",
+    "periods": [
+      {
+        "start": "2016-10-22T01:00:00.000Z",
+        "end": "2016-10-22T07:00:00.000Z"
+      },
+      {
+        "start": "2016-10-23T01:00:00.000Z",
+        "end": "2016-10-23T07:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "オーチュー事業共同体",
+      "河野プロパンガス有限会社"
+    ]
+  },
+  {
+    "id": "641",
+    "name": "第35回5・5まつり",
+    "location": {
+      "name": "高洲コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目12?1",
+      "addressCode": "121060006",
+      "lat": "35.63922",
+      "long": "140.06066"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "浜友の会",
+    "periods": [
+      {
+        "start": "2017-05-05T01:00:00.000Z",
+        "end": "2017-05-05T06:00:00.000Z"
+      }
+    ],
+    "url": "http://www.55matsuri.net/"
+  },
+  {
+    "id": "642",
+    "name": "第7回浜田まつり",
+    "location": {
+      "name": "日神パレステージ海浜幕張とコロンブスシティの間の道路",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区浜田1",
+      "addressCode": "121060010",
+      "lat": "35.660448",
+      "long": "140.034758"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "子ども神輿・山車"
+      ]
+    },
+    "organizer": "日神パレステージ海浜幕張自治会",
+    "periods": [
+      {
+        "start": "2017-04-23T01:55:00.000Z",
+        "end": "2017-04-23T07:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "コロンブスシティ自治会",
+      "ステラガーデン幕張自治会"
+    ]
   }
 ]
