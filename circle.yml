@@ -7,10 +7,10 @@ dependencies:
     - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update kubectl
     - sudo chmod 757 /home/ubuntu/.config/gcloud/logs -R
-    - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
-    - gcloud config set compute/zone $GCP_ZONE
-    - gcloud config set project $GCP_PROJECT
-    - gcloud container clusters get-credentials festival
+    - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
+    - sudo /opt/google-cloud-sdk/bin/gcloud config set compute/zone $GCP_ZONE
+    - sudo /opt/google-cloud-sdk/bin/gcloud config set project $GCP_PROJECT
+    - sudo /opt/google-cloud-sdk/bin/gcloud container clusters get-credentials festival
   override:
     - docker info
     - docker build -t $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --rm=false .
@@ -24,14 +24,14 @@ deployment:
   production:
     branch: master
     commands:
-      - gcloud docker -- push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - sudo /opt/google-cloud-sdk/bin/gcloud docker -- push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
       - kubectl rolling-update $CURRENT_RC_NAME server-v$CIRCLE_BUILD_NUM  --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival:
           environment:
             CURRENT_RC_NAME: $(kubectl get rc --namespace=cfc-festival | grep '^server' | cut -d ' ' -f 1)
   staging:
     branch: develop
     commands:
-      - gcloud docker -- push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
+      - sudo /opt/google-cloud-sdk/bin/gcloud docker -- push $GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM
       - kubectl rolling-update $CURRENT_RC_NAME server-v$CIRCLE_BUILD_NUM  --image=$GCP_REGISTRY_ENDPOINT/$GCP_PROJECT/festival-server:v$CIRCLE_BUILD_NUM --namespace=cfc-festival-staging:
           environment:
             CURRENT_RC_NAME: $(kubectl get rc --namespace=cfc-festival-staging | grep '^server' | cut -d ' ' -f 1)
