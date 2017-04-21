@@ -1,19 +1,21 @@
 kind: ReplicationController
 apiVersion: v1
 metadata:
-  name: server
+  name: server-v${CIRCLE_BUILD_NUM}
   namespace: cfc-festival
 spec:
   replicas: 1
   selector:
     app: server
     environment: production
+    version: v${CIRCLE_BUILD_NUM}
   template:
     metadata:
       labels:
         app: server
         tier: frontend
         environment: production
+        version: v${CIRCLE_BUILD_NUM}
     spec:
       containers:
         -
@@ -31,3 +33,8 @@ spec:
             -
               name: NODE_ENV
               value: production
+          resources:
+            limits:
+              cpu: 125m
+            requests:
+              cpu: 100m
