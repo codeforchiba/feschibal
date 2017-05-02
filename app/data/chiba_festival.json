@@ -7061,5 +7061,193 @@
       "コロンブスシティ自治会",
       "ステラガーデン幕張自治会"
     ]
+  },
+  {
+    "id": "449",
+    "name": "縄文春祭り",
+    "location": {
+      "name": "加曽利貝塚博物館",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区桜木8-33-1",
+      "addressCode": "121040024",
+      "lat": "35.623675",
+      "long": "140.165194"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "縄文体験"
+      ]
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-05-03T01:00:00.000Z",
+        "end": "2017-05-03T06:00:00.000Z"
+      },
+      {
+        "start": "2017-05-04T01:00:00.000Z",
+        "end": "2017-05-04T06:00:00.000Z"
+      },
+      {
+        "start": "2017-05-05T01:00:00.000Z",
+        "end": "2017-05-05T06:00:00.000Z"
+      },
+      {
+        "start": "2017-05-06T01:00:00.000Z",
+        "end": "2017-05-06T06:00:00.000Z"
+      },
+      {
+        "start": "2017-05-07T01:00:00.000Z",
+        "end": "2017-05-07T06:00:00.000Z"
+      }
+    ],
+    "url": "http://www.city.chiba.jp/kyoiku/shogaigakushu/bunkazai/kasorikaizuka/h29haru-fes.html"
+  },
+  {
+    "id": "643",
+    "name": "第5回検見川ビーチフェスタ",
+    "location": {
+      "name": "稲毛ヨットハーバー",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺2-8-1",
+      "addressCode": "121060001",
+      "lat": "35.623858",
+      "long": "140.05605"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "ビーチでのスポーツ体験"
+      ]
+    },
+    "organizer": "千葉市",
+    "periods": [
+      {
+        "start": "2017-05-21T01:00:00.000Z",
+        "end": "2017-05-21T06:00:00.000Z"
+      }
+    ],
+    "url": "https://www.city.chiba.jp/toshi/koenryokuchi/kanri/mihama/28-kemigawabeachfesta-yokoku.html",
+    "sponsors": [
+      "千葉銀行"
+    ]
+  },
+  {
+    "id": "644",
+    "name": "第20回ベイタウンまつり",
+    "location": {
+      "name": "幕張ベイタウン・コア、美浜プロムナード",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区打瀬2-13",
+      "addressCode": "121060003",
+      "lat": "35.639694",
+      "long": "140.046889"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "幕張ベイタウン自治会連合会",
+    "periods": [
+      {
+        "start": "2017-05-20T01:00:00.000Z",
+        "end": "2017-05-20T07:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日開催",
+    "url": "http://baytown.chiba.jp/festival/"
+  },
+  {
+    "id": "645",
+    "name": "幕張西一丁目海浜町内会神輿祭り",
+    "location": {
+      "name": "幕張西一丁目町内会館",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-6-3",
+      "addressCode": "121060012",
+      "lat": "35.665366",
+      "long": "140.036045"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-29T15:00:00.000Z",
+        "end": "2017-07-30T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "646",
+    "name": "幕張西地区盆踊り大会",
+    "location": {
+      "name": "幕張西第一公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区幕張西2-10",
+      "addressCode": "121060012",
+      "lat": "35.663777",
+      "long": "140.036089"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-27T15:00:00.000Z",
+        "end": "2017-07-28T15:00:00.000Z"
+      },
+      {
+        "start": "2017-07-28T15:00:00.000Z",
+        "end": "2017-07-29T15:00:00.000Z"
+      }
+    ]
   }
 ]
