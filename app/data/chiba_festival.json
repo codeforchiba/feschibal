@@ -7249,5 +7249,153 @@
         "end": "2017-07-29T15:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "120",
+    "name": "大賀ハス祭り",
+    "location": {
+      "name": "千葉公園内蓮華亭・ハス池周辺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区弁天3-1-1",
+      "addressCode": "121010053",
+      "lat": "35.621095",
+      "long": "140.113877"
+    },
+    "features": {
+      "dancing": true,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "ちはなちゃん、かそりーぬ、風太くん、モノちゃん"
+      ],
+      "specialProgram": [
+        "大賀ハスガイド",
+        "象鼻杯体験(大きな蓮の葉にお酒やジュースなどの飲み物を入れ、茎をストローにして飲む)"
+      ]
+    },
+    "organizer": "千葉市",
+    "periods": [
+      {
+        "start": "2017-06-16T23:00:00.000Z",
+        "end": "2017-06-17T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-17T23:00:00.000Z",
+        "end": "2017-06-18T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-18T23:00:00.000Z",
+        "end": "2017-06-19T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-19T23:00:00.000Z",
+        "end": "2017-06-20T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-20T23:00:00.000Z",
+        "end": "2017-06-21T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-21T23:00:00.000Z",
+        "end": "2017-06-22T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-22T23:00:00.000Z",
+        "end": "2017-06-23T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-23T23:00:00.000Z",
+        "end": "2017-06-24T05:00:00.000Z"
+      },
+      {
+        "start": "2017-06-24T23:00:00.000Z",
+        "end": "2017-06-25T05:00:00.000Z"
+      }
+    ],
+    "url": "https://www.city.chiba.jp/toshi/koenryokuchi/ryokusei/midoritohana/oga-lotus2017.html",
+    "sponsors": [
+      "花びと会ちば"
+    ]
+  },
+  {
+    "id": "240",
+    "name": "第13回幕張子ども夏祭り 2017",
+    "location": {
+      "name": "幕張小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町4丁目781",
+      "addressCode": "121020026",
+      "lat": "35.661653",
+      "long": "140.054089"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": true,
+      "mikoshi": false,
+      "others": [
+        "ゲームは 17:30 ? 18:30。幼児、小学生向け"
+      ]
+    },
+    "organizer": "幕張中学校区青少年育成委員会",
+    "periods": [
+      {
+        "start": "2017-07-17T08:30:00.000Z",
+        "end": "2017-07-17T10:30:00.000Z"
+      }
+    ],
+    "remarks": "ゲーム受付は 18:15 まで",
+    "sponsors": [
+      "幕張地区子ども会育成会"
+    ]
+  },
+  {
+    "id": "241",
+    "name": "第22回幕張本郷ふれあい祭り",
+    "location": {
+      "name": "ホテルメイプルイン幕張",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張本郷1-12-1",
+      "addressCode": "121020027",
+      "lat": "35.671598",
+      "long": "140.039879"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "幕張本郷ふれあい祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-01T07:00:00.000Z",
+        "end": "2017-08-01T11:45:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止",
+    "url": "http://blogs.makusta.com/fureai/",
+    "sponsors": [
+      "幕張本郷有志の会"
+    ]
   }
 ]
