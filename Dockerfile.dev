@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:4.4
+FROM mhart/alpine-node:6.11
 
 ENV ADDITIONAL_PKGS="make g++ python nasm autoconf automake zlib-dev git tzdata"
 
