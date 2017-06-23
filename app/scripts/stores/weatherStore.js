@@ -10,6 +10,8 @@
   };
 
   WeatherStore.prototype = {
+    /** アクセス先URL */
+    url: '@@url.weather_cache',
 
     storeData: function (data) {
       if (_.isEmpty(data)){
@@ -29,17 +31,6 @@
         var key = this._getDateKey(weather.forecastDateTime);
         this.dataStore[key] = weather;
       }
-    },
-
-    /**
-     * データ取得方法をJSONPで固定化
-     * @param url
-     * @returns {*}
-     */
-    getJSON: function (url) {
-      var d = new $.Deferred();
-      d.resolve(nm.weatherData);
-      return d.promise();
     },
 
     /**
