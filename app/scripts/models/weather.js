@@ -7,7 +7,9 @@
    * @constructor
    */
   var Weather = function (data) {
-
+    for (var prop in data) {
+      this[prop] = data[prop];
+    }
   };
 
   Weather.prototype = {
