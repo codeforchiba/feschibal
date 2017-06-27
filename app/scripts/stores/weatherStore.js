@@ -11,7 +11,7 @@
 
   WeatherStore.prototype = {
     /** アクセス先URL */
-    url: '@@url.weather_cache',
+    url: '@@url.weather',
 
     storeData: function (data) {
       if (_.isEmpty(data)){
