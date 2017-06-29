@@ -7397,5 +7397,81 @@
     "sponsors": [
       "幕張本郷有志の会"
     ]
+  },
+  {
+    "id": "121",
+    "name": "白旗七夕祭り",
+    "location": {
+      "name": "白旗公園、白旗商店街",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区白旗2-135",
+      "addressCode": "121010024",
+      "lat": "35.578733",
+      "long": "140.140314"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "スタンプラリー、チアリーダーや大道芸のパフォーマンス"
+      ]
+    },
+    "organizer": "白旗七夕祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-01T01:00:00.000Z",
+        "end": "2017-07-01T06:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "千葉県立生浜高等学校",
+      "ジェフユナイテッド株式会社"
+    ]
+  },
+  {
+    "id": "450",
+    "name": "第40回みつわ台夏祭り",
+    "location": {
+      "name": "みつわ台第二公園野球場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区みつわ台3丁目3-1",
+      "addressCode": "121040048",
+      "lat": "35.640957",
+      "long": "140.136292"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "フリーマーケット(昨年と場所が違います)"
+      ]
+    },
+    "organizer": "みつわ台祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-12T02:00:00.000Z",
+        "end": "2017-08-12T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-13T02:00:00.000Z",
+        "end": "2017-08-13T12:00:00.000Z"
+      }
+    ]
   }
 ]
