@@ -7614,5 +7614,150 @@
     "sponsors": [
       "おゆみ野地区町内自治会連絡協議会"
     ]
+  },
+  {
+    "id": "122",
+    "name": "なつまつり",
+    "location": {
+      "name": "きぼーる 3階 アリーナ",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区中央4-5-1",
+      "addressCode": "121010036",
+      "lat": "35.607452",
+      "long": "140.12311"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "千葉市子ども交流館",
+    "periods": [
+      {
+        "start": "2017-08-06T01:00:00.000Z",
+        "end": "2017-08-06T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "647",
+    "name": "ベイタウン夏祭り 2017",
+    "location": {
+      "name": "パティオス・プロムナード 4番街?6番街 コア周辺",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区打瀬2-13",
+      "addressCode": "121060003",
+      "lat": "35.639694",
+      "long": "140.046889"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "子供みこし"
+      ]
+    },
+    "organizer": "幕張ベイタウン商店街振興組合",
+    "periods": [
+      {
+        "start": "2017-08-26T06:00:00.000Z",
+        "end": "2017-08-26T11:00:00.000Z"
+      }
+    ],
+    "remarks": "小雨決行。雨天は翌日開催",
+    "sponsors": [
+      "幕張ベイタウン自治会連合会"
+    ]
+  },
+  {
+    "id": "242",
+    "name": "2017 花園ハス祭り",
+    "location": {
+      "name": "花園公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区花園2-11",
+      "addressCode": "121020023",
+      "lat": "35.653965",
+      "long": "140.07191"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "花園ハス祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-15T05:00:00.000Z",
+        "end": "2017-07-15T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-16T10:00:00.000Z",
+        "end": "2017-07-16T12:00:00.000Z"
+      }
+    ],
+    "remarks": "7/15 は、6:00?10:00 観蓮会を旧東大緑地植物実験所、14:00? 子ども行進を花園公園から花園東公園"
+  },
+  {
+    "id": "326",
+    "name": "第30回稲毛東五丁目夏祭り",
+    "location": {
+      "name": "稲毛東公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛東5-8",
+      "addressCode": "121030008",
+      "lat": "35.641317",
+      "long": "140.087091"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲毛東五丁目自治会",
+    "periods": [
+      {
+        "start": "2017-07-29T08:00:00.000Z",
+        "end": "2017-07-29T11:00:00.000Z"
+      },
+      {
+        "start": "2017-07-30T08:00:00.000Z",
+        "end": "2017-07-30T11:00:00.000Z"
+      }
+    ],
+    "remarks": "7/30 は、10:00からこどもみこし",
+    "sponsors": [
+      "成年部",
+      "婦人部"
+    ]
   }
 ]
