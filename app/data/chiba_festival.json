@@ -476,7 +476,7 @@
   },
   {
     "id": "301",
-    "name": "第29回「マイタウン夏祭り」",
+    "name": "第29回マイタウン夏祭り",
     "location": {
       "name": "小中台西第２公園（わんぱく公園）",
       "state": "千葉県",
@@ -7217,17 +7217,17 @@
   },
   {
     "id": "646",
-    "name": "幕張西地区盆踊り大会",
+    "name": "大盆踊り大会",
     "location": {
-      "name": "幕張西第一公園",
+      "name": "幕張西第三公園横野球グランド",
       "state": "千葉県",
       "stateCode": "12",
       "city": "千葉市",
       "cityCode": "1212",
-      "address": "美浜区幕張西2-10",
+      "address": "美浜区幕張西6-2-1他",
       "addressCode": "121060012",
-      "lat": "35.663777",
-      "long": "140.036089"
+      "lat": "35.662178",
+      "long": "140.032633"
     },
     "features": {
       "dancing": true,
@@ -7238,17 +7238,18 @@
       "fireworks": false,
       "mikoshi": false
     },
-    "organizer": "",
+    "organizer": "第30地区町内自治会連絡協議会",
     "periods": [
       {
-        "start": "2017-07-27T15:00:00.000Z",
-        "end": "2017-07-28T15:00:00.000Z"
+        "start": "2017-07-28T09:30:00.000Z",
+        "end": "2017-07-28T12:00:00.000Z"
       },
       {
-        "start": "2017-07-28T15:00:00.000Z",
-        "end": "2017-07-29T15:00:00.000Z"
+        "start": "2017-07-29T09:30:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
       }
-    ]
+    ],
+    "remarks": "雨天中止"
   },
   {
     "id": "120",
@@ -7357,7 +7358,6 @@
         "end": "2017-07-17T10:30:00.000Z"
       }
     ],
-    "remarks": "ゲーム受付は 18:15 まで",
     "sponsors": [
       "幕張地区子ども会育成会"
     ]
@@ -7705,7 +7705,10 @@
       "musicalPerformance": false,
       "foodTruck": false,
       "fireworks": false,
-      "mikoshi": false
+      "mikoshi": false,
+      "others": [
+        "7/15 は、6:00～10:00 観蓮会を旧東大緑地植物実験所、14:00～ 子ども行進を花園公園から花園東公園"
+      ]
     },
     "organizer": "花園ハス祭り実行委員会",
     "periods": [
@@ -7717,8 +7720,7 @@
         "start": "2017-07-16T10:00:00.000Z",
         "end": "2017-07-16T12:00:00.000Z"
       }
-    ],
-    "remarks": "7/15 は、6:00～10:00 観蓮会を旧東大緑地植物実験所、14:00～ 子ども行進を花園公園から花園東公園"
+    ]
   },
   {
     "id": "326",
@@ -7754,10 +7756,681 @@
         "end": "2017-07-30T11:00:00.000Z"
       }
     ],
-    "remarks": "7/30 は、10:00からこどもみこし",
     "sponsors": [
       "成年部",
       "婦人部"
     ]
+  },
+  {
+    "id": "327",
+    "name": "第4回稲毛せんげん通りまつり",
+    "location": {
+      "name": "稲毛せんげん通り商店街",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区稲毛東3丁目",
+      "addressCode": "121030008",
+      "lat": "35.63743",
+      "long": "140.084227"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "7/30 は、10:00からこどもみこし"
+      ]
+    },
+    "organizer": "稲毛せんげん通りまつり実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-14T08:00:00.000Z",
+        "end": "2017-07-14T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-15T08:00:00.000Z",
+        "end": "2017-07-15T12:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "稲毛商店街振興組合"
+    ]
+  },
+  {
+    "id": "648",
+    "name": "稲毛海岸4丁目自治会夏祭り",
+    "location": {
+      "name": "稲毛海岸4丁目自治会館",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸4丁目4",
+      "addressCode": "121060002",
+      "lat": "35.636727",
+      "long": "140.076453"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "山車の引き回し 19:00～"
+      ]
+    },
+    "organizer": "稲毛海岸4丁目自治会・祭礼実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-14T08:00:00.000Z",
+        "end": "2017-07-14T15:00:00.000Z"
+      },
+      {
+        "start": "2017-07-15T08:00:00.000Z",
+        "end": "2017-07-15T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "649",
+    "name": "稲浜地区夏祭り",
+    "location": {
+      "name": "稲毛海岸2丁目公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸2丁目3",
+      "addressCode": "121060002",
+      "lat": "35.629612",
+      "long": "140.085151"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲浜地区夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-22T08:00:00.000Z",
+        "end": "2017-07-22T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天順延・少雨決行"
+  },
+  {
+    "id": "650",
+    "name": "36連協納涼盆踊り大会",
+    "location": {
+      "name": "幸町公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜7丁目2",
+      "addressCode": "121060007",
+      "lat": "35.619857",
+      "long": "140.060811"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "36連協納涼盆踊り大会実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-28T09:00:00.000Z",
+        "end": "2017-07-28T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-29T09:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "651",
+    "name": "高浜第二県営夏まつり",
+    "location": {
+      "name": "高浜第二県営集会所脇",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜1丁目",
+      "addressCode": "121060007",
+      "lat": "35.620843",
+      "long": "140.07409"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜第二県営夏まつり実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-22T08:00:00.000Z",
+        "end": "2017-07-22T12:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天順延(7/23 17:00～21:00)"
+  },
+  {
+    "id": "652",
+    "name": "磯辺ふるさと祭り",
+    "location": {
+      "name": "北磯辺公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区磯辺6丁目4",
+      "addressCode": "121060001",
+      "lat": "35.637155",
+      "long": "140.054244"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "磯辺ふるさと祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-29T09:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-30T09:00:00.000Z",
+        "end": "2017-07-30T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "653",
+    "name": "平成29年度団地祭",
+    "location": {
+      "name": "稲毛海岸3丁目団地",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸3丁目",
+      "addressCode": "121060002",
+      "lat": "35.633865",
+      "long": "140.079648"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲毛海岸3丁目団地団地祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-29T09:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-30T09:00:00.000Z",
+        "end": "2017-07-30T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "243",
+    "name": "柏井ふるさと祭り",
+    "location": {
+      "name": "柏井小学校校庭",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区柏井4丁目48-1",
+      "addressCode": "121020006",
+      "lat": "35.708488",
+      "long": "140.106522"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "柏井小学校区内8町内自治会",
+    "periods": [
+      {
+        "start": "2017-07-15T09:00:00.000Z",
+        "end": "2017-07-15T12:30:00.000Z"
+      },
+      {
+        "start": "2017-07-16T09:00:00.000Z",
+        "end": "2017-07-16T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天の場合は、どちらか一日のみ"
+  },
+  {
+    "id": "244",
+    "name": "合同夏祭り",
+    "location": {
+      "name": "芦太山公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区柏井町1656-13",
+      "addressCode": "121020007",
+      "lat": "35.694831",
+      "long": "140.097247"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "八千代台パークハウス自治会",
+    "periods": [
+      {
+        "start": "2017-07-15T05:00:00.000Z",
+        "end": "2017-07-15T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期",
+    "sponsors": [
+      "柏井北自治会"
+    ]
+  },
+  {
+    "id": "245",
+    "name": "三町会夏祭り",
+    "location": {
+      "name": "長作台第3公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区作新台6丁目7",
+      "addressCode": "121020011",
+      "lat": "35.687306",
+      "long": "140.087356"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "三町会夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-16T05:00:00.000Z",
+        "end": "2017-07-16T10:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期"
+  },
+  {
+    "id": "246",
+    "name": "第34回朝日ヶ丘ビレジ夏祭り・盆踊り大会",
+    "location": {
+      "name": "朝日ヶ丘第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区朝日ヶ丘3丁目2665-6",
+      "addressCode": "121020001",
+      "lat": "35.655408",
+      "long": "140.081847"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "子供神輿、山車巡業 22日 14:00～、大人神輿巡業 23日 13:00～、夜店 両日 17:00～、盆踊り 両日 18:30～"
+      ]
+    },
+    "organizer": "朝日ヶ丘ビレジ自治会",
+    "periods": [
+      {
+        "start": "2017-07-22T05:00:00.000Z",
+        "end": "2017-07-22T15:00:00.000Z"
+      },
+      {
+        "start": "2017-07-23T04:00:00.000Z",
+        "end": "2017-07-23T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "247",
+    "name": "ふれあい夏祭り",
+    "location": {
+      "name": "幕張台公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張本郷7丁目23",
+      "addressCode": "121020027",
+      "lat": "35.674887",
+      "long": "140.049311"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "幕張台自治会",
+    "periods": [
+      {
+        "start": "2017-07-22T08:00:00.000Z",
+        "end": "2017-07-22T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期"
+  },
+  {
+    "id": "248",
+    "name": "納涼祭",
+    "location": {
+      "name": "畑町ガーデン",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区畑町591-17",
+      "addressCode": "121020021",
+      "lat": "35.65999",
+      "long": "140.091436"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "子供神輿 16:30～"
+      ]
+    },
+    "organizer": "畑町東部自治会",
+    "periods": [
+      {
+        "start": "2017-07-29T07:00:00.000Z",
+        "end": "2017-07-29T11:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期"
+  },
+  {
+    "id": "249",
+    "name": "第33回にれの木台夏祭り",
+    "location": {
+      "name": "朝日ヶ丘小学校、にれの木台地域内",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区朝日ケ丘2-6-1　",
+      "addressCode": "121020001",
+      "lat": "35.658804",
+      "long": "140.085506"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "子供神輿 9:30～、大人神輿 10:30～"
+      ]
+    },
+    "organizer": "にれの木台自治会",
+    "periods": [
+      {
+        "start": "2017-07-29T08:00:00.000Z",
+        "end": "2017-07-29T11:30:00.000Z"
+      },
+      {
+        "start": "2017-07-30T00:30:00.000Z",
+        "end": "2017-07-30T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "250",
+    "name": "第39回つくし夏祭り",
+    "location": {
+      "name": "つくし第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区朝日ヶ丘1丁目2571-4他",
+      "addressCode": "121020001",
+      "lat": "35.65579",
+      "long": "140.089281"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "祭事 8/5 8:00～、神輿・山車行進 8/5 9:00～"
+      ]
+    },
+    "organizer": "朝日ヶ丘つくし自治会",
+    "periods": [
+      {
+        "start": "2017-08-05T09:00:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T08:00:00.000Z",
+        "end": "2017-08-06T12:00:00.000Z"
+      }
+    ],
+    "remarks": "神輿・山車は朝日ヶ丘第6公園出発"
+  },
+  {
+    "id": "251",
+    "name": "第44回さつきが丘夏祭り",
+    "location": {
+      "name": "さつきが丘西公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区さつきが丘2丁目31",
+      "addressCode": "121020012",
+      "lat": "35.667236",
+      "long": "140.092712"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "第44回さつきが丘夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-05T08:00:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T08:00:00.000Z",
+        "end": "2017-08-06T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "252",
+    "name": "第28回横戸台夏祭り",
+    "location": {
+      "name": "横戸南公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区横戸台23",
+      "addressCode": "121020031",
+      "lat": "35.69569",
+      "long": "140.112354"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "横戸台自治会",
+    "periods": [
+      {
+        "start": "2017-08-05T07:30:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天時は翌日に延期"
+  },
+  {
+    "id": "253",
+    "name": "夏祭り盆踊り大会",
+    "location": {
+      "name": "作新台公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区作新台5丁目1455-1",
+      "addressCode": "121020011",
+      "lat": "35.691399",
+      "long": "140.082766"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "作新台自治会",
+    "periods": [
+      {
+        "start": "2017-08-05T10:00:00.000Z",
+        "end": "2017-08-05T12:30:00.000Z"
+      },
+      {
+        "start": "2017-08-06T10:00:00.000Z",
+        "end": "2017-08-06T12:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "254",
+    "name": "畑地区盆踊り大会",
+    "location": {
+      "name": "畑小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区畑町1385-1",
+      "addressCode": "121020021",
+      "lat": "35.665612",
+      "long": "140.078787"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "畑地区盆踊り大会",
+    "periods": [
+      {
+        "start": "2017-08-05T09:00:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T09:00:00.000Z",
+        "end": "2017-08-06T11:30:00.000Z"
+      }
+    ],
+    "remarks": "両日雨天時は 8/6 畑小学校体育館"
   }
 ]
