@@ -23,7 +23,7 @@
     });
   </script>
 
-  <style scorped>
+  <style scoped>
   .main .main-img h2 {
     position: absolute;
     top: 50%;
