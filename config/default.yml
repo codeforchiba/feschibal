@@ -2,5 +2,5 @@ url:
   event: data/chiba_festival.json
   city: data/12chiba.json
   announcement: data/announcement.json
-  weather: https://staging.weather.api.code4chiba.org/weather.json
+  weather: https://s3-ap-northeast-1.amazonaws.com/staging.weather.api.code4chiba.org/weather.json
 protocol: JSON
