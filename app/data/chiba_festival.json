@@ -8432,5 +8432,253 @@
       }
     ],
     "remarks": "両日雨天時は 8/6 畑小学校体育館"
+  },
+  {
+    "id": "123",
+    "name": "千葉けいりん夏まつり",
+    "location": {
+      "name": "千葉競輪場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区弁天4-1-1",
+      "addressCode": "121010053",
+      "lat": "35.622",
+      "long": "140.114736"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "はずれなしの抽選会"
+      ]
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-15T01:00:00.000Z",
+        "end": "2017-07-15T11:30:00.000Z"
+      },
+      {
+        "start": "2017-07-16T01:00:00.000Z",
+        "end": "2017-07-16T11:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "255",
+    "name": "夏祭り",
+    "location": {
+      "name": "なぎさ公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町1-7689-2",
+      "addressCode": "121020026",
+      "lat": "35.659483",
+      "long": "140.045229"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "神輿 15:30～、模擬店 16:00～、盆踊り 19:00～"
+      ]
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-29T06:00:00.000Z",
+        "end": "2017-07-29T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "450",
+    "name": "ちしろだい七夕まつり",
+    "location": {
+      "name": "千城台コミュニティセンター",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "若葉区千城台西2-1-1",
+      "addressCode": "121040035",
+      "lat": "35.621898",
+      "long": "140.186533"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-08T01:00:00.000Z",
+        "end": "2017-07-08T05:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "654",
+    "name": "美浜こどもまつり 2017",
+    "location": {
+      "name": "美浜文化ホール",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5-15-2",
+      "addressCode": "121060013",
+      "lat": "35.641011",
+      "long": "140.062664"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "",
+    "periods": [
+      {
+        "start": "2017-07-24T15:00:00.000Z",
+        "end": "2017-07-25T15:00:00.000Z"
+      },
+      {
+        "start": "2017-07-25T15:00:00.000Z",
+        "end": "2017-07-26T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "655",
+    "name": "第6回海浜幕張まつり",
+    "location": {
+      "name": "幕張海浜公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区ひび野2-116",
+      "addressCode": "121060011",
+      "lat": "35.641063",
+      "long": "140.037736"
+    },
+    "features": {
+      "dancing": false,
+      "singing": true,
+      "drum": true,
+      "musicalPerformance": true,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "よしもと、プロレス"
+      ]
+    },
+    "organizer": "海浜幕張まつり実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-05T06:00:00.000Z",
+        "end": "2017-08-05T12:30:00.000Z"
+      }
+    ],
+    "url": "http://www.baytown-mall.com/event/2017/kaihin-matsuri06.htm"
+  },
+  {
+    "id": "328",
+    "name": "第43回ともしび夏まつり",
+    "location": {
+      "name": "千草台小学校",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区天台5-11-1",
+      "addressCode": "121030020",
+      "lat": "35.631633",
+      "long": "140.122913"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "7/23 9:00～12:00 みこしの町内巡回"
+      ]
+    },
+    "organizer": "天台ともしび自治会",
+    "periods": [
+      {
+        "start": "2017-07-22T09:00:00.000Z",
+        "end": "2017-07-22T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-23T09:00:00.000Z",
+        "end": "2017-07-23T12:00:00.000Z"
+      }
+    ],
+    "remarks": "小雨決行"
+  },
+  {
+    "id": "529",
+    "name": "とけサマーフェスティバル 2017",
+    "location": {
+      "name": "創造の杜",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区あすみが丘5丁目41",
+      "addressCode": "121050001",
+      "lat": "35.524929",
+      "long": "140.257233"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "とけサマーフェスティバル実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-18T15:00:00.000Z",
+        "end": "2017-08-19T15:00:00.000Z"
+      },
+      {
+        "start": "2017-08-19T15:00:00.000Z",
+        "end": "2017-08-20T15:00:00.000Z"
+      }
+    ],
+    "url": "http://tokefes.rdy.jp/"
   }
 ]
