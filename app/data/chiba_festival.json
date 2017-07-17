@@ -8822,5 +8822,36 @@
         "end": "2017-07-22T12:00:00.000Z"
       }
     ]
+  },
+  {
+    "id": "257",
+    "name": "かいづかこども夏祭り",
+    "location": {
+      "name": "協進建設株式会社 駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区長作町355-4",
+      "addressCode": "121020018",
+      "lat": "35.678104",
+      "long": "140.069523"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "長作町貝塚町会",
+    "periods": [
+      {
+        "start": "2017-08-19T05:30:00.000Z",
+        "end": "2017-08-19T07:30:00.000Z"
+      }
+    ]
   }
 ]
