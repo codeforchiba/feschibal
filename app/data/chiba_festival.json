@@ -8680,5 +8680,147 @@
       }
     ],
     "url": "http://tokefes.rdy.jp/"
+  },
+  {
+    "id": "256",
+    "name": "第36回まくはり納涼大会",
+    "location": {
+      "name": "幕張公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区幕張町5丁目544-12",
+      "addressCode": "121020026",
+      "lat": "35.657918",
+      "long": "140.052041"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "こども神輿"
+      ]
+    },
+    "organizer": "幕張納涼大会実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-22T06:00:00.000Z",
+        "end": "2017-07-22T10:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "329",
+    "name": "園生町草野町内会納涼盆踊り大会",
+    "location": {
+      "name": "園生第2公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区園生町389-1",
+      "addressCode": "121030018",
+      "lat": "35.654841",
+      "long": "140.12039"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "園生町草野町内会",
+    "periods": [
+      {
+        "start": "2017-07-28T09:00:00.000Z",
+        "end": "2017-07-28T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-29T09:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "name": "新宿二丁目納涼会",
+    "location": {
+      "name": "新宿公園ピラミッド噴水広場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区新宿2-4",
+      "addressCode": "121010025",
+      "lat": "35.605979",
+      "long": "140.113683"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "新宿二丁目自治会",
+    "periods": [
+      {
+        "start": "2017-07-22T06:00:00.000Z",
+        "end": "2017-07-22T08:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "新宿二丁目子供会"
+    ]
+  },
+  {
+    "id": "330",
+    "name": "作草部親交会納涼盆踊り大会",
+    "location": {
+      "name": "ヤックス作草部店 屋上駐車場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区作草部1丁目10-2",
+      "addressCode": "121030015",
+      "lat": "35.62913",
+      "long": "140.115353"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "小学生の樽太鼓伴奏"
+      ]
+    },
+    "organizer": "作草部親交会",
+    "periods": [
+      {
+        "start": "2017-07-21T10:00:00.000Z",
+        "end": "2017-07-21T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-22T10:00:00.000Z",
+        "end": "2017-07-22T12:00:00.000Z"
+      }
+    ]
   }
 ]
