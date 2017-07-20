@@ -8853,5 +8853,89 @@
         "end": "2017-08-19T07:30:00.000Z"
       }
     ]
+  },
+  {
+    "id": "258",
+    "name": "南花園納涼踊り",
+    "location": {
+      "name": "新検見川公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区南花園2丁目4",
+      "addressCode": "121020029",
+      "lat": "35.65093",
+      "long": "140.072296"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false,
+      "others": [
+        "踊りは 19:00～"
+      ]
+    },
+    "organizer": "南花園自治会",
+    "periods": [
+      {
+        "start": "2017-07-22T09:00:00.000Z",
+        "end": "2017-07-22T11:30:00.000Z"
+      },
+      {
+        "start": "2017-07-23T09:00:00.000Z",
+        "end": "2017-07-23T11:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天の場合は販売のみ実施",
+    "sponsors": [
+      "南花園子供会"
+    ]
+  },
+  {
+    "id": "1018",
+    "name": "検見川神社例祭",
+    "location": {
+      "name": "検見川神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "花見川区検見川町1-641",
+      "addressCode": "121020008",
+      "lat": "35.653524",
+      "long": "140.065977"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "others": [
+        "神輿渡御 8/1 18:00 社頭発興、8/1 21:00 仮殿着御、8/3 15:00 仮殿発興、8/3 21:00 社頭還幸、ほおずき市"
+      ]
+    },
+    "organizer": "検見川神社",
+    "periods": [
+      {
+        "start": "2017-08-01T01:00:00.000Z",
+        "end": "2017-08-01T15:00:00.000Z"
+      },
+      {
+        "start": "2017-08-01T15:00:00.000Z",
+        "end": "2017-08-02T15:00:00.000Z"
+      },
+      {
+        "start": "2017-08-02T15:00:00.000Z",
+        "end": "2017-08-03T15:00:00.000Z"
+      }
+    ]
   }
 ]
