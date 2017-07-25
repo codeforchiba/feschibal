@@ -3,6 +3,6 @@ url:
   event: data/chiba_festival.json
   city: data/12chiba.json
   announcement: data/announcement.json
-  weather: https://s3-ap-northeast-1.amazonaws.com/production.weather.api.code4chiba.org/weather.json
+  weather: https://api.code4chiba.org/v1/weathers
 protocol: JSON
 config_name: 'production.yml'
