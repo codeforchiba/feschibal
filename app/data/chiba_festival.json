@@ -7881,10 +7881,10 @@
       "stateCode": "12",
       "city": "千葉市",
       "cityCode": "1212",
-      "address": "美浜区高浜7丁目2",
-      "addressCode": "121060007",
-      "lat": "35.619857",
-      "long": "140.060811"
+      "address": "美浜区幸町1丁目4",
+      "addressCode": "121060004",
+      "lat": "35.610616",
+      "long": "140.100022"
     },
     "features": {
       "dancing": true,
