@@ -527,13 +527,12 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', 'サーバに設置するためのファイルをdist配下に生成します。', function (option) {
-    if (option === 'production') {
-      env = yaml.load(fs.readFileSync('config/production.yml'));
-    } else if (option === 'staging') {
-      env = yaml.load(fs.readFileSync('config/staging.yml'));
+    var fileName = 'config/default.yml';
+    if (option === 'production' || option === 'staging') {
+      fileName = 'config/' + option + '.yml';
+      env = yaml.load(fs.readFileSync(fileName));
     }
-
-    grunt.log.writeln(env['config_name'] + 'でbuildします。');
+    grunt.log.writeln(fileName + 'でbuildします。');
 
     grunt.task.run([
       'clean:dist',

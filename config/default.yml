@@ -4,4 +4,3 @@ url:
   announcement: data/announcement.json
   weather: https://api.staging.code4chiba.org/v1/weathers
 protocol: JSON
-config_name: 'default.yml'

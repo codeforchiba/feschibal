@@ -5,4 +5,3 @@ url:
   announcement: data/announcement.json
   weather: https://api.code4chiba.org/v1/weathers
 protocol: JSON
-config_name: 'production.yml'
