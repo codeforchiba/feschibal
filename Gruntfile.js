@@ -526,20 +526,29 @@ module.exports = function (grunt) {
     grunt.task.run(tasks);
   });
 
-  grunt.registerTask('build', [
-    'clean:dist',
-    'useminPrepare',
-    'concurrent:dist',
-    'replace:prod',
-    'autoprefixer',
-    'concat',
-    'cssmin',
-    'uglify',
-    'copy:dist',
-    'rev',
-    'usemin',
-    'htmlmin'
-  ]);
+  grunt.registerTask('build', 'サーバに設置するためのファイルをdist配下に生成します。', function (option) {
+    var fileName = 'config/default.yml';
+    if (option === 'production' || option === 'staging') {
+      fileName = 'config/' + option + '.yml';
+      env = yaml.load(fs.readFileSync(fileName));
+    }
+    grunt.log.writeln(fileName + 'でbuildします。');
+
+    grunt.task.run([
+      'clean:dist',
+      'useminPrepare',
+      'concurrent:dist',
+      'replace:prod',
+      'autoprefixer',
+      'concat',
+      'cssmin',
+      'uglify',
+      'copy:dist',
+      'rev',
+      'usemin',
+      'htmlmin'
+    ]);
+  });
 
   grunt.registerTask('build-data', [
     'manipulate-csv',

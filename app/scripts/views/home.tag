@@ -336,7 +336,7 @@
      * swiper用
      */
     .main .main-img .swiper-container .swiper-wrapper .swiper-slide::before {
-      background: url(../images/common/t.svg) no-repeat;
+      background: url(./images/common/t.svg) no-repeat;
       background-size: cover;
       background-position: center center;
       display: block;

@@ -1,3 +1,4 @@
+# ステージング環境用
 url:
   event: data/chiba_festival.json
   city: data/12chiba.json
