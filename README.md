@@ -111,23 +111,6 @@ $ grunt serve:express
 http://localhost:9000/
 ```
 
-### ビルド
-サーバに設置するためのファイルをdist配下に生成します。
-
-オプションを指定しないと`config/default.yml`を使ってbuildします。
-
-#### ステージング
-`config/staging.yml`を使ってbuildします。
-```
-grunt build:staging
-```
-
-#### 本番
-`config/production.yml`を使ってbuildします。
-```
-grunt build:production
-```
-
 ## ディレクトリ構造
 
 ### app

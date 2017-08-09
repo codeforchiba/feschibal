@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="千葉市お祭りデータセンター" />
     <meta property="og:url" content="http://festival.code4chiba.org/" />
-    <meta property="og:image" content="./images/facebook.jpg" />
+    <meta property="og:image" content="/images/facebook.jpg" />
     <meta property="og:site_name" content="千葉市お祭りデータセンター" />
     <meta property="og:description" content="千葉市で、長い間、親しまれているお祭りについて、お知らせする無料サービスです。いつ、どこで、どんなお祭りが行われるのか、ひと目でわかるように情報をまとめました。" />
     <meta property="fb:admins" content="" />
@@ -63,6 +63,7 @@
     <script>
       try {
         window.cfc = window.cfc || {};
+        window.cfc.weatherData = <%- JSON.stringify(weatherData) %>;
       } catch(e){}
     </script>
 

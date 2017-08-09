@@ -1,7 +1,0 @@
-# 本番環境用
-url:
-  event: data/chiba_festival.json
-  city: data/12chiba.json
-  announcement: data/announcement.json
-  weather: https://api.code4chiba.org/v1/weathers
-protocol: JSON
