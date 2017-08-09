@@ -1,7 +1,7 @@
 <about>
   <article class="content">
     <section id="about-introduction">
-      <img src="./images/facebook.jpg">
+      <img src="/images/facebook.jpg">
       <p>本サービスは、千葉市で長い間親しまれているお祭りについて、お知らせする無料サービスです。</p>
       <p>いつ、どこで、どんなお祭りが行われるのか、ひと目でわかるように情報をまとめました。</p>
       <p>ご家族で、お友だち同士で、もちろんおひとりでも大丈夫。</p>

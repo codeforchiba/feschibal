@@ -2,5 +2,7 @@ url:
   event: data/chiba_festival.json
   city: data/12chiba.json
   announcement: data/announcement.json
-  weather: https://api.staging.code4chiba.org/v1/weathers
+  weather:
+    url: http://api.yumake.jp/1.0/forecastPrefWeek.php
+    cityCode: 12
 protocol: JSON
