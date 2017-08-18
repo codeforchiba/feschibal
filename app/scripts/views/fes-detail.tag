@@ -13,8 +13,8 @@
             <span class="date">{moment(period.start).format('MM/DD')}</span>
             <span class={day-of-week:true,sat:6===period.start.getDay(),sun:0===period.start.getDay()}>{moment(period.start).format('dd')}</span>
             <span class="clock">
-              <span if={moment(period.start).format('HH:mm') != '00:00'}>{moment(period.start).format('HH:mm')}</span>
-              <span if={moment(period.end).format('HH:mm') != '00:00'}> - {moment(period.end).format('HH:mm')}</span>
+              <span>{moment(period.start).format('HH:mm')}</span>
+              <span if={period.end != null}> - {moment(period.end).format('HH:mm')}</span>
             </span>
           </li>
         </ul>
