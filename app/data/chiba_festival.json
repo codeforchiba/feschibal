@@ -8665,20 +8665,24 @@
       "drum": false,
       "musicalPerformance": false,
       "foodTruck": true,
-      "fireworks": false,
-      "mikoshi": false
+      "fireworks": true,
+      "mikoshi": false,
+      "others": [
+        "8/19 20:30～ 花火"
+      ]
     },
     "organizer": "とけサマーフェスティバル実行委員会",
     "periods": [
       {
-        "start": "2017-08-18T15:00:00.000Z",
-        "end": "2017-08-19T15:00:00.000Z"
+        "start": "2017-08-19T02:00:00.000Z",
+        "end": "2017-08-19T12:00:00.000Z"
       },
       {
-        "start": "2017-08-19T15:00:00.000Z",
-        "end": "2017-08-20T15:00:00.000Z"
+        "start": "2017-08-20T03:00:00.000Z",
+        "end": "2017-08-20T12:00:00.000Z"
       }
     ],
+    "remarks": "19日の花火は、雨天時は20日に順延",
     "url": "http://tokefes.rdy.jp/"
   },
   {
@@ -9074,14 +9078,541 @@
     "organizer": "千葉神社",
     "periods": [
       {
-        "start": "2016-08-16T03:30:00.000Z",
-        "end": "2016-08-16T10:00:00.000Z"
+        "start": "2017-08-16T03:30:00.000Z",
+        "end": "2017-08-16T10:00:00.000Z"
       },
       {
-        "start": "2016-08-22T05:00:00.000Z",
-        "end": "2016-08-22T10:30:00.000Z"
+        "start": "2017-08-22T05:00:00.000Z",
+        "end": "2017-08-22T10:30:00.000Z"
       }
     ],
     "url": "http://www.chibajinja.com/shinji/reisai/index.html"
+  },
+  {
+    "id": "530",
+    "name": "越智はなみづき台自治会夏祭り",
+    "location": {
+      "name": "越智中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区越智町810-7",
+      "addressCode": "121050009",
+      "lat": "35.534607",
+      "long": "140.237512"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "越智はなみづき台自治会",
+    "periods": [
+      {
+        "start": "2017-07-23T09:00:00.000Z",
+        "end": "2017-07-23T11:30:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "531",
+    "name": "古市場盆踊り大会",
+    "location": {
+      "name": "古市場第1公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区古市場町474-189",
+      "addressCode": "121050030",
+      "lat": "35.548493",
+      "long": "140.146204"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "古市場地区5町内自治会",
+    "periods": [
+      {
+        "start": "2017-08-05T09:00:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T09:00:00.000Z",
+        "end": "2017-08-06T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "532",
+    "name": "鎌取大盆踊り大会",
+    "location": {
+      "name": "鎌取第1公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区おゆみ野2丁目1",
+      "addressCode": "121050011",
+      "lat": "35.56644",
+      "long": "140.174925"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "鎌取町内会",
+    "periods": [
+      {
+        "start": "2017-08-05T10:00:00.000Z",
+        "end": "2017-08-05T15:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T10:00:00.000Z",
+        "end": "2017-08-06T15:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止",
+    "sponsors": [
+      "鎌取商工会",
+      "鎌取団地自治会"
+    ]
+  },
+  {
+    "id": "533",
+    "name": "納涼盆踊り大会",
+    "location": {
+      "name": "誉田南公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区誉田町1丁目",
+      "addressCode": "121050032",
+      "lat": "35.548708",
+      "long": "140.19966"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "誉田一丁目町内会",
+    "periods": [
+      {
+        "start": "2017-08-05T10:00:00.000Z",
+        "end": "2017-08-05T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T10:00:00.000Z",
+        "end": "2017-08-06T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天中止"
+  },
+  {
+    "id": "534",
+    "name": "納涼盆踊り大会",
+    "location": {
+      "name": "誉田さくら公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "緑区誉田町2丁目21-1201他",
+      "addressCode": "121050032",
+      "lat": "35.549499",
+      "long": "140.21497"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "誉田二丁目町内会",
+    "periods": [
+      {
+        "start": "2017-08-12T10:00:00.000Z",
+        "end": "2017-08-12T12:00:00.000Z"
+      },
+      {
+        "start": "2017-08-13T10:00:00.000Z",
+        "end": "2017-08-13T12:00:00.000Z"
+      }
+    ],
+    "remarks": "雨天順延"
+  },
+  {
+    "id": "656",
+    "name": "第44回心のふるさと高洲夏祭り",
+    "location": {
+      "name": "高洲運動公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲2丁目",
+      "addressCode": "121060006",
+      "lat": "35.624037",
+      "long": "140.079272"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高洲夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-29T07:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-30T07:00:00.000Z",
+        "end": "2017-07-30T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "657",
+    "name": "第38回心のふるさとづくり TAF高洲まつり",
+    "location": {
+      "name": "高洲一丁目住宅集会所前広場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲1丁目",
+      "addressCode": "121060006",
+      "lat": "35.631367",
+      "long": "140.076832"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "TAF高洲まつり実行委員会",
+    "periods": [
+      {
+        "start": "2017-07-29T06:00:00.000Z",
+        "end": "2017-07-29T12:00:00.000Z"
+      },
+      {
+        "start": "2017-07-30T01:00:00.000Z",
+        "end": "2017-07-30T12:00:00.000Z"
+      }
+    ],
+    "remarks": "両日雨天時 7/31 15:00～21:00"
+  },
+  {
+    "id": "658",
+    "name": "高洲ふれあい祭り",
+    "location": {
+      "name": "高洲公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目2",
+      "addressCode": "121060006",
+      "lat": "35.627811",
+      "long": "140.075915"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高洲ふれあい祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-05T08:00:00.000Z",
+        "end": "2017-08-05T13:00:00.000Z"
+      },
+      {
+        "start": "2017-08-06T08:00:00.000Z",
+        "end": "2017-08-06T12:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "659",
+    "name": "第36回高浜南祭り",
+    "location": {
+      "name": "高洲南団地中央広場",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜3丁目",
+      "addressCode": "121060007",
+      "lat": "35.622418",
+      "long": "140.064817"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜南団地夏祭り実行員会",
+    "periods": [
+      {
+        "start": "2017-08-12T02:30:00.000Z",
+        "end": "2017-08-12T11:45:00.000Z"
+      },
+      {
+        "start": "2017-08-13T01:00:00.000Z",
+        "end": "2017-08-13T11:30:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "稲毛高浜南住宅管理組合",
+      "稲毛高浜南団地自治会会長"
+    ]
+  },
+  {
+    "id": "660",
+    "name": "サマーフェスティバル",
+    "location": {
+      "name": "新稲毛ガーデンタワー 中庭2階「スカイガーデン」",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高洲3丁目",
+      "addressCode": "121060006",
+      "lat": "35.625873",
+      "long": "140.071274"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "新稲毛ガーデンタワー自治会サマーフェスティバル実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-19T06:00:00.000Z",
+        "end": "2017-08-19T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "661",
+    "name": "第31回真砂夏祭り",
+    "location": {
+      "name": "真砂中央公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区真砂5丁目15",
+      "addressCode": "121060013",
+      "lat": "35.641941",
+      "long": "140.064243"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "第31地区町内自治会連絡協議会",
+    "periods": [
+      {
+        "start": "2017-08-19T08:00:00.000Z",
+        "end": "2017-08-19T12:30:00.000Z"
+      },
+      {
+        "start": "2017-08-20T08:00:00.000Z",
+        "end": "2017-08-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "662",
+    "name": "第36回高浜北祭り",
+    "location": {
+      "name": "高浜北団地中央プレイロット",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区高浜4丁目",
+      "addressCode": "121060007",
+      "lat": "35.625594",
+      "long": "140.068624"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "高浜北夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-19T06:00:00.000Z",
+        "end": "2017-08-19T12:30:00.000Z"
+      },
+      {
+        "start": "2017-08-20T01:00:00.000Z",
+        "end": "2017-08-20T12:00:00.000Z"
+      }
+    ],
+    "sponsors": [
+      "稲毛高浜北自治会",
+      "稲毛高浜北住宅管理組合"
+    ]
+  },
+  {
+    "id": "663",
+    "name": "稲毛東映マンション子供夏祭り",
+    "location": {
+      "name": "稲岸公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "美浜区稲毛海岸4丁目",
+      "addressCode": "121060002",
+      "lat": "35.635535",
+      "long": "140.077057"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": false
+    },
+    "organizer": "稲毛東映マンション子供夏祭り実行委員会",
+    "periods": [
+      {
+        "start": "2017-08-26T08:45:00.000Z",
+        "end": "2017-08-26T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "1020",
+    "name": "寒川神社例大祭",
+    "location": {
+      "name": "寒川神社",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "中央区寒川町1丁目123",
+      "addressCode": "121010021",
+      "lat": "35.597307",
+      "long": "140.120246"
+    },
+    "features": {
+      "dancing": false,
+      "singing": false,
+      "drum": true,
+      "musicalPerformance": false,
+      "foodTruck": false,
+      "fireworks": false,
+      "mikoshi": true,
+      "specialProgram": [
+        "御浜下り"
+      ]
+    },
+    "organizer": "寒川神社",
+    "periods": [
+      {
+        "start": "2017-08-19T22:30:00.000Z",
+        "end": "2017-08-20T12:00:00.000Z"
+      }
+    ],
+    "url": "http://chiba-samukawa-jinja.or.jp/event/annual_fest_2017/"
+  },
+  {
+    "id": "333",
+    "name": "天台町内会盆踊り大会",
+    "location": {
+      "name": "作草部公園",
+      "state": "千葉県",
+      "stateCode": "12",
+      "city": "千葉市",
+      "cityCode": "1212",
+      "address": "稲毛区天台1-1",
+      "addressCode": "121030020",
+      "lat": "35.630346",
+      "long": "140.113771"
+    },
+    "features": {
+      "dancing": true,
+      "singing": false,
+      "drum": false,
+      "musicalPerformance": false,
+      "foodTruck": true,
+      "fireworks": false,
+      "mikoshi": true
+    },
+    "organizer": "天台町内会",
+    "periods": [
+      {
+        "start": "2017-08-27T09:00:00.000Z",
+        "end": "2017-08-27T11:30:00.000Z"
+      }
+    ]
   }
 ]
